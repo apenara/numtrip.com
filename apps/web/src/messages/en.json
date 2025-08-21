@@ -1,0 +1,25 @@
+{
+  "HomePage": {
+    "nav": {
+      "search": "Search",
+      "businesses": "Businesses",
+      "about": "About"
+    },
+    "hero": {
+      "title": "Find Verified Tourism Contacts",
+      "subtitle": "Discover verified phone numbers, emails and WhatsApp contacts for hotels, tours and transportation in Cartagena and more destinations.",
+      "searchPlaceholder": "Search hotels, tours, transport...",
+      "searchButton": "Search"
+    },
+    "categories": {
+      "hotels": "Hotels",
+      "hotelsDescription": "Find direct contacts from verified hotels",
+      "tours": "Tours",
+      "toursDescription": "Connect with local tour operators",
+      "transport": "Transport",
+      "transportDescription": "Reliable transportation services"
+    }
+  },
+  "verified": "Verified",
+  "copy": "Copy"
+}

@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Variables from Design System */
+:root {
+  /* Primary Colors */
+  --primary-blue: #0066CC;
+  --primary-blue-hover: #0052A3;
+  --primary-blue-light: #E6F0FF;
+  
+  /* Verified Colors */
+  --verified-green: #00A651;
+  --verified-green-light: #E8F5E9;
+  
+  /* Category Colors */
+  --hotel-purple: #7C3AED;
+  --tour-orange: #FB923C;
+  --transport-blue: #0EA5E9;
+  
+  /* Gray Scale */
+  --gray-900: #1A1A1A;
+  --gray-700: #4A4A4A;
+  --gray-500: #737373;
+  --gray-300: #D4D4D4;
+  --gray-100: #F5F5F5;
+  
+  /* Status Colors */
+  --error-red: #DC2626;
+  --warning-orange: #F59E0B;
+  --success-green: #10B981;
+  --info-blue: #3B82F6;
+  
+  /* Typography */
+  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-mono: 'Roboto Mono', 'Monaco', monospace;
+  
+  /* Spacing (8pt grid) */
+  --space-1: 0.25rem;   /* 4px */
+  --space-2: 0.5rem;    /* 8px */
+  --space-3: 0.75rem;   /* 12px */
+  --space-4: 1rem;      /* 16px */
+  --space-5: 1.25rem;   /* 20px */
+  --space-6: 1.5rem;    /* 24px */
+  --space-8: 2rem;      /* 32px */
+  --space-10: 2.5rem;   /* 40px */
+  --space-12: 3rem;     /* 48px */
+  --space-16: 4rem;     /* 64px */
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.07);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.15);
+  
+  /* Border Radius */
+  --radius-sm: 0.25rem;  /* 4px */
+  --radius-md: 0.5rem;   /* 8px */
+  --radius-lg: 0.75rem;  /* 12px */
+  --radius-xl: 1rem;     /* 16px */
+  --radius-full: 9999px; /* Pill shape */
+  
+  /* Transitions */
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+  
+  /* Focus styles for accessibility */
+  button:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  a:focus-visible {
+    @apply outline-none ring-2 ring-primary-blue ring-offset-2;
+  }
+}
+
+@layer components {
+  /* Button variants */
+  .btn-primary {
+    @apply bg-primary-blue hover:bg-primary-blue-hover text-white font-medium px-4 py-2 rounded-md transition-colors duration-150;
+  }
+  
+  .btn-secondary {
+    @apply bg-gray-100 hover:bg-gray-200 text-gray-900 font-medium px-4 py-2 rounded-md transition-colors duration-150;
+  }
+  
+  .btn-verified {
+    @apply bg-verified-green hover:bg-verified-green/90 text-white font-medium px-4 py-2 rounded-md transition-colors duration-150;
+  }
+  
+  /* Contact item styles */
+  .contact-item {
+    @apply flex items-center gap-3 p-3 rounded-lg border border-gray-200 hover:border-gray-300 transition-colors;
+  }
+  
+  /* Card styles */
+  .card {
+    @apply bg-white rounded-lg border border-gray-200 shadow-sm;
+  }
+  
+  .card-hover {
+    @apply hover:shadow-md hover:border-gray-300 transition-all duration-200;
+  }
+  
+  /* Badge styles */
+  .badge {
+    @apply inline-flex items-center px-2 py-1 rounded-full text-sm font-medium;
+  }
+  
+  .badge-verified {
+    @apply bg-verified-green-light text-verified-green;
+  }
+  
+  .badge-hotel {
+    @apply bg-purple-100 text-hotel-purple;
+  }
+  
+  .badge-tour {
+    @apply bg-orange-100 text-tour-orange;
+  }
+  
+  .badge-transport {
+    @apply bg-blue-100 text-transport-blue;
+  }
+}
+
+@layer utilities {
+  /* Custom utilities */
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animation-delay-400 {
+    animation-delay: 400ms;
+  }
+}
