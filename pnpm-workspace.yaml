@@ -1,0 +1,14 @@
+packages:
+  - apps/*
+  - packages/*
+  - tools/*
+
+ignoredBuiltDependencies:
+  - '@nestjs/core'
+  - '@prisma/client'
+  - '@prisma/engines'
+  - '@tailwindcss/oxide'
+  - bcrypt
+  - msgpackr-extract
+  - prisma
+  - unrs-resolver

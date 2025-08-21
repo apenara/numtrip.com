@@ -1,0 +1,147 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(cuid())
+  email     String   @unique
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  // Optional profile information
+  name      String?
+  phone     String?
+  verified  Boolean  @default(false)
+
+  // Relations
+  ownedBusinesses Business[]
+  validations     Validation[]
+
+  @@map("users")
+}
+
+model Business {
+  id          String      @id @default(cuid())
+  name        String
+  description String?
+  category    Category
+  verified    Boolean     @default(false)
+  active      Boolean     @default(true)
+  
+  // Location
+  city        String
+  address     String?
+  latitude    Float?
+  longitude   Float?
+  
+  // Contact information
+  phone       String?
+  email       String?
+  whatsapp    String?
+  website     String?
+  
+  // External IDs
+  googlePlaceId String?
+  
+  // Ownership
+  ownerId     String?
+  owner       User?       @relation(fields: [ownerId], references: [id])
+  
+  // Timestamps
+  createdAt   DateTime    @default(now())
+  updatedAt   DateTime    @updatedAt
+  claimedAt   DateTime?
+  
+  // Relations
+  validations Validation[]
+  promoCodes  PromoCode[]
+
+  @@map("businesses")
+}
+
+model Validation {
+  id         String         @id @default(cuid())
+  type       ValidationType
+  isCorrect  Boolean
+  comment    String?
+  
+  // Relations
+  businessId String
+  business   Business       @relation(fields: [businessId], references: [id], onDelete: Cascade)
+  userId     String?
+  user       User?          @relation(fields: [userId], references: [id])
+  
+  // Metadata
+  ipAddress  String?
+  userAgent  String?
+  createdAt  DateTime       @default(now())
+
+  @@map("validations")
+}
+
+model PromoCode {
+  id          String    @id @default(cuid())
+  code        String    @unique
+  description String
+  discount    String    // e.g., "20%", "$50", "Free upgrade"
+  validUntil  DateTime?
+  active      Boolean   @default(true)
+  usageCount  Int       @default(0)
+  maxUsage    Int?
+  
+  // Relations
+  businessId  String
+  business    Business  @relation(fields: [businessId], references: [id], onDelete: Cascade)
+  
+  // Timestamps
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@map("promo_codes")
+}
+
+enum Category {
+  HOTEL
+  TOUR
+  TRANSPORT
+  RESTAURANT
+  ATTRACTION
+  OTHER
+}
+
+enum ValidationType {
+  PHONE_WORKS
+  PHONE_INCORRECT
+  EMAIL_WORKS
+  EMAIL_INCORRECT
+  WHATSAPP_WORKS
+  WHATSAPP_INCORRECT
+  GENERAL_CORRECT
+  GENERAL_INCORRECT
+}
+
+// Indexes for better query performance
+// Business indexes
+@@index([Business.category])
+@@index([Business.city])
+@@index([Business.verified])
+@@index([Business.active])
+@@index([Business.createdAt])
+
+// Validation indexes  
+@@index([Validation.businessId])
+@@index([Validation.type])
+@@index([Validation.createdAt])
+
+// PromoCode indexes
+@@index([PromoCode.businessId])
+@@index([PromoCode.active])
+@@index([PromoCode.validUntil])

@@ -1,0 +1,31 @@
+{
+  "name": "contactos-turisticos",
+  "version": "1.0.0",
+  "description": "NumTrip - Plataforma de Contactos Verificados para Turismo",
+  "private": true,
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "type-check": "turbo type-check",
+    "test": "turbo test",
+    "test:integration": "turbo test:integration",
+    "test:e2e": "turbo test:e2e",
+    "clean": "turbo clean"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "prettier": "^3.3.0",
+    "turbo": "^2.0.0",
+    "typescript": "^5.4.0"
+  },
+  "keywords": ["tourism", "contacts", "directory", "verification", "travel"],
+  "author": "Alfonso Peñaranda",
+  "license": "MIT",
+  "packageManager": "pnpm@10.15.0"
+}
