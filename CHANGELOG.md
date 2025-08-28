@@ -7,6 +7,93 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Next Steps (Development Roadmap)
+
+#### Phase 2: Business Detail Pages (Priority: High)
+- [ ] Create dynamic business profile pages `/[locale]/business/[id]`
+- [ ] Implement contact copy functionality with toast notifications
+- [ ] Add promo code display and management
+- [ ] Show validation statistics
+- [ ] Add SEO meta tags and structured data
+- [ ] Implement breadcrumb navigation
+
+#### Phase 3: Validation System (Priority: High)
+- [ ] Create validation API endpoints
+- [ ] Implement rate limiting per IP/session
+- [ ] Add interactive validation buttons on business profiles
+- [ ] Create validation history tracking
+- [ ] Implement optimistic UI updates
+
+#### Phase 4: Business Claiming Flow (Priority: High)
+- [ ] Create business claiming pages
+- [ ] Implement verification methods (email, SMS, phone)
+- [ ] Build business management dashboard
+- [ ] Add promo code management interface
+- [ ] Create business analytics charts
+
+#### Phase 5: Google Places Integration (Priority: Medium)
+- [ ] Set up Google Places API service
+- [ ] Create data import pipeline
+- [ ] Implement batch import with BullMQ
+- [ ] Add duplicate detection
+- [ ] Load initial Cartagena data
+
+#### Phase 6: Production Setup (Priority: Medium)
+- [ ] Configure Vercel deployment
+- [ ] Set up Railway/Render for backend
+- [ ] Configure production database
+- [ ] Set up Redis caching
+- [ ] Implement error tracking (Sentry)
+- [ ] Add analytics integration
+- [ ] Configure CDN for images
+
+## [1.1.0] - 2025-08-28
+
+### Added
+- **Authentication System (Phase 1 Complete)**
+  - Supabase integration for user authentication
+  - JWT-based API protection with NestJS guards
+  - Login and registration pages with form validation
+  - Email verification flow
+  - User profile dropdown with logout functionality
+  - Protected routes and middleware
+  - Auth state management with Zustand
+  - Dashboard page for authenticated users
+  - OAuth support (Google, GitHub)
+
+- **Backend Auth Module**
+  - Complete auth service with Supabase integration
+  - JWT strategy implementation with Passport
+  - Auth guards and decorators (@Public, @CurrentUser)
+  - Login, register, and email verification endpoints
+  - User profile management
+  - Refresh token support
+
+- **Frontend Auth Components**
+  - Login page with error handling and OAuth options
+  - Registration page with email verification
+  - Protected route wrapper component
+  - User profile dropdown component
+  - Auth provider for app-wide authentication
+  - Supabase client configuration (browser & server)
+
+- **Development Infrastructure**
+  - Environment variables for Supabase configuration
+  - Updated dependencies for authentication
+  - Middleware for auth protection and i18n
+
+### Changed
+- Enhanced environment configuration with auth-related variables
+- Updated middleware to handle authentication and protected routes
+- Improved error handling across auth flows
+
+### Security
+- JWT token-based authentication
+- Password validation and secure storage
+- Protected API endpoints with auth guards
+- Session management with Supabase
+- CORS and security headers configuration
+
 ## [1.0.0] - 2025-08-20
 
 ### Added

@@ -33,3 +33,11 @@ export const CreateValidationSchema = z.object({
 });
 
 export type CreateValidation = z.infer<typeof CreateValidationSchema>;
+
+export const ValidationRequestSchema = z.object({
+  type: z.nativeEnum(ValidationType),
+  isCorrect: z.boolean(),
+  comment: z.string().optional(),
+});
+
+export type ValidationRequest = z.infer<typeof ValidationRequestSchema>;

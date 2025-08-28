@@ -67,12 +67,7 @@
 }
 
 @layer base {
-  * {
-    @apply border-border;
-  }
-  
   body {
-    @apply bg-background text-foreground;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
   
@@ -86,14 +81,14 @@
   textarea:focus-visible,
   select:focus-visible,
   a:focus-visible {
-    @apply outline-none ring-2 ring-primary-blue ring-offset-2;
+    @apply outline-none ring-2 ring-blue-500 ring-offset-2;
   }
 }
 
 @layer components {
   /* Button variants */
   .btn-primary {
-    @apply bg-primary-blue hover:bg-primary-blue-hover text-white font-medium px-4 py-2 rounded-md transition-colors duration-150;
+    @apply bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded-md transition-colors duration-150;
   }
   
   .btn-secondary {
@@ -101,7 +96,7 @@
   }
   
   .btn-verified {
-    @apply bg-verified-green hover:bg-verified-green/90 text-white font-medium px-4 py-2 rounded-md transition-colors duration-150;
+    @apply bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-md transition-colors duration-150;
   }
   
   /* Contact item styles */
@@ -124,19 +119,19 @@
   }
   
   .badge-verified {
-    @apply bg-verified-green-light text-verified-green;
+    @apply bg-green-100 text-green-800;
   }
   
   .badge-hotel {
-    @apply bg-purple-100 text-hotel-purple;
+    @apply bg-purple-100 text-purple-800;
   }
   
   .badge-tour {
-    @apply bg-orange-100 text-tour-orange;
+    @apply bg-orange-100 text-orange-800;
   }
   
   .badge-transport {
-    @apply bg-blue-100 text-transport-blue;
+    @apply bg-blue-100 text-blue-800;
   }
 }
 
@@ -144,6 +139,13 @@
   /* Custom utilities */
   .text-balance {
     text-wrap: balance;
+  }
+  
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
   
   .animation-delay-200 {
@@ -154,3 +156,4 @@
     animation-delay: 400ms;
   }
 }
+

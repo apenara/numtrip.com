@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
-import { IsString, IsEnum, IsOptional, IsBoolean, IsNumber, Min, Max, Transform } from 'class-validator';
-import { Type } from 'class-transformer';
+import { IsString, IsEnum, IsOptional, IsBoolean, IsNumber, Min, Max } from 'class-validator';
+import { Type, Transform } from 'class-transformer';
 import { Category } from '@prisma/client';
 
 export class BusinessSearchDto {

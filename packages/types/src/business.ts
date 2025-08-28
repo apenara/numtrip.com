@@ -26,9 +26,16 @@ export const BusinessSchema = z.object({
   website: z.string().url().nullable(),
   googlePlaceId: z.string().nullable(),
   ownerId: z.string().nullable(),
-  createdAt: z.date(),
-  updatedAt: z.date(),
-  claimedAt: z.date().nullable(),
+  createdAt: z.union([z.string(), z.date()]),
+  updatedAt: z.union([z.string(), z.date()]),
+  claimedAt: z.union([z.string(), z.date()]).nullable(),
+  promoCodes: z.array(z.object({
+    id: z.string(),
+    code: z.string(),
+    description: z.string(),
+    discount: z.string(),
+    validUntil: z.union([z.string(), z.date()]).nullable(),
+  })).optional(),
 });
 
 export type Business = z.infer<typeof BusinessSchema>;
@@ -65,3 +72,15 @@ export const BusinessSearchSchema = z.object({
 });
 
 export type BusinessSearch = z.infer<typeof BusinessSearchSchema>;
+
+export type BusinessSearchParams = BusinessSearch;
+
+export const BusinessSearchResponseSchema = z.object({
+  items: z.array(BusinessSchema),
+  total: z.number(),
+  page: z.number(),
+  limit: z.number(),
+  totalPages: z.number(),
+});
+
+export type BusinessSearchResponse = z.infer<typeof BusinessSearchResponseSchema>;

@@ -9,7 +9,27 @@ Una plataforma global donde los viajeros pueden encontrar números de contacto, 
 - **Sistema de reclamación de perfiles** para empresarios
 - **Códigos promocionales** exclusivos
 - **Soporte multi-idioma** (Español/Inglés)
+- **Sistema de autenticación** completo con Supabase
 - **Arquitectura moderna** con Next.js y NestJS
+
+## 📈 Estado Actual (v1.1.0)
+
+### ✅ Completado
+- ✅ **Infraestructura del proyecto** - Monorepo con Turborepo
+- ✅ **Frontend básico** - Páginas principales y componentes UI
+- ✅ **Backend API** - Endpoints básicos y estructura de datos
+- ✅ **Base de datos** - Schema completo con Prisma
+- ✅ **Sistema de autenticación** - Supabase + JWT completo
+- ✅ **Login/Register** - Páginas con validación y OAuth
+- ✅ **Dashboard** - Área protegida para usuarios
+- ✅ **Middleware** - Protección de rutas y manejo de auth
+
+### 🚧 En Progreso / Próximo
+- 🔄 **Páginas de negocio** - Perfiles detallados de empresas
+- 🔄 **Sistema de validación** - Botones comunitarios
+- 🔄 **Claiming de negocios** - Verificación empresarial
+- ⏳ **Google Places API** - Carga inicial de datos
+- ⏳ **Producción** - Deploy y configuración live
 
 ## 🏗️ Arquitectura
 
@@ -37,12 +57,14 @@ contactos-turisticos/
 - **TanStack Query** para data fetching
 - **Zustand** para estado global
 - **next-intl** para internacionalización
+- **Supabase** para autenticación
 
 ### Backend
 - **NestJS** con TypeScript
 - **Prisma ORM** con PostgreSQL
+- **Supabase** para autenticación y usuarios
 - **Redis** para cache y colas
-- **JWT** para autenticación
+- **JWT** para tokens de API
 - **Swagger** para documentación API
 - **Jest** para testing
 
@@ -74,10 +96,16 @@ contactos-turisticos/
 3. **Configurar variables de entorno**
    ```bash
    cp .env.example .env
-   # Editar .env con tus configuraciones
+   # Editar .env con tus configuraciones de Supabase y base de datos
    ```
 
-4. **Iniciar servicios de desarrollo**
+4. **Configurar Supabase**
+   - Crear proyecto en [supabase.com](https://supabase.com)
+   - Copiar URL del proyecto y Anon Key al .env
+   - Habilitar autenticación por email en el dashboard
+   - (Opcional) Configurar proveedores OAuth (Google, GitHub)
+
+5. **Iniciar servicios de desarrollo**
    ```bash
    # Iniciar PostgreSQL y Redis
    docker-compose up -d
@@ -89,7 +117,7 @@ contactos-turisticos/
    pnpm prisma migrate dev
    ```
 
-5. **Iniciar aplicaciones en modo desarrollo**
+6. **Iniciar aplicaciones en modo desarrollo**
    ```bash
    # Desde la raíz del proyecto
    pnpm dev
@@ -276,15 +304,46 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 
 ## 🗺️ Roadmap
 
+### Completado ✅
 - [x] Setup inicial del monorepo
 - [x] Aplicaciones base (Frontend/Backend)
-- [x] Sistema de autenticación
-- [x] CRUD de negocios
-- [ ] Sistema de validación comunitaria
-- [ ] Panel de administración
+- [x] **Sistema de autenticación completo** (Supabase + JWT)
+- [x] CRUD básico de negocios
+- [x] Login/Register con OAuth
+- [x] Dashboard protegido
+- [x] Middleware de autenticación
+
+### Próximas Fases 🚀
+
+**Fase 2: Business Detail Pages** (Alta prioridad)
+- [ ] Páginas dinámicas de negocios (`/business/[id]`)
+- [ ] Funcionalidad de copiar contactos
+- [ ] Display de códigos promocionales
+- [ ] SEO y meta tags
+
+**Fase 3: Validation System** (Alta prioridad)
+- [ ] API de validaciones comunitarias
+- [ ] Botones interactivos de validación
+- [ ] Historial y estadísticas
+
+**Fase 4: Business Claiming** (Alta prioridad)
+- [ ] Flujo de reclamación de negocios
+- [ ] Verificación por email/SMS
+- [ ] Panel de gestión empresarial
+
+**Fase 5: Data Integration** (Media prioridad)
 - [ ] Integración con Google Places API
-- [ ] Sistema de pagos (Stripe/PayU)
-- [ ] Tests E2E completos
-- [ ] Deploy automatizado
+- [ ] Carga de datos de Cartagena
+- [ ] Sistema de importación batch
+
+**Fase 6: Production** (Media prioridad)
+- [ ] Deploy en Vercel + Railway
+- [ ] Configuración de producción
 - [ ] Monitoreo y analytics
+- [ ] Tests E2E completos
+
+### Futuras Mejoras 🔮
+- [ ] Sistema de pagos (Stripe/PayU)
 - [ ] App móvil (React Native)
+- [ ] IA para validación automática
+- [ ] Expansión internacional
