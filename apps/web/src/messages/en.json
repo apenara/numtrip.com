@@ -53,6 +53,53 @@
     "about": "About",
     "searchPlaceholder": "Search hotels, tours, transport..."
   },
+  "Validation": {
+    "works": "Works",
+    "doesntWork": "Doesn't Work",
+    "validatedCorrect": "Validated as correct",
+    "validatedIncorrect": "Validated as incorrect",
+    "cooldown": "You can validate again in {time}h",
+    "commentPlaceholder": "Add optional comment...",
+    "cancel": "Cancel",
+    "validations": "validations",
+    "communityValidation": "Community Validation",
+    "accuracy": "Accuracy",
+    "totalValidations": "total validations",
+    "trustLevel": {
+      "low": "Low Trust",
+      "medium": "Medium Trust",
+      "high": "High Trust",
+      "verified": "Verified"
+    },
+    "contactType": {
+      "phone": "Phone",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "general": "General"
+    }
+  },
+  "Gamification": {
+    "userLevel": "User Level",
+    "points": "points",
+    "validations": "validations",
+    "accuracy": "accuracy",
+    "nextLevel": "Next level",
+    "progressTo": "Progress to {level}",
+    "badges": "Badges",
+    "validationComplete": "Validation completed!",
+    "level": {
+      "novato": "Novice",
+      "experto": "Expert",
+      "super_validador": "Super Validator"
+    },
+    "badge": {
+      "verificador_novato": "Novice Validator",
+      "experto_local": "Local Expert",
+      "super_validador": "Super Validator",
+      "opinion_confiable": "Reliable Opinion",
+      "precision_alta": "High Precision"
+    }
+  },
   "verified": "Verified",
   "copy": "Copy"
 }

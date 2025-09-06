@@ -53,6 +53,53 @@
     "about": "Acerca de",
     "searchPlaceholder": "Buscar hoteles, tours, transporte..."
   },
+  "Validation": {
+    "works": "Funciona",
+    "doesntWork": "No funciona",
+    "validatedCorrect": "Validado como correcto",
+    "validatedIncorrect": "Validado como incorrecto",
+    "cooldown": "Puedes validar nuevamente en {time}h",
+    "commentPlaceholder": "Agregar comentario opcional...",
+    "cancel": "Cancelar",
+    "validations": "validaciones",
+    "communityValidation": "Validación Comunitaria",
+    "accuracy": "Precisión",
+    "totalValidations": "validaciones totales",
+    "trustLevel": {
+      "low": "Confianza Baja",
+      "medium": "Confianza Media",
+      "high": "Confianza Alta",
+      "verified": "Verificado"
+    },
+    "contactType": {
+      "phone": "Teléfono",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "general": "General"
+    }
+  },
+  "Gamification": {
+    "userLevel": "Nivel de Usuario",
+    "points": "puntos",
+    "validations": "validaciones",
+    "accuracy": "precisión",
+    "nextLevel": "Siguiente nivel",
+    "progressTo": "Progreso hacia {level}",
+    "badges": "Insignias",
+    "validationComplete": "¡Validación completada!",
+    "level": {
+      "novato": "Novato",
+      "experto": "Experto",
+      "super_validador": "Super Validador"
+    },
+    "badge": {
+      "verificador_novato": "Verificador Novato",
+      "experto_local": "Experto Local",
+      "super_validador": "Super Validador",
+      "opinion_confiable": "Opinión Confiable",
+      "precision_alta": "Alta Precisión"
+    }
+  },
   "verified": "Verificado",
   "copy": "Copiar"
 }

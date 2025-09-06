@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { useValidateContact } from '@/hooks/useBusinesses';
 import { Header } from '@/components/layout/Header';
 import { Breadcrumbs, generateBusinessBreadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SimilarBusinesses } from '@/components/business/SimilarBusinesses';
+import { ValidationButtons } from '@/components/validation/ValidationButtons';
+import { ValidationStats } from '@/components/validation/ValidationStats';
 import { AdBanner } from '@/components/ads/AdBanner';
 import { AdSidebar } from '@/components/ads/AdSidebar';
 import { AdInContent } from '@/components/ads/AdInContent';
@@ -17,9 +18,6 @@ import {
   CheckCircle,
   Copy,
   ExternalLink,
-  Star,
-  ThumbsUp,
-  ThumbsDown,
   Tag
 } from 'lucide-react';
 
@@ -51,8 +49,6 @@ interface BusinessDetailClientProps {
 
 export function BusinessDetailClient({ business, translations: t }: BusinessDetailClientProps) {
   const [copiedField, setCopiedField] = useState<string | null>(null);
-  const [validationFeedback, setValidationFeedback] = useState<Record<string, boolean>>({});
-  const validateContactMutation = useValidateContact();
 
   const copyToClipboard = async (text: string, field: string) => {
     try {
@@ -64,26 +60,6 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
     }
   };
 
-  const handleValidation = (field: string, isCorrect: boolean) => {
-    setValidationFeedback({ ...validationFeedback, [field]: isCorrect });
-    
-    // Map field to validation type
-    const typeMap: Record<string, string> = {
-      phone: isCorrect ? 'PHONE_WORKS' : 'PHONE_INCORRECT',
-      email: isCorrect ? 'EMAIL_WORKS' : 'EMAIL_INCORRECT',
-      whatsapp: isCorrect ? 'WHATSAPP_WORKS' : 'WHATSAPP_INCORRECT',
-    };
-
-    if (typeMap[field]) {
-      validateContactMutation.mutate({
-        businessId: business.id,
-        validation: {
-          type: typeMap[field],
-          isCorrect,
-        },
-      });
-    }
-  };
 
   const getCategoryColor = (category: string) => {
     const colors: Record<string, string> = {
@@ -159,6 +135,14 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                 )}
               </div>
 
+              {/* Community Validation Stats */}
+              <div className="mb-4">
+                <ValidationStats 
+                  businessId={business.id} 
+                  layout="horizontal"
+                />
+              </div>
+
               {business.description && (
                 <p className="text-gray-600">{business.description}</p>
               )}
@@ -202,31 +186,14 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                   </div>
                 </div>
                 
-                {/* Validation buttons */}
-                <div className="flex items-center gap-2 mt-3 pt-3 border-t">
-                  <span className="text-sm text-gray-500">Does this number work?</span>
-                  <button
-                    onClick={() => handleValidation('phone', true)}
-                    className={`px-3 py-1 rounded-lg text-sm flex items-center gap-1 transition-colors ${
-                      validationFeedback.phone === true 
-                        ? 'bg-green-100 text-green-700' 
-                        : 'hover:bg-gray-100 text-gray-600'
-                    }`}
-                  >
-                    <ThumbsUp className="h-4 w-4" />
-                    Yes
-                  </button>
-                  <button
-                    onClick={() => handleValidation('phone', false)}
-                    className={`px-3 py-1 rounded-lg text-sm flex items-center gap-1 transition-colors ${
-                      validationFeedback.phone === false 
-                        ? 'bg-red-100 text-red-700' 
-                        : 'hover:bg-gray-100 text-gray-600'
-                    }`}
-                  >
-                    <ThumbsDown className="h-4 w-4" />
-                    No
-                  </button>
+                {/* Community Validation */}
+                <div className="mt-3 pt-3 border-t">
+                  <ValidationButtons
+                    businessId={business.id}
+                    contactType="phone"
+                    contactValue={business.phone}
+                    size="sm"
+                  />
                 </div>
               </div>
             )}
@@ -262,31 +229,14 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                   </div>
                 </div>
                 
-                {/* Validation buttons */}
-                <div className="flex items-center gap-2 mt-3 pt-3 border-t">
-                  <span className="text-sm text-gray-500">Does this email work?</span>
-                  <button
-                    onClick={() => handleValidation('email', true)}
-                    className={`px-3 py-1 rounded-lg text-sm flex items-center gap-1 transition-colors ${
-                      validationFeedback.email === true 
-                        ? 'bg-green-100 text-green-700' 
-                        : 'hover:bg-gray-100 text-gray-600'
-                    }`}
-                  >
-                    <ThumbsUp className="h-4 w-4" />
-                    Yes
-                  </button>
-                  <button
-                    onClick={() => handleValidation('email', false)}
-                    className={`px-3 py-1 rounded-lg text-sm flex items-center gap-1 transition-colors ${
-                      validationFeedback.email === false 
-                        ? 'bg-red-100 text-red-700' 
-                        : 'hover:bg-gray-100 text-gray-600'
-                    }`}
-                  >
-                    <ThumbsDown className="h-4 w-4" />
-                    No
-                  </button>
+                {/* Community Validation */}
+                <div className="mt-3 pt-3 border-t">
+                  <ValidationButtons
+                    businessId={business.id}
+                    contactType="email"
+                    contactValue={business.email}
+                    size="sm"
+                  />
                 </div>
               </div>
             )}
@@ -324,31 +274,14 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                   </div>
                 </div>
                 
-                {/* Validation buttons */}
-                <div className="flex items-center gap-2 mt-3 pt-3 border-t">
-                  <span className="text-sm text-gray-500">Does this WhatsApp work?</span>
-                  <button
-                    onClick={() => handleValidation('whatsapp', true)}
-                    className={`px-3 py-1 rounded-lg text-sm flex items-center gap-1 transition-colors ${
-                      validationFeedback.whatsapp === true 
-                        ? 'bg-green-100 text-green-700' 
-                        : 'hover:bg-gray-100 text-gray-600'
-                    }`}
-                  >
-                    <ThumbsUp className="h-4 w-4" />
-                    Yes
-                  </button>
-                  <button
-                    onClick={() => handleValidation('whatsapp', false)}
-                    className={`px-3 py-1 rounded-lg text-sm flex items-center gap-1 transition-colors ${
-                      validationFeedback.whatsapp === false 
-                        ? 'bg-red-100 text-red-700' 
-                        : 'hover:bg-gray-100 text-gray-600'
-                    }`}
-                  >
-                    <ThumbsDown className="h-4 w-4" />
-                    No
-                  </button>
+                {/* Community Validation */}
+                <div className="mt-3 pt-3 border-t">
+                  <ValidationButtons
+                    businessId={business.id}
+                    contactType="whatsapp"
+                    contactValue={business.whatsapp}
+                    size="sm"
+                  />
                 </div>
               </div>
             )}
