@@ -38,7 +38,7 @@
     "@nestjs/throttler": "^5.1.0",
     "@prisma/client": "^5.15.0",
     "@supabase/supabase-js": "^2.56.0",
-    "bcrypt": "^5.1.0",
+    "bcrypt": "^6.0.0",
     "bullmq": "^5.8.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",

@@ -14,10 +14,14 @@ export class AuthService {
     private readonly jwtService: JwtService,
     private readonly configService: ConfigService,
   ) {
-    this.supabase = createClient(
-      this.configService.get('NEXT_PUBLIC_SUPABASE_URL'),
-      this.configService.get('SUPABASE_SERVICE_KEY'),
-    );
+    const supabaseUrl = this.configService.get('NEXT_PUBLIC_SUPABASE_URL');
+    const supabaseKey = this.configService.get('SUPABASE_SERVICE_KEY');
+    
+    if (!supabaseUrl || !supabaseKey) {
+      throw new Error('Supabase credentials are required. Please configure NEXT_PUBLIC_SUPABASE_URL and SUPABASE_SERVICE_KEY environment variables.');
+    }
+    
+    this.supabase = createClient(supabaseUrl, supabaseKey);
   }
 
   async validateUser(email: string, password: string) {

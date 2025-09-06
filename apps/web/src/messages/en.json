@@ -18,7 +18,40 @@
       "toursDescription": "Connect with local tour operators",
       "transport": "Transport",
       "transportDescription": "Reliable transportation services"
+    },
+    "verified": "Verified",
+    "copy": "Copy"
+  },
+  "SearchPage": {
+    "title": "Search Results",
+    "noResults": "No results found",
+    "searchPlaceholder": "Search hotels, tours, transport...",
+    "filters": {
+      "category": "Category",
+      "city": "City",
+      "verified": "Verified only"
     }
+  },
+  "Business": {
+    "details": "Business Details",
+    "contacts": "Contact Information",
+    "promoCodes": "Promotional Codes",
+    "validation": "Community Validation",
+    "similarBusinesses": "Similar Businesses",
+    "breadcrumb": {
+      "home": "Home"
+    },
+    "actions": {
+      "copy": "Copy",
+      "whatsapp": "WhatsApp",
+      "call": "Call"
+    }
+  },
+  "Header": {
+    "search": "Search",
+    "verified": "Verified",
+    "about": "About",
+    "searchPlaceholder": "Search hotels, tours, transport..."
   },
   "verified": "Verified",
   "copy": "Copy"

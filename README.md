@@ -5,14 +5,17 @@ Una plataforma global donde los viajeros pueden encontrar números de contacto, 
 ## 🚀 Características
 
 - **Búsqueda y filtrado avanzado** de negocios turísticos
+- **Páginas de negocio detalladas** con navegación completa y breadcrumbs
+- **Recomendaciones inteligentes** de negocios similares por categoría
 - **Verificación comunitaria** de información de contacto
 - **Sistema de reclamación de perfiles** para empresarios
 - **Códigos promocionales** exclusivos
+- **Monetización con Google AdSense** (compliance 2025)
 - **Soporte multi-idioma** (Español/Inglés)
 - **Sistema de autenticación** completo con Supabase
 - **Arquitectura moderna** con Next.js y NestJS
 
-## 📈 Estado Actual (v1.1.0)
+## 📈 Estado Actual (v1.2.0)
 
 ### ✅ Completado
 - ✅ **Infraestructura del proyecto** - Monorepo con Turborepo
@@ -23,12 +26,17 @@ Una plataforma global donde los viajeros pueden encontrar números de contacto, 
 - ✅ **Login/Register** - Páginas con validación y OAuth
 - ✅ **Dashboard** - Área protegida para usuarios
 - ✅ **Middleware** - Protección de rutas y manejo de auth
+- ✅ **Páginas de negocio** - Perfiles detallados con navegación completa
+- ✅ **Header y navegación** - Botón de retroceso y búsqueda integrada
+- ✅ **Breadcrumbs** - Navegación contextual de negocios
+- ✅ **Negocios similares** - Recomendaciones por categoría y ciudad
+- ✅ **Google AdSense** - Integración completa con compliance 2025
+- ✅ **Sistema de anuncios** - Monetización estratégica para negocios no verificados
 
 ### 🚧 En Progreso / Próximo
-- 🔄 **Páginas de negocio** - Perfiles detallados de empresas
-- 🔄 **Sistema de validación** - Botones comunitarios
+- 🔄 **Sistema de validación** - Botones comunitarios interactivos
 - 🔄 **Claiming de negocios** - Verificación empresarial
-- ⏳ **Google Places API** - Carga inicial de datos
+- ⏳ **Google Places API** - Carga inicial de datos de Cartagena
 - ⏳ **Producción** - Deploy y configuración live
 
 ## 🏗️ Arquitectura
@@ -174,6 +182,31 @@ Servicios incluidos:
 - **Redis** (puerto 6379)
 - **Adminer** (puerto 8080) - GUI para PostgreSQL
 
+## 🧩 Componentes Implementados
+
+### Layout y Navegación
+- **Header**: Navegación completa con búsqueda integrada y botón de retroceso
+- **Breadcrumbs**: Navegación contextual que muestra la ubicación actual
+- **Footer**: Información legal y enlaces importantes
+
+### Páginas de Negocio
+- **BusinessDetailClient**: Página principal de detalles de negocio
+- **BusinessCard**: Componente reutilizable para mostrar información de negocios
+- **SimilarBusinesses**: Recomendaciones inteligentes basadas en categoría y ciudad
+- **ContactInformation**: Display optimizado de información de contacto
+
+### Sistema de Anuncios
+- **GoogleAdSenseProvider**: Proveedor de contexto para AdSense
+- **AdBanner**: Anuncio banner responsive
+- **AdSidebar**: Anuncio lateral para desktop
+- **AdInContent**: Anuncio integrado en contenido
+- Estrategia: Solo se muestran anuncios en negocios **no verificados**
+
+### Autenticación y Dashboard
+- **LoginForm/RegisterForm**: Formularios con validación completa
+- **Dashboard**: Panel protegido para usuarios autenticados
+- **ProfileSettings**: Gestión de perfil de usuario
+
 ## 🌍 Internacionalización
 
 El proyecto soporta múltiples idiomas usando `next-intl`:
@@ -182,6 +215,12 @@ El proyecto soporta múltiples idiomas usando `next-intl`:
 - **Inglés** (en)
 
 URLs con estructura: `/{locale}/ruta` (ej: `/es/cartagena`, `/en/cartagena`)
+
+### Traducciones Implementadas
+- **HomePage**: Página principal y navegación
+- **Business**: Páginas de negocio y componentes relacionados  
+- **SearchPage**: Página de búsqueda y filtros
+- **Header**: Navegación y elementos comunes
 
 ## 📊 Base de Datos
 
@@ -312,14 +351,19 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
 - [x] Login/Register con OAuth
 - [x] Dashboard protegido
 - [x] Middleware de autenticación
+- [x] **Fase 2: Business Detail Pages** ✅
+  - [x] Páginas dinámicas de negocios (`/[locale]/business/[id]`)
+  - [x] Header completo con navegación y búsqueda
+  - [x] Breadcrumbs contextuales
+  - [x] Funcionalidad de copiar contactos
+  - [x] Display de códigos promocionales
+  - [x] Recomendaciones de negocios similares
+  - [x] Integración Google AdSense (compliance 2025)
+  - [x] Sistema de anuncios estratégico
+  - [x] SEO y meta tags optimizados
+  - [x] Soporte completo multi-idioma
 
 ### Próximas Fases 🚀
-
-**Fase 2: Business Detail Pages** (Alta prioridad)
-- [ ] Páginas dinámicas de negocios (`/business/[id]`)
-- [ ] Funcionalidad de copiar contactos
-- [ ] Display de códigos promocionales
-- [ ] SEO y meta tags
 
 **Fase 3: Validation System** (Alta prioridad)
 - [ ] API de validaciones comunitarias

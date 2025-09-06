@@ -18,7 +18,40 @@
       "toursDescription": "Conecta con operadores de tours locales",
       "transport": "Transporte",
       "transportDescription": "Servicios de transporte confiables"
+    },
+    "verified": "Verificado",
+    "copy": "Copiar"
+  },
+  "SearchPage": {
+    "title": "Resultados de Búsqueda",
+    "noResults": "No se encontraron resultados",
+    "searchPlaceholder": "Buscar hoteles, tours, transporte...",
+    "filters": {
+      "category": "Categoría",
+      "city": "Ciudad",
+      "verified": "Solo verificados"
     }
+  },
+  "Business": {
+    "details": "Detalles del Negocio",
+    "contacts": "Información de Contacto",
+    "promoCodes": "Códigos Promocionales",
+    "validation": "Validación Comunitaria",
+    "similarBusinesses": "Negocios Similares",
+    "breadcrumb": {
+      "home": "Inicio"
+    },
+    "actions": {
+      "copy": "Copiar",
+      "whatsapp": "WhatsApp",
+      "call": "Llamar"
+    }
+  },
+  "Header": {
+    "search": "Buscar",
+    "verified": "Verificados",
+    "about": "Acerca de",
+    "searchPlaceholder": "Buscar hoteles, tours, transporte..."
   },
   "verified": "Verificado",
   "copy": "Copiar"

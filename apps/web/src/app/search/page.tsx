@@ -1,13 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Search, MapPin, Phone, Mail, MessageCircle, Filter, ChevronDown } from 'lucide-react';
 import { BusinessService } from '@/services/business.service';
 import { Business, BusinessCategory } from '@contactos-turisticos/types';
 import Link from 'next/link';
 
-export default function SearchPage() {
+function SearchPageContent() {
   const searchParams = useSearchParams();
   const [businesses, setBusinesses] = useState<Business[]>([]);
   const [loading, setLoading] = useState(false);
@@ -273,5 +273,15 @@ export default function SearchPage() {
         )}
       </main>
     </div>
+  );
+}
+
+export default function SearchPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center">
+      <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>
+    </div>}>
+      <SearchPageContent />
+    </Suspense>
   );
 }
