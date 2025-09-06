@@ -102,6 +102,11 @@ export function ClaimButton({
       setShowClaimForm(false);
       onClaimSuccess?.();
       
+      // Redirect to dashboard after successful claim
+      setTimeout(() => {
+        window.location.href = `/dashboard/business/overview?claimed=${businessId}`;
+      }, 2000);
+      
     } catch (error) {
       console.error('Claim error:', error);
       alert(error instanceof Error ? error.message : 'Error al iniciar el reclamo');

@@ -6,6 +6,7 @@ import { AuthController } from './auth.controller';
 import { AuthService } from './auth.service';
 import { JwtStrategy } from './strategies/jwt.strategy';
 import { SupabaseAuthGuard } from './guards/supabase-auth.guard';
+import { BusinessOwnerGuard } from './guards/business-owner.guard';
 import { DatabaseModule } from '../../database/database.module';
 
 @Module({
@@ -24,7 +25,7 @@ import { DatabaseModule } from '../../database/database.module';
     }),
   ],
   controllers: [AuthController],
-  providers: [AuthService, JwtStrategy, SupabaseAuthGuard],
-  exports: [AuthService, SupabaseAuthGuard],
+  providers: [AuthService, JwtStrategy, SupabaseAuthGuard, BusinessOwnerGuard],
+  exports: [AuthService, SupabaseAuthGuard, BusinessOwnerGuard],
 })
 export class AuthModule {}

@@ -10,7 +10,6 @@ import { AdBanner } from '@/components/ads/AdBanner';
 import { AdSidebar } from '@/components/ads/AdSidebar';
 import { AdInContent } from '@/components/ads/AdInContent';
 import { ClaimButton } from '@/components/business/ClaimButton';
-import { AuthStatus } from '@/components/auth/AuthStatus';
 import { 
   Phone, 
   Mail, 
@@ -173,11 +172,6 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                 />
               </div>
             )}
-          </div>
-
-          {/* Development: Auth Status for testing */}
-          <div className="mt-4">
-            <AuthStatus />
           </div>
 
           {/* Business Claim Notice for unverified businesses */}
