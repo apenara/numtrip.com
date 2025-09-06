@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useState, useEffect } from 'react';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
@@ -20,6 +20,8 @@ type LoginFormData = z.infer<typeof loginSchema>;
 export default function LoginPage() {
   const t = useTranslations('Auth');
   const router = useRouter();
+  const searchParams = useSearchParams();
+  const returnUrl = searchParams.get('returnUrl');
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -48,8 +50,9 @@ export default function LoginPage() {
         return;
       }
 
-      // Redirect to dashboard or previous page
-      router.push('/dashboard');
+      // Redirect to returnUrl or dashboard
+      const redirectTo = returnUrl ? decodeURIComponent(returnUrl) : '/dashboard';
+      router.push(redirectTo);
       router.refresh();
     } catch (err) {
       setError('An unexpected error occurred');
@@ -161,6 +164,8 @@ export default function LoginPage() {
               </div>
             </div>
 
+            {/* OAuth providers commented out - need to be configured in Supabase Dashboard first */}
+            {/* 
             <div className="mt-6 grid grid-cols-2 gap-3">
               <button
                 onClick={() => supabase.auth.signInWithOAuth({ provider: 'google' })}
@@ -175,6 +180,7 @@ export default function LoginPage() {
                 GitHub
               </button>
             </div>
+            */}
           </div>
 
           <p className="mt-8 text-center text-sm text-gray-600">

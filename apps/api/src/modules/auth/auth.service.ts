@@ -191,4 +191,63 @@ export class AuthService {
 
     return user;
   }
+
+  async verifyToken(token: string) {
+    try {
+      // In development, handle mock tokens
+      if (process.env.NODE_ENV === 'development' && token === 'mock-access-token-xyz') {
+        // Get or create mock user in database
+        let user = await this.prisma.user.findUnique({
+          where: { email: 'demo@numtrip.com' },
+        });
+
+        if (!user) {
+          user = await this.prisma.user.create({
+            data: {
+              id: 'mock-user-123',
+              email: 'demo@numtrip.com',
+              name: 'Demo User',
+              verified: true,
+            },
+          });
+        }
+
+        return {
+          user: {
+            id: user.id,
+            email: user.email,
+            name: user.name,
+            verified: user.verified,
+          },
+        };
+      }
+
+      // Normal Supabase token verification
+      const { data, error } = await this.supabase.auth.getUser(token);
+      
+      if (error) {
+        throw new UnauthorizedException('Invalid token');
+      }
+
+      // Get user from our database
+      const user = await this.prisma.user.findUnique({
+        where: { email: data.user.email },
+      });
+
+      if (!user) {
+        throw new UnauthorizedException('User not found in database');
+      }
+
+      return {
+        user: {
+          id: user.id,
+          email: user.email,
+          name: user.name,
+          verified: user.verified,
+        },
+      };
+    } catch (error) {
+      throw new UnauthorizedException('Invalid token');
+    }
+  }
 }

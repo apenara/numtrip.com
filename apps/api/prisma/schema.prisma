@@ -24,6 +24,7 @@ model User {
   // Relations
   ownedBusinesses Business[]
   validations     Validation[]
+  claims          BusinessClaim[]
 
   @@map("users")
 }
@@ -63,6 +64,7 @@ model Business {
   // Relations
   validations Validation[]
   promoCodes  PromoCode[]
+  claims      BusinessClaim[]
 
   @@index([category])
   @@index([city])
@@ -117,6 +119,55 @@ model PromoCode {
   @@index([active])
   @@index([validUntil])
   @@map("promo_codes")
+}
+
+model BusinessClaim {
+  id               String            @id @default(cuid())
+  status           ClaimStatus       @default(PENDING)
+  verificationType VerificationType
+  contactValue     String            // Email or phone number for verification
+  verificationCode String?           // 6-digit code for verification
+  codeExpiresAt    DateTime?         // Expiration time for verification code
+  claimReason      String?           // Optional reason for claim
+  adminNotes       String?           // Notes from admin review
+  
+  // Relations
+  businessId       String
+  business         Business          @relation(fields: [businessId], references: [id], onDelete: Cascade)
+  userId           String
+  user             User              @relation(fields: [userId], references: [id])
+  
+  // Metadata
+  ipAddress        String?
+  userAgent        String?
+  
+  // Timestamps
+  createdAt        DateTime          @default(now())
+  updatedAt        DateTime          @updatedAt
+  verifiedAt       DateTime?         // When claim was verified
+  approvedAt       DateTime?         // When claim was approved by admin/system
+
+  @@index([businessId])
+  @@index([userId])
+  @@index([status])
+  @@index([createdAt])
+  @@unique([businessId, userId]) // Prevent duplicate claims from same user
+  @@map("business_claims")
+}
+
+enum ClaimStatus {
+  PENDING      // Initial state, waiting for verification
+  VERIFIED     // Contact verified, but pending approval
+  APPROVED     // Claim approved, user is now owner
+  REJECTED     // Claim rejected by admin
+  EXPIRED      // Verification code expired
+  CANCELLED    // User cancelled the claim
+}
+
+enum VerificationType {
+  EMAIL
+  SMS
+  PHONE_CALL
 }
 
 enum Category {

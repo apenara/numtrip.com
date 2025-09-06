@@ -5,6 +5,7 @@ import { AuthModule } from './modules/auth/auth.module';
 import { BusinessModule } from './modules/business/business.module';
 import { SearchModule } from './modules/search/search.module';
 import { ValidationModule } from './modules/validation/validation.module';
+import { ClaimModule } from './modules/claim/claim.module';
 import { DatabaseModule } from './database/database.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -26,6 +27,7 @@ import { AppService } from './app.service';
     BusinessModule,
     SearchModule,
     ValidationModule,
+    ClaimModule,
   ],
   controllers: [AppController],
   providers: [AppService],

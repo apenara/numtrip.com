@@ -8,8 +8,10 @@ import {
   Mail, 
   MessageCircle, 
   Star,
-  ThumbsUp
+  ThumbsUp,
+  Shield
 } from 'lucide-react';
+import { ClaimButton } from './ClaimButton';
 
 interface Business {
   id: string;
@@ -23,6 +25,7 @@ interface Business {
   email?: string;
   whatsapp?: string;
   website?: string;
+  ownerId?: string;
   _count?: {
     validations: number;
   };
@@ -46,7 +49,12 @@ export function BusinessCard({
 }: BusinessCardProps) {
   const router = useRouter();
 
-  const handleClick = () => {
+  const handleClick = (e: React.MouseEvent) => {
+    // Don't navigate if clicking on interactive elements
+    const target = e.target as HTMLElement;
+    if (target.closest('button') || target.closest('a[href]')) {
+      return;
+    }
     router.push(`/business/${business.id}`);
   };
 
@@ -100,6 +108,9 @@ export function BusinessCard({
               {business.verified && (
                 <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
               )}
+              {business.ownerId && (
+                <Shield className="h-4 w-4 text-blue-600 flex-shrink-0" title="Owner Verified" />
+              )}
             </div>
             
             <div className="flex items-center gap-2 mb-2">
@@ -141,6 +152,24 @@ export function BusinessCard({
             </div>
           )}
         </div>
+
+        {/* Claim prompt for non-owned businesses */}
+        {!business.ownerId && !business.verified && (
+          <div className="mt-3 pt-3 border-t border-gray-100">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-xs text-gray-600 mb-1">¿Es tu negocio?</p>
+                <p className="text-xs text-gray-500">Reclámalo gratis</p>
+              </div>
+              <ClaimButton
+                businessId={business.id}
+                businessName={business.name}
+                isOwned={!!business.ownerId}
+                className="text-xs px-2 py-1 h-7"
+              />
+            </div>
+          </div>
+        )}
       </div>
     );
   }
@@ -168,6 +197,12 @@ export function BusinessCard({
         {business.verified && (
           <div className="absolute top-3 right-3 bg-white rounded-full p-1">
             <CheckCircle className="h-5 w-5 text-green-600" />
+          </div>
+        )}
+
+        {business.ownerId && (
+          <div className="absolute top-3 right-12 bg-white rounded-full p-1">
+            <Shield className="h-4 w-4 text-blue-600" />
           </div>
         )}
 
@@ -227,6 +262,24 @@ export function BusinessCard({
             )}
           </div>
         </div>
+
+        {/* Claim section for non-owned businesses */}
+        {!business.ownerId && !business.verified && (
+          <div className="border-t border-gray-100 p-4">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium text-gray-700 mb-1">¿Es tu negocio?</p>
+                <p className="text-xs text-gray-500">Reclámalo gratis y obtén beneficios exclusivos</p>
+              </div>
+              <ClaimButton
+                businessId={business.id}
+                businessName={business.name}
+                isOwned={!!business.ownerId}
+                className="text-sm px-3 py-2"
+              />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

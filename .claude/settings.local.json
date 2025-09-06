@@ -6,7 +6,9 @@
       "Bash(rmdir:*)",
       "Bash(cp:*)",
       "Bash(rm:*)",
-      "Bash(rsync:*)"
+      "Bash(rsync:*)",
+      "mcp__filesystem__list_directory",
+      "mcp__filesystem__create_directory"
     ],
     "deny": [],
     "ask": []

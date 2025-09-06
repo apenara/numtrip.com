@@ -34,9 +34,10 @@ Una plataforma global donde los viajeros pueden encontrar números de contacto, 
 - ✅ **Sistema de anuncios** - Monetización estratégica para negocios no verificados
 - ✅ **Sistema de validación comunitaria** - Validación interactiva con gamificación
 - ✅ **Sistema de gamificación** - Puntos, niveles y logros para usuarios
+- ✅ **Sistema de reclamación de negocios (Business Claiming)** - Verificación empresarial completa
+- ✅ **Autenticación mock para desarrollo** - Sistema de testing sin configuración Supabase
 
 ### 🚧 En Progreso / Próximo
-- ⏳ **Claiming de negocios** - Verificación empresarial
 - ⏳ **Google Places API** - Carga inicial de datos de Cartagena
 - ⏳ **Producción** - Deploy y configuración live
 
@@ -108,11 +109,12 @@ contactos-turisticos/
    # Editar .env con tus configuraciones de Supabase y base de datos
    ```
 
-4. **Configurar Supabase**
+4. **Configurar Supabase** (o usar autenticación mock)
    - Crear proyecto en [supabase.com](https://supabase.com)
    - Copiar URL del proyecto y Anon Key al .env
    - Habilitar autenticación por email en el dashboard
    - (Opcional) Configurar proveedores OAuth (Google, GitHub)
+   - **Para desarrollo**: Usa `NEXT_PUBLIC_MOCK_AUTH=true` en .env.local para autenticación mock
 
 5. **Iniciar servicios de desarrollo**
    ```bash
@@ -210,10 +212,20 @@ Servicios incluidos:
 - **UserLevel**: Componente de gamificación con niveles y logros
 - **useValidation hooks**: Hooks completos para gestión de validaciones y estadísticas
 
+### Sistema de Reclamación de Negocios
+- **ClaimButton**: Botón de reclamación integrado en páginas de negocio
+- **ClaimForm**: Formulario de verificación por email con validación
+- **ClaimFlow**: Flujo completo de verificación con códigos
+- **Backend completo**: API endpoints con rate limiting y validación
+- **EmailService**: Sistema de envío de códigos de verificación
+- **SupabaseAuthGuard**: Guard de autenticación que soporta tokens mock
+- **Mock Authentication**: Sistema de desarrollo sin configurar Supabase
+
 ### Autenticación y Dashboard
 - **LoginForm/RegisterForm**: Formularios con validación completa
 - **Dashboard**: Panel protegido para usuarios autenticados
 - **ProfileSettings**: Gestión de perfil de usuario
+- **AuthStatus**: Componente de desarrollo para testing de autenticación
 
 ## 🌍 Internacionalización
 
@@ -382,32 +394,42 @@ Este proyecto está bajo la Licencia MIT. Ver `LICENSE` para más detalles.
   - [x] Soporte para usuarios anónimos y autenticados
   - [x] Notificaciones de recompensas animadas
   - [x] Traducciones completas ES/EN
+- [x] **Fase 4: Business Claiming** ✅ **COMPLETADA**
+  - [x] Flujo completo de reclamación de negocios empresariales
+  - [x] Verificación por email con códigos de seguridad
+  - [x] Sistema completo de autenticación (Supabase + Mock para desarrollo)
+  - [x] API endpoints con rate limiting y throttling
+  - [x] Integración en páginas de negocio con ClaimButton
+  - [x] Backend con EmailService y guards de autenticación
+  - [x] Sistema mock para desarrollo sin configurar Supabase
+  - [x] Panel de administración básico para claims
+  - [x] Modificación de estado de negocios (ownership)
 
 ### Próximas Fases 🚀
 
-**Fase 4: Business Claiming** (Alta prioridad) - RECOMENDADA SIGUIENTE
-- [ ] Flujo de reclamación de negocios empresariales
-- [ ] Verificación por email/SMS/llamada telefónica
-- [ ] Panel de gestión empresarial con dashboard
-- [ ] Sistema de aprobación de claims
-- [ ] Modificación de información por propietarios verificados
-- [ ] Gestión de códigos promocionales por negocios
+**Fase 5: Business Management Dashboard** (Alta prioridad) - RECOMENDADA SIGUIENTE
+- [ ] Panel completo de gestión empresarial post-claim
+- [ ] Dashboard con estadísticas y métricas de negocio
+- [ ] Edición de información del negocio por propietarios
+- [ ] Sistema avanzado de códigos promocionales
+- [ ] Gestión de validaciones y respuestas a comentarios
+- [ ] Notificaciones empresariales y alertas
 
-**Fase 5: Data Integration** (Media prioridad)
+**Fase 6: Data Integration** (Media prioridad)
 - [ ] Integración con Google Places API
 - [ ] Carga inicial de datos de Cartagena (10,000+ negocios)
 - [ ] Sistema de importación batch y sincronización
 - [ ] Enriquecimiento automático de datos faltantes
 - [ ] Sistema de detección de duplicados
 
-**Fase 6: Advanced Features** (Media prioridad)
+**Fase 7: Advanced Features** (Media prioridad)
 - [ ] Sistema de reviews y ratings avanzado
 - [ ] Mapas interactivos con ubicaciones
 - [ ] Filtros avanzados por precio, servicios, etc.
 - [ ] Notificaciones push y sistema de seguimiento
 - [ ] API pública para terceros
 
-**Fase 7: Production & Scale** (Media prioridad)
+**Fase 8: Production & Scale** (Media prioridad)
 - [ ] Deploy completo en Vercel + Railway
 - [ ] Configuración de producción optimizada
 - [ ] Monitoreo avanzado y analytics

@@ -9,6 +9,8 @@ import { ValidationStats } from '@/components/validation/ValidationStats';
 import { AdBanner } from '@/components/ads/AdBanner';
 import { AdSidebar } from '@/components/ads/AdSidebar';
 import { AdInContent } from '@/components/ads/AdInContent';
+import { ClaimButton } from '@/components/business/ClaimButton';
+import { AuthStatus } from '@/components/auth/AuthStatus';
 import { 
   Phone, 
   Mail, 
@@ -18,7 +20,8 @@ import {
   CheckCircle,
   Copy,
   ExternalLink,
-  Tag
+  Tag,
+  Shield
 } from 'lucide-react';
 
 interface Business {
@@ -36,6 +39,7 @@ interface Business {
   email?: string;
   whatsapp?: string;
   website?: string;
+  ownerId?: string;
   createdAt: string;
   updatedAt: string;
   validations?: any[];
@@ -118,6 +122,12 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                     <span className="text-sm font-medium text-green-800">Verified</span>
                   </div>
                 )}
+                {business.ownerId && (
+                  <div className="flex items-center bg-blue-50 px-2 py-1 rounded-full">
+                    <Shield className="h-5 w-5 text-blue-600 mr-1" />
+                    <span className="text-sm font-medium text-blue-800">Owner Verified</span>
+                  </div>
+                )}
               </div>
               
               <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
@@ -147,7 +157,51 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                 <p className="text-gray-600">{business.description}</p>
               )}
             </div>
+
+            {/* Claim Button - Show only for non-owned businesses */}
+            {!business.ownerId && (
+              <div className="flex-shrink-0 ml-4">
+                <ClaimButton
+                  businessId={business.id}
+                  businessName={business.name}
+                  isOwned={!!business.ownerId}
+                  onClaimSuccess={() => {
+                    // Optional: Could trigger a page refresh or show success message
+                    window.location.reload();
+                  }}
+                  className="shadow-md"
+                />
+              </div>
+            )}
           </div>
+
+          {/* Development: Auth Status for testing */}
+          <div className="mt-4">
+            <AuthStatus />
+          </div>
+
+          {/* Business Claim Notice for unverified businesses */}
+          {!business.verified && !business.ownerId && (
+            <div className="mt-4 p-4 bg-blue-50 border border-blue-200 rounded-lg">
+              <div className="flex items-start gap-3">
+                <Shield className="h-5 w-5 text-blue-600 mt-0.5" />
+                <div>
+                  <h4 className="text-sm font-medium text-blue-900 mb-1">
+                    ¿Es tu negocio?
+                  </h4>
+                  <p className="text-sm text-blue-700 mb-2">
+                    Reclama la propiedad para obtener un perfil verificado sin anuncios, panel de administración y más beneficios.
+                  </p>
+                  <div className="flex items-center gap-4 text-xs text-blue-600">
+                    <span>✓ Sin anuncios</span>
+                    <span>✓ Panel de control</span>
+                    <span>✓ Códigos promocionales</span>
+                    <span>✓ Estadísticas detalladas</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
         </div>
 
             {/* Contact Information */}

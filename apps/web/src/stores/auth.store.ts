@@ -1,6 +1,7 @@
 import { create } from 'zustand';
 import { createClient } from '@/lib/supabase';
 import type { User } from '@supabase/supabase-js';
+import { mockAuth, isMockAuthEnabled, MOCK_USER } from '@/lib/auth-mock';
 
 interface AuthState {
   user: User | null;
@@ -23,9 +24,29 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   initialize: async () => {
     if (get().initialized) return;
     
-    const supabase = createClient();
     set({ loading: true });
 
+    // Use mock auth in development if enabled
+    if (isMockAuthEnabled()) {
+      const mockUser = mockAuth.getUser();
+      set({ 
+        user: mockUser as any,
+        initialized: true,
+        loading: false,
+      });
+
+      // Listen for mock auth changes
+      if (typeof window !== 'undefined') {
+        window.addEventListener('mock-auth-change', () => {
+          const updatedUser = mockAuth.getUser();
+          set({ user: updatedUser as any });
+        });
+      }
+      return;
+    }
+
+    // Normal Supabase auth flow
+    const supabase = createClient();
     try {
       const { data: { session } } = await supabase.auth.getSession();
       set({ 
@@ -50,9 +71,17 @@ export const useAuthStore = create<AuthState>((set, get) => ({
   },
 
   signOut: async () => {
-    const supabase = createClient();
     set({ loading: true });
 
+    // Use mock auth in development if enabled
+    if (isMockAuthEnabled()) {
+      mockAuth.signOut();
+      set({ user: null, loading: false });
+      return;
+    }
+
+    // Normal Supabase signout
+    const supabase = createClient();
     try {
       await supabase.auth.signOut();
       set({ user: null });
