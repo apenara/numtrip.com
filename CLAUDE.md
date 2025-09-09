@@ -17,13 +17,15 @@ NumTrip is a verified tourism contact directory platform. The initial focus is o
 - **Forms**: React Hook Form 7.52.x with Zod 3.23.x validation
 - **Icons**: Lucide React
 
-### Backend
+### Backend (Supabase)
 - **Backend as a Service**: Supabase (complete backend solution)
 - **Database**: PostgreSQL (hosted on Supabase)
 - **Authentication**: Supabase Auth (complete auth system)
 - **Real-time**: Supabase Realtime (for live updates)
 - **Storage**: Supabase Storage (for file uploads)
+- **Edge Functions**: Deno runtime for serverless functions
 - **Security**: Row Level Security (RLS) policies
+- **API**: Auto-generated REST API and GraphQL from database schema
 
 ### Infrastructure
 - **Frontend Hosting**: Vercel
@@ -58,31 +60,38 @@ pnpm lint
 pnpm format
 ```
 
-### Supabase Development
+### Supabase Backend Development
 ```bash
 # Generate TypeScript types from Supabase
-npx supabase gen types typescript --project-id YOUR_PROJECT_ID > src/types/database.ts
+npx supabase gen types typescript --project-id xvauchcfkrbbpfoszlah > apps/web/src/types/database.ts
 
-# Optional: Local Supabase development
+# Database management via Supabase Dashboard:
+# - https://supabase.com/dashboard/project/xvauchcfkrbbpfoszlah
+# - SQL Editor for queries and migrations
+# - Table Editor for schema changes
+# - Auth settings for user management
+# - Edge Functions management
+
+# Local Supabase development (optional)
 npm install -g supabase
 supabase init
 supabase start
 supabase stop
-
-# Database management via Supabase Dashboard:
-# - SQL Editor for queries and migrations
-# - Table Editor for schema changes
-# - Auth settings for user management
-```
-
-### Local Development (Optional)
-```bash
-# For local Supabase instance (optional)
-supabase start    # Starts local Supabase services
-supabase stop     # Stops local services
-supabase status   # Shows running services
+supabase status
 
 # Most development is done against remote Supabase instance
+```
+
+### Data Import Commands
+```bash
+# Import businesses from Google Places API
+npx tsx import-businesses-simple.ts
+
+# Test Google Places API configuration
+pnpm run script:test-google-places
+
+# Check imported data (legacy - use Supabase dashboard instead)
+pnpm run script:check-imported-data
 ```
 
 ### Testing
@@ -298,13 +307,28 @@ chore(deps): update dependencies
 
 ### Database Schema (Supabase Tables)
 
+#### Core Business Tables
 - **businesses**: Hotels, tour operators, transportation services
-- **contacts**: Phone numbers, emails, WhatsApp linked to businesses
+  - Google Place ID integration for duplicate prevention
+  - Categories: HOTEL, RESTAURANT, TOUR, TRANSPORT, ATTRACTION, OTHER
+  - GPS coordinates, addresses, verification status
+- **contacts**: Phone numbers, emails, WhatsApp, websites linked to businesses
+  - Contact types: PHONE, EMAIL, WHATSAPP, WEBSITE
+  - Primary contact designation and verification status
 - **cities**: Geographic locations for businesses
-- **profiles**: User profiles (linked to Supabase Auth)
+  - Currently focused on Cartagena, Colombia
+
+#### User & Authentication
+- **profiles**: User profiles (linked to Supabase Auth users)
+- **auth.users**: Supabase managed user authentication table
+
+#### Business Management
 - **validations**: Community validations of contact information
 - **business_claims**: Business ownership claims and verification
-- **auth.users**: Supabase managed user authentication table
+- **business_views**: Analytics tracking for business profile views
+
+#### Additional Features
+- **promo_codes**: Promotional codes and discounts for verified businesses
 
 ## Important Business Logic
 

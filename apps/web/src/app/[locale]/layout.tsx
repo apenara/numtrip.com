@@ -3,6 +3,8 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { QueryProvider } from '@/components/providers/query-provider';
 import { GoogleAdSenseProvider } from '@/components/ads/GoogleAdSenseProvider';
+import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
+import CookieConsentBanner from '@/components/gdpr/CookieConsentBanner';
 
 const locales = ['es', 'en'];
 
@@ -23,7 +25,9 @@ export default async function LocaleLayout({
     <NextIntlClientProvider messages={messages}>
       <QueryProvider>
         <GoogleAdSenseProvider>
+          <GoogleAnalytics />
           {children}
+          <CookieConsentBanner />
         </GoogleAdSenseProvider>
       </QueryProvider>
     </NextIntlClientProvider>

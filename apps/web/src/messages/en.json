@@ -17,7 +17,20 @@
       "tours": "Tours",
       "toursDescription": "Connect with local tour operators",
       "transport": "Transport",
-      "transportDescription": "Reliable transportation services"
+      "transportDescription": "Reliable transportation services",
+      "restaurants": "Restaurants",
+      "restaurantsDescription": "Discover the best local restaurants"
+    },
+    "cities": {
+      "cartagenaDescription": "Historic and touristic city"
+    },
+    "actions": {
+      "exploreAll": "Explore All",
+      "exploreAllDescription": "Discover all available destinations"
+    },
+    "features": {
+      "verified": "Verified",
+      "verifiedDescription": "Community validated contacts"
     },
     "verified": "Verified",
     "copy": "Copy"

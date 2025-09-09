@@ -81,33 +81,19 @@ export function useCookieConsent() {
   const canUseAdvertising = (): boolean => preferences.advertising;
   const canUseFunctional = (): boolean => preferences.functional;
 
-  // Initialize Google Analytics if consent is given
+  // Update consent mode when preferences change
   useEffect(() => {
-    if (hasConsent && preferences.analytics && typeof window !== 'undefined') {
-      // Initialize Google Analytics
-      const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
-      if (GA_MEASUREMENT_ID) {
-        // Dynamically load Google Analytics
-        const script = document.createElement('script');
-        script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-        script.async = true;
-        document.head.appendChild(script);
-
-        window.dataLayer = window.dataLayer || [];
-        const gtag = (...args: any[]) => {
-          window.dataLayer.push(args);
-        };
-        
-        gtag('js', new Date());
-        gtag('config', GA_MEASUREMENT_ID, {
-          cookie_flags: 'SameSite=None;Secure',
-        });
-
-        // Make gtag available globally
-        (window as any).gtag = gtag;
-      }
+    if (hasConsent && typeof window !== 'undefined' && window.gtag) {
+      // Update Google Analytics consent mode
+      window.gtag('consent', 'update', {
+        ad_storage: preferences.advertising ? 'granted' : 'denied',
+        analytics_storage: preferences.analytics ? 'granted' : 'denied',
+        functionality_storage: preferences.functional ? 'granted' : 'denied',
+        personalization_storage: preferences.functional ? 'granted' : 'denied',
+        security_storage: 'granted', // Always granted for essential functionality
+      });
     }
-  }, [hasConsent, preferences.analytics]);
+  }, [hasConsent, preferences]);
 
   return {
     preferences,

@@ -70,10 +70,10 @@ export default function HomePage() {
           </div>
 
           {/* Categories */}
-          <div className="grid md:grid-cols-3 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
             <div onClick={() => router.push('/search?category=HOTEL')} className="card card-hover p-6 text-center cursor-pointer">
               <div className="h-12 w-12 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-6 w-6 text-hotel-purple" />
+                <MapPin className="h-6 w-6 text-purple-600" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {t('categories.hotels')}
@@ -85,7 +85,7 @@ export default function HomePage() {
             
             <div onClick={() => router.push('/search?category=TOUR')} className="card card-hover p-6 text-center cursor-pointer">
               <div className="h-12 w-12 bg-orange-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-6 w-6 text-tour-orange" />
+                <MapPin className="h-6 w-6 text-orange-500" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {t('categories.tours')}
@@ -97,13 +97,25 @@ export default function HomePage() {
             
             <div onClick={() => router.push('/search?category=TRANSPORT')} className="card card-hover p-6 text-center cursor-pointer">
               <div className="h-12 w-12 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-4">
-                <MapPin className="h-6 w-6 text-transport-blue" />
+                <MapPin className="h-6 w-6 text-blue-500" />
               </div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {t('categories.transport')}
               </h3>
               <p className="text-gray-600">
                 {t('categories.transportDescription')}
+              </p>
+            </div>
+
+            <div onClick={() => router.push('/search?category=RESTAURANT')} className="card card-hover p-6 text-center cursor-pointer">
+              <div className="h-12 w-12 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-4">
+                <MapPin className="h-6 w-6 text-green-600" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                {t('categories.restaurants')}
+              </h3>
+              <p className="text-gray-600">
+                {t('categories.restaurantsDescription')}
               </p>
             </div>
           </div>
