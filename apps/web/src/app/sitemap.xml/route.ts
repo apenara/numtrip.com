@@ -11,7 +11,36 @@ export async function GET(): Promise<Response> {
       limit: 10000, // Get all businesses
     })
 
-    const businessUrls = businesses.items.flatMap(business => {
+    // Filter out monuments, landmarks, and non-contactable businesses
+    const excludedKeywords = [
+      'monumento', 'monument', 'plaza', 'parque', 'park', 'museo', 'museum',
+      'catedral', 'cathedral', 'iglesia', 'church', 'basilica', 'convento', 
+      'convent', 'castillo', 'castle', 'fortaleza', 'fort', 'bahia', 'bay',
+      'malecon', 'camellon', 'getsemani', 'getsemaní', 'murallas', 'walls', 
+      'torre', 'tower', 'puerta', 'gate', 'alcatraces', 'pegasos', 'aduana', 
+      'cementerio', 'india catalina', 'bolivar', 'bolívar', 'santo domingo',
+      'los coches', 'san pedro claver', 'santa cruz', 'popa', 'oro zenu',
+      'zenú', 'martires', 'mártires', 'oceanos', 'océanos', 'union', 'unión',
+      'reloj', 'barajas'
+    ];
+    
+    const filteredBusinesses = businesses.items.filter(business => {
+      const name = business.name.toLowerCase();
+      const description = (business.description || '').toLowerCase();
+      
+      // Exclude if name or description contains monument/landmark keywords
+      const isLandmark = excludedKeywords.some(keyword => 
+        name.includes(keyword) || description.includes(keyword)
+      );
+      
+      // Include only contactable categories and exclude landmarks
+      const contactableCategories = ['HOTEL', 'RESTAURANT', 'TOUR', 'TRANSPORT'];
+      const isContactable = contactableCategories.includes(business.category as string);
+      
+      return isContactable && !isLandmark;
+    });
+
+    const businessUrls = filteredBusinesses.flatMap(business => {
       // Generate SEO-friendly slugs for both languages
       const spanishSlug = SupabaseBusinessService.generateBusinessSlug(business, 'es');
       const englishSlug = SupabaseBusinessService.generateBusinessSlug(business, 'en');
