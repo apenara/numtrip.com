@@ -43,13 +43,12 @@ export default function GoogleAnalytics() {
 
     // Initialize dataLayer and gtag function globally
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
+    window.gtag = function() {
       window.dataLayer.push(arguments);
-    }
-    window.gtag = gtag;
+    };
 
     // Set default consent state
-    gtag('consent', 'default', {
+    window.gtag('consent', 'default', {
       'ad_storage': 'denied',
       'analytics_storage': 'denied',
       'functionality_storage': 'denied',
@@ -58,7 +57,7 @@ export default function GoogleAnalytics() {
     });
 
     // Configure GA with initial pageview
-    gtag('js', new Date());
+    window.gtag('js', new Date());
     
     if (DEBUG_GA) {
       console.log('[GA Debug] Initialized gtag and dataLayer');
