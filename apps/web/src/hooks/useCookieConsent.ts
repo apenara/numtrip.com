@@ -72,6 +72,7 @@ export function useCookieConsent() {
   };
 
   const getConsentDate = (): Date | null => {
+    if (typeof window === 'undefined') return null;
     const dateString = localStorage.getItem('cookieConsentDate');
     return dateString ? new Date(dateString) : null;
   };

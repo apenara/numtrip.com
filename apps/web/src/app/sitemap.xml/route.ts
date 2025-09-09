@@ -65,6 +65,30 @@ export async function GET(): Promise<Response> {
         changeFrequency: 'daily' as const,
         priority: 0.8,
       },
+      {
+        url: `${baseUrl}/es/contact`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      },
+      {
+        url: `${baseUrl}/en/contact`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.7,
+      },
+      {
+        url: `${baseUrl}/es/cookie-preferences`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly' as const,
+        priority: 0.3,
+      },
+      {
+        url: `${baseUrl}/en/cookie-preferences`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly' as const,
+        priority: 0.3,
+      },
     ]
 
     const allUrls = [...staticUrls, ...businessUrls]
