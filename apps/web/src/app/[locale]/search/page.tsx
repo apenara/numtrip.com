@@ -1,9 +1,9 @@
 'use client';
 
-import { useState, Suspense } from 'react';
-import { useTranslations, useLocale } from 'next-intl';
+import { Suspense, useState } from 'react';
+import { useLocale, useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
-import { Search, MapPin, Phone, Mail, MessageCircle, Filter, ChevronDown } from 'lucide-react';
+import { ChevronDown, Filter, Mail, MapPin, MessageCircle, Phone, Search } from 'lucide-react';
 import { useBusinessSearch } from '@/hooks/useBusinesses';
 import { Business, BusinessCategory } from '@contactos-turisticos/types';
 import Link from 'next/link';

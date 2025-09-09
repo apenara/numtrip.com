@@ -9,7 +9,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { createClient } from '@/lib/supabase';
-import { Mail, Lock, Eye, EyeOff, MapPin, User, Phone } from 'lucide-react';
+import { Eye, EyeOff, Lock, Mail, MapPin, Phone, User } from 'lucide-react';
 
 const registerSchema = z.object({
   email: z.string().email('Invalid email address'),

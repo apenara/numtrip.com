@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { CheckCircle, XCircle, AlertCircle, Loader2, Clock } from 'lucide-react';
+import { AlertCircle, CheckCircle, Clock, Loader2, XCircle } from 'lucide-react';
 import { useValidateContact } from '@/hooks/useValidation';
-import { ValidationRewards, useValidationRewards } from '@/components/gamification/ValidationRewards';
+import { useValidationRewards, ValidationRewards } from '@/components/gamification/ValidationRewards';
 
 interface ValidationButtonsProps {
   businessId: string;

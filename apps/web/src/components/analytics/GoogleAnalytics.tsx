@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Script from 'next/script';
+import { usePathname, useSearchParams } from 'next/navigation';
 import { useCookieConsent } from '@/hooks/useCookieConsent';
 
 declare global {
@@ -15,6 +16,8 @@ const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
 export default function GoogleAnalytics() {
   const { preferences, hasConsent, isLoaded } = useCookieConsent();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     // Only initialize if we have consent for analytics and GA ID is configured
@@ -45,6 +48,8 @@ export default function GoogleAnalytics() {
       ad_storage: preferences.advertising ? 'granted' : 'denied',
       // Analytics storage based on analytics cookie preference
       analytics_storage: preferences.analytics ? 'granted' : 'denied',
+      // Send initial page view
+      page_path: pathname,
     });
 
     // Set up consent mode
@@ -57,6 +62,23 @@ export default function GoogleAnalytics() {
     });
 
   }, [preferences, hasConsent, isLoaded]);
+
+  // Track page views on route change
+  useEffect(() => {
+    if (!GA_MEASUREMENT_ID || !hasConsent || !preferences.analytics) {
+      return;
+    }
+
+    const url = pathname + (searchParams ? `?${searchParams}` : '');
+    
+    // Send pageview event to GA
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('config', GA_MEASUREMENT_ID, {
+        page_path: url,
+        page_title: document.title,
+      });
+    }
+  }, [pathname, searchParams, hasConsent, preferences.analytics]);
 
   // Don't render scripts if no consent or no GA ID
   if (!GA_MEASUREMENT_ID || !isLoaded || !hasConsent || !preferences.analytics) {
@@ -79,7 +101,7 @@ export const trackEvent = (action: string, category: string, label?: string, val
     window.gtag('event', action, {
       event_category: category,
       event_label: label,
-      value: value,
+      value,
     });
   }
 };
@@ -135,7 +157,7 @@ export const trackBusinessClaim = (businessId: string, method: 'email' | 'sms' |
 export const trackUserRegistration = (method: 'email' | 'google' | 'facebook') => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'sign_up', {
-      method: method,
+      method,
     });
   }
 };
@@ -143,7 +165,7 @@ export const trackUserRegistration = (method: 'email' | 'google' | 'facebook') =
 export const trackUserLogin = (method: 'email' | 'google' | 'facebook') => {
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'login', {
-      method: method,
+      method,
     });
   }
 };

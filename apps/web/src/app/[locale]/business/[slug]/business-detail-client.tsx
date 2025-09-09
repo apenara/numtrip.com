@@ -7,21 +7,19 @@ import { Breadcrumbs, generateBusinessBreadcrumbs } from '@/components/layout/Br
 import { SimilarBusinesses } from '@/components/business/SimilarBusinesses';
 import { ValidationButtons } from '@/components/validation/ValidationButtons';
 import { ValidationStats } from '@/components/validation/ValidationStats';
-import { AdBanner } from '@/components/ads/AdBanner';
-import { AdSidebar } from '@/components/ads/AdSidebar';
-import { AdInContent } from '@/components/ads/AdInContent';
+import { BannerAd, BusinessPageAd, ResponsiveAd } from '@/components/ads/GoogleAdSense';
 import { ClaimButton } from '@/components/business/ClaimButton';
 import { 
-  Phone, 
-  Mail, 
-  MessageCircle, 
+  CheckCircle, 
+  Copy, 
+  ExternalLink, 
   Globe, 
-  MapPin, 
-  CheckCircle,
-  Copy,
-  ExternalLink,
-  Tag,
-  Shield
+  Mail, 
+  MapPin,
+  MessageCircle,
+  Phone,
+  Shield,
+  Tag
 } from 'lucide-react';
 
 interface Business {
@@ -100,10 +98,8 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
         {/* Top Banner Ad - Only for non-verified businesses */}
         {!business.verified && (
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-6">
-            <AdBanner 
-              slot="top-banner"
+            <BannerAd 
               className="w-full"
-              format="horizontal"
               style={{ minHeight: '90px' }}
             />
           </div>
@@ -377,9 +373,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
 
             {/* In-content Ad - Only for non-verified businesses */}
             {!business.verified && (
-              <AdInContent 
-                slot="in-content"
-                format="rectangle"
+              <ResponsiveAd
                 className="my-6"
               />
             )}
@@ -422,6 +416,11 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
               </div>
             )}
 
+            {/* Ad placement - After contact information but before similar businesses */}
+            {!business.verified && (
+              <BusinessPageAd className="my-8" />
+            )}
+
             {/* Similar Businesses */}
             <SimilarBusinesses currentBusiness={business} />
             
@@ -429,11 +428,11 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
             
             {/* Sidebar - Only for non-verified businesses */}
             {!business.verified && (
-              <AdSidebar 
-                slot="sidebar"
-                className="flex-shrink-0"
-                sticky={true}
-              />
+              <div className="flex-shrink-0 w-80">
+                <div className="sticky top-6">
+                  <ResponsiveAd className="mb-6" />
+                </div>
+              </div>
             )}
           </div>
         </div>

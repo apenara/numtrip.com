@@ -1,20 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useAuthStore } from '@/stores/auth.store';
 import { DashboardCard } from '@/components/business-dashboard/DashboardCard';
 import { MetricChart } from '@/components/business-dashboard/MetricChart';
 import { RecentActivity } from '@/components/business-dashboard/RecentActivity';
 import { QuickActions } from '@/components/business-dashboard/QuickActions';
 import { 
+  AlertCircle, 
+  CheckCircle2, 
   Eye, 
-  MousePointer, 
   MessageSquare, 
-  TrendingUp, 
+  MousePointer,
   Shield,
   Tag,
-  AlertCircle,
-  CheckCircle2
+  TrendingUp
 } from 'lucide-react';
 
 interface BusinessMetrics {

@@ -4,23 +4,23 @@ import { useEffect, useState } from 'react';
 import { useAuthStore } from '@/stores/auth.store';
 import ProtectedRoute from '@/components/auth/ProtectedRoute';
 import { 
-  Building, 
-  Phone, 
-  Mail, 
-  MessageCircle, 
-  Plus, 
-  Edit, 
-  Trash2, 
+  AlertCircle, 
   BarChart3, 
-  Users, 
-  Eye,
+  Building, 
+  Calendar, 
+  CheckCircle, 
+  Clock, 
+  Edit, 
+  Eye, 
+  Gift, 
+  Mail,
+  MessageCircle,
+  Phone,
+  Plus,
   Shield,
+  Trash2,
   TrendingUp,
-  Calendar,
-  AlertCircle,
-  CheckCircle,
-  Clock,
-  Gift
+  Users
 } from 'lucide-react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase';

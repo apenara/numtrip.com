@@ -1,20 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase';
 import type { Database } from '@/types/database';
 import { 
   Building2, 
-  MapPin, 
+  CheckCircle, 
   Globe, 
-  Phone, 
   Mail, 
+  MapPin, 
   MessageCircle,
-  Save,
+  Phone,
   Plus,
-  Trash2,
-  CheckCircle
+  Save,
+  Trash2
 } from 'lucide-react';
 
 export default function BusinessProfilePage({

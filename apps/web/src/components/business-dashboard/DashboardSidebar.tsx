@@ -1,19 +1,19 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { 
-  LayoutDashboard,
-  Building2,
-  Tag,
-  MessageSquare,
-  Bell,
-  Settings,
   BarChart3,
-  Users,
+  Bell,
+  Building2,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  LayoutDashboard,
+  MessageSquare,
+  Settings,
+  Tag,
+  Users
 } from 'lucide-react';
 
 interface NavItem {

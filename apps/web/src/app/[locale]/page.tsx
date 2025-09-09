@@ -2,7 +2,7 @@
 
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { Search, MapPin, CheckCircle } from 'lucide-react';
+import { CheckCircle, MapPin, Search } from 'lucide-react';
 import { useState } from 'react';
 import { PopularBusinesses } from '@/components/business/PopularBusinesses';
 import PublicLayout from '@/components/layout/PublicLayout';

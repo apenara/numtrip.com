@@ -1,17 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase';
 import { 
-  TrendingUp, 
-  Eye, 
-  Calendar,
-  Users,
-  MapPin,
+  BarChart3, 
+  Calendar, 
   Clock,
-  BarChart3,
-  PieChart
+  Eye,
+  MapPin,
+  PieChart,
+  TrendingUp,
+  Users
 } from 'lucide-react';
 
 interface ViewData {

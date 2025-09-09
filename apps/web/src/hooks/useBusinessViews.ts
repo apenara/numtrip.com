@@ -1,4 +1,4 @@
-import { useEffect, useCallback } from 'react';
+import { useCallback, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import businessViewsService, { MostViewedBusiness } from '@/services/businessViews.service';
 

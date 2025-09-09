@@ -5,12 +5,12 @@ import Link from 'next/link';
 import { useAuthStore } from '@/stores/auth.store';
 import { 
   Bell, 
-  Search, 
+  LogOut, 
+  MapPin,
   Menu,
-  User,
-  LogOut,
+  Search,
   Settings,
-  MapPin 
+  User 
 } from 'lucide-react';
 
 export function DashboardHeader() {

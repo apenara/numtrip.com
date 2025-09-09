@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
-import { TrendingUp, Eye, MapPin, CheckCircle, Loader2 } from 'lucide-react';
+import { CheckCircle, Eye, Loader2, MapPin, TrendingUp } from 'lucide-react';
 import SupabaseBusinessService from '@/services/business.service.supabase';
 import { Business as BusinessType } from '@contactos-turisticos/types';
 

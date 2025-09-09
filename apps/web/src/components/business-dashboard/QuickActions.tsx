@@ -4,11 +4,11 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { 
   AlertTriangle, 
-  MessageSquare, 
-  Tag, 
-  Edit,
-  ChevronDown,
-  ExternalLink
+  ChevronDown, 
+  Edit, 
+  ExternalLink,
+  MessageSquare,
+  Tag
 } from 'lucide-react';
 
 interface QuickActionsProps {

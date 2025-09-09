@@ -1,17 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useAuthStore } from '@/stores/auth.store';
 import { 
-  Save, 
-  Upload, 
-  MapPin, 
-  Phone, 
+  AlertCircle, 
+  Clock, 
+  Globe, 
   Mail, 
+  MapPin, 
   MessageCircle, 
-  Globe,
-  Clock,
-  AlertCircle
+  Phone,
+  Save,
+  Upload
 } from 'lucide-react';
 
 interface BusinessData {

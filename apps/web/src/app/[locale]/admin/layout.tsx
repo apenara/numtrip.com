@@ -1,17 +1,17 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase';
 import Link from 'next/link';
 import { 
-  LayoutDashboard, 
-  Building2, 
   BarChart3, 
-  Tag, 
-  Settings,
-  LogOut,
+  Building2, 
+  LayoutDashboard, 
+  LogOut, 
   Menu,
+  Settings,
+  Tag,
   X
 } from 'lucide-react';
 

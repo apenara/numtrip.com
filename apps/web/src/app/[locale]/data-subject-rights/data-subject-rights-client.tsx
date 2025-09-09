@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Send, Download, Eye, Edit, Trash2, UserX, AlertTriangle, CheckCircle, Mail } from 'lucide-react';
+import { AlertTriangle, CheckCircle, Download, Edit, Eye, Mail, Send, Trash2, UserX } from 'lucide-react';
 
 type RequestType = 'access' | 'rectification' | 'erasure' | 'restriction' | 'portability' | 'objection' | 'complaint';
 

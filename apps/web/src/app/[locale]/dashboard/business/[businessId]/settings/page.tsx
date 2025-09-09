@@ -5,19 +5,19 @@ import { useParams, useRouter } from 'next/navigation';
 import { useAuthStore } from '@/stores/auth.store';
 import ProtectedRoute from '@/components/auth/ProtectedRoute';
 import { 
+  AlertCircle, 
+  ArrowLeft, 
   Building, 
-  Phone, 
-  Mail, 
-  MessageCircle, 
-  Globe,
-  MapPin,
-  Save,
-  ArrowLeft,
-  AlertCircle,
+  Camera, 
   CheckCircle,
+  Globe,
+  Info,
   Loader2,
-  Camera,
-  Info
+  Mail,
+  MapPin,
+  MessageCircle,
+  Phone,
+  Save
 } from 'lucide-react';
 import Link from 'next/link';
 import { createClient } from '@/lib/supabase';

@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { X, Settings, Check } from 'lucide-react';
+import { Check, Settings, X } from 'lucide-react';
 
 interface CookiePreferences {
   essential: boolean;

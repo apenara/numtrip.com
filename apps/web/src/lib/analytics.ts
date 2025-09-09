@@ -2,14 +2,14 @@
 // These functions provide an easy way to track user interactions and business events
 
 import { 
-  trackEvent, 
-  trackPageView, 
+  trackBusinessClaim, 
   trackBusinessView, 
   trackContactClick, 
+  trackEvent, 
+  trackPageView, 
   trackSearch, 
-  trackBusinessClaim, 
-  trackUserRegistration, 
-  trackUserLogin 
+  trackUserLogin, 
+  trackUserRegistration 
 } from '@/components/analytics/GoogleAnalytics';
 
 // Business-related tracking

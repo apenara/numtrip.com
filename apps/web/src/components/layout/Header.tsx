@@ -4,11 +4,11 @@ import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { 
+  ChevronLeft, 
   MapPin, 
-  Search, 
   Menu, 
-  X,
-  ChevronLeft 
+  Search,
+  X 
 } from 'lucide-react';
 
 interface HeaderProps {

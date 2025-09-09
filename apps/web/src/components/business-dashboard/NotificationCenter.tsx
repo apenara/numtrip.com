@@ -1,18 +1,18 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { 
+  AlertTriangle, 
   Bell, 
-  MessageSquare, 
-  Tag, 
-  TrendingUp, 
-  AlertTriangle,
-  CheckCircle,
-  X,
-  Settings,
-  Clock,
+  CheckCircle, 
+  Clock, 
   Eye,
-  EyeOff
+  EyeOff,
+  MessageSquare,
+  Settings,
+  Tag,
+  TrendingUp,
+  X
 } from 'lucide-react';
 
 interface Notification {

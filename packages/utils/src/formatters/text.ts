@@ -63,6 +63,9 @@ export const textFormatters = {
     return text
       .toLowerCase()
       .trim()
+      // Normalize accented characters to their basic form
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
       // Replace spaces and special characters with hyphens
       .replace(/[^\w\s-]/g, '')
       .replace(/[\s_-]+/g, '-')

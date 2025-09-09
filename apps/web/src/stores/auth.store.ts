@@ -1,7 +1,7 @@
 import { create } from 'zustand';
 import { createClient } from '@/lib/supabase';
 import type { User } from '@supabase/supabase-js';
-import { mockAuth, isMockAuthEnabled, MOCK_USER } from '@/lib/auth-mock';
+import { isMockAuthEnabled, MOCK_USER, mockAuth } from '@/lib/auth-mock';
 
 interface AuthState {
   user: User | null;

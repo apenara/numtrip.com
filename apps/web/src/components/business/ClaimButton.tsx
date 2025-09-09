@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { Shield, Loader2 } from 'lucide-react';
+import { Loader2, Shield } from 'lucide-react';
 // Using standard HTML button with Tailwind classes
 import { useAuthStore } from '@/stores/auth.store';
 import { createClient } from '@/lib/supabase';
-import { mockAuth, isMockAuthEnabled } from '@/lib/auth-mock';
+import { isMockAuthEnabled, mockAuth } from '@/lib/auth-mock';
 
 interface ClaimButtonProps {
   businessId: string;

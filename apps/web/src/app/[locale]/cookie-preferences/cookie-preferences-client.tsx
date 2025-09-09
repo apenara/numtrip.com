@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Save, RefreshCw, Shield, BarChart3, Target, Settings2 } from 'lucide-react';
+import { BarChart3, RefreshCw, Save, Settings2, Shield, Target } from 'lucide-react';
 import { useCookieConsent } from '@/hooks/useCookieConsent';
 
 export default function CookiePreferencesClient() {

@@ -1,18 +1,18 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase';
 import Link from 'next/link';
 import { 
+  AlertCircle, 
+  ArrowRight, 
   Building2, 
-  Search, 
-  MapPin, 
-  Phone, 
+  CheckCircle, 
   Mail, 
-  CheckCircle,
-  AlertCircle,
-  ArrowRight
+  MapPin,
+  Phone,
+  Search
 } from 'lucide-react';
 
 export default function ClaimBusinessPage({

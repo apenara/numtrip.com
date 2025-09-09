@@ -1,20 +1,20 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { createClient } from '@/lib/supabase';
 import { 
-  Settings, 
-  User, 
+  AlertTriangle, 
   Bell, 
-  Shield, 
-  CreditCard,
-  Trash2,
-  Save,
-  AlertTriangle,
-  CheckCircle,
+  CheckCircle, 
+  CreditCard, 
   Mail,
-  Phone
+  Phone,
+  Save,
+  Settings,
+  Shield,
+  Trash2,
+  User
 } from 'lucide-react';
 
 export default function SettingsPage({

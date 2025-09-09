@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { MapPin, Mail, Phone, Facebook, Instagram, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin, Phone, Twitter } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();

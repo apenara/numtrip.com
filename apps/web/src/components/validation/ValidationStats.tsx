@@ -1,7 +1,7 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Shield, Users, TrendingUp, CheckCircle, XCircle } from 'lucide-react';
+import { CheckCircle, Shield, TrendingUp, Users, XCircle } from 'lucide-react';
 import { useValidationStats } from '@/hooks/useValidation';
 
 interface ValidationStatsProps {

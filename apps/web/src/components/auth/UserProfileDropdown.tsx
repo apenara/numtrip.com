@@ -1,10 +1,10 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { useRouter, useParams } from 'next/navigation';
+import { useParams, useRouter } from 'next/navigation';
 import { useAuthStore } from '@/stores/auth.store';
-import { User, LogOut, Settings, Building, ChevronDown } from 'lucide-react';
+import { Building, ChevronDown, LogOut, Settings, User } from 'lucide-react';
 
 export default function UserProfileDropdown() {
   const router = useRouter();

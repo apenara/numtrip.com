@@ -2,12 +2,12 @@
 
 import { useTranslations } from 'next-intl';
 import { 
-  Trophy, 
+  Award, 
+  CheckCircle, 
   Star, 
-  Target, 
-  Award,
+  Target,
   TrendingUp,
-  CheckCircle 
+  Trophy 
 } from 'lucide-react';
 import { useUserValidationStats } from '@/hooks/useValidation';
 

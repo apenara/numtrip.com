@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { Shield, Mail, Check, AlertCircle, Loader2, ArrowLeft, ArrowRight } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { AlertCircle, ArrowLeft, ArrowRight, Check, Loader2, Mail, Shield } from 'lucide-react';
 // Using standard HTML button with Tailwind classes
 import { useAuthStore } from '@/stores/auth.store';
 import { createClient } from '@/lib/supabase';

@@ -1,7 +1,7 @@
 'use client';
 
 import { useAuthStore } from '@/stores/auth.store';
-import { mockAuth, isMockAuthEnabled } from '@/lib/auth-mock';
+import { isMockAuthEnabled, mockAuth } from '@/lib/auth-mock';
 
 export function AuthStatus() {
   const { user, initialized, loading } = useAuthStore();

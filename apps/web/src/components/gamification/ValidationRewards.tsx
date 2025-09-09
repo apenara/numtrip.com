@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { Trophy, Plus, CheckCircle } from 'lucide-react';
+import { CheckCircle, Plus, Trophy } from 'lucide-react';
 
 interface ValidationRewardsProps {
   isVisible: boolean;

@@ -1,14 +1,14 @@
 'use client';
 
-import { useState, useEffect } from 'react';
-import { useRouter, useSearchParams, useParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { useParams, useRouter, useSearchParams } from 'next/navigation';
 import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { useTranslations } from 'next-intl';
 import { createClient } from '@/lib/supabase';
-import { Mail, Lock, Eye, EyeOff, MapPin } from 'lucide-react';
+import { Eye, EyeOff, Lock, Mail, MapPin } from 'lucide-react';
 
 const loginSchema = z.object({
   email: z.string().email('Invalid email address'),

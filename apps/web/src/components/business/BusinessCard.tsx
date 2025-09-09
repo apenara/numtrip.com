@@ -3,14 +3,14 @@
 import { useRouter } from 'next/navigation';
 import { useLocale } from 'next-intl';
 import { 
-  MapPin, 
   CheckCircle, 
-  Phone, 
   Mail, 
+  MapPin, 
   MessageCircle, 
+  Phone, 
+  Shield,
   Star,
-  ThumbsUp,
-  Shield
+  ThumbsUp
 } from 'lucide-react';
 import { ClaimButton } from './ClaimButton';
 import SupabaseBusinessService from '@/services/business.service.supabase';
