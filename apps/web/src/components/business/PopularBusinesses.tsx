@@ -2,8 +2,10 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import { TrendingUp, Eye, MapPin, CheckCircle, Loader2 } from 'lucide-react';
 import SupabaseBusinessService from '@/services/business.service.supabase';
+import { Business as BusinessType } from '@contactos-turisticos/types';
 
 interface Business {
   id: string;
@@ -30,6 +32,7 @@ export function PopularBusinesses({
   className = '' 
 }: PopularBusinessesProps) {
   const router = useRouter();
+  const locale = useLocale();
   const [businesses, setBusinesses] = useState<Business[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -65,8 +68,9 @@ export function PopularBusinesses({
     return colors[category] || colors.OTHER;
   };
 
-  const handleBusinessClick = (businessId: string) => {
-    router.push(`/business/${businessId}`);
+  const handleBusinessClick = (business: Business) => {
+    const slug = SupabaseBusinessService.generateBusinessSlug(business as BusinessType, locale);
+    router.push(`/${locale}/business/${slug}`);
   };
 
   if (loading) {
@@ -121,7 +125,7 @@ export function PopularBusinesses({
         {businesses.map((business, index) => (
           <div
             key={business.id}
-            onClick={() => handleBusinessClick(business.id)}
+            onClick={() => handleBusinessClick(business)}
             className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 cursor-pointer border border-gray-200 hover:border-blue-300"
           >
             {/* Header with ranking */}

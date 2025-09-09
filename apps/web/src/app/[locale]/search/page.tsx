@@ -1,16 +1,18 @@
 'use client';
 
 import { useState, Suspense } from 'react';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 import { Search, MapPin, Phone, Mail, MessageCircle, Filter, ChevronDown } from 'lucide-react';
 import { useBusinessSearch } from '@/hooks/useBusinesses';
 import { Business, BusinessCategory } from '@contactos-turisticos/types';
 import Link from 'next/link';
+import SupabaseBusinessService from '@/services/business.service.supabase';
 
 function SearchPageContent() {
   const searchParams = useSearchParams();
   const t = useTranslations('SearchPage');
+  const locale = useLocale();
   const [searchQuery, setSearchQuery] = useState(searchParams.get('q') || '');
   const [selectedCategory, setSelectedCategory] = useState<BusinessCategory | ''>(
     (searchParams.get('category') as BusinessCategory) || ''
@@ -210,7 +212,7 @@ function SearchPageContent() {
                   )}
 
                   <Link
-                    href={`/business/${business.id}`}
+                    href={`/${locale}/business/${SupabaseBusinessService.generateBusinessSlug(business, locale)}`}
                     className="mt-4 block text-center text-primary-blue hover:text-primary-blue-hover font-medium"
                   >
                     View Details →

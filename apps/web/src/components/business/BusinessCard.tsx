@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { useLocale } from 'next-intl';
 import { 
   MapPin, 
   CheckCircle, 
@@ -12,6 +13,8 @@ import {
   Shield
 } from 'lucide-react';
 import { ClaimButton } from './ClaimButton';
+import SupabaseBusinessService from '@/services/business.service.supabase';
+import { Business as BusinessType } from '@contactos-turisticos/types';
 
 interface Business {
   id: string;
@@ -48,6 +51,7 @@ export function BusinessCard({
   className = '' 
 }: BusinessCardProps) {
   const router = useRouter();
+  const locale = useLocale();
 
   const handleClick = (e: React.MouseEvent) => {
     // Don't navigate if clicking on interactive elements
@@ -55,7 +59,9 @@ export function BusinessCard({
     if (target.closest('button') || target.closest('a[href]')) {
       return;
     }
-    router.push(`/business/${business.id}`);
+    // Generate SEO-friendly slug and navigate
+    const slug = SupabaseBusinessService.generateBusinessSlug(business as BusinessType, locale);
+    router.push(`/${locale}/business/${slug}`);
   };
 
   const getCategoryColor = (category: string) => {

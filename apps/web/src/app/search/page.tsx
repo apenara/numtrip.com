@@ -6,6 +6,7 @@ import { Search, MapPin, Phone, Mail, MessageCircle, Filter, ChevronDown } from 
 import { useBusinessSearch } from '@/hooks/useBusinesses';
 import { Business, BusinessCategory } from '@contactos-turisticos/types';
 import Link from 'next/link';
+import SupabaseBusinessService from '@/services/business.service.supabase';
 
 function SearchPageContent() {
   const searchParams = useSearchParams();
@@ -214,7 +215,7 @@ function SearchPageContent() {
                   )}
 
                   <Link
-                    href={`/business/${business.id}`}
+                    href={`/es/business/${SupabaseBusinessService.generateBusinessSlug(business, 'es')}`}
                     className="mt-4 block text-center text-blue-600 hover:text-blue-700 font-medium"
                   >
                     View Details →
