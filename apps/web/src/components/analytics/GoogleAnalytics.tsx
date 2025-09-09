@@ -43,7 +43,7 @@ export default function GoogleAnalytics() {
 
     // Initialize dataLayer and gtag function globally
     window.dataLayer = window.dataLayer || [];
-    function gtag(...args: any[]) {
+    function gtag() {
       window.dataLayer.push(arguments);
     }
     window.gtag = gtag;
