@@ -2,8 +2,7 @@ module.exports = {
   root: true,
   extends: [
     'eslint:recommended',
-    '@typescript-eslint/recommended',
-    'prettier',
+    'next/core-web-vitals',
   ],
   parser: '@typescript-eslint/parser',
   plugins: ['@typescript-eslint'],
