@@ -9,6 +9,7 @@ import { ValidationButtons } from '@/components/validation/ValidationButtons';
 import { ValidationStats } from '@/components/validation/ValidationStats';
 import { BannerAd, BusinessPageAd, ResponsiveAd } from '@/components/ads/GoogleAdSense';
 import { ClaimButton } from '@/components/business/ClaimButton';
+import Footer from '@/components/layout/Footer';
 import { 
   CheckCircle, 
   Copy, 
@@ -106,15 +107,15 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
         )}
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-8">
-          <div className="flex gap-8">
+          <div className="flex flex-col lg:flex-row gap-4 lg:gap-8">
             {/* Main Content */}
-            <div className="flex-1">
+            <div className="flex-1 min-w-0">
         {/* Header */}
-        <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-          <div className="flex items-start justify-between">
+        <div className="bg-white rounded-lg shadow-sm p-4 sm:p-6 mb-4 sm:mb-6">
+          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
             <div className="flex-1">
-              <div className="flex items-center gap-3 mb-2">
-                <h1 className="text-3xl font-bold text-gray-900">Número de contacto {business.name}</h1>
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-3 mb-2">
+                <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-900 break-words">Número de contacto {business.name}</h1>
                 {business.verified && (
                   <div className="flex items-center bg-green-50 px-2 py-1 rounded-full">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-1" />
@@ -129,7 +130,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                 )}
               </div>
               
-              <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4 text-sm text-gray-600 mb-4">
                 <span className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(business.category)}`}>
                   {business.category}
                 </span>
@@ -159,7 +160,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
 
             {/* Claim Button - Show only for non-owned businesses */}
             {!business.ownerId && (
-              <div className="flex-shrink-0 ml-4">
+              <div className="flex-shrink-0 mt-4 sm:mt-0 sm:ml-4">
                 <ClaimButton
                   businessId={business.id}
                   businessName={business.name}
@@ -199,14 +200,14 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
         </div>
 
             {/* Contact Information */}
-            <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Número de contacto y información de {business.name}</h2>
+            <div className="bg-white rounded-lg shadow-sm p-4 sm:p-6 mb-4 sm:mb-6">
+          <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4 break-words">Número de contacto y información de {business.name}</h2>
           
           <div className="space-y-4">
             {/* Phone */}
             {business.phone && (
-              <div className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                <div className="flex items-center justify-between">
+              <div className="border rounded-lg p-3 sm:p-4 hover:bg-gray-50 transition-colors">
+                <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <Phone className="h-5 w-5 text-gray-600" />
                     <div>
@@ -214,10 +215,10 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                       <p className="font-medium text-gray-900">{business.phone}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1 sm:gap-2">
                     <button
                       onClick={() => copyToClipboard(business.phone!, 'phone')}
-                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                      className="p-2 sm:p-2 min-w-[44px] min-h-[44px] hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center"
                     >
                       {copiedField === 'phone' ? (
                         <CheckCircle className="h-5 w-5 text-green-600" />
@@ -227,7 +228,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                     </button>
                     <a
                       href={`tel:${business.phone}`}
-                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                      className="p-2 sm:p-2 min-w-[44px] min-h-[44px] hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center"
                     >
                       <ExternalLink className="h-5 w-5 text-gray-600" />
                     </a>
@@ -248,8 +249,8 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
 
             {/* Email */}
             {business.email && (
-              <div className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                <div className="flex items-center justify-between">
+              <div className="border rounded-lg p-3 sm:p-4 hover:bg-gray-50 transition-colors">
+                <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <Mail className="h-5 w-5 text-gray-600" />
                     <div>
@@ -257,10 +258,10 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                       <p className="font-medium text-gray-900">{business.email}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1 sm:gap-2">
                     <button
                       onClick={() => copyToClipboard(business.email!, 'email')}
-                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                      className="p-2 sm:p-2 min-w-[44px] min-h-[44px] hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center"
                     >
                       {copiedField === 'email' ? (
                         <CheckCircle className="h-5 w-5 text-green-600" />
@@ -270,7 +271,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                     </button>
                     <a
                       href={`mailto:${business.email}`}
-                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                      className="p-2 sm:p-2 min-w-[44px] min-h-[44px] hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center"
                     >
                       <ExternalLink className="h-5 w-5 text-gray-600" />
                     </a>
@@ -291,8 +292,8 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
 
             {/* WhatsApp */}
             {business.whatsapp && (
-              <div className="border rounded-lg p-4 hover:bg-gray-50 transition-colors">
-                <div className="flex items-center justify-between">
+              <div className="border rounded-lg p-3 sm:p-4 hover:bg-gray-50 transition-colors">
+                <div className="flex items-center justify-between gap-3">
                   <div className="flex items-center gap-3">
                     <MessageCircle className="h-5 w-5 text-gray-600" />
                     <div>
@@ -300,10 +301,10 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                       <p className="font-medium text-gray-900">{business.whatsapp}</p>
                     </div>
                   </div>
-                  <div className="flex items-center gap-2">
+                  <div className="flex items-center gap-1 sm:gap-2">
                     <button
                       onClick={() => copyToClipboard(business.whatsapp!, 'whatsapp')}
-                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                      className="p-2 sm:p-2 min-w-[44px] min-h-[44px] hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center"
                     >
                       {copiedField === 'whatsapp' ? (
                         <CheckCircle className="h-5 w-5 text-green-600" />
@@ -315,7 +316,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                       href={`https://wa.me/${business.whatsapp.replace(/\D/g, '')}`}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                      className="p-2 sm:p-2 min-w-[44px] min-h-[44px] hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center"
                     >
                       <ExternalLink className="h-5 w-5 text-gray-600" />
                     </a>
@@ -380,11 +381,11 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
 
             {/* Promo Codes */}
             {business.promoCodes && business.promoCodes.length > 0 && (
-              <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-            <h2 className="text-xl font-semibold text-gray-900 mb-4">Promo Codes</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="bg-white rounded-lg shadow-sm p-4 sm:p-6 mb-4 sm:mb-6">
+            <h2 className="text-lg sm:text-xl font-semibold text-gray-900 mb-4">Promo Codes</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">
               {business.promoCodes.map((promo: any) => (
-                <div key={promo.id} className="border-2 border-dashed border-gray-300 rounded-lg p-4 hover:border-blue-400 transition-colors">
+                <div key={promo.id} className="border-2 border-dashed border-gray-300 rounded-lg p-3 sm:p-4 hover:border-blue-400 transition-colors">
                   <div className="flex items-start justify-between">
                     <div>
                       <div className="flex items-center gap-2 mb-2">
@@ -401,7 +402,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                     </div>
                     <button
                       onClick={() => copyToClipboard(promo.code, `promo-${promo.id}`)}
-                      className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+                      className="p-2 min-w-[44px] min-h-[44px] hover:bg-gray-100 rounded-lg transition-colors flex items-center justify-center"
                     >
                       {copiedField === `promo-${promo.id}` ? (
                         <CheckCircle className="h-5 w-5 text-green-600" />
@@ -426,17 +427,27 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
             
             </div>
             
-            {/* Sidebar - Only for non-verified businesses */}
+            {/* Sidebar - Only for non-verified businesses - Hidden on mobile */}
             {!business.verified && (
-              <div className="flex-shrink-0 w-80">
+              <div className="hidden lg:block flex-shrink-0 w-80">
                 <div className="sticky top-6">
                   <ResponsiveAd className="mb-6" />
                 </div>
               </div>
             )}
+            
+            {/* Mobile Ad - Only shown on mobile for non-verified businesses */}
+            {!business.verified && (
+              <div className="lg:hidden mt-6">
+                <ResponsiveAd className="mb-4" />
+              </div>
+            )}
           </div>
         </div>
       </div>
+      
+      {/* Footer */}
+      <Footer />
     </>
   );
 }

@@ -7,8 +7,8 @@ export default function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
             <div className="flex items-center">
@@ -112,13 +112,13 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
-          <div className="md:flex md:items-center md:justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-6">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
             <div className="text-sm text-gray-400">
               © {currentYear} NumTrip. Todos los derechos reservados. VAN BOMMEL IORIO SAS
             </div>
-            <div className="mt-4 md:mt-0">
-              <ul className="flex space-x-6 text-sm">
+            <div>
+              <ul className="flex flex-wrap gap-4 sm:gap-6 text-sm">
                 <li>
                   <Link href="/privacy" className="hover:text-white transition-colors">
                     Política de Privacidad
