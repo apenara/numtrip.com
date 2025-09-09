@@ -13,83 +13,162 @@ declare global {
 }
 
 const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+const IS_PRODUCTION = process.env.NODE_ENV === 'production';
+const DEBUG_GA = true; // Set to false in production
 
 export default function GoogleAnalytics() {
   const { preferences, hasConsent, isLoaded } = useCookieConsent();
   const pathname = usePathname();
   const searchParams = useSearchParams();
 
+  // Log GA status for debugging
   useEffect(() => {
-    // Only initialize if we have consent for analytics and GA ID is configured
-    if (!GA_MEASUREMENT_ID || !isLoaded || !hasConsent || !preferences.analytics) {
+    if (DEBUG_GA) {
+      console.log('[GA Debug] Component mounted', {
+        GA_MEASUREMENT_ID,
+        hasConsent,
+        analyticsConsent: preferences.analytics,
+        isLoaded,
+        pathname
+      });
+    }
+  }, []);
+
+  // Initialize gtag and dataLayer immediately (before script loads)
+  useEffect(() => {
+    if (!GA_MEASUREMENT_ID) {
+      console.error('[GA Error] GA_MEASUREMENT_ID is not defined');
       return;
     }
 
-    // Initialize dataLayer if it doesn't exist
+    // Initialize dataLayer and gtag function globally
     window.dataLayer = window.dataLayer || [];
-    
-    // Define gtag function
     function gtag(...args: any[]) {
-      window.dataLayer.push(args);
+      window.dataLayer.push(arguments);
     }
-
-    // Make gtag available globally
     window.gtag = gtag;
 
-    // Configure Google Analytics
+    // Set default consent state
+    gtag('consent', 'default', {
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'functionality_storage': 'denied',
+      'personalization_storage': 'denied',
+      'security_storage': 'granted'
+    });
+
+    // Configure GA with initial pageview
     gtag('js', new Date());
-    gtag('config', GA_MEASUREMENT_ID, {
-      // Respect user's cookie preferences
-      anonymize_ip: true,
-      cookie_flags: 'SameSite=Lax;Secure',
-      // Only set cookies if user has consented to functional cookies
-      storage: preferences.functional ? 'granted' : 'denied',
-      // Respect advertising cookie preference
-      ad_storage: preferences.advertising ? 'granted' : 'denied',
-      // Analytics storage based on analytics cookie preference
-      analytics_storage: preferences.analytics ? 'granted' : 'denied',
-      // Send initial page view
-      page_path: pathname,
-    });
+    
+    if (DEBUG_GA) {
+      console.log('[GA Debug] Initialized gtag and dataLayer');
+    }
+  }, []); // Run once on mount
 
-    // Set up consent mode
-    gtag('consent', 'update', {
-      ad_storage: preferences.advertising ? 'granted' : 'denied',
-      analytics_storage: preferences.analytics ? 'granted' : 'denied',
-      functionality_storage: preferences.functional ? 'granted' : 'denied',
-      personalization_storage: preferences.functional ? 'granted' : 'denied',
-      security_storage: 'granted', // Always granted for essential functionality
-    });
+  // Update consent when preferences change
+  useEffect(() => {
+    if (!GA_MEASUREMENT_ID || !isLoaded) return;
 
-  }, [preferences, hasConsent, isLoaded]);
+    const consentState = hasConsent && preferences.analytics ? 'granted' : 'denied';
+    
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('consent', 'update', {
+        'ad_storage': preferences.advertising ? 'granted' : 'denied',
+        'analytics_storage': consentState,
+        'functionality_storage': preferences.functional ? 'granted' : 'denied',
+        'personalization_storage': preferences.functional ? 'granted' : 'denied',
+        'security_storage': 'granted'
+      });
+
+      if (DEBUG_GA) {
+        console.log('[GA Debug] Updated consent', {
+          analytics_storage: consentState,
+          hasConsent,
+          preferences
+        });
+      }
+
+      // If consent is granted, configure GA
+      if (consentState === 'granted') {
+        window.gtag('config', GA_MEASUREMENT_ID, {
+          page_path: pathname,
+          debug_mode: !IS_PRODUCTION
+        });
+        
+        if (DEBUG_GA) {
+          console.log('[GA Debug] Configured GA with initial pageview', pathname);
+        }
+      }
+    }
+  }, [hasConsent, preferences, isLoaded, pathname]);
 
   // Track page views on route change
   useEffect(() => {
-    if (!GA_MEASUREMENT_ID || !hasConsent || !preferences.analytics) {
-      return;
-    }
+    if (!GA_MEASUREMENT_ID) return;
 
+    // Create full URL
     const url = pathname + (searchParams ? `?${searchParams}` : '');
     
-    // Send pageview event to GA
+    // Only track if we have consent and gtag is available
     if (typeof window !== 'undefined' && window.gtag) {
-      window.gtag('config', GA_MEASUREMENT_ID, {
+      // Always send pageview, GA will respect consent state
+      window.gtag('event', 'page_view', {
         page_path: url,
         page_title: document.title,
+        page_location: window.location.href,
+        send_to: GA_MEASUREMENT_ID
       });
+
+      if (DEBUG_GA) {
+        console.log('[GA Debug] Pageview tracked', {
+          url,
+          title: document.title,
+          consent: hasConsent && preferences.analytics
+        });
+      }
     }
   }, [pathname, searchParams, hasConsent, preferences.analytics]);
 
-  // Don't render scripts if no consent or no GA ID
-  if (!GA_MEASUREMENT_ID || !isLoaded || !hasConsent || !preferences.analytics) {
+  // Don't render script if no GA ID
+  if (!GA_MEASUREMENT_ID) {
+    console.error('[GA Error] NEXT_PUBLIC_GA_MEASUREMENT_ID is not configured');
     return null;
   }
 
   return (
     <>
+      {/* Google Analytics Script */}
       <Script
+        id="google-analytics"
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
         strategy="afterInteractive"
+        onLoad={() => {
+          if (DEBUG_GA) {
+            console.log('[GA Debug] GA script loaded successfully');
+          }
+        }}
+        onError={(e) => {
+          console.error('[GA Error] Failed to load GA script:', e);
+        }}
+      />
+      
+      {/* Inline script to ensure gtag is defined before GA script runs */}
+      <Script
+        id="gtag-init"
+        strategy="beforeInteractive"
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}', {
+              page_path: window.location.pathname,
+              debug_mode: ${!IS_PRODUCTION}
+            });
+            ${DEBUG_GA ? "console.log('[GA Debug] Inline script executed');" : ''}
+          `,
+        }}
       />
     </>
   );
@@ -103,6 +182,10 @@ export const trackEvent = (action: string, category: string, label?: string, val
       event_label: label,
       value,
     });
+    
+    if (DEBUG_GA) {
+      console.log('[GA Debug] Event tracked', { action, category, label, value });
+    }
   }
 };
 
@@ -112,6 +195,10 @@ export const trackPageView = (path: string, title?: string) => {
       page_path: path,
       page_title: title,
     });
+    
+    if (DEBUG_GA) {
+      console.log('[GA Debug] Manual pageview tracked', { path, title });
+    }
   }
 };
 
@@ -147,6 +234,10 @@ export const trackSearch = (query: string, category?: string, resultsCount?: num
       search_category: category,
       search_results: resultsCount,
     });
+    
+    if (DEBUG_GA) {
+      console.log('[GA Debug] Search tracked', { query, category, resultsCount });
+    }
   }
 };
 
