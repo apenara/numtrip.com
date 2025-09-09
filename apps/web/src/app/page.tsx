@@ -2,7 +2,8 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { Search, MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
+import { Search, MapPin, Phone } from 'lucide-react';
+import { PopularBusinesses } from '@/components/business/PopularBusinesses';
 
 export default function HomePage() {
   const router = useRouter();
@@ -103,61 +104,48 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Sample Business Card */}
-          <div className="max-w-md mx-auto bg-white rounded-lg shadow-md p-6 text-left">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    Hotel Ejemplo Cartagena
-                  </h3>
-                  <span className="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
-                    ✓ Verified
-                  </span>
-                </div>
-                <span className="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded-full">
-                  Hotel
-                </span>
+          {/* Featured Cities */}
+{/*           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div onClick={() => router.push('/search?city=Cartagena')} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 text-center cursor-pointer">
+              <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <MapPin className="h-5 w-5 text-blue-600" />
               </div>
-            </div>
-            
-            <div className="space-y-3">
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Phone className="h-4 w-4 text-gray-500" />
-                  <span className="font-mono text-sm">+57 5 664 9494</span>
-                </div>
-                <button className="text-blue-600 hover:text-blue-700 text-sm">
-                  Copy
-                </button>
-              </div>
-              
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <Mail className="h-4 w-4 text-gray-500" />
-                  <span className="text-sm">info@hotelcartagena.com</span>
-                </div>
-                <button className="text-blue-600 hover:text-blue-700 text-sm">
-                  Copy
-                </button>
-              </div>
-              
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <MessageCircle className="h-4 w-4 text-green-600" />
-                  <span className="font-mono text-sm">+57 300 123 4567</span>
-                </div>
-                <button className="bg-green-600 text-white text-sm py-1 px-3 rounded-md hover:bg-green-700">
-                  WhatsApp
-                </button>
-              </div>
-            </div>
-            
-            <div className="mt-4 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
-              <p className="text-sm text-yellow-800">
-                <strong>Promo Code:</strong> NUMTRIP20 - 20% discount
+              <h3 className="font-semibold text-gray-900 mb-1">
+                Cartagena
+              </h3>
+              <p className="text-sm text-gray-600">
+                Historic Caribbean destination
               </p>
             </div>
+
+            <div onClick={() => router.push('/search')} className="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow p-4 text-center cursor-pointer">
+              <div className="h-10 w-10 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Search className="h-5 w-5 text-green-600" />
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-1">
+                Explore All
+              </h3>
+              <p className="text-sm text-gray-600">
+                Browse all businesses
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg shadow-md p-4 text-center">
+              <div className="h-10 w-10 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Phone className="h-5 w-5 text-purple-600" />
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-1">
+                Verified Contacts
+              </h3>
+              <p className="text-sm text-gray-600">
+                Trusted information
+              </p>
+            </div>
+          </div>
+ */}
+          {/* Popular Businesses Section */}
+          <div className="mt-16">
+            <PopularBusinesses limit={6} daysBack={30} />
           </div>
         </div>
       </main>

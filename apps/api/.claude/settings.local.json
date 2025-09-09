@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/apenara/numtrip.com/apps/web/src/types/**)",
+      "Read(//Users/apenara/numtrip.com/apps/web/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

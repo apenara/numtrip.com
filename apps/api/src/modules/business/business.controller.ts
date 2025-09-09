@@ -3,7 +3,6 @@ import {
   Get,
   Post,
   Put,
-  Delete,
   Body,
   Param,
   Query,
@@ -23,10 +22,7 @@ import { BusinessService } from './business.service';
 import { 
   CreateBusinessDto, 
   UpdateBusinessDto, 
-  BusinessSearchDto,
-  CreatePromoCodeDto,
-  UpdatePromoCodeDto,
-  PromoCodeResponseDto
+  BusinessSearchDto
 } from './dto';
 
 @ApiTags('Business')
@@ -87,92 +83,19 @@ export class BusinessController {
   @Throttle({ default: { limit: 10, ttl: 60000 } }) // 10 updates per minute
   async updateBusiness(
     @Param('id') id: string,
-    @Body() updateBusinessDto: UpdateBusinessDto,
-    @Request() req: any
+    @Body() updateBusinessDto: UpdateBusinessDto
   ) {
-    const userId = req.user.id;
-    return this.businessService.updateBusinessByOwner(id, updateBusinessDto, userId);
+    return this.businessService.updateBusiness(id, updateBusinessDto);
   }
 
-  // Promo Code Management Endpoints
 
-  @Post(':id/promo-codes')
-  @UseGuards(JwtAuthGuard)
-  @ApiOperation({ summary: 'Create promo code for business (owners only)' })
-  @ApiResponse({ status: 201, description: 'Promo code created successfully' })
-  @ApiResponse({ status: 403, description: 'Not authorized to manage this business' })
+  @Get(':id/stats')
+  @ApiOperation({ summary: 'Get business stats' })
+  @ApiResponse({ status: 200, description: 'Business stats data' })
   @ApiResponse({ status: 404, description: 'Business not found' })
-  @ApiBearerAuth()
-  @Throttle({ default: { limit: 5, ttl: 60000 } }) // 5 promo codes per minute
-  async createPromoCode(
-    @Param('id') businessId: string,
-    @Body() createPromoCodeDto: CreatePromoCodeDto,
-    @Request() req: any
-  ): Promise<PromoCodeResponseDto> {
-    const userId = req.user.id;
-    return this.businessService.createPromoCode(businessId, createPromoCodeDto, userId);
-  }
-
-  @Get(':id/promo-codes')
-  @UseGuards(JwtAuthGuard)
-  @ApiOperation({ summary: 'Get all promo codes for business (owners only)' })
-  @ApiResponse({ status: 200, description: 'List of promo codes' })
-  @ApiResponse({ status: 403, description: 'Not authorized to view this business promo codes' })
-  @ApiResponse({ status: 404, description: 'Business not found' })
-  @ApiBearerAuth()
-  async getBusinessPromoCodes(
-    @Param('id') businessId: string,
-    @Request() req: any
-  ): Promise<PromoCodeResponseDto[]> {
-    const userId = req.user.id;
-    return this.businessService.getBusinessPromoCodes(businessId, userId);
-  }
-
-  @Put(':businessId/promo-codes/:promoId')
-  @UseGuards(JwtAuthGuard)
-  @ApiOperation({ summary: 'Update promo code (owners only)' })
-  @ApiResponse({ status: 200, description: 'Promo code updated successfully' })
-  @ApiResponse({ status: 403, description: 'Not authorized to manage this promo code' })
-  @ApiResponse({ status: 404, description: 'Promo code not found' })
-  @ApiBearerAuth()
-  async updatePromoCode(
-    @Param('businessId') businessId: string,
-    @Param('promoId') promoId: string,
-    @Body() updatePromoCodeDto: UpdatePromoCodeDto,
-    @Request() req: any
-  ): Promise<PromoCodeResponseDto> {
-    const userId = req.user.id;
-    return this.businessService.updatePromoCode(businessId, promoId, updatePromoCodeDto, userId);
-  }
-
-  @Delete(':businessId/promo-codes/:promoId')
-  @UseGuards(JwtAuthGuard)
-  @ApiOperation({ summary: 'Delete promo code (owners only)' })
-  @ApiResponse({ status: 200, description: 'Promo code deleted successfully' })
-  @ApiResponse({ status: 403, description: 'Not authorized to delete this promo code' })
-  @ApiResponse({ status: 404, description: 'Promo code not found' })
-  @ApiBearerAuth()
-  async deletePromoCode(
-    @Param('businessId') businessId: string,
-    @Param('promoId') promoId: string,
-    @Request() req: any
-  ): Promise<{ message: string }> {
-    const userId = req.user.id;
-    return this.businessService.deletePromoCode(businessId, promoId, userId);
-  }
-
-  @Get(':id/analytics')
-  @UseGuards(JwtAuthGuard)
-  @ApiOperation({ summary: 'Get business analytics (owners only)' })
-  @ApiResponse({ status: 200, description: 'Business analytics data' })
-  @ApiResponse({ status: 403, description: 'Not authorized to view this business analytics' })
-  @ApiResponse({ status: 404, description: 'Business not found' })
-  @ApiBearerAuth()
-  async getBusinessAnalytics(
-    @Param('id') businessId: string,
-    @Request() req: any
+  async getBusinessStats(
+    @Param('id') businessId: string
   ) {
-    const userId = req.user.id;
-    return this.businessService.getBusinessAnalytics(businessId, userId);
+    return this.businessService.getBusinessStats(businessId);
   }
 }

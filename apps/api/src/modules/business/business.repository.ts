@@ -21,49 +21,41 @@ export class BusinessRepository {
     const take = Math.min(limit, 100); // Max 100 items per page
 
     const where: Prisma.BusinessWhereInput = {
-      active: true,
       ...(query && {
         OR: [
           { name: { contains: query, mode: 'insensitive' } },
           { description: { contains: query, mode: 'insensitive' } },
         ],
       }),
-      ...(city && { city: { equals: city, mode: 'insensitive' } }),
       ...(category && { category }),
       ...(verified !== undefined && { verified }),
     };
+
+    // If city is provided, filter by city name
+    if (city) {
+      where.city = {
+        name: { equals: city, mode: 'insensitive' }
+      };
+    }
 
     const [businesses, total] = await Promise.all([
       this.prisma.business.findMany({
         where,
         include: {
-          owner: {
-            select: { id: true, name: true, verified: true },
-          },
-          promoCodes: {
-            where: { active: true },
-            select: {
-              id: true,
-              code: true,
-              description: true,
-              discount: true,
-              validUntil: true,
-            },
-          },
-          _count: {
-            select: {
-              validations: {
-                where: { isCorrect: true },
-              },
+          city: true,
+          contacts: true,
+          validations: {
+            include: {
+              contact: true,
             },
           },
         },
-        orderBy: [
-          { verified: 'desc' }, // Verified businesses first
-          { createdAt: 'desc' },
-        ],
         skip,
         take,
+        orderBy: [
+          { verified: 'desc' },
+          { createdAt: 'desc' },
+        ],
       }),
       this.prisma.business.count({ where }),
     ]);
@@ -71,10 +63,10 @@ export class BusinessRepository {
     return {
       data: businesses,
       pagination: {
-        page,
-        limit,
         total,
-        pages: Math.ceil(total / limit),
+        page,
+        limit: take,
+        pages: Math.ceil(total / take),
       },
     };
   }
@@ -83,121 +75,160 @@ export class BusinessRepository {
     return this.prisma.business.findUnique({
       where: { id },
       include: {
-        owner: {
-          select: { id: true, name: true, email: true, verified: true },
-        },
-        promoCodes: {
-          where: { active: true },
-          select: {
-            id: true,
-            code: true,
-            description: true,
-            discount: true,
-            validUntil: true,
-          },
-        },
+        city: true,
+        contacts: true,
         validations: {
-          select: {
-            id: true,
-            type: true,
-            isCorrect: true,
-            comment: true,
-            createdAt: true,
-          },
-          orderBy: { createdAt: 'desc' },
-          take: 10, // Last 10 validations
-        },
-        _count: {
-          select: {
-            validations: {
-              where: { isCorrect: true },
-            },
+          include: {
+            contact: true,
           },
         },
+        claims: true,
       },
     });
   }
 
   async create(data: CreateBusinessDto) {
-    return this.prisma.business.create({
-      data,
+    // First, get or create city
+    let cityRecord = await this.prisma.city.findFirst({
+      where: { name: data.city }
+    });
+
+    if (!cityRecord) {
+      cityRecord = await this.prisma.city.create({
+        data: {
+          name: data.city,
+          country: 'Colombia', // Default for now
+        }
+      });
+    }
+
+    // Create business without phone/email/whatsapp fields
+    const business = await this.prisma.business.create({
+      data: {
+        name: data.name,
+        description: data.description,
+        category: data.category,
+        address: data.address,
+        cityId: cityRecord.id,
+        latitude: data.latitude,
+        longitude: data.longitude,
+        website: data.website,
+        googlePlaceId: data.googlePlaceId,
+        verified: data.verified || false,
+      },
       include: {
-        owner: {
-          select: { id: true, name: true, verified: true },
-        },
+        city: true,
+        contacts: true,
       },
     });
+
+    // Create contacts if provided
+    const contactPromises = [];
+    if (data.phone) {
+      contactPromises.push(
+        this.prisma.contact.create({
+          data: {
+            businessId: business.id,
+            type: 'PHONE',
+            value: data.phone,
+            primaryContact: true,
+          }
+        })
+      );
+    }
+    if (data.email) {
+      contactPromises.push(
+        this.prisma.contact.create({
+          data: {
+            businessId: business.id,
+            type: 'EMAIL',
+            value: data.email,
+            primaryContact: !data.phone,
+          }
+        })
+      );
+    }
+    if (data.whatsapp) {
+      contactPromises.push(
+        this.prisma.contact.create({
+          data: {
+            businessId: business.id,
+            type: 'WHATSAPP',
+            value: data.whatsapp,
+            primaryContact: !data.phone && !data.email,
+          }
+        })
+      );
+    }
+
+    if (contactPromises.length > 0) {
+      await Promise.all(contactPromises);
+    }
+
+    // Return business with contacts
+    return this.findById(business.id);
   }
 
   async update(id: string, data: UpdateBusinessDto) {
-    return this.prisma.business.update({
+    // Update business (excluding contact fields)
+    const business = await this.prisma.business.update({
       where: { id },
       data: {
-        ...data,
+        name: data.name,
+        description: data.description,
+        category: data.category,
+        address: data.address,
+        latitude: data.latitude,
+        longitude: data.longitude,
+        website: data.website,
+        verified: data.verified,
         updatedAt: new Date(),
       },
       include: {
-        owner: {
-          select: { id: true, name: true, verified: true },
-        },
+        city: true,
+        contacts: true,
       },
     });
+
+    // Update contacts if provided
+    if (data.phone !== undefined) {
+      await this.updateOrCreateContact(id, 'PHONE', data.phone);
+    }
+    if (data.email !== undefined) {
+      await this.updateOrCreateContact(id, 'EMAIL', data.email);
+    }
+    if (data.whatsapp !== undefined) {
+      await this.updateOrCreateContact(id, 'WHATSAPP', data.whatsapp);
+    }
+
+    return this.findById(id);
   }
 
-  async claim(id: string, userId: string) {
+  async claim(businessId: string, userId: string) {
     return this.prisma.business.update({
-      where: { id },
+      where: { id: businessId },
       data: {
+        claimed: true,
         ownerId: userId,
-        claimedAt: new Date(),
-        verified: true, // Auto-verify when claimed
-        updatedAt: new Date(),
       },
       include: {
-        owner: {
-          select: { id: true, name: true, verified: true },
-        },
+        city: true,
+        contacts: true,
       },
     });
   }
 
-  async findByCity(city: string) {
+  async findManyByOwner(ownerId: string) {
     return this.prisma.business.findMany({
       where: {
-        city: { equals: city, mode: 'insensitive' },
-        active: true,
+        ownerId,
       },
       include: {
-        _count: {
-          select: {
-            validations: {
-              where: { isCorrect: true },
-            },
-          },
-        },
-      },
-      orderBy: [
-        { verified: 'desc' },
-        { createdAt: 'desc' },
-      ],
-    });
-  }
-
-  async findVerified() {
-    return this.prisma.business.findMany({
-      where: {
-        verified: true,
-        active: true,
-      },
-      include: {
-        owner: {
-          select: { id: true, name: true, verified: true },
-        },
-        _count: {
-          select: {
-            validations: {
-              where: { isCorrect: true },
-            },
+        city: true,
+        contacts: true,
+        validations: {
+          include: {
+            contact: true,
           },
         },
       },
@@ -206,9 +237,49 @@ export class BusinessRepository {
   }
 
   async delete(id: string) {
+    // Soft delete by removing from search results
     return this.prisma.business.update({
       where: { id },
-      data: { active: false },
+      data: { 
+        verified: false,
+        claimed: false,
+      },
     });
+  }
+
+  private async updateOrCreateContact(businessId: string, type: string, value: string | null) {
+    if (!value) {
+      // Delete contact if value is null
+      await this.prisma.contact.deleteMany({
+        where: {
+          businessId,
+          type: type as any,
+        }
+      });
+      return;
+    }
+
+    const existing = await this.prisma.contact.findFirst({
+      where: {
+        businessId,
+        type: type as any,
+      }
+    });
+
+    if (existing) {
+      await this.prisma.contact.update({
+        where: { id: existing.id },
+        data: { value }
+      });
+    } else {
+      await this.prisma.contact.create({
+        data: {
+          businessId,
+          type: type as any,
+          value,
+          primaryContact: false,
+        }
+      });
+    }
   }
 }

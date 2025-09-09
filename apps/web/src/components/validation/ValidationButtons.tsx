@@ -43,7 +43,7 @@ export function ValidationButtons({
       whatsapp: isCorrect ? 'WHATSAPP_WORKS' : 'WHATSAPP_INCORRECT',
       general: isCorrect ? 'GENERAL_CORRECT' : 'GENERAL_INCORRECT',
     };
-    return typeMap[type as keyof typeof typeMap];
+    return typeMap[type as keyof typeof typeMap] as "PHONE_WORKS" | "PHONE_INCORRECT" | "EMAIL_WORKS" | "EMAIL_INCORRECT" | "WHATSAPP_WORKS" | "WHATSAPP_INCORRECT" | "GENERAL_CORRECT" | "GENERAL_INCORRECT";
   };
 
   const handleValidation = async (isCorrect: boolean) => {

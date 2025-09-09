@@ -2,8 +2,11 @@
 
 import { useTranslations } from 'next-intl';
 import { useRouter } from 'next/navigation';
-import { Search, MapPin, Phone, Mail, MessageCircle } from 'lucide-react';
+import { Search, MapPin, CheckCircle } from 'lucide-react';
 import { useState } from 'react';
+import { PopularBusinesses } from '@/components/business/PopularBusinesses';
+import PublicLayout from '@/components/layout/PublicLayout';
+import Footer from '@/components/layout/Footer';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
@@ -105,58 +108,54 @@ export default function HomePage() {
             </div>
           </div>
 
-          {/* Sample Business Card */}
-          <div className="max-w-md mx-auto card p-6 text-left">
-            <div className="flex justify-between items-start mb-4">
-              <div>
-                <div className="flex items-center gap-2 mb-2">
-                  <h3 className="text-lg font-semibold text-gray-900">
-                    Hotel Ejemplo Cartagena
-                  </h3>
-                  <span className="badge badge-verified">
-                    ✓ {t('verified')}
-                  </span>
-                </div>
-                <span className="badge badge-hotel">
-                  {t('categories.hotels')}
-                </span>
+          {/* Featured Cities */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div onClick={() => router.push('/search?city=Cartagena')} className="card card-hover p-4 text-center cursor-pointer">
+              <div className="h-10 w-10 bg-blue-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <MapPin className="h-5 w-5 text-blue-600" />
               </div>
+              <h3 className="font-semibold text-gray-900 mb-1">
+                Cartagena
+              </h3>
+              <p className="text-sm text-gray-600">
+                {t('cities.cartagenaDescription')}
+              </p>
             </div>
-            
-            <div className="space-y-3">
-              <div className="contact-item">
-                <Phone className="h-4 w-4 text-gray-500" />
-                <span className="font-mono text-sm">+57 5 664 9494</span>
-                <button className="ml-auto text-primary-blue hover:text-primary-blue-hover text-sm">
-                  {t('copy')}
-                </button>
+
+            <div onClick={() => router.push('/search')} className="card card-hover p-4 text-center cursor-pointer">
+              <div className="h-10 w-10 bg-green-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <Search className="h-5 w-5 text-green-600" />
               </div>
-              
-              <div className="contact-item">
-                <Mail className="h-4 w-4 text-gray-500" />
-                <span className="text-sm">info@hotelcartagena.com</span>
-                <button className="ml-auto text-primary-blue hover:text-primary-blue-hover text-sm">
-                  {t('copy')}
-                </button>
-              </div>
-              
-              <div className="contact-item">
-                <MessageCircle className="h-4 w-4 text-green-600" />
-                <span className="font-mono text-sm">+57 300 123 4567</span>
-                <button className="ml-auto btn-primary text-sm py-1 px-3">
-                  WhatsApp
-                </button>
-              </div>
+              <h3 className="font-semibold text-gray-900 mb-1">
+                {t('actions.exploreAll')}
+              </h3>
+              <p className="text-sm text-gray-600">
+                {t('actions.exploreAllDescription')}
+              </p>
             </div>
-            
-            <div className="mt-4 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
-              <p className="text-sm text-yellow-800">
-                <strong>Código promocional:</strong> NUMTRIP20 - 20% de descuento
+
+            <div className="card p-4 text-center">
+              <div className="h-10 w-10 bg-purple-100 rounded-lg flex items-center justify-center mx-auto mb-3">
+                <CheckCircle className="h-5 w-5 text-purple-600" />
+              </div>
+              <h3 className="font-semibold text-gray-900 mb-1">
+                {t('features.verified')}
+              </h3>
+              <p className="text-sm text-gray-600">
+                {t('features.verifiedDescription')}
               </p>
             </div>
           </div>
+
+          {/* Popular Businesses Section */}
+          <div className="mt-16">
+            <PopularBusinesses limit={6} daysBack={30} />
+          </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 }

@@ -67,12 +67,7 @@ export function SimilarBusinesses({
       if (a.verified && !b.verified) return -1;
       if (!a.verified && b.verified) return 1;
       
-      // Then by validation count (if available)
-      const aValidations = a._count?.validations || 0;
-      const bValidations = b._count?.validations || 0;
-      if (aValidations !== bValidations) {
-        return bValidations - aValidations;
-      }
+      // Then by name directly since _count is not available in the new Business type
       
       // Finally by name
       return a.name.localeCompare(b.name);

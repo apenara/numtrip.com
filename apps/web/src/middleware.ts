@@ -1,13 +1,18 @@
 import createMiddleware from 'next-intl/middleware';
 import { locales, defaultLocale } from './i18n/request';
+import { NextRequest, NextResponse } from 'next/server';
 
-// For now, we'll keep middleware simple and handle auth at component level
-// to avoid Edge Runtime issues with Supabase
-export default createMiddleware({
+const intlMiddleware = createMiddleware({
   locales,
   defaultLocale,
   localePrefix: 'always',
 });
+
+export default function middleware(request: NextRequest) {
+  // Apply the intl middleware for all routes
+  // The [slug] route will handle both slugs and legacy IDs internally
+  return intlMiddleware(request);
+}
 
 export const config = {
   matcher: ['/((?!api|_next/static|_next/image|favicon.ico|.*\\..*).*)'],

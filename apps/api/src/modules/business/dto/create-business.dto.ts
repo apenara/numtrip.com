@@ -1,6 +1,6 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsEmail, IsEnum, IsOptional, IsBoolean, IsNumber, MinLength, MaxLength } from 'class-validator';
-import { Category } from '@prisma/client';
+import { BusinessCategory } from '@prisma/client';
 
 export class CreateBusinessDto {
   @ApiProperty({ example: 'Hotel Cartagena Plaza' })
@@ -15,9 +15,9 @@ export class CreateBusinessDto {
   @MaxLength(500)
   description?: string;
 
-  @ApiProperty({ enum: Category, example: Category.HOTEL })
-  @IsEnum(Category)
-  category: Category;
+  @ApiProperty({ enum: BusinessCategory, example: BusinessCategory.HOTEL })
+  @IsEnum(BusinessCategory)
+  category: BusinessCategory;
 
   @ApiProperty({ example: 'Cartagena' })
   @IsString()

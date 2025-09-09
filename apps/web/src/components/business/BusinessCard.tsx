@@ -109,7 +109,7 @@ export function BusinessCard({
                 <CheckCircle className="h-5 w-5 text-green-600 flex-shrink-0" />
               )}
               {business.ownerId && (
-                <Shield className="h-4 w-4 text-blue-600 flex-shrink-0" title="Owner Verified" />
+                <Shield className="h-4 w-4 text-blue-600 flex-shrink-0" />
               )}
             </div>
             

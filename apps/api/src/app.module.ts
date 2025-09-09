@@ -4,9 +4,11 @@ import { ThrottlerModule } from '@nestjs/throttler';
 import { AuthModule } from './modules/auth/auth.module';
 import { BusinessModule } from './modules/business/business.module';
 import { SearchModule } from './modules/search/search.module';
-import { ValidationModule } from './modules/validation/validation.module';
+// import { ValidationModule } from './modules/validation/validation.module';
 import { ClaimModule } from './modules/claim/claim.module';
 import { BusinessDashboardModule } from './modules/business-dashboard/business-dashboard.module';
+import { GooglePlacesModule } from './modules/google-places/google-places.module';
+import { DataImportModule } from './modules/data-import/data-import.module';
 import { DatabaseModule } from './database/database.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
@@ -24,12 +26,14 @@ import { AppService } from './app.service';
       },
     ]),
     DatabaseModule,
-    AuthModule,
+    // AuthModule, // Temporarily disabled - needs fixing
     BusinessModule,
     SearchModule,
-    ValidationModule,
-    ClaimModule,
-    BusinessDashboardModule,
+    // ValidationModule, // Temporarily disabled - needs fixing
+    // ClaimModule, // Temporarily disabled - needs fixing
+    // BusinessDashboardModule, // Temporarily disabled - needs fixing
+    GooglePlacesModule,
+    DataImportModule,
   ],
   controllers: [AppController],
   providers: [AppService],

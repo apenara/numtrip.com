@@ -15,7 +15,7 @@ export function AdInContent({
   format = 'rectangle'
 }: AdInContentProps) {
   const { shouldLoadAds, adSenseClientId } = useAdSense();
-  const adRef = useRef<HTMLDivElement>(null);
+  const adRef = useRef<HTMLModElement>(null);
   const hasInitialized = useRef(false);
 
   useEffect(() => {

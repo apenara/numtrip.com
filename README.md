@@ -13,15 +13,15 @@ Una plataforma global donde los viajeros pueden encontrar números de contacto, 
 - **Monetización con Google AdSense** (compliance 2025)
 - **Soporte multi-idioma** (Español/Inglés)
 - **Sistema de autenticación** completo con Supabase
-- **Arquitectura moderna** con Next.js y NestJS
+- **Arquitectura moderna** con Next.js y Supabase
 
 ## 📈 Estado Actual (v1.3.0)
 
 ### ✅ Completado
 - ✅ **Infraestructura del proyecto** - Monorepo con Turborepo
 - ✅ **Frontend básico** - Páginas principales y componentes UI
-- ✅ **Backend API** - Endpoints básicos y estructura de datos
-- ✅ **Base de datos** - Schema completo con Prisma
+- ✅ **Backend Supabase** - Base de datos y APIs directas
+- ✅ **Base de datos** - Schema completo en Supabase
 - ✅ **Sistema de autenticación** - Supabase + JWT completo
 - ✅ **Login/Register** - Páginas con validación y OAuth
 - ✅ **Dashboard** - Área protegida para usuarios
@@ -47,12 +47,11 @@ Una plataforma global donde los viajeros pueden encontrar números de contacto, 
 Este proyecto utiliza un monorepo con las siguientes aplicaciones y paquetes:
 
 ```
-contactos-turisticos/
+numtrip/
 ├── apps/
-│   ├── web/          # Frontend Next.js 14 con App Router
-│   └── api/          # Backend NestJS con Prisma
+│   └── web/          # Frontend Next.js 14 con App Router + Supabase
 ├── packages/
-│   ├── ui/           # Componentes UI compartidos
+│   ├── ui/           # Componentes UI compartidos (opcional)
 │   ├── types/        # Tipos TypeScript compartidos
 │   └── utils/        # Utilidades compartidas
 └── tools/            # Scripts y herramientas
@@ -71,25 +70,22 @@ contactos-turisticos/
 - **Supabase** para autenticación
 
 ### Backend
-- **NestJS** con TypeScript
-- **Prisma ORM** con PostgreSQL
-- **Supabase** para autenticación y usuarios
-- **Redis** para cache y colas
-- **JWT** para tokens de API
-- **Swagger** para documentación API
-- **Jest** para testing
+- **Supabase** como BaaS completo (Backend as a Service)
+- **PostgreSQL** (hosted en Supabase)
+- **Supabase Auth** para autenticación completa
+- **Supabase Realtime** para actualizaciones en tiempo real
+- **Row Level Security (RLS)** para seguridad de datos
 
 ### Infraestructura
-- **Docker** para desarrollo local
 - **Vercel** para frontend hosting
-- **Railway/Render** para backend hosting
-- **Cloudflare CDN**
+- **Supabase** para backend completo (base de datos, auth, storage, edge functions)
+- **Cloudflare CDN** (integrado con Vercel)
 
 ## 📋 Prerrequisitos
 
 - Node.js 20.x o superior
 - pnpm 9.x o superior
-- Docker y Docker Compose (para desarrollo local)
+- Cuenta de Supabase (para desarrollo y producción)
 
 ## ⚡ Inicio Rápido
 
@@ -110,26 +106,24 @@ contactos-turisticos/
    # Editar .env con tus configuraciones de Supabase y base de datos
    ```
 
-4. **Configurar Supabase** (o usar autenticación mock)
+4. **Configurar Supabase**
    - Crear proyecto en [supabase.com](https://supabase.com)
    - Copiar URL del proyecto y Anon Key al .env
+   - Ejecutar las migraciones SQL en Supabase SQL Editor
    - Habilitar autenticación por email en el dashboard
    - (Opcional) Configurar proveedores OAuth (Google, GitHub)
-   - **Para desarrollo**: Usa `NEXT_PUBLIC_MOCK_AUTH=true` en .env.local para autenticación mock
+   - Configurar Row Level Security (RLS) policies
 
-5. **Iniciar servicios de desarrollo**
+5. **Configurar base de datos**
    ```bash
-   # Iniciar PostgreSQL y Redis
-   docker-compose up -d
+   # Ir al directorio web
+   cd apps/web
    
-   # Generar Prisma client
-   cd apps/api && pnpm prisma generate
-   
-   # Ejecutar migraciones
-   pnpm prisma migrate dev
+   # Generar tipos de Supabase
+   npx supabase gen types typescript --project-id YOUR_PROJECT_ID > src/types/database.ts
    ```
 
-6. **Iniciar aplicaciones en modo desarrollo**
+6. **Iniciar aplicación en modo desarrollo**
    ```bash
    # Desde la raíz del proyecto
    pnpm dev
@@ -137,8 +131,7 @@ contactos-turisticos/
 
    Esto iniciará:
    - Frontend en http://localhost:3000
-   - Backend en http://localhost:3001
-   - Swagger docs en http://localhost:3001/api/docs
+   - Conexión automática con Supabase (remoto)
 
 ## 📝 Scripts Disponibles
 
@@ -158,33 +151,31 @@ pnpm test          # Ejecuta tests unitarios
 pnpm test:integration  # Ejecuta tests de integración
 pnpm test:e2e      # Ejecuta tests end-to-end
 
-# Base de datos
-cd apps/api
-pnpm prisma generate   # Genera cliente Prisma
-pnpm prisma migrate dev # Ejecuta migraciones
-pnpm prisma studio     # Abre Prisma Studio
-pnpm prisma seed       # Ejecuta seed de datos
+# Base de datos (Supabase)
+cd apps/web
+npx supabase gen types typescript --project-id YOUR_PROJECT_ID > src/types/database.ts  # Actualiza tipos
+# Usar Supabase Dashboard para gestión de base de datos
+# SQL Editor para ejecutar migraciones manuales
 ```
 
-## 🐳 Desarrollo con Docker
+## 🗄️ Base de Datos (Supabase)
 
-El proyecto incluye un `docker-compose.yml` para el entorno de desarrollo:
+El proyecto usa Supabase como backend completo:
 
+**Gestión desde Dashboard:**
+- **Table Editor** - Crear y editar tablas
+- **SQL Editor** - Ejecutar queries y migraciones
+- **Authentication** - Gestionar usuarios y políticas
+- **Storage** - Gestionar archivos (futuro)
+- **Logs** - Monitorear actividad
+
+**Desarrollo Local:**
 ```bash
-# Iniciar servicios
-docker-compose up -d
-
-# Ver logs
-docker-compose logs -f
-
-# Detener servicios
-docker-compose down
+# Opcional: Supabase CLI para desarrollo local
+npm install -g supabase
+supabase init
+supabase start  # Instancia local de Supabase
 ```
-
-Servicios incluidos:
-- **PostgreSQL** (puerto 5432)
-- **Redis** (puerto 6379)
-- **Adminer** (puerto 8080) - GUI para PostgreSQL
 
 ## 🧩 Componentes Implementados
 
@@ -259,28 +250,25 @@ URLs con estructura: `/{locale}/ruta` (ej: `/es/cartagena`, `/en/cartagena`)
 - **Validation**: Sistema de validación comunitaria completo
 - **Gamification**: Niveles, puntos y logros de usuario
 
-## 📊 Base de Datos
+## 📊 Base de Datos (Supabase)
 
-### Modelos Principales
+### Tablas Principales
 
-- **Business**: Negocios turísticos (hoteles, tours, transporte)
-- **User**: Usuarios del sistema
-- **Validation**: Validaciones comunitarias
-- **PromoCode**: Códigos promocionales
+- **businesses**: Negocios turísticos (hoteles, tours, transporte)
+- **contacts**: Información de contacto (teléfono, email, WhatsApp)
+- **cities**: Ciudades donde operan los negocios
+- **profiles**: Perfiles de usuario (integrado con Supabase Auth)
+- **validations**: Validaciones comunitarias
+- **business_claims**: Reclamaciones de propiedad de negocios
 
-### Migraciones
+### Gestión de Schema
 
 ```bash
-cd apps/api
-
-# Crear nueva migración
-pnpm prisma migrate dev --name nombre_migracion
-
-# Aplicar migraciones en producción
-pnpm prisma migrate deploy
-
-# Reset completo (solo desarrollo)
-pnpm prisma migrate reset
+# Usar Supabase Dashboard -> SQL Editor
+# Ejecutar migraciones SQL directamente
+# Configurar Row Level Security (RLS)
+# Actualizar tipos TypeScript:
+npx supabase gen types typescript --project-id YOUR_PROJECT_ID > src/types/database.ts
 ```
 
 ## 🧪 Testing
@@ -304,23 +292,27 @@ pnpm test:watch
 
 ## 📈 Monitoreo y Logs
 
-- **Logs estructurados** con Winston
-- **Health checks** en `/api/health`
-- **Métricas** con Prometheus (configuración futura)
+- **Supabase Logs** - Logs integrados en dashboard
+- **Vercel Analytics** - Métricas de frontend
+- **Supabase Metrics** - Métricas de base de datos y auth
 
 ## 🚀 Deploy
 
 ### Frontend (Vercel)
 ```bash
 # El deploy se hace automáticamente desde main branch
-# Configurar variables de entorno en Vercel dashboard
+# Configurar variables de entorno en Vercel dashboard:
+# - NEXT_PUBLIC_SUPABASE_URL
+# - NEXT_PUBLIC_SUPABASE_ANON_KEY
 ```
 
-### Backend (Railway/Render)
+### Backend (Supabase)
 ```bash
-# Configurar variables de entorno
-# Ejecutar migraciones en producción
-pnpm prisma migrate deploy
+# El backend es completamente gestionado por Supabase
+# Configuraciones en Supabase Dashboard:
+# - Authentication settings
+# - Database policies (RLS)
+# - Edge Functions (si se requieren)
 ```
 
 ## 🔧 Configuración de IDE

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useBusinessView } from '@/hooks/useBusinessViews';
 import { Header } from '@/components/layout/Header';
 import { Breadcrumbs, generateBusinessBreadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SimilarBusinesses } from '@/components/business/SimilarBusinesses';
@@ -52,6 +53,9 @@ interface BusinessDetailClientProps {
 
 export function BusinessDetailClient({ business, translations: t }: BusinessDetailClientProps) {
   const [copiedField, setCopiedField] = useState<string | null>(null);
+  
+  // Track business page view
+  useBusinessView(business.id);
 
   const copyToClipboard = async (text: string, field: string) => {
     try {
@@ -114,7 +118,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
           <div className="flex items-start justify-between">
             <div className="flex-1">
               <div className="flex items-center gap-3 mb-2">
-                <h1 className="text-3xl font-bold text-gray-900">{business.name}</h1>
+                <h1 className="text-3xl font-bold text-gray-900">Número de contacto {business.name}</h1>
                 {business.verified && (
                   <div className="flex items-center bg-green-50 px-2 py-1 rounded-full">
                     <CheckCircle className="h-5 w-5 text-green-600 mr-1" />
@@ -200,7 +204,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
 
             {/* Contact Information */}
             <div className="bg-white rounded-lg shadow-sm p-6 mb-6">
-          <h2 className="text-xl font-semibold text-gray-900 mb-4">Contact Information</h2>
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">Número de contacto y información de {business.name}</h2>
           
           <div className="space-y-4">
             {/* Phone */}

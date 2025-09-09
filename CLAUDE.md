@@ -18,18 +18,18 @@ NumTrip is a verified tourism contact directory platform. The initial focus is o
 - **Icons**: Lucide React
 
 ### Backend
-- **Runtime**: Node.js 20.x LTS
-- **Framework**: NestJS 10.3.x
-- **Database**: PostgreSQL 16.x with Prisma 5.15.x ORM
-- **Cache/Queue**: Redis 7.2.x with BullMQ 5.8.x
-- **Authentication**: Supabase Auth
-- **Payments**: Stripe SDK 15.x, PayU Latam SDK
+- **Backend as a Service**: Supabase (complete backend solution)
+- **Database**: PostgreSQL (hosted on Supabase)
+- **Authentication**: Supabase Auth (complete auth system)
+- **Real-time**: Supabase Realtime (for live updates)
+- **Storage**: Supabase Storage (for file uploads)
+- **Security**: Row Level Security (RLS) policies
 
 ### Infrastructure
 - **Frontend Hosting**: Vercel
-- **Backend Hosting**: Railway.app or Render
-- **CDN**: Cloudflare
-- **Image Storage**: AWS S3 or Cloudinary
+- **Backend**: Supabase (fully managed)
+- **CDN**: Cloudflare (via Vercel)
+- **Database**: Supabase PostgreSQL
 - **Package Manager**: pnpm 9.x
 
 ## Development Commands
@@ -58,44 +58,31 @@ pnpm lint
 pnpm format
 ```
 
-### Backend Development
+### Supabase Development
 ```bash
-# Install dependencies
-pnpm install
+# Generate TypeScript types from Supabase
+npx supabase gen types typescript --project-id YOUR_PROJECT_ID > src/types/database.ts
 
-# Start development server
-pnpm dev
+# Optional: Local Supabase development
+npm install -g supabase
+supabase init
+supabase start
+supabase stop
 
-# Build for production
-pnpm build
-
-# Run tests
-pnpm test
-
-# Run tests in watch mode
-pnpm test:watch
-
-# Database migrations
-pnpm prisma migrate dev
-pnpm prisma migrate deploy
-
-# Open Prisma Studio
-pnpm prisma studio
-
-# Generate Prisma client
-pnpm prisma generate
+# Database management via Supabase Dashboard:
+# - SQL Editor for queries and migrations
+# - Table Editor for schema changes
+# - Auth settings for user management
 ```
 
-### Docker Development Environment
+### Local Development (Optional)
 ```bash
-# Start PostgreSQL and Redis
-docker-compose up -d
+# For local Supabase instance (optional)
+supabase start    # Starts local Supabase services
+supabase stop     # Stops local services
+supabase status   # Shows running services
 
-# Stop services
-docker-compose down
-
-# View logs
-docker-compose logs -f
+# Most development is done against remote Supabase instance
 ```
 
 ### Testing
@@ -115,38 +102,34 @@ pnpm test:coverage
 
 ## Architecture & Development Rules
 
-### Directory Structure (Monorepo)
+### Directory Structure
 ```
-/contactos-turisticos
+/numtrip
 ├── /apps
-│   ├── /web                    # Frontend Next.js
-│   │   ├── /app                # App Router
-│   │   │   ├── /[locale]       # i18n routes
-│   │   │   ├── /api           # API routes
-│   │   │   └── /components    # Page components
-│   │   ├── /components        # Shared components
-│   │   ├── /hooks             # Custom hooks
-│   │   ├── /lib               # Utilities
-│   │   ├── /services          # API calls
-│   │   └── /stores            # Zustand stores
-│   │
-│   └── /api                    # Backend NestJS
-│       ├── /src
-│       │   ├── /modules       # Feature-based modules
-│       │   │   ├── /auth
-│       │   │   ├── /business
-│       │   │   ├── /search
-│       │   │   └── /validation
-│       │   ├── /common        # Shared resources
-│       │   ├── /config        # Configurations
-│       │   └── /database      # Prisma schemas
-│       └── /test
+│   └── /web                    # Frontend Next.js + Supabase
+│       ├── /app                # App Router
+│       │   ├── /[locale]       # i18n routes
+│       │   │   ├── /business      # Business pages
+│       │   │   ├── /search        # Search pages
+│       │   │   └── /auth          # Auth pages
+│       │   ├── /api            # Next.js API routes (minimal)
+│       │   └── /globals.css   # Global styles
+│       ├── /components         # Shared components
+│       │   ├── /business      # Business-specific components
+│       │   ├── /auth          # Auth components
+│       │   ├── /layout        # Layout components
+│       │   └── /ui            # Base UI components
+│       ├── /hooks              # Custom React hooks
+│       ├── /lib                # Utilities and configs
+│       ├── /services           # Supabase service layer
+│       ├── /stores             # Zustand stores
+│       └── /types              # TypeScript definitions
+│           └── database.ts     # Supabase generated types
 │
-├── /packages                   # Shared code
-│   ├── /ui                    # UI components
-│   ├── /types                 # TypeScript types
-│   ├── /utils                 # Shared utilities
-│   └── /config                # Shared configs
+├── /packages                   # Shared code (optional)
+│   ├── /ui                    # Reusable UI components
+│   ├── /types                 # Shared TypeScript types
+│   └── /utils                 # Shared utilities
 │
 ├── /tools                     # Scripts and tools
 └── /docs                      # Documentation
@@ -188,35 +171,36 @@ class RedisCacheService implements CacheService { }
 
 ### Code Organization
 
-#### Module Structure
-Each NestJS module should be self-contained:
+#### Service Layer Structure
+Supabase services should be organized by feature:
 ```
-/modules/business
-├── business.module.ts
-├── business.controller.ts
-├── business.service.ts
-├── business.repository.ts
-├── dto/
-├── entities/
-├── interfaces/
-└── tests/
+/services
+├── business.service.supabase.ts    # Business data operations
+├── auth.service.ts                # Authentication helpers
+├── validation.service.ts          # Community validation
+└── supabase.ts                    # Supabase client config
 ```
 
 #### Shared Components
-Reusable UI components in packages/ui:
+Reusable UI components in components/ui:
 ```typescript
-// packages/ui/src/components/ContactItem.tsx
+// components/ui/ContactItem.tsx
 export const ContactItem: React.FC<ContactItemProps> = ({ type, value, verified }) => {
   // Reusable contact display component
 };
 ```
 
 #### Custom Hooks
-Common hooks in packages/utils:
+Common hooks in hooks directory:
 ```typescript
-// packages/utils/src/hooks/useClipboard.ts
+// hooks/useClipboard.ts
 export const useClipboard = () => {
   // Clipboard functionality reusable across the app
+};
+
+// hooks/useSupabaseAuth.ts
+export const useSupabaseAuth = () => {
+  // Supabase authentication state management
 };
 ```
 
@@ -312,14 +296,15 @@ chore(deps): update dependencies
 - [ ] Security validated
 - [ ] Useful logging added
 
-### Database Schema Key Entities
+### Database Schema (Supabase Tables)
 
-- **Business**: Hotels, tour operators, transportation services
-- **Contact**: Phone numbers, emails, WhatsApp
-- **Verification**: Community validations and business claims
-- **User**: Registered users and business owners
-- **Subscription**: Premium plan management
-- **PromoCode**: Discount codes for businesses
+- **businesses**: Hotels, tour operators, transportation services
+- **contacts**: Phone numbers, emails, WhatsApp linked to businesses
+- **cities**: Geographic locations for businesses
+- **profiles**: User profiles (linked to Supabase Auth)
+- **validations**: Community validations of contact information
+- **business_claims**: Business ownership claims and verification
+- **auth.users**: Supabase managed user authentication table
 
 ## Important Business Logic
 
@@ -334,9 +319,9 @@ chore(deps): update dependencies
 - Initial 6-month free premium for key Cartagena businesses (go-to-market strategy)
 
 ### Data Sources
-- Initial data load from Google Places API
-- Community-driven updates and validations
-- Business owner direct updates
+- Initial data load from Google Places API (via Supabase functions or direct import)
+- Community-driven updates and validations (stored in Supabase)
+- Business owner direct updates (via Supabase client)
 
 ## SEO and Performance Requirements
 

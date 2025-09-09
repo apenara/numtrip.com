@@ -1,26 +1,35 @@
 'use client';
 
-import { useState, useEffect, Suspense } from 'react';
+import { useState, Suspense } from 'react';
 import { useTranslations } from 'next-intl';
 import { useSearchParams } from 'next/navigation';
 import { Search, MapPin, Phone, Mail, MessageCircle, Filter, ChevronDown } from 'lucide-react';
-import { BusinessService } from '@/services/business.service';
+import { useBusinessSearch } from '@/hooks/useBusinesses';
 import { Business, BusinessCategory } from '@contactos-turisticos/types';
 import Link from 'next/link';
 
 function SearchPageContent() {
   const searchParams = useSearchParams();
   const t = useTranslations('SearchPage');
-  const [businesses, setBusinesses] = useState<Business[]>([]);
-  const [loading, setLoading] = useState(false);
   const [searchQuery, setSearchQuery] = useState(searchParams.get('q') || '');
   const [selectedCategory, setSelectedCategory] = useState<BusinessCategory | ''>(
     (searchParams.get('category') as BusinessCategory) || ''
   );
-  const [selectedCity, setSelectedCity] = useState('Cartagena');
+  const [selectedCity, setSelectedCity] = useState('Cartagena, Colombia');
   const [showVerifiedOnly, setShowVerifiedOnly] = useState(false);
   const [page, setPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
+
+  const { data: businessData, isLoading: loading } = useBusinessSearch({
+    query: searchQuery || undefined,
+    category: selectedCategory || undefined,
+    city: selectedCity || undefined,
+    verified: showVerifiedOnly || undefined,
+    page,
+    limit: 12,
+  });
+
+  const businesses = businessData?.items || [];
+  const totalPages = businessData?.totalPages || 1;
 
   const categories = [
     { value: BusinessCategory.HOTEL, label: 'Hotels', color: 'bg-purple-100 text-hotel-purple' },
@@ -30,37 +39,9 @@ function SearchPageContent() {
     { value: BusinessCategory.ATTRACTION, label: 'Attractions', color: 'bg-pink-100 text-pink-600' },
   ];
 
-  useEffect(() => {
-    searchBusinesses();
-  }, [page, selectedCategory, selectedCity, showVerifiedOnly]);
-
-  const searchBusinesses = async () => {
-    setLoading(true);
-    try {
-      const params = {
-        query: searchQuery || undefined,
-        category: selectedCategory || undefined,
-        city: selectedCity || undefined,
-        verified: showVerifiedOnly || undefined,
-        page,
-        limit: 12,
-      };
-      
-      const response = await BusinessService.searchBusinesses(params);
-      setBusinesses(response.items || []);
-      setTotalPages(response.totalPages || 1);
-    } catch (error) {
-      console.error('Error fetching businesses:', error);
-      setBusinesses([]);
-    } finally {
-      setLoading(false);
-    }
-  };
-
   const handleSearch = (e: React.FormEvent) => {
     e.preventDefault();
     setPage(1);
-    searchBusinesses();
   };
 
   const copyToClipboard = (text: string) => {
@@ -144,7 +125,7 @@ function SearchPageContent() {
               onChange={(e) => setSelectedCity(e.target.value)}
               className="px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-blue focus:border-transparent"
             >
-              <option value="Cartagena">Cartagena</option>
+              <option value="Cartagena, Colombia">Cartagena</option>
               <option value="Bogota">Bogotá</option>
               <option value="Medellin">Medellín</option>
             </select>

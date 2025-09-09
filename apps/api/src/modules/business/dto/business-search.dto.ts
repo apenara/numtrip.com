@@ -1,7 +1,7 @@
 import { ApiProperty } from '@nestjs/swagger';
 import { IsString, IsEnum, IsOptional, IsBoolean, IsNumber, Min, Max } from 'class-validator';
 import { Type, Transform } from 'class-transformer';
-import { Category } from '@prisma/client';
+import { BusinessCategory } from '@prisma/client';
 
 export class BusinessSearchDto {
   @ApiProperty({ example: 'hotel', required: false, description: 'Search query for business name or description' })
@@ -14,10 +14,10 @@ export class BusinessSearchDto {
   @IsString()
   city?: string;
 
-  @ApiProperty({ enum: Category, required: false, description: 'Filter by business category' })
+  @ApiProperty({ enum: BusinessCategory, required: false, description: 'Filter by business category' })
   @IsOptional()
-  @IsEnum(Category)
-  category?: Category;
+  @IsEnum(BusinessCategory)
+  category?: BusinessCategory;
 
   @ApiProperty({ example: true, required: false, description: 'Filter by verification status' })
   @IsOptional()

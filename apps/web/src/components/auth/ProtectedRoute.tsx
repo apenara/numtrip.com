@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useRouter } from 'next/navigation';
+import { useRouter, usePathname, useParams } from 'next/navigation';
 import { useAuthStore } from '@/stores/auth.store';
 
 interface ProtectedRouteProps {
@@ -11,13 +11,18 @@ interface ProtectedRouteProps {
 
 export default function ProtectedRoute({ children, redirectTo = '/auth/login' }: ProtectedRouteProps) {
   const router = useRouter();
+  const pathname = usePathname();
+  const params = useParams();
   const { user, loading, initialized } = useAuthStore();
 
   useEffect(() => {
     if (!loading && initialized && !user) {
-      router.push(redirectTo);
+      const locale = (params as any)?.locale ?? '';
+      const encoded = encodeURIComponent(pathname || '/dashboard');
+      const target = `/${locale}${redirectTo}?returnUrl=${encoded}`;
+      router.push(target);
     }
-  }, [user, loading, initialized, router, redirectTo]);
+  }, [user, loading, initialized, router, redirectTo, pathname, params]);
 
   if (loading || !initialized) {
     return (

@@ -2,12 +2,13 @@
 
 import { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { useRouter, useParams } from 'next/navigation';
 import { useAuthStore } from '@/stores/auth.store';
 import { User, LogOut, Settings, Building, ChevronDown } from 'lucide-react';
 
 export default function UserProfileDropdown() {
   const router = useRouter();
+  const params = useParams();
   const { user, signOut } = useAuthStore();
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -24,18 +25,30 @@ export default function UserProfileDropdown() {
   }, []);
 
   const handleSignOut = async () => {
-    await signOut();
-    router.push('/');
-    router.refresh();
+    try {
+      const locale = (params as any)?.locale ?? '';
+      const res = await fetch(`/${locale}/auth/logout?next=/${locale}`, {
+        method: 'POST',
+      });
+      if (res.redirected) {
+        router.push(res.url);
+      } else {
+        router.push(`/${locale}`);
+      }
+      router.refresh();
+    } catch (e) {
+      router.push('/');
+      router.refresh();
+    }
   };
 
   if (!user) {
     return (
       <div className="flex items-center gap-3">
-        <Link href="/auth/login" className="text-gray-600 hover:text-gray-900">
+        <Link href={`/${(params as any)?.locale ?? ''}/auth/login`} className="text-gray-600 hover:text-gray-900">
           Sign In
         </Link>
-        <Link href="/auth/register" className="btn-primary py-2 px-4">
+        <Link href={`/${(params as any)?.locale ?? ''}/auth/register`} className="btn-primary py-2 px-4">
           Get Started
         </Link>
       </div>
@@ -67,7 +80,7 @@ export default function UserProfileDropdown() {
           </div>
 
           <Link
-            href="/dashboard"
+            href={`/${(params as any)?.locale ?? ''}/dashboard`}
             className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
             onClick={() => setIsOpen(false)}
           >
@@ -76,7 +89,7 @@ export default function UserProfileDropdown() {
           </Link>
 
           <Link
-            href="/profile"
+            href={`/${(params as any)?.locale ?? ''}/profile`}
             className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
             onClick={() => setIsOpen(false)}
           >
@@ -85,7 +98,7 @@ export default function UserProfileDropdown() {
           </Link>
 
           <Link
-            href="/settings"
+            href={`/${(params as any)?.locale ?? ''}/settings`}
             className="flex items-center gap-3 px-4 py-2 text-sm text-gray-700 hover:bg-gray-50"
             onClick={() => setIsOpen(false)}
           >
