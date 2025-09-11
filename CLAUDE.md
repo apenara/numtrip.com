@@ -84,7 +84,7 @@ supabase status
 
 ### Data Import Commands
 ```bash
-# Import businesses from Google Places API
+# Import businesses from Google Places API (with landmark filtering)
 npx tsx import-businesses-simple.ts
 
 # Test Google Places API configuration
@@ -93,6 +93,8 @@ pnpm run script:test-google-places
 # Check imported data (legacy - use Supabase dashboard instead)
 pnpm run script:check-imported-data
 ```
+
+**Important**: The import script automatically filters out monuments, landmarks, and non-contactable places using the shared `isLandmarkToFilter` function to avoid importing irrelevant tourist attractions that don't provide services.
 
 ### Testing
 ```bash
@@ -211,6 +213,17 @@ export const useClipboard = () => {
 export const useSupabaseAuth = () => {
   // Supabase authentication state management
 };
+```
+
+#### Shared Utilities
+Business-related utilities in packages/utils:
+```typescript
+// packages/utils/src/business/landmark-filter.ts
+import { isLandmarkToFilter } from '@contactos-turisticos/utils';
+
+// Filter monuments, landmarks from business data
+const isLandmark = isLandmarkToFilter(name, description, address);
+// Returns true if business should be filtered out (is a monument/landmark)
 ```
 
 ### Testing Requirements

@@ -7,6 +7,8 @@ import { useState } from 'react';
 import { PopularBusinesses } from '@/components/business/PopularBusinesses';
 import PublicLayout from '@/components/layout/PublicLayout';
 import Footer from '@/components/layout/Footer';
+import StructuredData from '@/components/seo/StructuredData';
+import Head from 'next/head';
 
 export default function HomePage() {
   const t = useTranslations('HomePage');
@@ -14,8 +16,11 @@ export default function HomePage() {
   const [searchQuery, setSearchQuery] = useState('');
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary-blue-light to-white">
-      {/* Header */}
+    <>
+      <StructuredData type="website" data={{}} />
+      <StructuredData type="organization" data={{}} />
+      <div className="min-h-screen bg-gradient-to-br from-primary-blue-light to-white">
+        {/* Header */}
       <header className="bg-white shadow-sm border-b border-gray-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
@@ -166,8 +171,9 @@ export default function HomePage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <Footer />
-    </div>
+        {/* Footer */}
+        <Footer />
+      </div>
+    </>
   );
 }

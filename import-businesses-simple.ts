@@ -4,6 +4,7 @@
  */
 
 import { createClient } from '@supabase/supabase-js';
+import { isLandmarkToFilter } from './packages/utils/src/business/landmark-filter';
 
 const SUPABASE_URL = 'https://xvauchcfkrbbpfoszlah.supabase.co';
 const SUPABASE_SERVICE_KEY = 'sb_secret_8VPgI3gIlboHsJNaFQAh8w_96_GR-Lb';
@@ -167,6 +168,12 @@ async function importBusinesses(category: string, limit: number, city: string = 
         
         const placeDetails = detailsData.result as GooglePlaceResult;
         const businessCategory = mapToBusinessCategory(placeDetails.types);
+        
+        // Filter out monuments, landmarks, and non-contactable businesses
+        if (isLandmarkToFilter(placeDetails.name, undefined, placeDetails.formatted_address)) {
+          console.log(`🏛️  Skipping landmark/monument: ${placeDetails.name}`);
+          continue;
+        }
         
         // Create business record
         const businessData = {
