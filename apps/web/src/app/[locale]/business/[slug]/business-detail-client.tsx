@@ -5,8 +5,9 @@ import { useBusinessView } from '@/hooks/useBusinessViews';
 import { Header } from '@/components/layout/Header';
 import { Breadcrumbs, generateBusinessBreadcrumbs } from '@/components/layout/Breadcrumbs';
 import { SimilarBusinesses } from '@/components/business/SimilarBusinesses';
-import { ValidationButtons } from '@/components/validation/ValidationButtons';
-import { ValidationStats } from '@/components/validation/ValidationStats';
+// Temporarily disabled validation components to remove legacy API calls
+// import { ValidationButtons } from '@/components/validation/ValidationButtons';
+// import { ValidationStats } from '@/components/validation/ValidationStats';
 import { BannerAd, BusinessPageAd, ResponsiveAd } from '@/components/ads/GoogleAdSense';
 import { ClaimButton } from '@/components/business/ClaimButton';
 import Footer from '@/components/layout/Footer';
@@ -145,13 +146,15 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                 )}
               </div>
 
-              {/* Community Validation Stats */}
+              {/* Community Validation Stats - Temporarily disabled */}
+              {/*
               <div className="mb-4">
                 <ValidationStats 
                   businessId={business.id} 
                   layout="horizontal"
                 />
               </div>
+              */}
 
               {business.description && (
                 <p className="text-gray-600">{business.description}</p>
@@ -235,7 +238,8 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                   </div>
                 </div>
                 
-                {/* Community Validation */}
+                {/* Community Validation - Temporarily disabled */}
+                {/*
                 <div className="mt-3 pt-3 border-t">
                   <ValidationButtons
                     businessId={business.id}
@@ -244,6 +248,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                     size="sm"
                   />
                 </div>
+                */}
               </div>
             )}
 
@@ -278,7 +283,8 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                   </div>
                 </div>
                 
-                {/* Community Validation */}
+                {/* Community Validation - Temporarily disabled */}
+                {/*
                 <div className="mt-3 pt-3 border-t">
                   <ValidationButtons
                     businessId={business.id}
@@ -287,6 +293,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                     size="sm"
                   />
                 </div>
+                */}
               </div>
             )}
 
@@ -323,7 +330,8 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                   </div>
                 </div>
                 
-                {/* Community Validation */}
+                {/* Community Validation - Temporarily disabled */}
+                {/*
                 <div className="mt-3 pt-3 border-t">
                   <ValidationButtons
                     businessId={business.id}
@@ -332,6 +340,7 @@ export function BusinessDetailClient({ business, translations: t }: BusinessDeta
                     size="sm"
                   />
                 </div>
+                */}
               </div>
             )}
 

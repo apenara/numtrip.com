@@ -3,7 +3,6 @@ import { getMessages } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { QueryProvider } from '@/components/providers/query-provider';
 import { GoogleAdSenseProvider } from '@/components/ads/GoogleAdSenseProvider';
-import { GoogleAdSenseScript } from '@/components/ads/GoogleAdSense';
 import GoogleAnalytics from '@/components/analytics/GoogleAnalytics';
 import CookieConsentBanner from '@/components/gdpr/CookieConsentBanner';
 import type { Metadata } from 'next';
@@ -79,7 +78,6 @@ export default async function LocaleLayout({
       <QueryProvider>
         <GoogleAdSenseProvider>
           <GoogleAnalytics />
-          <GoogleAdSenseScript />
           {children}
           <CookieConsentBanner />
         </GoogleAdSenseProvider>
