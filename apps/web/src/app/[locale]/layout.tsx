@@ -24,6 +24,17 @@ export async function generateMetadata({
       title: 'NumTrip - Directorio Verificado de Contactos Turísticos en Cartagena',
       description: 'Encuentra contactos verificados (teléfono, email, WhatsApp) de hoteles, tours y transporte en Cartagena, Colombia. Información turística confiable y actualizada.',
       keywords: 'turismo Cartagena, hoteles Cartagena, tours Cartagena, transporte Cartagena, contactos turísticos, directorio turístico, viajes Colombia',
+      robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
+      },
       openGraph: {
         title: 'NumTrip - Directorio Verificado de Contactos Turísticos',
         description: 'Encuentra contactos verificados de hoteles, tours y transporte en Cartagena, Colombia.',
@@ -43,6 +54,17 @@ export async function generateMetadata({
       title: 'NumTrip - Verified Tourism Contact Directory in Cartagena',
       description: 'Find verified contacts (phone, email, WhatsApp) for hotels, tours and transportation in Cartagena, Colombia. Reliable and updated tourist information.',
       keywords: 'Cartagena tourism, Cartagena hotels, Cartagena tours, Cartagena transportation, tourist contacts, tourism directory, Colombia travel',
+      robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+          index: true,
+          follow: true,
+          'max-video-preview': -1,
+          'max-image-preview': 'large',
+          'max-snippet': -1,
+        },
+      },
       openGraph: {
         title: 'NumTrip - Verified Tourism Contact Directory',
         description: 'Find verified contacts for hotels, tours and transportation in Cartagena, Colombia.',

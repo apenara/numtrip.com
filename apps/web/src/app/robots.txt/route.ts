@@ -37,7 +37,6 @@ Disallow: /favicon.ico
 
 # Sitemaps
 Sitemap: https://numtrip.com/sitemap.xml
-Sitemap: https://numtrip.com/sitemap-index.xml
 
 # No crawl delay for important bots
 User-agent: Bingbot
