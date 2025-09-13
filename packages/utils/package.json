@@ -4,6 +4,20 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "private": true,
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./server": {
+      "import": "./dist/server.js",
+      "types": "./dist/server.d.ts"
+    },
+    "./business": {
+      "import": "./dist/business/index.js",
+      "types": "./dist/business/index.d.ts"
+    }
+  },
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",

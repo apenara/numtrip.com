@@ -1,9 +1,40 @@
 #!/usr/bin/env tsx
 
 import { createClient } from '@supabase/supabase-js';
-import { isLandmarkToFilter } from '@contactos-turisticos/utils';
 import * as dotenv from 'dotenv';
 import { resolve } from 'path';
+
+// Landmark filter function to exclude monuments and non-contactable places
+const EXCLUDED_LANDMARK_KEYWORDS = [
+  'monumento', 'monument', 'estatua', 'statue',
+  'plaza', 'parque', 'park', 'malecon', 'camellon',
+  'museo', 'museum', 'catedral', 'cathedral', 'iglesia', 'church',
+  'basilica', 'convento', 'convent', 'castillo', 'castle',
+  'fortaleza', 'fort', 'murallas', 'walls', 'torre', 'tower',
+  'puerta', 'gate', 'cementerio',
+  'bahia', 'bay', 'muelle', 'puerto', 'port',
+  'getsemani', 'getsemaní', 'alcatraces', 'pegasos', 'aduana',
+  'india catalina', 'bolivar', 'bolívar', 'santo domingo',
+  'los coches', 'san pedro claver', 'santa cruz', 'popa',
+  'oro zenu', 'zenú', 'martires', 'mártires', 'oceanos',
+  'océanos', 'union', 'unión', 'reloj', 'barajas'
+];
+
+function isLandmarkToFilter(
+  name: string,
+  description?: string | null,
+  address?: string | null
+): boolean {
+  const nameText = name.toLowerCase();
+  const descText = (description || '').toLowerCase();
+  const addressText = (address || '').toLowerCase();
+
+  return EXCLUDED_LANDMARK_KEYWORDS.some(keyword =>
+    nameText.includes(keyword) ||
+    descText.includes(keyword) ||
+    addressText.includes(keyword)
+  );
+}
 
 // Load environment variables
 dotenv.config({ path: resolve(__dirname, '../.env.local') });
@@ -35,7 +66,7 @@ async function submitToIndexNow(urls: string[]): Promise<void> {
 
   const payload: IndexNowPayload = {
     host,
-    key: INDEXNOW_KEY,
+    key: INDEXNOW_KEY!,
     keyLocation,
     urlList: urls,
   };
