@@ -89,3 +89,6 @@ docker-compose.override.yml
 # Temporary folders
 tmp/
 temp/
+
+# Internal tools and tests
+tools/
