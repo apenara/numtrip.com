@@ -1,0 +1,3131 @@
+{
+  "search_date": "2025-09-14T18:26:43.896Z",
+  "location": "Cartagena, Colombia",
+  "total_requested": 13,
+  "total_found": 13,
+  "places": [
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Playa linda tierra bomba, Cartagena de Indias, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "314 2594747",
+      "geometry": {
+        "location": {
+          "lat": 10.3687489,
+          "lng": -75.57978229999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3687508802915,
+            "lng": -75.57816816970849
+          },
+          "southwest": {
+            "lat": 10.3660529197085,
+            "lng": -75.58086613029151
+          }
+        }
+      },
+      "international_phone_number": "+57 314 2594747",
+      "name": "Amare Beach Club",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1700"
+            },
+            "open": {
+              "day": 1,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0930"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0930"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: 9:30–17:00",
+          "martes: 9:30–17:00",
+          "miércoles: 9:30–17:00",
+          "jueves: 9:30–17:00",
+          "viernes: 9:30–17:00",
+          "sábado: 9:30–17:00",
+          "domingo: 9:30–17:00"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3840,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109788678681522962831\">Ma.Alejandra Sanchez</a>"
+          ],
+          "photo_reference": "AciIO2eHPqHJB7E6JaWYOlhfzTYGSKOf9uW_IKpyF13mXTleE36OfzB6Y6hfJr0ls5-sBwhUJ5VC7SroV7CJpbkggLHXHSXlzMTQ2eNB_GTmmPIawCQMuWgXLtszlEQSe3Sus5XzhYFMZzxfU68ZcxsQ5QYZwYeBp2PY2ffwJWZ3eRh4Rp3JPy3LGIuoLZBDL3dNkb4f_iq9cPd_D9gzXnaSMiuqL3vN0Q4kwjmD6Lrobie_z7sS8pAlwmIZEA1V9Hz2QKJLKvbi28ub5atz1dpoZrcBV2MivBQB1iE3h7P_f5nFx3iqjhv67pPE0gVJgFDa-7Ai_bdfp2osyFbr5rEwyX8ObESCPeZSywzOgcKKR3YfbP_Vtsd1PpQF8fdFRmqcT09BANAWC7a-5NjjrHNwmNlNaAqIja3quazhgNFfHAd37G8e",
+          "width": 2160
+        },
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107268533834775397408\">Amare Beach Club</a>"
+          ],
+          "photo_reference": "AciIO2cCH5oXRCuxf75E7s_9hjgQ0ycU1OIVs0GcO28f60S1CjuLlgO5xOy3r0VzdSkqI5gIzeosPhSfnm1fn1Vr0hX00UkE2TQKcgHi6F2fWLEFbXS9hvFmy_KNpKdq_utjKPm2nQsJ31Hwehomg85_LsOL72LbF15aGKPK6Di1rY6oN8l5P8O7K698rwQe8nbpdfUCfm3OdtaM9dp-o6yu8VDdQhix6BqmhufWxK1_Hnq5BSg4zWInXV34j5T30yMD9IPYd4bB90mb5Jojxpt7eS5sslmYimu8M4w47kpwlLKMEg",
+          "width": 3607
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102709786138843407540\">Rafael Villamizar</a>"
+          ],
+          "photo_reference": "AciIO2fstG0i-Ifw7m-YXI991GnxlrsZokLWlRDCgpCoLOC_ZSwiCpdANV4bkCWZwIG77vVfUUEayzMS5PmBYYDLXvuzvELjuorypgeuFYOJajvWLBHMj3wfXNcMBstbUsVlmC2A9e4vBXZ407kY__aBi68oaLk7eCPtF4cafwtfd714gnboXafQbpMWEyuRQ4KsFmV112xRxVaQN73wgksCB0VirKoxP--_cGpfVa0_Y6wKytvb-fGYy4u1tQvZbhk24J6N_QKrzOdTxmTnGu04g8cBp7CPl9NI2biqpEXgep054EF_DKOwiTIn643bcwffCnskTggOBiDcxQBFmvREF-LeXNHdJHVVjQoIXVTN74bI12DRpqXyFEmtHkzw6lrWJRcADkYPZAOTItAo8eWegVhMNf9-joDnEjKi344Sj4w-xgtewbFnlBW-8zYTxzTA",
+          "width": 3600
+        },
+        {
+          "height": 2250,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107268533834775397408\">Amare Beach Club</a>"
+          ],
+          "photo_reference": "AciIO2fjFDYKKyMnHns8zEAtNjNLjveS9nBu7lTlPRjDn72tqRN2xVz7CzAp6l3nOJAbQp49N5lDAfzMGf5qSPLXnFU9JH50vMpEsNhni3gBgsOiW14VdoQZVMZUxGFxdaxqgP9vIFpJvcFxzk3uqzJf4256NFSl_nxh2Ppe9pMVyt5x4RKGGVX1x_abPfUzbYPEJd4C3zQ_ljZqtP9_YhWAhrOdY0_FbGRKcxTGuIxq824dmRic20UFmpfhIDBtgf6UfhTMk-z4MT-G6Rvo9ySjNEfJ-dvubmSKGS5ozu7c_C8C0Q",
+          "width": 4000
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117194403412240760223\">HERE Travel Mates</a>"
+          ],
+          "photo_reference": "AciIO2ei4qJroy5YEwrnabDu4G6FrhWKQ6ln9U1Ra5X4rOAnpJ8g8d20yVlaywcZWtmC_GnjXu1YUbE2bt65c7Nkvu4XiB2wIp449Odiye_DCY2khLnlY2ihGJobrT9XYJNxP4bAOLt31QKQJ7syKeLVB3NGvBRMAdJURCg1MQt9NBCCxQIYsG7c5rFI6nM5Zqs5mh9RDtJ1l8DFW0kPkEJG2mS7O1SAZzUVS3SouMCnJ9oiciP2aVp_lg0UzNEosm1zrSvSDXGHUBBjA986bYuETj2qD0pU9IDoCFPHd50wUZdpWWvnXmeIKOMI6MhygrgNP_O6ccXr-BoqlevkrgVQ6eec3hMgNkiPRJGDiaJTMZ5N0ieb7cn-NMBW4IIGAeV-JETbY5_0Xevp2TWcYFjuWRMpxCTVTcNqr7A7FmDGQGS5zI375fVeQNoH_zcYy5u4",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116724579305927588463\">Vicente Navarro</a>"
+          ],
+          "photo_reference": "AciIO2cwvHso0JVkp7IfPzczjKrH45GEHhrtQXhmgSaRVNkO8I6PVY2GzCVLlVXthP6yLjrcmp7R60PpuhuxcPzF018plz14p1V-Hww4BFB7CCll6aVUJv4NBI_4Vr63xsZ7GoQ8bCYYB3vx8G7kukDkU2SAEYYxJ8f5IfdhNOQA0UejiAP9TzzZE0l6_yWiFwRifUG0k-J0HA6h29s3vhw23d4WxDRKazUODdMDB9oChq7Y3GtcLZW-kZNuk5aNSezAWfVSAN20OEl2FZncwxXU4YofDY9g9_eHgf7r5b3gPhvbqX_ktiuO8gDvc3FFBfOBJujW3_T9Lk7jDM7dOJspUTvcz5K527A5BTdzRom-JKtdwfWyT78IWJ9pC6zkVyrXw8E7FDMjqb2-sIsvmbbb6Wg-75Eg1wbLtuBSQkmz0JQ",
+          "width": 4032
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100467560188692066676\">Dirjan van der Plas</a>"
+          ],
+          "photo_reference": "AciIO2eP1jaGwO0BrrBbLzDazrv03ehU3yNcJybju7NWidC-zD97h85GsbepeHeeBq1Z8TPMdJ2NcvVD8cu74IPVDR_4Ioo6xKp1PrH8ltZ5ntK1bH6wuHDI1egLI-ylNs5Jmchw7ES-UJk0AGGANM6a57NftCeXBIZ4yJjoK7AqfVecbh7CfDSomLyHGys1bnqYkNguS-xldpZTdgz1_ZbV0yTQ2Byqy4L0LnBin3361OVv_U_z8NOfv6tCpGOrdw24yYdCAglvTDv96MlHhu9X1WIDiTL6zxC6bGIfdCt2F_vnyVfNpqCKY9pN5yvIDKERu7mvyX5lkb_wW_2PJ8469HAv-GuIt-ibBggPtVfvQPfxdJGnE67uf2lbIPq-IKsTsh40sH7BL7OXh-v5LObGEsF5Bo2Y7Qo7HgdFUpkrtcdxnQ",
+          "width": 3000
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102709786138843407540\">Rafael Villamizar</a>"
+          ],
+          "photo_reference": "AciIO2dlSqGFQFSUyZ6_GgouCCG4zpB_voIXgklQqlqm6DoOvrNTv8fy0PkPj2I_MeF2HUF7KIbFdSSsD8NXssi5ywS-RqeJFT0fFhL8102QS34pWplHCSDbAjQ07d5tXkURDd_H39eOJsRGcB_PfAx-mwrh2LJrjLq0HJP2Y58yZ7X1pYEBKYUD0lv_v5Ggk3bZO9My6_PO05U2WlI0GuSzKYAM49cllR5KfJC5N-LpKpnt8mTSWVx7ITarDIFHNB90coMhe4liQ-w0ShK6DxHRlVW-K2RKO902uKdG_YJU75cclt76UfJtz9VEppidu2PRz11lgwihCaVZ_5SRLprtt8JJpzbFYMpVCgJ969kEynex1oYhfkKOg59AiPIVHpCEWI12GUndS0eeFFMxHwNcPEUaHfYX8Q3UD41JpVIvclD4PPCBzU6Ws-O2njyfcrfm",
+          "width": 3600
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100148257780244866905\">Gaël Lupien</a>"
+          ],
+          "photo_reference": "AciIO2fggMu6XpzQzJFOkhXs5ekXZiPgUBcUQOtvW9d9yXs1FGftI6t6gHISLVsrFYgEka-lekhYLp2lOzEvFmEMznmVcClfMP3UaYeE6zAb0Zx9aJGf0IpJPFNEaihuyfj8nlQ82dKf6byX_7SxNtGS9Uf0ULGhwkInsWNIy9K-2jXtsa4V5ru34BFRvcpcj653DQvBdvpo4euv4GnRIcjEA3zCDt_WCQ6I82qZYgsxevjmQEC0p_SchEVU2VMdQbMhewUZd0MJqUhEAdNk6-p3Yke8sHR7LSSSbYeldFWgptC41RnnO7KonJPqidz6-LmytIC9W2xCMBAUqPlIvRwOqkRW_veOMzJu9sP-z_CKyGfO5to2kbc2tithdEkNiSi5G9n5O_hMASVHuIICEtIu91-Qg0jqbwhpECgDZE9GnGanvqiSWvOFpkyvTl4akOWv",
+          "width": 3024
+        },
+        {
+          "height": 1280,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109767347500729288789\">Laura Beleño</a>"
+          ],
+          "photo_reference": "AciIO2fAgoRVpYvQH8kQ8xwwJgTjyiHWcSQFiYSbaizVQTRwSuaahwwm4nCXSLAyDsFZBJiCBsmRkfj5qHoYrXOaIJRXgGtFZF5nstqPHEV0JxB_7XT3gf8M4l5VLqvlw9YUI7-GzHOTbHoKO_tGCEBoz-zawC26IV-eCMqCXUgX53IzfkM7DA86h8g4BIR-i65InUGhp24RA7PeYhQb5gUc7Kmys-4fUDGnuQyLhr0rwXSicDBx3TpCaj7mWeCdiNFvzTHJNR78M8TTRZRmPyJAenBbON1cjSFwg1WXdqC4rsA1OebkicDPsmzRs5WTM_w-QQDN-2U-qEVHASpHLcFgoe2FI6LrVB-uZ1e0T66XdVXcu6U1lBgiidntd3-KSLTbHHM6u42zf8BlrurK1331NpW0ZILMvL3q1XIcGMKJ0Js",
+          "width": 960
+        }
+      ],
+      "place_id": "ChIJr_5xgxAp9o4RtRoOdStl1i4",
+      "rating": 4.8,
+      "reviews": [
+        {
+          "author_name": "Rafael Villamizar",
+          "author_url": "https://www.google.com/maps/contrib/102709786138843407540/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJD4hkIFCP-10UsJ7BJHCUAWYh1CviBSpgJEnuJfn8lNouljw=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace una semana",
+          "text": "Estuve el  Viernes y con toda seguridad puedo decir que es de las playas mas bellas de Cartagena ( El Mar es color esmeralda, absolutamente hermoso !!) Ubicada en Tierra Bomba con un estilo sobrio pero al mismo tiempo elegante te da una sensacion de tranquilidad desde que llegas. La comida es maravillosa, probamos el Life Lovers un plato para compartir delicioso tenía chicharrón, camarones con un toque picante y un pollo exquisito, pero el ganador para mí fue el Lamb Flatbread (háganse un favor y vayan a probarlo) los cocktails son increíbles probamos muchísimos, súper recomendados Pablito Mi amor y el Pink Gin (pero en serio todos los que probamos estaban deliciosos) Lo que más me gustó fue la atención de todos !! Especialmente de Kelly, que gran anfitriona. Volveré mil veces más !!! ❤️❤️❤️❤️",
+          "time": 1756777200,
+          "translated": false
+        },
+        {
+          "author_name": "Bruno Spagnuolo",
+          "author_url": "https://www.google.com/maps/contrib/110134243738780630178/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjV6VymTPUAxeGQoFPdbgDTxFZc0a_R1mBH9uuN_fEeIlN131kfM=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "Hace 1 mes",
+          "text": "Un oasis dentro de una isla que está muy descuidada. Playa Linda hace honor a su nombre, y Amare eleva la experiencia. Un lugar limpio, cuidado en todos los detalles. Hermoso beach spot para hacer playa, piscina, comer y descansar.",
+          "time": 1754441186,
+          "translated": false
+        },
+        {
+          "author_name": "Julian Mateo Puentes",
+          "author_url": "https://www.google.com/maps/contrib/109129060946576206859/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIL7FlCoE3750ri2Zgu0UksGEB91aku0W5l40_6fzAvi-8X=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 5 meses",
+          "text": "Espectacular!! Atencion increible, comida excelente y ambiente para todos.\n\nAlgunos domingos hacen paella que estaba deliciosa, pero los bowls son muy sabrosos tambien\n\nEl equipo de Amare es de otro nivel ademas Manuel nos dio muy buenas recomendaciones y una atencion muy amable.\n\nVolveremos sin dudas!",
+          "time": 1744579827,
+          "translated": false
+        },
+        {
+          "author_name": "Valentina Osorio",
+          "author_url": "https://www.google.com/maps/contrib/108184945706860098802/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWcXEbST7XK4IyCz2qEf-5WmvPbcCvvfwPUiWLb3McAXrIrwJ-7IA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 5 meses",
+          "text": "he venido así más veces de las que puedo recordar. Mi lugar favorito cerca a Cartagena para desconectarme. La comida es increíble y la atención divina ✨",
+          "time": 1743873193,
+          "translated": false
+        },
+        {
+          "author_name": "Laura Beleño",
+          "author_url": "https://www.google.com/maps/contrib/109767347500729288789/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWxGKHTyv7a7EN8PwuFAmXrX2uoiVBCfn80B2wFEKCcZHpXlbNDjg=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "Hace 10 meses",
+          "text": "Es un buen lugar para estar, tanto en familia como con amigos. He estado en 2 oportunidades en Amare y ambas han sido espectaculares. Debora es muy atenta y amable. En esta ocasión conocimos personal nuevo y también sentimos la acogida. Con respecto al lugar, muy chévere, el espacio es muy bonito y cómodo, con lo necesario para pasar un día maravilloso. La comida es otro punto espectacular! Hemos probado varios platos de la carta y cada uno es mejor que el otro, es un buen lugar para tener una experiencia diferente a lo común. Felicidades por este lugar.",
+          "time": 1731896669,
+          "translated": false
+        }
+      ],
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "user_ratings_total": 457,
+      "website": "http://www.amarecartagena.com/",
+      "customDisplayName": "Amare Beach Club"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Isla de Tierra Bomba, Cartagena de Indias, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "314 5948838",
+      "geometry": {
+        "location": {
+          "lat": 10.3728756,
+          "lng": -75.5693543
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3743210802915,
+            "lng": -75.56799431970849
+          },
+          "southwest": {
+            "lat": 10.3716231197085,
+            "lng": -75.57069228029151
+          }
+        }
+      },
+      "international_phone_number": "+57 314 5948838",
+      "name": "Anaho Beach Club",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2330"
+            },
+            "open": {
+              "day": 0,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2330"
+            },
+            "open": {
+              "day": 1,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2330"
+            },
+            "open": {
+              "day": 2,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2330"
+            },
+            "open": {
+              "day": 3,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2330"
+            },
+            "open": {
+              "day": 4,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2330"
+            },
+            "open": {
+              "day": 5,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2330"
+            },
+            "open": {
+              "day": 6,
+              "time": "0800"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: 8:00–23:30",
+          "martes: 8:00–23:30",
+          "miércoles: 8:00–23:30",
+          "jueves: 8:00–23:30",
+          "viernes: 8:00–23:30",
+          "sábado: 8:00–23:30",
+          "domingo: 8:00–23:30"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3600,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103989232242076593312\">Katheaviles@outlook.es Katherine100298</a>"
+          ],
+          "photo_reference": "AciIO2fGgbqCzvuD0BB6bPb6fu2tsJWlAqkSLpzbNaY3D4R33fhsdcTRNDVGfFS3SsTFQl8kw-M4BEZtOOmIOWnIwauJcHxY3gYXel6YGLMc5xH1EEwoncaHGP8p09lSIuauIduonzN-RRPCvmtcoEB6hN2Vno1LcZscbiCEO_MtGuptKoAID5i9ww9pk6S_jEfcfeSE-EC1ESwzqNZfd_KruRclpA7-0SV347wN_WVzlUZELq0N93HTGmCqkFT8UolYTFYDSuL33MalI0wG46tHgAxZ0rEJTzh97_q0PmGcMJYHaxycjlLeubJzUz2sRa_7tNUzeoFN7bJM-jDaz-FIMhyUG2NuTecTi_Y3k44FPHoAPxjO9LVCBuRtxoa35B9PD3-ZL58u4IKC2EsNGnsgNRCIoquPUtUA4z4MYrKBTR8lVyci18hLYw8dsgApkK33",
+          "width": 4800
+        },
+        {
+          "height": 3968,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114033145796450124877\">Matias Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2daPdGJPJRD0R-CGJNvSrrgkUGhbuwv9O7Le3aKG15aPv7iV61PAKaL4C5FqTQrxSxwgJtb9FYT5aqirygy5Bb_W3XjghrzdQRDXqJ3k4LknTwdWe7SONQxWw7fGOkX0QhHR8czfP48cQbwuCw_AVioTik63R114qzQkyIK2VXkQTBjC64YtiJTR0yPfbGGjKl1ZGqX0j9E9SHr9x9NIyRnkYg-oVJ21EEc0jpB0lnuSCYna7wJJ8ckOfrdmPJ6z7ak295vZQMxK5FKuiweN25RGXJQ6MAJQ-UvEsFcztEfzgwfLYiLOrUxQwVb4Hg4F9bAWn9o5g2JmG0S2KdD8-36Szatdg1owBlHFnfOcn-_4OTWocSngfOGLK0ux1_ZlRrTVsxH5nTzTLpX4JyyXnPZmUNbzBUAw7EtNFPTg6x6LIgtwFkTWcO6lVDk1Vy8",
+          "width": 2976
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111210076953828569889\">JS BP</a>"
+          ],
+          "photo_reference": "AciIO2enenry3nUyom9s5O43vfxxao_240TuMG-4_3R8TANjfnu25VaVszaGdM9crb0Go8Hr28NomvqveFm0ZKoc6fVh_Ur1Ey8MMgZo5wGfIXPI_AWKVr4FMs-SeLdtWyZI0YdAGlLDVNSkf5qClHJECfDV3UAJbFUg7IjhE1sOhQaV5mq6FyX3dNl6ymLKCg0xwN8LIkHbemS_5HP4qszXkr9lE19Yt5oTjWUKFCMrDavf0iwPlfGw3NYnv-NMqgFhcKketOokGEQVWe0oJ-YeLX87Db-URoy2ugOwdIGlYEDxyoUWorVYIP0w_gXakbQ9JEN4rrsTL_mMWuI9QBDoAdTX1QcOz8vWOjBAHkHnapt9sg5L1nmWT2J9Bc_wIwxkzdyRlBIae0TBuJF-vvNEwcQ3j6za_eBEp_ubj4yhozDcJA",
+          "width": 3000
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115214442622964613232\">Crystal F</a>"
+          ],
+          "photo_reference": "AciIO2eiCpUZgBpQ_J42_knmbjCPoXRQu8sXQc4osGS9-DcmEkbZxKJ2Tu0Wsd-gqrOFss-zfutxic1gpS2foNI750fI_l7CQGwofqrwzqxxe-nt2jEECWtnUkbuJbVHutSs_Ycqppk7tJNoPnzMbmcuC8NpD3m7a5HZYRFSwWBTzgC_jvVd2l7imfVyYwCayTRrjxlp-_CY8h0vShu5zydoyJNzPEvnWS8lb0pZgv2-xtlNTagYkJpBMvTSsYX8KHhzlDEAeBSiSXcvjV3lCHHg15YRgjtuD3cTAhDv71HC9b51znGeQPMqL1q1mcSSWhhsx1OzZd14PSpv9uv6HPt62YhqzblNNg6xVXSSVC0Z66gEiVWxuyIGpsO0KBVlruo871Zirt6E40qAeEyvOXteOSmNZHh3WpIVbn9FBhgwrfpJFas",
+          "width": 3024
+        },
+        {
+          "height": 3274,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105680532675741122036\">Anaho Beach Club</a>"
+          ],
+          "photo_reference": "AciIO2dJJgaVIMMtte12YP0LIqcVlHguBTmhTKNYZ6tsD7Khw16CXNnCB8nQREbcJPaaj_-vHRyt5abr8Sqaea49P9psv-_C1T6vHd4A0YLBpwbUrdLD9qk8oCanFuMDvb_Z0DQip-eR6yjOPGHE22YxT7v1fbZcy6cDwKThByBOTPmPo4qPr1Fp47YmmjoOkNRGigQmq3DzGdiAUCoNqYQ1LMatLvHFKtN6eGdvLlXg_kF_niUhui2r1fvyrKC-AclLlIs_2Ss2afR0OXWQe6cWvfZ-bxTFlCIlhDgEBSVeJwTngQ",
+          "width": 2456
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113664107150118005993\">Maria Chacon</a>"
+          ],
+          "photo_reference": "AciIO2eXF8AaeTFLobbr3-F0mQaDF7wgFZ_3yh0jyHj86drlMZsC4Wy6ew3lZ4wiLqJdVVmugYQbjlRPZQAlWpRY_jB15GzYzlE4MPz45vpRup-cAKq3xzWVoXUnWB5LknOxuScz17xPYTrP7PTcPbc7HFinR-lifHAw09r1NhWNwFHVoMnRn1igM7LPR0wemtDf7rtx1EYxdOYJSKD_1a-mE5tdzdb3icjsa13JoK8i-puYf9IwhMHEGeNe2grurMbq6vSuE-6h5_Z5F-S8OPSg-QrXg5k_W2FB6ZjEyhcBaM1RKDcItk8TMLBRc2N2eZAaEEIei8J5viBNCPoSg9GD73WhJpNIUkH5S7zwwl5CnG87NNWhshJ-QoI3zpAXF-zjF8C8kjbR2sc3Er8YtzbJxYFiwz8L-MIZDPER6JIZMQcwp6VF_Bd36gDCFpsALNCz",
+          "width": 3024
+        },
+        {
+          "height": 2296,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105799184375509968946\">Stefan Weber</a>"
+          ],
+          "photo_reference": "AciIO2deAs0NRM2qu3ND4_2MLQVwoAkrXU5TB73A0jOVgqYkh_4SmKdPOVsemxF-KxdxL9z7Qi2IBf9p8xN_eZX-NaUUiIhsEidkzSEqV_e9l8wA3j-380KWeT5CM9RaexRhHWB4dMiwIJHe-w6_bVQi1V8-E2vWlfl6MFIkaYRwcm0uFiQ1pLhs3KOisLBaODvqLhXWUxi4qYzb0OJ_SCgFSO44F3iADGV4egS2-F8uExWXuk10_MCRYvmctzJyBjHKbh5k9UxanUawwJBo9_k4uw6zqTW81bIBrV055W_TdekksckGlLJeygV9lQMrzcwuSW6yBMofhtgX8ggP1FCZxwzJ6B0M4NCHeYlkxBYTOmfEnejsM9Z8r_s0n5Bt6vGZ-YXkZwIxbMapTp085zLtGbwwteghoqLG5o4686kWwEzve52ZdcpOmRen-5g3GW45",
+          "width": 4080
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102522839133423652564\">Heekart D e s i g n</a>"
+          ],
+          "photo_reference": "AciIO2emKAoM5EQ7Un9IlxUYP_8oPeSqJefUEjyXZ-w-zR_SjT99D_tPWIuhcBZLC0nCjPsBAm35s0XjMjNmlEuvlMk59AA5RnCu5-KgXSNJotLyPaj3NYcEppLabwqhOf1T4ctrzF88kNnmC-YM8UBq7g9tBOtMQ0EWaOPh7TAFN5FuKBtfeQduNTHw2eCyWbrY2CCcMF2uW7PO2Ofe4N6m99a8RYrrqXfmuILHtbMKYv35HV87xSNvHZhdYPxx7wyF8E14NWrqGJZgaoZMK3Kwb2P696fA3Y1O4G06Y6AmRpPYdlvbLcAGhkaHezYL0Ilcyh9BPRfDCrFzrvP6IL1St9uP8G1aBqYRg6DdI4x7Bk81ucc9A8zr1K12YHv0-DoI0439ZHKkIoI90baGftJlPdL_Hu3ONhrOfCpha3nHFEl9Ipsr",
+          "width": 1868
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/111210076953828569889\">JS BP</a>"
+          ],
+          "photo_reference": "AciIO2eVN8ku4Fu0ecLiLucwJWczH57AVdoR_Cmq5QCI2LmegNOC5PrIycTkeXi7bV7zKOOFNOvXAfXGU1TY8nD0y_DZDK0TAxuhqZ1ix33tT0FvJw7DRe5Bog8CkOppcGwjqf1bIhXYJ2N3m7hOdf5VpPD8GUj8VokFVohULz-_qXhR-lL4ZcbzOUI5EyqGo1emZwAw9nt0nPm9gsFOX5iYX8oFieWNAhxAJyAgR4XdvxlbPEd43BaB0LU-uQucC0-7WYPVUe7foqE0XeMsMfvTLV8J1SkKfFBpGhynkVbfdkiqKEb4whm97MGV-JT2Qf9Q2yeSBVHx9gp4E-nVzUhSXceLvl5kt0103os6AviasOy2y9lPE8Baqq1Bi8DxdVplfMjmJUn_hplIvn1fz8euhjBmohA08WhlHaz3F9bb0vc",
+          "width": 3000
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117552962727184412863\">Jana B.</a>"
+          ],
+          "photo_reference": "AciIO2c470hcb8piXMmz4JHaZqSei7FBNsa53pcb7HD2Ngo1pqgPvrGC7JLzBAxmZEbsDlITm4l2LWBmivD6ogXeS-IlMPUWbGgDRY6nY_Zpx0XIn7icfM1PZK4kL6Xfj9RmEHkWF9FIdZofQ72gg--zJl24EqcZs6Qg2xRXGXNIltza-NZXGz9vom2BlnqboxGHS8JvDF2r8RAtaNhcx1gs4J-a_NFhYCQZhp_OC1oKYn5A76vHhdBYWAb-grA5reV6S3itYSWTQvQfOXMQNHbwL5jbcxiEJXS2nKrhRe79y3wL6-G8aLOGD6F5ywoQ_92b9p3r-Z9dcY1-YQfSCZsx3pgRENOonGzLqxnVcLMFW9-71v0DMDRdIeMAcsmEmfe8X7Te9g99IHYQw1zTYRkTzWgXPz-YkJjXDColNHYrAqY",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJc6ZWdKEp9o4RgYiDxZIZ-OQ",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "author_name": "Berenice Curiel",
+          "author_url": "https://www.google.com/maps/contrib/108934967220595402892/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW_4jNf8GGsOhq65XjRBRZgeOOzvw11IVogiCLfi4w7diFJoz-8vQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace una semana",
+          "text": "Lugar hermoso para relajarse.\nSolo a la hora de pagar nos tardaron un montón de tiempo para darnos el cambio (lo que sobraba del total de la cuenta) , como para desesperarnos y dejárselos ( aclarar q la propina ya estaba cobrada en la cuenta)  👎 pero éramos varios los q estábamos esperando nuestros cambio así q tuvimos q tener paciencia",
+          "time": 1756833786,
+          "translated": false
+        },
+        {
+          "author_name": "Matias Ramirez",
+          "author_url": "https://www.google.com/maps/contrib/114033145796450124877/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWve7FWe8ILv31p_cFYda3DCfEhNtouf8b_3Tol6ymo860ET3oz=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "Hace 3 meses",
+          "text": "Excelente servicio, nos atendieron genial, agradecemos a todos los que nos atendieron, vista, alimentos, bebidas y diversión...todo genial, pensamos en volver muy pronto!",
+          "time": 1749943514,
+          "translated": false
+        },
+        {
+          "author_name": "Sebastian Giraldo Galvis",
+          "author_url": "https://www.google.com/maps/contrib/116191147177110866135/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocICSAqyiJva3cUjmVA1ecUT6xnigiIeNcqTVBRWFr9_2EyPMWk=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 6 meses",
+          "text": "Anaho Beach Club es un verdadero paraíso en Cartagena. Desde que llegué, el servicio fue excepcional. El personal es atento y amable, siempre pendiente de cada detalle. El alojamiento es súper cómodo y la vista al mar es espectacular.\nLa comida es genial - probé los ceviches y estaban fresquísimos. Los cócteles son creativos y deliciosos, perfectos para disfrutar mientras te relajas bajo el sol caribeño.\nEl ambiente es tranquilo pero con buena música que no interrumpe la conversación. La piscina con vista al mar es impresionante para fotos.\nPrecios acordes a la calidad del lugar. Definitivamente regresaré en mi próxima visita a Cartagena. ¡Un must si buscas un día de playa con estilo!",
+          "time": 1740498763,
+          "translated": false
+        },
+        {
+          "author_name": "Vanesa Quintero",
+          "author_url": "https://www.google.com/maps/contrib/104876609831912443614/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK-1nevbLDCayEDHgXXASxhkDwym3f9jYWyV_yOmcmuK4cWMA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 6 meses",
+          "text": "¡No puedo creer que no hayamos venido antes a Anaho! Mi novio me sorprendió trayéndome aquí y fue el mejor día de nuestras vacaciones en Cartagena.\nMe encantó todo - desde las el alojamiento hasta el servicio personalizado. Todos fueron muy amables y nos hicieron sentir especiales. El ambiente es romántico y relajado, perfecto para parejas.\nLos cocteles están buenísimos y la comida... ¡wow! Compartimos un beef que estaba delicioso. La música era perfecta.\nLas fotos que nos tomamos en la piscina con el mar de fondo quedaron increíbles para Instagram. Definitivamente convenceré a mi novio para que volvamos antes de regresar a casa. ¡100% recomendado para un día especial en pareja!",
+          "time": 1740498976,
+          "translated": false
+        },
+        {
+          "author_name": "Julian Anca",
+          "author_url": "https://www.google.com/maps/contrib/107939596912761166250/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXMB9dzIDqjxSJz---JHYfXbtKIWN7UpDf_wpLiTfXjgsf-_gCu=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "Hace 6 meses",
+          "text": "Un lugar excelente, para ir en pareja y disfrutar de un buen momento. El lugar maravilloso, el servicio de 10. Las instalaciones de primera. Una experiencia inolvidable, volvería en mi próxima visita de Colombia.",
+          "time": 1741800827,
+          "translated": false
+        }
+      ],
+      "types": [
+        "establishment",
+        "food",
+        "lodging",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "user_ratings_total": 143,
+      "website": "https://anahobeachclub.com/",
+      "customDisplayName": "Anaho"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Isla de Tierra Bomba, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "305 9326183",
+      "geometry": {
+        "location": {
+          "lat": 10.3669309,
+          "lng": -75.5820671
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3678644302915,
+            "lng": -75.5805856697085
+          },
+          "southwest": {
+            "lat": 10.3651664697085,
+            "lng": -75.5832836302915
+          }
+        }
+      },
+      "international_phone_number": "+57 305 9326183",
+      "name": "ANCESTRAL LOUNGE",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: 9:00–16:00",
+          "martes: 9:00–16:00",
+          "miércoles: Cerrado",
+          "jueves: 9:00–16:00",
+          "viernes: 9:00–16:00",
+          "sábado: 9:00–17:00",
+          "domingo: 9:00–17:00"
+        ]
+      },
+      "photos": [
+        {
+          "height": 2296,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105799184375509968946\">Stefan Weber</a>"
+          ],
+          "photo_reference": "AciIO2ek4L3VjuYHpOZiLwyI-o3M8oXy97Flge5e_eo-AnvtVZM3jfqdhLHb7RXc8sVk9To1_B2irD_WzL9qszwrS1GsMCgS_NVrVP7DGmUeX3Mtu7Rfx1WaqWRvWP4Wgv0lxDW8HUvKMHft7V_4tHvtAub1rlQLb43hqmbYNOnqcZo56M9pVsd6QkyqMx6rxbpRGwigRSuVZptZuKjoOaAVscdsEzjkC_qsFLmeORjLQ9iOOxlu4FCseTbX9amvEfb9NzTld1G5O2DyoZCH5j3zlOXoesqRXnGRENGstfiA9dfWL7n7MGtH1_uigfCRYbW04hRCwaFdfltN9j1Zi01l_ZPvwyjOK4Y8R8FEWYyQOb80JCxKDUtQ022AMU67Ctv4pOw7IxxCflP3ZPpvrO2wDAc9lkJzcbf9ks0ZoY4PMgFXtH5NXO0PM_rLibKvWiKm",
+          "width": 4080
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108187350623824390836\">Reema Azar</a>"
+          ],
+          "photo_reference": "AciIO2d-Wh6xZbHrE_Ec6semzvYXj_MO8jb7fikjdiHL_leLBYQkWduiCxZUESJ6320YSyXuqIUBtWz83IREIrxsdVgLFMNBB8lL_5dDBNRoSK0iGAvWeZRBqUivcrX74LrX2FjRmw3LHYYuHXhEVcyd3rFvXoBaWyuOiGSxy-HKu4ExpNKu14CSLTJ6OBjYoCz54xMVtD12fmFYPe7-wI2kEgEFfXVreRNHIVOafUtHauHN5oVD50Pha4WrWGuKgkKJZYEF1WVJ8YmGCM7M2Tk6zVgDI-isQNRW7AbqhajTjvOY8WCC8tGFLCJ0T-hEovIk6wPk2Q67QAYed8vpCdc2DuRCDhvMBhaQQxIcdd1RVRPtbBvheNups1JwSahogt0sn0h0DdEcTKVLEUnmG2ostg_-i8r9Dck--sR64MOS_5ZsdnJg",
+          "width": 4032
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/115184382852566680958\">Mariana Chaparro</a>"
+          ],
+          "photo_reference": "AciIO2fJYJ0yePO_rb1g_FqRQSuNBuuOiht8OqROOQ1lRqnarsyZsO761ontwhNDKx3vprik8KSbQj1OWdait65MebQw-0hUt7LOr8AqgeKWUjRRZzEAlzBP52a0I75zkxqWFzrtRQE5EInRGj1JU4Vx7M-37ciGdA987Rxh0SHUHq5eRPfzYqkuCdO9Ap3uSmzOi6ASV4EAhU44Pb6V85R31lHHBZmcBeqjEXtXsvq8REab15Xc-mU8rimSKi8u_5XWK87ukSdC-PLzK61398LLbjRO_bExLLkFhJzP7tH3rsjrY2Edyzs34iRfPgNLwWtGNLfP8XwTLucNyWsATX5VqRGqbERS1589XRlilK5nL4UY5_ytJ2O1n9CiqxyspVY2lIVL1guZu8x0xZDWYcixT-KuTlZKRlaBK20w9CXzFcHvDViBBeuVT8JK22pPZQ",
+          "width": 3024
+        },
+        {
+          "height": 2296,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105799184375509968946\">Stefan Weber</a>"
+          ],
+          "photo_reference": "AciIO2fwAcE91SO-Ek3QRipNf7dljEfaz8QX6tgDR4jwtImx0z5l1lCTY0IYGQY1GtYt_Y2sZwEiCYKZTBaDuKQPbXYXWheywg1YGHdt9K7_IcsytqfxtJQy4CgWJ2_9CJZHp-ZE5EGUvhW_Y-g631eLnZ01OzfwXIMayni6H34LPaYofEZdS4HgbIegRqu2rjQfZp7nXFAXcUXYQsEAqglVpHJ6avTNMtHh6VdZzLfauZ7W9XSlkRtwtzsYsCIu09U5LDDwdXU3GKDrbyrbAac2c7FhJUYlgfBvKhcIVy6yEieTSt5RkzfuOD7y_NmnSIf1sozGkIGw_XUbHu2niF0Dfi8mie2hSLDZr9QeB5VgHQEKgKYR8r1FeVRmNl9P__VI9TX8tKXcruaPmJGL0wF_TvwQBnb8da8Txbv-18BO2m8sB06WH2TT90v0L7Vj6w",
+          "width": 4080
+        },
+        {
+          "height": 3072,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114802080980920356780\">Elvis Martinez</a>"
+          ],
+          "photo_reference": "AciIO2dYaG6SJ3xiXvpB81rvDQf_22TKpSdde1V_M1F7-wKP4JvjfqI3s_c8F-XqxFaGV3zwW_69-RbUKs9VSVMaMubf9sLsJbfb8gOQuIwW5kLQJEv1L5qcfVVpiGxlavPJIhepYhldjhnEWJDrseFyPjCGTlpn3_c0m6fq6kK_FD8uNReZuiMQRTaIP3z7iDezzTpXFTi7hi12bKxvcUDLs12Jst2_Lndxs_lqIAkmI9u2XEOJX6dKpVANAa90dciXpkNlZLSu6DJNpTefys2b_Kc1vY5uL9wcHMw4dsffV7XwuDGAKwxJjv6EjBK6ARj9fI3oQmt9s0qpLO2ti4Yt3BGwfS8b_ZRi0MdDJWBTRouB7FeXsFbxZqcGusrUMWaAfY_9lJonJUCZCAtl5ukaB2pgdZDestzNIPqFD4UWyDNbCQ",
+          "width": 4096
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103171064861179470061\">Steven Patouris</a>"
+          ],
+          "photo_reference": "AciIO2e8tBlXjiZ0TyPSGAOUYMcnQbqx9lvpo2aDxzlE79eWYsJrT7milhIcZAHyEJOtixywZf2mpz1KVcFWl2x6xCEKMpMmlyZTxjw8A-N-GJ-9hrqKumpnu1lMN_m1oPO6n6bF4r03bxLEoQu6n98Ln3uFpi5_rn698KRd3j6osvacZsVEnVhmm4ASawb2u869kNJAMBolrbgV89xpBEf8nZrnKccah_N-bfSkVfGfhn86SKAf_0tnqTK8KFs59JDb1-tSji6uw3sQJeZAapI82ySsRgdRELiIGpDLr_L2Kmn_BF1LDQOOpeTc83ijbK8EA22bZz3te0__K7Zzepgp_iRU4SNmdrmnyXXMzAn2U6xpgL-f95QvrFWGaOkh0I0QjMoc7z666SloMXw9TJodf1NhENQn2HSaKTV0LVbyJLu4Zwk",
+          "width": 4000
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102860296154038602459\">Lorena Ayala</a>"
+          ],
+          "photo_reference": "AciIO2dsnCVjQvp7TwV_TM5PQW76xfq0jElXnoWwviP06yFQlRl5zdShxw7KRD3vaVy9UCQ84MKmwY_iL8KFf5cN_5Z1qkwMNtD6JlkjvxIeJxc3qj_WVur4TAGbwa3TQzbXdj_g3dxqMjB19ajawwBOuPyv5mlnHhsRddxcJpubz-icWEimQTT0k6zEs4ZVzgxBWK5S6DbpxbAwINzR5TYY-aNCEDwK-nChXw6kk3ksscyUWZnzYJHDo3tvccgNWPFMvvOqGp_l9zweCRdenKhL6zMp-tyzMdNalPgsqzglbTbLNHCCJiYvv_RQzAdWULE1Eosb_s5r9b1-2M9wcdsjohCBZuI3dKTRwrn88LITv91pPpduLrrlu1gIqupEuvTIDo0IpJIke6CPcXl5cojhLn8CSXTRlGyIEkTUFbWC8ehrOQ",
+          "width": 3024
+        },
+        {
+          "height": 4096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114802080980920356780\">Elvis Martinez</a>"
+          ],
+          "photo_reference": "AciIO2cDnUrvPVxWGuwSP-9VuSMcIzzAbuKpIOl0UqAXufYpnntTI7k72TrBT-ZAk7W3O2jtxBJb1HTPHYzF5UwFJLrLLIfji5Q9YCLYzxdKQ_SLOttA01I6NBrDxGPfI7CnVeDPJKh7-GDWBgEMHz1fXzFEyvPg6AHMo-rk3IVIhGj2TB2oqtsKamTOavfD2nP8krrGYvzKSEm5_vPgbuGKh8BmFy0AAoO5saJkqzspRm6gzu7tgVkPO_aTQZI2kjUanvq4kEUtVWxg9b33B-JZf0jgNfyp88o_mezB5P1u7Gi6YA4rGOUmNtROpzxm2oRAgl-Sx51ssnH3lemVp-89llcssiNKW7e3oCyF5c089Dfk84UwC8PFMp4JqyFoSszs7ujHunLu6qE8pDXUeJQUb7jK8Xs5ar-a7bS6xR1_vwupT_Nm",
+          "width": 3072
+        },
+        {
+          "height": 4096,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114802080980920356780\">Elvis Martinez</a>"
+          ],
+          "photo_reference": "AciIO2eqsJFhMcL5bH7GXXARz5f2g7PnFF1ZUjCcNS3geRdaV_j4mZzURpP4aIc07mFJiqXBHqMduSut-5WE7cWfKZDUJHM9cZMGRhuuVKfhpGwsJlpEouMYL64Eeb5RkPkQWLrqMyX2vjPplrkLZTHe6Pt-fr6tZ5crbTKxp5-Qw8jbQYStCZl60-1rX5CSJ33wBKvZb-9IA12DuDHN8R0bRw-hqJrxJSrbbt_t8KUMAlhHLbhqsCfShBRgtEt7a2O9rkzrDbg-zVUwurPo_3TFRqfmG_K6w2p4m_0U48TsrTo3cI0oYryBcIu23lXVNTDfmPS-Uu2tAtNKMx7alZjOE92vjhZYrzNfFMPG_9dEgvO9h4UyfB86u0CgTjqu3LLrlsP31ba9vpNX0x-NUOmMFW5weeLWdRUPg9DBEP0KVETLkxHg",
+          "width": 3072
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108487086414326465445\">Fernando Rivera Lopez</a>"
+          ],
+          "photo_reference": "AciIO2cPJQ-CraU5EZR4n_x6sQya7esfKliJKf8xye157HKP3uF79dZWgV_UZk6cSsDCYZdbq9Dobjbauk_-_iV3WNi1IJ8t2nv4RvomJrS85GjZEuCgVjXU-6LNop45_5l1HP9Ey58WLFUHjF5pgKok_Ttu_2SYA1Ca91Jlo78ocn3vB67pB_Q8FaJhv2uXupmAV3KrbANb2lwv3iy-a4z2qA9aVdA-O1yqBB8HDQHkd4Qd1PfOXyQfvIkvkLm5W--u_rq2BkhVnoJU1Qinb9a2ImmQh-b6MVs6VK9B1qFK33ie5sD8BdTbqHdCctv01-ye75yHLoDQAM4P5GX8N2nxWyCNHlBWnxhvt2hnn1xqHAbg88-JufdAC4W01BojtGwTxm_xH9llqdf0WJpVuhmK7Iw8Ajy4-G9A3-n6DBiZdRKRUQ",
+          "width": 3024
+        }
+      ],
+      "place_id": "ChIJDZdzEZsp9o4RN4YBF0RWuGI",
+      "rating": 3.9,
+      "reviews": [
+        {
+          "author_name": "Desconocido Noob",
+          "author_url": "https://www.google.com/maps/contrib/103123545992150673461/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocJzDzoqFqvL8_HdvVO3o81ag2E-g893uDnBXI64gD__hDzYzw=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "Hace 2 meses",
+          "text": "El lugar es bastante bueno y agradable, lo único que el tiempo ya le está pasando y mantenimiento a camas y estructuras no le han hecho, el baño no tiene privacidad, las esterillas o esos bambus se han caído,",
+          "time": 1750531914,
+          "translated": false
+        },
+        {
+          "author_name": "Mariana Chaparro",
+          "author_url": "https://www.google.com/maps/contrib/115184382852566680958/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUQ3Cs-J2sxQWU4cg5lmYlg4lIVrsL3KwoX3FYuBrOQWSchboSPig=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "Hace 2 meses",
+          "text": "Un lugar lindo, muy tranquilo, para disfrutar de un pasadía, están construyendo una piscina cuando fui, genial 🏊‍♀️",
+          "time": 1750785248,
+          "translated": false
+        },
+        {
+          "author_name": "Abdul Mustafa",
+          "author_url": "https://www.google.com/maps/contrib/108386288291435938927/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW4TTjFM2YciskMbgY4OqS5Dc7TPEmUNGnmvMXJPe5K8vJ8fzFL2A=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 5,
+          "relative_time_description": "Hace 8 meses",
+          "text": "De las mejores pasadía que he hecho. El lugar muy bonito con una playa super bonita. El servicio de todo el personal extraordinario y muy amables. La comida delicioso y los precios también muy buenos. Lo único a mejorar un poco es la infraestructura de los baños.",
+          "time": 1736537788,
+          "translated": false
+        },
+        {
+          "author_name": "Lorena Ayala",
+          "author_url": "https://www.google.com/maps/contrib/102860296154038602459/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIU_lhoObgqaPRqEt3WGr4RVxHVXLGOMy3ywJMGjj5vx7AYlKja=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "Hace 3 meses",
+          "text": "La atención es muy buena, son personas muy amables, el lugar es muy bonito tiene dos o tres spot para fotos, sin embargo es muy pequeño es eso y ya, no hay piscina, la playa no es privada por lo que se me hace costoso el valor del pasadía para lo que se ofrece, el almuerzo que viene incluido no tiene bebida entonces tuvimos que pagar adicional esto (que no es costoso). Cambia bastante el valor del pasadía con respecto a los lugares vecinos. Fui dos días después a uno del lado y valía menos de la mitad, el almuerzo era el mismo.",
+          "time": 1747930209,
+          "translated": false
+        },
+        {
+          "author_name": "Felipe H",
+          "author_url": "https://www.google.com/maps/contrib/107177808909589470072/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVXDJAb8f4fESCJXU-7A1X1iN0iVSeLAkI2U1q62fZs0OfWZfOv=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 4,
+          "relative_time_description": "Hace 11 meses",
+          "text": "Las sillas y camas son muy cómodas. El sitio es agradable y la playa es hermosa. Si el clima colabora se puede disfrutar de un mar espectacular.\nLa comida si debe mejorar un poco",
+          "time": 1728142305,
+          "translated": false
+        }
+      ],
+      "types": [
+        "bar",
+        "establishment",
+        "point_of_interest"
+      ],
+      "user_ratings_total": 106,
+      "customDisplayName": "Ancestral Lounge Beach Club"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Isla Tierra Bomba, Cartagena de Indias, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "300 3194215",
+      "geometry": {
+        "location": {
+          "lat": 10.3221033,
+          "lng": -75.5871441
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3236471802915,
+            "lng": -75.5856205197085
+          },
+          "southwest": {
+            "lat": 10.3209492197085,
+            "lng": -75.58831848029152
+          }
+        }
+      },
+      "international_phone_number": "+57 300 3194215",
+      "name": "Atolon Beach Club Cartagena",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "2300"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "2300"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "2300"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "2300"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "2300"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "2300"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "2300"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: 9:00–23:00",
+          "martes: 9:00–23:00",
+          "miércoles: 9:00–23:00",
+          "jueves: 9:00–23:00",
+          "viernes: 9:00–23:00",
+          "sábado: 9:00–23:00",
+          "domingo: 9:00–23:00"
+        ]
+      },
+      "photos": [
+        {
+          "height": 2160,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108211833751089963765\">Raquel Hernandez</a>"
+          ],
+          "photo_reference": "AciIO2dxOqNrkoNeuXtUAu1ZXa6ceYHeks_qmSjD3Zx8Oawhgf15iBUtn509lvOqthdIMivUCoZzsGX2bhAt9_S_T_N4DKoZ7sS5WOjGYlzPXiGIGVVo18PszFezdOctJTtrclscWcJD_Ukz-EobQr8SvyfyA0aqicHyLqqG6btKCSotXb1MSIzeV2RpJkCsKlzOprd4B-mamujc7iI8cL4nK7jAOKxCduuwAH1ciAAqjWXpB4pnc-UEYJWBgA5XZAP0h7I2Utns-vRB-TBdy4fyOQraTpDQw0UlpJtRppLj8LOgKNIkEbSLixNP0y_y1MJHLLIfbEwszs4Q9OSLA6aCyqUwYTXNASKmfY9ri4f9tguQnTlyYooQf8yVi3QZQPbo-b9GhDtPvHN1cHuWW7yGzap4SJBWszVFVNrrKoyKQUg",
+          "width": 3840
+        },
+        {
+          "height": 809,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101898175369151460360\">Atolon Beach Club Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2cbw2l_7oP-5JzKR7-U5X0EnYrum12h3RmlUYiMewLXUVL4dGDPJiv4BZbgT_mmDhxRS2kPokvN2iexr1hUac8BtCQLKvhpA0VLLi1mFumSLBAuwFHSWhelpxJ05JcadG-bXMIPNS-BrFYXKALcG8F5YWWDmkxHQmh5Gj6ss9b_fjHFx3xUzCsB0Z0TZUPtlbyAET7iMV0LOvZsaJzQagOHKH_O-x1r0sODnECYWrqUi9dXlyopYY2QlrHVaHtbdZy1zWMiUETxqYlsbtBq6YwqMIklP0DU3p-5pd8PoDA6Hw",
+          "width": 1414
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101853093766556032798\">Elli Dumont</a>"
+          ],
+          "photo_reference": "AciIO2c7sjQv2DRZvsWRPAYX-mHMPGPlByld-f61klmgUuabRHhE-OocLj573GOY61jIkcatp6R9RZhOJV9eWDM7aA2ypRx-XctM0Cr0708o2EPQxc23nTOSXqlK3qsqBlBWfD6hyF3V7HA_ous336N33OGHczK_vhV6J72LS12xOYVlkRHlt0FeOL1ShXAdNPF9z4IQ9M286y-U2HkS97cqnn6TRxOR0QSaPI4Gv-zXutP8hvTQe9Xf5ZCwBiHfprIL5A-juo9O84uPX0mtybNRYlhNyUNMXHsSLjOLm7PnnbvPprgX0KPe9MqlMroIMk-Jrh_wn2QA7xePqzIuyb7jw-7mQbj-p7xUvvtUOdYZoIZlcChpZ2iH4WtZbel9NHesfrNSED9EE_nsRyvCWm3fzaKErYzoewvJ8VRd-BZGF1p0LbNbdZddaa-7cl_mj0rs",
+          "width": 3000
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107108411099863049346\">Viajar Es La Vida</a>"
+          ],
+          "photo_reference": "AciIO2cc-kqHFbyFNqx5zcW6nHN4yy51ZOInoexC8qLkx0IYYDSMnNVxR8U4X4YiwG1aFeYtjPbj77ZU6vd9pO3thxaVUjX4xsT1Hqreot0e6tzu-D4G7hRqhUJindy9t482BcnnnxnmQLuJqfPOkdcKZzPlsWpa75ixqF4gYjgBs_8PEYOHnUR3V0CuKh9xQfPuqBrP0mcILreJUUF2icIVO_Kc8eHotMqA6_-BIMVdgo1HLRSpTcgpuRFt-dr5XHvfoKUi6192KX8oE3wmdlLKcqONqnz--Jb9CoBNjIQhxw8NWysWvW5k1O_azHYUl2CH5s3MVEaLR80NhBELGLYUx07Twu1eTF3AI3GZLD92GaGs6aD7SJbH7N6XYAPNCOL20__4XF-aJKIp2f7KunaCgV12fJN_1xQ0d3zp6h3fdlp-XUb3",
+          "width": 3000
+        },
+        {
+          "height": 1723,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108907970830304188136\">Sonia Vazquez</a>"
+          ],
+          "photo_reference": "AciIO2frR9RpWfT9hd4q7-T9SJMoX8REb0PEhIgLu1ulKEJtLwfN8p6NojOKT9OfqaPzWMzAUhCoy6pt6-_ZsmOQUYKc_R6FixcVZD7H4jGiWj1Bh0veSw2MR1DYn5lRJQldWxORLbgC7OfkC7V4dZt-vaaX88Low1aeDWd-HhGvhNQOyPDKP4hap1YU7CgA-vkHjxri4jeCzrXFWQ6mdE64uAWoOX8afONtptYMCs049LDbEhPzFgP2APgwiQo7Bmex8JB6LtLe2HxbOQjtp2BUnM8wDtnSoJHhTSWLwyuopMnVVNHRUAJfbz3HFK_FIbwGNFD2vRmXL10iHhJd9v9__WYS01uxcjhG4Hio9lRMohsyVjLXVX2l0NRZtvL4IE5jOENbhZBkQfJ2L_mMeAVdJCWNPEo9kYPOcCZQBD68d_VQLKG-XJUx_tMaZjN7wUkj",
+          "width": 3368
+        },
+        {
+          "height": 960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/116563734693117933131\">Nur Sezek</a>"
+          ],
+          "photo_reference": "AciIO2cOQWT4i4yfsfCVD04S4chZmNdZ50KXXFlxV45LNOcX_LzR3rZ3wIkemAxfnpNPDibUAdCFMOpQSKnYFIuwrAzsG9EHEx5fZPamI3Bs2ktuL9vXt2LYnnD9MA8uFZp5sujkS11uTE1yTO6mIBroRd0z9fWYGOwIOMUJIW9ZWNOISp0_0ZQ5-rPkw4eC7_yyIbCG49284agyksY8VLC4-I25OcZzp21Jt4KroyOqlycvso_fDUAUZ_mxSXUY1UDGcUZpwF1LDvkPB2h8h0Oeud07LYZtgkP749zv3pSYeYYFV-NQnpBP5NtZ1cHNBjdH37DoZFWabMkYvRFT9-MiuhYtekdHGlnSNGN5NbRMeSyPl1Ny2hodz4srVF6s6WJyrxHpulrXv4SWVlJ1fodCeL_5asnR_Wriq6AzNPsnsZd7sA",
+          "width": 1280
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105980347408424152646\">Vanessa Barreto</a>"
+          ],
+          "photo_reference": "AciIO2eTiar9qzXIDFlT1jCKOT9l2UxCTGnxjxi5oN4bY0LfbGt-SM8gW9ZWpOAtFef2C8ImkUdMFQXyg6JibKhozLTxMkb4acUXjzsaKR9-zTbut7aCuScfKGqCx1eHGs0btujDRO1RSwWU3za8u_PG9fm9wQB5Ak4nNViola__iyXiS69EA3JWIjfGx_OwUPzCf7HP_0v1SUQXuSMmPdikpGYAgX31hJjbcwQj_4ZS0zVnwgR6TtHlXgoucAcDwzCO7MoCLpo2ZwGe4UjkwUV7TSWmCgbpaazx6LRYVNUjRCaBvTnaBIoSOpq_YpmiHf_Wubrmn-onUISZ5rbjrezRRfa4a0ktvKmTintDPxbA-dVc9G8zXSqaD59-fpflQQERnOBU20ue-rPDdr1gTsazF3le85eCfbOBLb6bsApIvQD3-Q",
+          "width": 3024
+        },
+        {
+          "height": 816,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101898175369151460360\">Atolon Beach Club Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2fRdpOfIRoNJqUnmANnqoRmFQZR0seMDwT_peYeBZdK_JvtBxCu5hDfR4kTdL0be96YkGMZFMA6akb7DFH1zm5thGiFlYGtAm5y589i-ndOUpjuJJMMQ9j-_q1g8wVMC2zrqdNWmxDXse9b4vQd7hVeUfA4wU7DJtTHik63OAwBKIucwdho1vCYwbj64NnxV8xeN72oxtxML4FR53LJB3WVq55pHTAndD_PiSocbf4ndOB3DjE-L96nXsm6ia9Xx8rWOr8sKTMI8n44rU3WfavnDJEsyq9B9hZdKFPzfEn9UQ",
+          "width": 1000
+        },
+        {
+          "height": 4189,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101898175369151460360\">Atolon Beach Club Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2eNX-HAPyzzWqoz6dmejOOm2aFFPsNALugziegbGhtCtpFibZtiBTWzdAeETZlHtbARQU4KV4TuAF2J4gY2coKjAODGQ_KY5iMCmS9glMpu0_PkcyD457kb4OondEaiAPjK4LVkMJo2_TtpGW8rzMdD0MAYztx66zirPFBcVGktsonK_Xsz-yTqhWzJv8bwzQ3yJIwgbggBvn3uyr4z7xJSxzlTjlVAgSw6rqlMzEPnJFuSSzT3AKGvlT_e-v6pNZbXR_7HtrQr4MGuJEaDNFx2zyibYcQzF_sJQYQ2UM8o_w",
+          "width": 2798
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110413469841953680479\">Andrew Smith</a>"
+          ],
+          "photo_reference": "AciIO2ePEW_jLjC2gvPED9DqCtQGalWuLC-6jeGg7nF5jX8KUEKS78rHSJFzB6lP1g-ELa_OkqfLdHdmjc_Pm1mzcgtOM0-TsccMEryl_fatosBYi53FCf0nAJMcazuCdVZKN6CK6KWBb35afgZF023bIJq1kDML-I_0ptZXv_swDdueSBKGxTZLfmBuVsZq8UrhtZVWOn5AJEIpsX5LJY54sUYJziM3YZwD9OWsoobkcPZkZLQ_9TZsN---xUkTZevF9MRW25FRMbET8FyLaw15xrsPYXPnqo2chxeqG482svZLuWHmaKO9nOo1FzQJ6nm1pIvoSwr5MYZf01bD-Xfa4x2hAFOWxbt9yqcygep-aD3EKXZ2BaVlW03a459yuBddFg-OrE6s_2D2zxjw64IlVTpdqIfYM-5ok61yjyktRzo0Jg",
+          "width": 2700
+        }
+      ],
+      "place_id": "ChIJT5Qvvt0p9o4RAtPYjng8huY",
+      "rating": 4.4,
+      "reviews": [
+        {
+          "author_name": "Vanessa Barreto",
+          "author_url": "https://www.google.com/maps/contrib/105980347408424152646/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK8Fl_E8I33wF-WvjwnHNr_MgrviISu4Dvzata4-hEPnSgcSQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 5 meses",
+          "text": "Una experiencia inolvidable.\nDesde que llegamos, todo fue perfecto: el ambiente tiene una vibra mágica, la música en el lugar te envuelve, la atención del personal fue de otro nivel, siempre con una sonrisa y dispuestos a ayudar. La comida… ¡qué delicia! Cada plato fue un gusto al alma. La habitación, cómoda y limpia, con detalles que te hacen sentir especial. Y el atardecer frente al mar… simplemente no se puede describir con palabras. Es un lugar que se queda en el corazón. Gracias por hacerme tan feliz. Volveré sin dudarlo, y ojalá muchos más se animen a vivir esta experiencia.",
+          "time": 1744142667,
+          "translated": false
+        },
+        {
+          "author_name": "Raquel Hernandez",
+          "author_url": "https://www.google.com/maps/contrib/108211833751089963765/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjU7TUoSFddsrDiZJR8xEN-SY5-CrffinVQl5T8LVFkC3valOsKE=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 8 meses",
+          "text": "Este Beach Club es, sin duda, el mejor lugar para descansar y disfrutar de una experiencia inolvidable. La vista al mar es impresionante, los empleados son amables y atentos, la comida del chef es exquisita y los cocteles son los mejores que he probado. Todo en este hotel es perfecto, desde la atención hasta la ubicación. Lo recomiendo al 100% a cualquier persona que busque un lugar para relajarse y disfrutar de la vida.",
+          "time": 1735404387,
+          "translated": false
+        },
+        {
+          "author_name": "Tomás Flores",
+          "author_url": "https://www.google.com/maps/contrib/102418951860081824134/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXL8reoRnvnj5-tDjD9DtjGiMsp1m3Kk6scqM-Q-piKxaFoV_IknQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 4 meses",
+          "text": "Un lugar muy bueno para pasar un agradable día! Si llegan pregunten por el mesero Yor o Jor no se como se escribe, pero siempre servicial y atento, pedi una jarra de sangría y nunca me falto hielo, no tenía que pedirlo porque Yor estaba atento y listo en todo momento, esto llegó a sorprenderme por esa atención y hable con su supervisor para darle un reconocimiento a parte de la propina. Buena experiencia de club de playa. Recomendado.",
+          "time": 1745031379,
+          "translated": false
+        },
+        {
+          "author_name": "AR ODONTOLOGÍA",
+          "author_url": "https://www.google.com/maps/contrib/113010078722390120276/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVb-LfLcKKkcy6X9Mz8wCPkH7ote99vK7FB2guZrDlknLvYhqnm=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "Hace 4 meses",
+          "text": "El lugar es lindo, comida deliciosa, ambiente muy tranquilo y el personal es excelente, la carta de comidas es muy variada ! Me encantó",
+          "time": 1745715630,
+          "translated": false
+        },
+        {
+          "author_name": "lina parra guerrero",
+          "author_url": "https://www.google.com/maps/contrib/101648927719577519313/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIKTV6eh61ytGmkwBiwIf_Qf01uWfVwmAKjtrxTFa3tEChgJA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 5 meses",
+          "text": "El día 23-3-2025 asistimos al beach club con aproximadamente 80 personas invitadas a nuestro matrimonio el día anterior recomendación del sitio realizada por nuestra wedding planner Emma Uribe, buscábamos algo no tan retirado de Cartagena pues trasladabamos a niños y adultos mayores. Todos adquirimos el pasa día que incluye almuerzo, al llegar al sitio se nos tomo el pedido para tenerlo a la hora que deseábamos pues éramos un gran numero de personas.\nSus instalaciones son muy lindas, limpias y cómodas; la comida nos encantó al igual que la cantidad. Llenaron nuestras expectativas pues buscábamos un lugar donde pudiéramos compartir con todos nuestro ultimo dia y ademas pudieran asistir niños y adultos mayores. Gracias Paola por ayudarnos con la logistica y tu paciencia.",
+          "time": 1743956123,
+          "translated": false
+        }
+      ],
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "user_ratings_total": 25,
+      "website": "http://www.atoloncartagena.com/",
+      "customDisplayName": "Atolon Beach Club"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Tierra Bomba, Cartagena de Indias, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "310 7746736",
+      "geometry": {
+        "location": {
+          "lat": 10.363227,
+          "lng": -75.5859607
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3650148802915,
+            "lng": -75.5816912
+          },
+          "southwest": {
+            "lat": 10.3623169197085,
+            "lng": -75.5859607
+          }
+        }
+      },
+      "international_phone_number": "+57 310 7746736",
+      "name": "Baia Bella Beach Club",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1700"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: Cerrado",
+          "martes: 9:00–17:00",
+          "miércoles: 9:00–17:00",
+          "jueves: 9:00–17:00",
+          "viernes: 9:00–17:00",
+          "sábado: 9:00–17:00",
+          "domingo: 9:00–17:00"
+        ]
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106516959408286790782\">Santiago Lopez</a>"
+          ],
+          "photo_reference": "AciIO2f3CcQBHvsxdc9R-jgReBIu3jNKpl5Tv4bLvtubKMX32KMUY1YEs-_4HwBIBjqsSKL2dPtFiKf8evikYL4Kzc-U4AYrSrJR7X4tKX8hTzOKSVH3U8-Za0R5IOm09guilVBee50fEdv3weAe1ztVMMgTUxvQ7C8GtgQmKFdvkHFo_RhdnWj79BeMhtrFzdUeLb7trSkGwCd3BpYEdNSgWYX98bxnS0FhIXqN8b69i-UkTNzNzVhJORPNgGu0vNYk0_AovwWkIOUsJ4CN-S8xCOfzp7iKuW4G9934nn1aFj0kSY9QLMMwAtsW0emT0-oPnlSjzI0FKeeY402Hzd3aKnbSuFHzf1Bo_9-Zspn-nsqFn8bTZz735o3M73nXzRu0dtx7SEZ0Jkd6gq8ovXOQ3jFF-atDPac5SYautOdgOtcyLGnYIsCJRga7Ky9f9g_S",
+          "width": 3024
+        },
+        {
+          "height": 4000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107575475011800776140\">Anne Lemieux</a>"
+          ],
+          "photo_reference": "AciIO2cj4-YQz0hvi-N3iAOTAUbXwsVUwzFCLhnPlIRDz9f7ELHeuxLPlJ76BI1qjABruQ0KeMXRGbgt1nRZkJgQcQb18rhGCeMIpQEx7BPY5saC1aCy44KA-X5Xhbp-Cp3Jm8POCRdtd6ehtIr6ja0PctXayQ2sxa8tFTLbhKKkFpUt_glvWxPR7WAki7ZGwwYGRuLKvurUDxwmQr3dtdhhnOpOQuZ581r8zPwQA-tgQlTH0G-YNO-NpmZox_gpmAnjSsxMV7iijR3sZWcu7ptcFg-s3RBpianQ_rFEo1NwwHD23oqH-MygtWClF5pWhgwIktNKgrHvEenjdojrNCp9RRg6hDZep_ZC9OoNda53tTJV-LlcMPn7RBBIWCQwDCU9hHxsEveLBGU8Gf95blQW3Mej8DevJmqk94uVDl87uk0yiQ",
+          "width": 3000
+        },
+        {
+          "height": 2976,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114033145796450124877\">Matias Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2dzUUPkC5yUoLUo8HzrmX9Ls8ZtwFzNvmw1G2nP5Oe3j6GGx4NY9NRn_KniQvPYxCSkP94yuPEzBBtbfDhQsMFbvJU1KJAOlNJReSfnYo8VV7ZZ8PdQA9gMAcnnEr6MkoplVzbuR1rhNCNQlp7zoxsZ6E8MTiNhu3kM3PIb2UT69k_3DPSsmuKOTyHFmheDlXCmRmB7AEtZcaA7CJHGMpyPVYZTOpDjZ8jZT7NOoJ8_TcyrPpa1GwKHd0tuDXNhi-OhUW2MDeIrQ3GoOfYsRub3-UB9BuvKNAMDIN_7J0xzIsvrZQZhME9DE-GP_-q0zaaf5iouBImAfmQ5a2OMc101y0kS4o7bY7-OXkHnDB9n8hugyy8QA98slOHNzGcE1hsqRduDwYhGhHn78zjelt2UGbpPjpDpelLolUVYv6YgvLr1QlZlO_N59jt4cxaM",
+          "width": 3968
+        },
+        {
+          "height": 3408,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109163906283153831951\">Yamile Gamboa</a>"
+          ],
+          "photo_reference": "AciIO2f0I5gOPFX6yIPxi0Ws-LV4rjwFctdfcnxEcUrdc9dQ5lTI6TkY81aX1lfUGCrJPZj3bV0ZQEW3R5JfgAI8FNjjri1dh6-jJKG-t-mNsw2GQKEX6-UyLkSpzXwojeTkCUdIGIjKyE6qmnZsXICLffolQCx-8xpYihYhvQNA5XKx7PcZPJ2RsYNGbb_y04v6zqunAN2KCmup8Fa5W3dfOR4sDHs9MluFpS6gsgbljWRIutC0UqEbhQTAtiZcX9GgUjTqgSTl2TZ4eM8R0q4jr3MlyotdYxNZQqOvOvu0itfquwGpbKUSMuIauj4boL7uA4U2z-6VPrGrCYqXRkQb3oFDDzdDCiWm2V-BGMNmmqBNvc0mwNvBmSdgDWkPT1TnbZ5ot0JZjwrL6PZUJJDcmbSg1XNnTeR5-NfJ34C_r24v36I",
+          "width": 2556
+        },
+        {
+          "height": 3000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/107575475011800776140\">Anne Lemieux</a>"
+          ],
+          "photo_reference": "AciIO2e_hF5eAK7XbPhXuOEg8chjWni2WhUdSkYQVdc1OhsU-trLZQWIqR1HDsTtBAydAArDHUx54lVxP1hN4cQIads4hWA89Uc_gYMbIrP89n6aKGkUTFv8vcNKGg76RPhtJBM12Ns58-7p1-Z0mU8UZxubwIlT61w6o581LuZaJkoeNAFibM05PjzOifW5MF31WFxKGXLR6PPTKBgx_nKffowO6KKw6EQxpKMdh9Lbq_mL7IINTssJ9saDWAl7ddMNcbErCxvAM1N6kMWw0eRCHmMKLgJEz332v6qIIjIMjszYSRhPfZQIir6TvZ5TlMY6enV8fdpTlOSyroyHAFyIvc2JyaTJfGBWh1Dm34BTpARGB92urgUj7AgxxZvllcHOlZJZ6cU9fS6cqoKE90lEr0fot3PaDNiZyPxOOygKPhHmxjcM",
+          "width": 4000
+        },
+        {
+          "height": 3968,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114033145796450124877\">Matias Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2ekKKLpFF2PBAwLosdQAf_BAqm0vbexArI7lRwisXEKRPXQpT-9qf3_Rs0PYl6VGHcx0TuGoUh5dj-Ic9vjtKUjrZJ2uuEIc8E_uozyaZvpgtkLRULVCH4-HUBizqznz8EFjd2ZtYW16dbsOn4M4dHc7qkpcCb5YCq3MlnNQJFh5gKGUUfaAFY18xckKbMxMvILi59f4uTeQ43jlzJmAUpvZ4UDfqnRQhpAYsbtUv3hhQ387N1vhMNZ3fQloXz2Qgv7GJkcgi3jjH6OY-HmRhtkwfKrS-1uoPiqHlfnD4hPReSfVec1oUXuMous3LY30ZGjTV-63czUWe6ndPC98ONL4PkIccIrzufubZSUuAgRsazgL_mFacwe1vp7wkge49JIRlidBZOAo7D0he5U_c___5tDGm5rtCoiBi2JcvD2VhoBDyIBZGZtbZmJ_OeE",
+          "width": 2976
+        },
+        {
+          "height": 2976,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114033145796450124877\">Matias Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2cVorih0DfIVR0LvkiEQHnfSun-ZaLzS4XYHwvw2GJq1KFNaC2ouiUXu_DDJwCrpPGwGJg8mco14pZIfooAn5FwW2XJymc1NQ9gzmJ7TpTNhdqOFE5hjPdb6X93UhLUDqq0R0eHoN0NNJnHgbYLQsr5D-R3fHLnCjS01WMxqapnzlQSIP-XyLGdC68RXj5i2nfr1BRO8uyI7bOVxV1_k06Iza1zqZZFemzuJ9b5aaKsNwMheKgRD61HF-03U4oCo7esfMZ058haR1YhLDdBhIMneaSuUlB3QWVVn8YbdQvASs0rLoGXhKNJBUug6FxvojcT-pFCY2xrGzpyZNzxJnaF11qSJyvcxVJppRJxGi69Rfu7pSWWGPm6rztbgMuOgKtkdhaUKYF25alkNxZxRYKH9_9APJoufdSWuXlDun5L1x2rskUTN5Frk9ofs6EF",
+          "width": 3968
+        },
+        {
+          "height": 3968,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114033145796450124877\">Matias Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2dRgvk8khJ8uUYbjjBWzdHUbdvctGmAGYM1ZKZRfhJLX-DxJtcA6tTavvXHciOA3U_NQLV1_ZvC6gnrMb9cD_ModnIQYMuO_HHuF1sr5cfLbIAnSsoFSCW_yBt24ayda3Z8j6Dksa34zLLqXVGdhbvPUmwsNmkR9nV4AF9PCFxyUMfeRZNtCYpQaafjStIjVy9GbBSQSvp27aOebjJzwE68x_ioop3fX5U9WDVqTqjg85ERELMvNgwPCXK7ndcKlVQGRlAgQ9-qiIL5p60m6_Wby8huyyxOnIrEk8pofitSJQdZLpxnfrG6IqKewgS4bQyDDiw2wfi_hR56zPJi2AJaASgW8uStCl6dPapy0wmIIE7EoSGh2n63FHSUbCYp3wo8RyMxai3mUYJYAtyH6jZQnbUEbKMzWdoILgFbMoRqkCiE8QfeVUMke3PwxDlM",
+          "width": 2976
+        },
+        {
+          "height": 3968,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114033145796450124877\">Matias Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2fSclA6SSxvXlNKa2YWCqvPk8qkM-QPk3n3kl96mQi3WzPQeBqrH_o4kpZ38js_Vx8jtCfj-gVWdi0hsYxSE94dCcsYfgcvxP04UYnhgHmYsILKaD7N-a3ETdsBSu0CLNNT2qZ1JDpNhskzenZGyc1aNhLFYQZBcFvkZwxXG3LEkOPEr2IFOcX2_ke5Fq3SvzfOMDS-RV7EdyxZo2SXNK9DMOy3qnoPq4YGRyGHnv-ivCB0GMbncMMQlQyYcN4s0QnpwwhN4J8d8pIQLZzsh-suOWAe8dZ68Wm5NbUO461MfvM_Zwy_QmO2b0m_gx-RVPMY8aSZ-YU2RYj2qjVRYgtf9EM7jef0sPrQ99vTrQPHRLQ8juGnWMnxOreeqy4VBTgvMOVJ_kscsjtZZd2Sl3t2uMIWESeUDG1-Lt2jXcimST3P2JVzbzNbohYOpIzh",
+          "width": 2976
+        },
+        {
+          "height": 3968,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114033145796450124877\">Matias Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2fqoRjAOhCPWUmLm-Vrp-mFwN92dbg_UmjuKVaL5xjPK3f5HUPF7u0_OZSwLitjVRKjm47gTNy29N-zMVdm0oAh6O6xgq0sN2eKtTCnTEVwnGaC4xHMjP37q_nabtabtoIY22P5NkU5ne8Ec1_1f61kcCYwcGHI8gdkNcdtbjVqxCz2R8aKFstDQhFOEqD_CTKj0OOvqZd4dPPpKpQsp_83_hWeDLEEceoMV1oZIM_R0nafEUfYq7a3vgBPrFhIo0CbHtZvV4UyB6hEpn2HgEc2nA9blgZJALkLyONN5keEWhKXm5sc7UiKXT8lBPGtJr0WLRICnAFxQZo4UQ4cyu7H6ZVK6KGT_cS8aGiRzB7lUh3F2eKui1KmoebTYjGjmTsSa3Xs0tHhBJPPtghHv0xeikO-XYllpJCAo40R_v4qdjB7p5pamHzX6PXu-wZC",
+          "width": 2976
+        }
+      ],
+      "place_id": "ChIJyXGYuysp9o4RHANQyP3Ew20",
+      "rating": 4.9,
+      "reviews": [
+        {
+          "author_name": "Franlol 42",
+          "author_url": "https://www.google.com/maps/contrib/117981547218981508524/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWmOf2x8tShlvPeJEJDs7aqybSM3UREasj_zdBB_1f7nMI_YeQE=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 4 meses",
+          "text": "Un lugar maravilloso, mágico increíble más que recomendado muy amables muy privado, excelente para pasar un momento único más que recomendado volvería mil veces más gracias Baia Bella",
+          "time": 1746815414,
+          "translated": false
+        },
+        {
+          "author_name": "Santiago Lopez",
+          "author_url": "https://www.google.com/maps/contrib/106516959408286790782/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLqpZRP2HDeEI42PWbtVCCd-k-O1KqLE9c7gaKlEOEk4n_KxZE-=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 2 meses",
+          "text": "Increíble lugar! Excelente ambiente, buena atención, y una vista espectacular",
+          "time": 1751565989,
+          "translated": false
+        },
+        {
+          "author_name": "Gabriela Reyes",
+          "author_url": "https://www.google.com/maps/contrib/105942982194022386024/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVrw8dWlsQfmF8HmV-t-DxhyyzDSa7WKPhVBdGQ_JZj65xb54_z=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 3 meses",
+          "text": "Playa exclusiva y muy buen servicio por parte del personal.",
+          "time": 1748031739,
+          "translated": false
+        },
+        {
+          "author_name": "CAIPI PRODC",
+          "author_url": "https://www.google.com/maps/contrib/101475659232588191163/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVvTxsSK2cYgPscdlkTAxsgI4Gq6elzlJEzRCZmZ6YdeF_ebvP7=s128-c0x00000000-cc-rp-mo-ba6",
+          "rating": 5,
+          "relative_time_description": "Hace 4 meses",
+          "text": "Este lugar es increíble tiene una excelente vista una calidad en Atencion el privilegio de tener una piscina con vista infinita y los mejores cócteles de la zona este es un lugar 100% recomendado tierra bomba en Cartagena sus platos la delicia y los precios ajustados a la experiencia",
+          "time": 1746641103,
+          "translated": false
+        },
+        {
+          "author_name": "Fernando Pellegrino",
+          "author_url": "https://www.google.com/maps/contrib/107619891465679853154/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocISC9EBoxhrSoRsoNvR25NlWU-3_H_UNlzHg_K3OHpQHIzHvQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "Hace 2 meses",
+          "text": "La mejor playa en Tierra bomba para descansar de verdad",
+          "time": 1751909396,
+          "translated": false
+        }
+      ],
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "user_ratings_total": 12,
+      "website": "https://baiabellabeachclub.com/",
+      "customDisplayName": "Baia Bella Beach Club"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "editorial_summary": {
+        "language": "es",
+        "overview": "Hotel moderno con restaurante informal, piscina exterior, club de playa y habitaciones con obras de arte."
+      },
+      "formatted_address": "Blue Apple Beach House, Isla Tierra Bomba, Bocachica, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "316 7506979",
+      "geometry": {
+        "location": {
+          "lat": 10.3255653,
+          "lng": -75.5906017
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3269196802915,
+            "lng": -75.58929186970849
+          },
+          "southwest": {
+            "lat": 10.3242217197085,
+            "lng": -75.59198983029151
+          }
+        }
+      },
+      "international_phone_number": "+57 316 7506979",
+      "name": "Blue Apple Beach",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: Abierto 24 horas",
+          "martes: Abierto 24 horas",
+          "miércoles: Abierto 24 horas",
+          "jueves: Abierto 24 horas",
+          "viernes: Abierto 24 horas",
+          "sábado: Abierto 24 horas",
+          "domingo: Abierto 24 horas"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3309,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2fL2j1hjJbM6es4AKac_6_R1F5U8AIemyucZ4gNLZw0sB9cVhiVaw1lCkOLEjbfmgmfuLbzufCpS31yi4ANf7ls9Wc44R3-2jGLzQ9Mf-uHFDk4aOtFoZbOWKg7uBHoflvpYgP1eURM3keDYcHsiYxifvcDUrTkRPtcBZwkENWYowN5n_kPMhmvxbEjR_0ssD_6ce8Ji2-PWKHZWReQrx6DdvVaaUqJdgJExwNtB4JNYqPqCddQX79UmMrCFA-omUclUZPvuMLIe8XGbnk2nJyvantxb-bAaeHZ452Q_snDwA",
+          "width": 4800
+        },
+        {
+          "height": 3151,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2ddTLX5zmHGWm_CcyFxt1MjEWTMHnNdEpG51y3W6nODfiEdoqQH09JpPpHsUJfG2aQhwWCxaMh30lr_FaqFin1nwbgH9O6oyLOwBYxnFT1q--rjSxki5pjv6WQjd8v5bH7Sjpyl0MwQwB2VLJniJJWZOm8Xo2cVe9Jh6fr_KEK7-CW_U7fcU4L60X-_hSh5nYSsF-4Hu95Gl6Zcq17gveaR39CIb3w11XgSuk0IG2LRLlZ9ome075XXlUOEidNaUIJuPJU2Z9QLkYUiGzxOwhoWe_XXtF3-blhJ8_N8OzkCuA",
+          "width": 4800
+        },
+        {
+          "height": 3203,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2cLwvklHOecAhm4J5vhC73lZvRz9F58Jw6ImBgQgu6dtP5An78EtYB7p6eN5nF7ReNjUC8cRTOVG3KWy8zZXvBatQmaEI2ZkdK_FsKr78XVqc81y3SzMvKStmNknwVexOCnMBenpIK4VCItVAdVHNTkzYgF-wxAnXgZlXPNIF-EOnbYqTDgTpBOicXYDpRyd4WcGouZFQC3NhsrDbHuSC6dPrVMN3zIjYqhKR5nQbqvr67bSmxzoK7gg5Qsv_z2xgIdIEtMBrEhPBBOFuuE1HbLgGe5TMDM_g1gVnKM-bUE8w",
+          "width": 4800
+        },
+        {
+          "height": 2911,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2cRWxXY4w3VYZZkZoh0m0prjvxJx3-zKoXJc2xtGQaqIw0oOD2jMSfwmYEVO6IrFuqTi256FaBXYKzqLN9hZ9fLJXmD7Bs78BNRUtMddTWYhvPlM8GKHdMHaqFHDMOlSblUukySJ8O6C2OkvQBcQKzV-YzH0kC-p4wKBOD1PPyhICcIp97S4LYbbWTq72zo-nOSBP-8Uo61uQmBKgMmnrCmtTIeaKNBMw0Uyerwh9F5L4Mnv5NfAE62s4zsOXz7QVQTISIlE4HYhgZ9n7vud5Hg0uECpmoCN4O4Y6wIqihZVQ",
+          "width": 4800
+        },
+        {
+          "height": 3204,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2fbFsOro7nIBpneCumuSo0eXjM9Cz_3TjLmxuC_Kp6z1CAoY6cfjF1ri3cuM7LNGxAqgpQ6JnJ88Zx0DD2ONPAxEGySGZWsi8uWm3RcZptIEOvmmbjrEHWHh7xkVl_QeTN9Lk-5ZSePDLKQyN_rEMOhOhuu83r_KnnVJDO_g2rB_TfAQvuZbHNX6pL1O8cDevMFB4gVCnJI-eUcDen3sLDifn_ZXjUJiwjB4ws0vsIImcx5tDejWYgJd_aQVAUpWJQqjTASHtDdMIOCXEnCP2GAxfByofVtlWaSMmTa-H4sbw",
+          "width": 4800
+        },
+        {
+          "height": 2610,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2eNfOxZYG0MON6mQaXyrFQX-pX8TAEPZHEG40DjBXc-Aa8kZN6lhf_x0BxZhVVU0lUJ0zjgKOujVEiO7GL5HNip4LnCr85yZ0O6a6kts0lwLsSzwRpKytf5qIgJ0rt6Ld3DLuWg7JUaFe7efvFAC5I2e9cnGwtGh--fOLGh6SWBENiGUZ2lbV4oiTuOIwXYuUY2dF_gUPaXJ9hRBfSrBIFpx_BGWGWnPh3FE2zXqUK_zTQUuSOeEkSVpZ9UgRCMB2MWSN4Jz8CfPgPJnq-f0nY32AjMohtHrqPS71bKyiDCkw",
+          "width": 4200
+        },
+        {
+          "height": 1800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2dXzwZJO20YVXsLludsayvWqTuZ60DMzBW8qkn4cFIFcQuvDR0vikz3FOu8lKAD1G6taS52y1rFrLYEUi-YF8ej7hl_n9LYhzqcKLePpVXmsUvN7wBTCfJAHcWGaZDQXK618Kw1luA_pEOF1wZIaZ0d3m5me6VLWa2ig0-uk91Qng_AIau_COvSAig2xfCsOcziMgAIrxtFTpTGrFdVwPGekjEDbWJnLaTGJBp-UB7BF56gCSsV9WVC27zNDqe6jacomeqCwSrAO93iQxG__jtCXNFCTKCLhmN2PNrQ2iKobg",
+          "width": 2705
+        },
+        {
+          "height": 2195,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2eA_crqqgYgJG6UIwx3S1zgiRCvey__iFpCJEzy8g8cennBpmztkLUdxScmXKGut9YP9-Hzo_uo4fhRhHANvDRhB3bCajP2Evr76wuP-GZA5SyNmpumDTC2nRZnbOMXHvU6qcy-76rjBBrEym232aao0LptoeQcEcEpLpzBUtb1IjvNdnxRj8T9xQSvwgS-cLOdr2BPCQDWTDKAieq_Wh8YLt1MXtYpO1TZFNsVpzM8U4nFFcbdpFy7N2N9nfw8l48hT6-_b9hjTbICHYLQ7KSkIeJ1Nnl2tEliWK48zm0Qmg",
+          "width": 4200
+        },
+        {
+          "height": 2692,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2cS46k8AtS9kPjpVv-m3TLyykgkAZh2lwtGmaIH72IWCvIpQmuiuOFF5uLUgIZJ3u7potxrIJynJoYqwQqHQXH2hUvkTZocF9FPFEWYEtleMPZBHtWoGtxZveuM9uY47flDarFJ1LipZOHtBSfhlip7BHxmgIRfsKm9sMRF_A2Kdseb2agbfQiyvrJwDYVUlyK4UAw2gm4h2lum1CdhIQtoS_PjJMGO4RLgdsFoeP6EDD7jrBpmrHYsg2-nM8TOzRHwQSY6bo0bj52aydEkSFKQPeFY0mq7DIbCdgSjWm1d0A",
+          "width": 4200
+        },
+        {
+          "height": 3204,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113870039510057574858\">Blue Apple Beach</a>"
+          ],
+          "photo_reference": "AciIO2eW6Kp_UY9C5NLxUB696AMamyPfJbdKLg4IhDhZd6XSr524jB6v86Fkr8Fhrp7c_k8QMpT7pUXFS2ZDTwHWpIPpWOEDuOixdLMb8-kH4IFeRc-WrqVjmsN4z0M8jZgtbN2f0HzL-u5Cs9-kk5ZU2Ppgo8XCe8o_sbkuPGrbY_BpA6_dHcEp-DUBDb5HEAB7cArkeHVepwVs4CaeyLfhP7edT3trjZwgA09ytjjW9XffPUuQDSGmksCERDb9y7xvMVSOXG-wHtHgKR_Wt4iyPWgmSO9reQq26W9gNA5wjE0r7A",
+          "width": 4800
+        }
+      ],
+      "place_id": "ChIJ5UQbTLsp9o4RZ21NmlNxUxY",
+      "rating": 4.7,
+      "reviews": [
+        {
+          "author_name": "Sebastian Velasquez",
+          "author_url": "https://www.google.com/maps/contrib/102906167291493262997/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWKywR4FpFbIuGkT9LQ9PzFqOVeoV6uzteX1Iv5gUFB_r2WNulB=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "Hace 5 meses",
+          "text": "Es un paraíso en tierra bomba el hotel es muy agradable con acceso a la playa y los vendedores de la isla son respetuosos. Buen ambiente, precios moderados y altos. Buen servicio aunque podría mejorar por parte del personal de barra, restaurante y lancha . Adquirimos un pasa día desde Cartagena y la pasamos muy bien. Sin duda volveríamos. Recomendación llegar en el primer bote de la mañana.",
+          "time": 1743897267,
+          "translated": false
+        },
+        {
+          "author_name": "Lucia Mutchnik",
+          "author_url": "https://www.google.com/maps/contrib/102051289882714028955/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKr817KTcGIqYJ1vkxgAxejpg-r6MQpwsF60qo6Hh5_AeRTYVUj=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 3 semanas",
+          "text": "Blue Apple seguro que es de los mejores sitios en Tierrabomba, el ambiente es bacanismo tanto para niños como para adultos. El servicio y la gastronomía q ofrece su restaurante en la cena para los que se quedan a dormir es exquisito. Muy recomendado, volveremos 😎\n\nBlue Apple is just the perfect getaway from Cartagena. It’s not as far as the islands, there’s beach access, pool env is very kid friendly, volleyball court, SUP and the option of doing a tour of the town and eat at local restaurants. Just ask for La Mami and eat the best pescado frito con arroz con coco y patacones. Yum! WE WILL BE BACK! Gracias xx",
+          "time": 1755563305,
+          "translated": false
+        },
+        {
+          "author_name": "Martin Javier Valda",
+          "author_url": "https://www.google.com/maps/contrib/115061304075478703503/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUPmpzfJ3Q18a2N0-edEzeT6FFvpOIxXWbgHLplxFhflHB1pKah=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "Hace 2 meses",
+          "text": "Excelente lugar para pasar un dia increíble!!muy buena atención de todo staff (Deilmer,Carlos, Ezequiel,Laura)La comida deliciosa!! hermoso lugar,limpio y con una piscina espectacular!!la vista al mar no tiene precio!! Sigan asi no cambien nunca!!! Totalmente recomendable!",
+          "time": 1752367063,
+          "translated": false
+        },
+        {
+          "author_name": "Grace Del Cid",
+          "author_url": "https://www.google.com/maps/contrib/116271715650674267584/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLmKfZJ5H7WSkvZhW49grw0-gPUeEZV_nsI4-I9g3YOti9hOA=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 4 meses",
+          "text": "Segunda vez aquí y MEGA recomendado. Cuenta con todas las comodidades que se requiere para disfrutar una estadía agradable, cómoda y con buen servicio.\nBuena comida, variedad de bebidas, limpio, servicio excepcional, instalaciones sostenibles y amplias.",
+          "time": 1746382122,
+          "translated": false
+        },
+        {
+          "author_name": "Madina FL",
+          "author_url": "https://www.google.com/maps/contrib/110435358843309559286/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXXQ3ENwZnEzXzkW9yxrim-qdl304ukWew4S4l_aoGp3bMtnEK9=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "Hace 1 mes",
+          "text": "El hotel Blue Apple Beach fue genial, lo disfruté mucho. El servicio fue muy bueno y el ambiente, muy romántico.",
+          "time": 1754442862,
+          "translated": false
+        }
+      ],
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "user_ratings_total": 1118,
+      "website": "https://www.blueapplebeach.com/",
+      "customDisplayName": "Blue Apple"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Isla de Tierrabomba, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "304 5938911",
+      "geometry": {
+        "location": {
+          "lat": 10.3673598,
+          "lng": -75.5595317
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3687834802915,
+            "lng": -75.5581608697085
+          },
+          "southwest": {
+            "lat": 10.36608551970849,
+            "lng": -75.56085883029151
+          }
+        }
+      },
+      "international_phone_number": "+57 304 5938911",
+      "name": "Éteka Beach Cartagena",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: Abierto 24 horas",
+          "martes: Abierto 24 horas",
+          "miércoles: Abierto 24 horas",
+          "jueves: Abierto 24 horas",
+          "viernes: Abierto 24 horas",
+          "sábado: Abierto 24 horas",
+          "domingo: Abierto 24 horas"
+        ]
+      },
+      "photos": [
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102751411675722880759\">Dae Kim</a>"
+          ],
+          "photo_reference": "AciIO2dyDzAtJPjqmlPTZA_69yiZjZbOAsewpCjMDu-ByfucKxRnJlx51G3LaR24cEyEMnEWR3LVSoG6vCCaiyT-6cLIwTNJK2Ts4fTMESMmKil6ZauUtT6d2foAgxa29jYpZnfgEg84Ob_Ho3Hf5vfMj9JZK3sLAs6qA5MWRZvjuMvItJO9-x9tzsoHhZgfo90TEjVKhHvwEbJFXq4w4n-uZIdQDGPEt15HlTy62gGhhJ7msDvtIKHPYrh47uYysNqgwugIJ4SX4dz8arlypF4OR7LJVmMy5wtj24-N_JpSO3wCtt5aSpJrfR1VwbFe-SPpYAQZLEiwFFqeOwzD3CAtiiEkMJplMbCCTMwnjH7YoVIjWR_qt2mp2wM77kkPh_Wj1ZVpQtOq8BrcNYW8qGBMGqON7dgiAbZA4-VA2_wrU2nz3hk",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102751411675722880759\">Dae Kim</a>"
+          ],
+          "photo_reference": "AciIO2fuaCthJJD0q8_yoKtEnWLeT7npszxEKBk0wCf0a8jAZE8oZYMJKdg6A9B5jjhNxpgjawOn5g_JwlXdrlymn26TXNpl5P-7KqsFERx70rYSS93TnyqLiT36BVaxoqXj_5zx6OxBgMK1me7yQlrWENG3eqdZVqabjuvmwmE-MMlA6s5qUzHUMVVEJQA2TyP6TVlxPHB9x10kAwj_g9Q_7lJZAe6Q7gCIf8bQ6bm9kuD6PgLd_cbn7-B0_lUBKXd7SfHx0LKlWV-k87IJuAwNTcKb2UPTt_ey9Sxf05MQ8bYBv9yK_ban0wl1eWSpTzKtp12ju0-7BCDUhFhKw2SdwQW8I4YoC7o_ajbmCEik0iIARU95XFRbNUe7xZqeUbArylrDL5bNP2UT9KyWobBskJyNSUVLFy5wXOuWAPiKc2WeuLtG",
+          "width": 4032
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103094696754794938684\">Massiel Nineth</a>"
+          ],
+          "photo_reference": "AciIO2f7qPooGrLHKBOZPJrVipf22JalBrdr4eWealryKo0-VfB8lLQKyy9VoxtN7NHDMeb9WYhdKkUNex4KCjc7XQ04EniIk2u--JfL4-jxrA5l7LCHdHksl3vl9-cRoZOOrkg-UCV5B5tpZ44z1JbYxBqBsiSKC4TrhvWp6a7Fx858cmK5i83WGYDNBn5OCa_CRn4K-WoWMgDvKJ29PGCjdzLW7kS-geqeH2nDdowWJK4f1APW9D76by6rYw26eFszeAfU7gifndJsv4P_KRGuLCWfhCU3B-jak9kiS_qPOmVReuW8N9XAnElu2q3XBLPWxWgyr9hFRtnqLjSdAybD097eYJDzP0GpWqNYg_EvIEuB7pcTc9A_ZymYYnHsS_fQrEt-DtGrbpi7IxnJNVCPPfD_UJfTOfrLFMQJTlk9BtPnjA",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/113736429675417240989\">Samir Hernandez</a>"
+          ],
+          "photo_reference": "AciIO2cU4hca0DnAegZ_ZU2jWARzgGUbf-BFsVgmxe_AVFywlnGUMLCYWO__OuDoadNvl4rTVAtJgFQtQk9CiatVS7rs1D7B0t8hLTAq3jHzxiaEtkynaBU3FURPUpxlghH6OQUy0Sw7bGu-tuScHjxtvWQnJ8ToE0R8NPGohDUmJeIb0z_yP-RIALrJsakyFO5k7npKkBzFyfkyNh2vl-1Z-T6u2vqvZeFchnMkiMwHeoxYXCmANwmOHzXLZeiERwrfkSjaW-xgcTyqM6hMzIzixsTaWLyMvVyiehuKcpBBIpqKIrRUdmw04bP1hQ_hRpnzwkl3yrqR-aOm4BWnNCtCEjf7chZJOSgGctIhANsu-cQG5cSNjqwnPXhUsPrD0DnxjCMOOda4QMo_KOWhWK_SyqlYRr0karL5ZDmAGAZ9kY4SWf4y",
+          "width": 4032
+        },
+        {
+          "height": 3189,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112794495655184994068\">Carlos Alberto Barriga Prado</a>"
+          ],
+          "photo_reference": "AciIO2f9TnmnOWwOeumWIrbZniIBf5oTxE1Pa9MCPEbMJlu4qszkgXySVggw4GUFjaMet_-__Tm_m4JRA4dOjBMKivj1LWTfEN3VtVgB-zMDWgTdgHFSdCvz__PkrOn6Ynxt8lJKt-ozAnLeQZ0xpOf88BBPFvgqzfMYyTLXQRomYJD72N2CcgM2yybDkgQ2j2CmDY_5NOOnvN3CRuj6Z63aXBSTOyHw2y6Diir7jOyBjRi-oOQgIJYcxjMkoggjyhTEU6S-yiZS5G3KaA5MyDefD66a85_D3RGZI5NVSv3ZTGgL9im6NU93PtM3-98eTkH3Vqc0U7-OaGLVVLBkijk7di_GNeyAldoRNJQ7xT4PxsowhNXwBL6DI0biPos5WK_dzJDkvp8BaCi6Gm35590ZRelpnRpgNytxEAoRR8IYE38",
+          "width": 4800
+        },
+        {
+          "height": 2833,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/102751411675722880759\">Dae Kim</a>"
+          ],
+          "photo_reference": "AciIO2coJPNsBZBbDd7kx13tFHiBb0vhmdEscczOdnbpRkBZJFKfjD8cI4-E6zPf1hSgLdnfLJRegq0TUPPOU5c_hcPS2kcaHkgavGGEABQiqZbWHj9WT4H2uTlfKuwFTysRMdorv13IBUSNPVEsYhM0LLNXv9LKx1Nn3d7YV5KjztdZy5Za-nd3_M2N_wO2Zt4ka5t0nhMrBJI26zFyymJf2ThAIVJ5tHno8Uqq4WN_LKjz24Gaoj99-8WijNyH3HWbeD9pxcNVboadJUSalU-M4NfxFJxTgvtAgLY-HElqbKveNjOsoLREpmcUd9jnrCx9ydwKtrUwQrxp6-uYS24oDJq01ceQJkB6ZWuXbFUpIic_6KqcoM_FMxGfO3sGmvtASz72_2Odxwq2-4Cm-p3i-SK_8D8iIw9xz8sYTdRq7zmtXkDU",
+          "width": 3780
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108015724961448325657\">Javier Lopez</a>"
+          ],
+          "photo_reference": "AciIO2dbyUuBmSYBL9fPUW98pSjl7bJEzCbsDhfvPVuDrRXTEcrioZzpv0C5rCYPvaXswJ5TjqpEL3M2S13-tzVaYHfqMdZGyEz7xafz3HhlasRleTCxb1TzRTDj77xkeazy63F6J4MT0adKhgCLqMT54-Z_MPAvt-MYAZ9_5sDcKj5KP8ncaFFO244REbdYDnSOK7Ap-k9pT81sR02Of8AkuyNjkk7m_h73zVeBtmJhMNhCGTW7NwgNGi1kTuI16IZa41YpcROnP2nx798GcGBkr9zCz_t68Qb7sPfi0Rog9GC4dimFWs02jfz_4VK6LN5Z1NIF-_EQDZ0Bcfi-IARjMB4p41Tv9tJb9uAAPH_G88frYLYCG6EQ3XgwE7nIwlYpoaTK5uQGWk6xe9JqcqFReEr9n8eWhToklatzoMnu2l2624_X",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112767877796779148238\">Megan Keeling</a>"
+          ],
+          "photo_reference": "AciIO2e9caFUAQpYdfFL45xsaXzSxJ3_RjQwWBfmwUXVsMpE0rpwrWJQ5LMKrHe2L-r9I3ts0nZLgN2_QDKYZ6j6oJRR10_kx79fwSw4pmBtiD-_h_oeiVX5EA7gSsJCCWo4qX_U-3aa6fQFjgZdSKGU0giMsb3UzpltiaBsAnJLaZWoPenvqWV4oWyzVvgHlwGiD9Cqdlag1CL3rGKA-3vDAH0FD_H4ER2P9abKk5m_hq0d_NBDt2l-_QlwrId5hGPoWwKqNrp-2GZ7GDN_EwcU5cbNnnZhckD6f7p3QuQmYu5ZWWJLoivjpBUZUd1uBVTRyN4xixLe-s99HHYClFW0FLBkktTp75yTzmSYzZNawNP3isJ4vWYCwglD4mVvnkvtHD5JiPY1mziRT_qqBYkuYOlrnJ-5vZ40dF7KykgIT_tFk2V5",
+          "width": 4032
+        },
+        {
+          "height": 3189,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112794495655184994068\">Carlos Alberto Barriga Prado</a>"
+          ],
+          "photo_reference": "AciIO2dIUYxde1o6AC9gyzAmdjo8Ih8wqSK3lUdAeupRAdOcuvJ3MEyTNv_DR904Wal7dJtZ9SoOP1XpBkUnhfMwHmkDe7g5q2RL2kUMG7To4IQ-pqK_NPPEgLJpds0Xobguwo0fkvHwsdhQ6qR9XwbWajkswyLo4G45u5kHUQSJTjCxWNING0dbvErN_Xlj3GZFdZ6xSyxPZzAuQ1SXrY8zdzHhP98yWvrM3cJomr3awL_KLUKNwNlVuHsn8zZPHTcmiqXmX-a0HQgu2rvPXm4LaY130AnjibJSa76upJEVqZ9YRPCGYNG4CMswU9H2kYYdwUXk0b0GcT_BiNAfgtPC9jFUtCq0zVhDEMnGInPkBaAvs3WDB5xym7iOBncxCxIhFO0rVkXw6txwpv7oVkfwCBQ5--nTJm44jmmtvQ0wBy8",
+          "width": 4800
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/114594779617290005755\">Jeroen Dekker</a>"
+          ],
+          "photo_reference": "AciIO2dlvGNgnT-rUP81lH5GShT0lKGYF6mTpVLsK7V6qM7jYekDkK64H0EBU-3MhUa4McpTQ_DiwEB4yo5Vo0KPfcJQBICRuCt7LtDSii9TuhFMUjzOgGmvbXahKumx55kyc8G3DZOB1R5nlvVPpk8SiNgUlVH0NZ9XjNm_8aiN6V63O5g4L9Unfq_U-XpxBXK3ZbfZFs6kFwX4InVeV5dIWwsA64pBzv1gLuLekLZtAlRpSQIKX67RJCN0hdxcAboHcp2zXfvAv2OTAhbH6EHKdGUITvXHVm2FTV4yJZebZrdEi_d86T6Wc8HZRNd4HBiMqjFiO0CXssc6mFVkewFFB_bYj_c8qcFbgAx7NW1lUAyGrspCh7gmjMOeA5ze3b5ewkcSoYhxaCHMVwa0HfJZaqoyMv2gqT1RY7cW_5zJF9gYeel3",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJYXDegsUo9o4Rdbe9pD8aWJY",
+      "rating": 4.3,
+      "reviews": [
+        {
+          "author_name": "Jorge Gomez",
+          "author_url": "https://www.google.com/maps/contrib/116790078204164915160/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUU-6QBbuoELjovUJCM8sGhBdRPFOhW6TwIdxb_xLI6K-qWODUm=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "Hace 1 mes",
+          "text": "Una experiencia 100/10. Fui con mi esposa y desde que llegamos, la atención fue impecable: el personal siempre amable, atento y dispuesto a ayudar con una sonrisa. Las instalaciones son cómodas, limpias y muy bien cuidadas, ideales para relajarse y disfrutar al máximo de la playa. La relación calidad-precio es excelente, realmente vale cada peso invertido. Sin duda, un lugar al que dan ganas de volver y que recomiendo con los ojos cerrados a quienes buscan descanso, buen servicio y una estadía memorable. ¡Gracias por hacer de nuestras vacaciones algo tan especial!",
+          "time": 1754322981,
+          "translated": false
+        },
+        {
+          "author_name": "Mari S",
+          "author_url": "https://www.google.com/maps/contrib/103458452732548582944/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKU6L_kEOYDUrmwcXsQ8fSaa0AiNeJeQEKefSDi2_YB5s10zg=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "Hace 2 meses",
+          "text": "La comida deja MUCHO que desear. Cuando uno compra el pase VIP realmente uno piensa que hay gran diferencia Y NO. No son claros con la información, además de que cosas que dicen que incluyen después empiezan a salir con “raras” para no hacerlas. Aparte de esto la gente no atiende bien, me tocó decirle a varias personas a ver si me traían los platos, y la actitud del personal tampoco es muy buena.  La playa es muy pequeña, y realmente no hay mucho por hacer aquí. No volvería y mucho menos pagaría el pase VIP.",
+          "time": 1751136167,
+          "translated": false
+        },
+        {
+          "author_name": "Mónica Rodríguez R",
+          "author_url": "https://www.google.com/maps/contrib/117042621550213071548/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUz53rExhleBfTaoUmiFqwhk40yGjgM4wFVAvnXRjT9isT3zlDn=s128-c0x00000000-cc-rp-mo",
+          "rating": 3,
+          "relative_time_description": "Hace 3 semanas",
+          "text": "El sitio es bonito, tiene buenos Spots para fotos, el servicio estuvo correcto, en recepción me atendieron bien y el personal de la primera playa fue amable. Sin embargo, la playa en esa zona no es tan bonita, ni el mar tan azul, tiene dos accesos a la playa que están bien dotados, pero todo el tiempo hay vendedores de todo tipo, que incluso hacen tertulia ahí mismo, pasan constantemente motos que pitan todo el tiempo, por lo que descansar no es algo que se pueda hacer completamente.\n\nPor otro lado la comida, en mi experiencia fue muy mala, un pescado frío, patacones hechos en un aceite cuestionable que daba un sabor terrible, arroz con coco que traía un animalito dentro, jugo sin sabor y mucha agua.\n\nEs un lugar muy lindo en fotos, muy de moda, pero en mi opinión  sobrevalorado.",
+          "time": 1755613716,
+          "translated": false
+        },
+        {
+          "author_name": "Ann Marie",
+          "author_url": "https://www.google.com/maps/contrib/101459165720842113540/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUGO1tNrD2pI4wdsvOTZahJn5Fc__sPdzuLs4v0cNARlBh1pWTFwQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "Hace 1 mes",
+          "text": "Me gustó mucho y volvería, la comida demasiado top de los mejores pescados fritos que me he comido en mi vida, las instalaciones excelentes, toallas por doquier la atención excelente, amé la piscina pues a las playas van vendedores lo cual no es culpa del hotel todas las playas en Colombia son públicas, algo para resaltar la entrega de las toallitas húmedas al entrar me parece nefasto, es completamente innecesario genera demasiada contaminación y no tiene ningún sentido. Resalto el tema de los horarios de los almuerzos asignados ne pareció genial",
+          "time": 1754112191,
+          "translated": false
+        },
+        {
+          "author_name": "FoodieMx",
+          "author_url": "https://www.google.com/maps/contrib/109556036405436126990/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVuTzeFNBOIMyIUHp0RWHTtNpJp02kXNB2hJkAG5GqBEaAcYxg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "Hace 1 mes",
+          "text": "Visitamos Etéka Beach Club y fue, en términos generales, una experiencia muy agradable. El lugar destaca por su ambiente relajado, la atención del personal —que fue excelente de principio a fin— y, sobre todo, la calidad de la comida, que realmente supera expectativas: ingredientes frescos, bien preparados y presentados con mucho cuidado.\n\nEl day pass cuesta 350,000 COP, lo cual solo incluye el ingreso, una comida principal y una bebida de cortesía (agua de sandía). Es importante saber que todo lo demás —incluyendo cocteles, snacks, postres o cualquier otra bebida— tiene un costo adicional y los precios son considerablemente altos, incluso para estándares de Cartagena.\n\nDicho esto, la calidad general del lugar sí justifica el costo, especialmente si buscas un espacio más exclusivo, con buena gastronomía y servicio impecable. Solo recomendaría tener en cuenta el presupuesto adicional necesario si deseas consumir más allá de lo incluido.\nUn punto a mejorar es la actualidad de los meseros del restaurante, las chicas que atienden son antipáticas y poco amables",
+          "time": 1754050595,
+          "translated": false
+        }
+      ],
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "user_ratings_total": 469,
+      "website": "https://www.etekacartagena.com/",
+      "customDisplayName": "Eteka"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "editorial_summary": {
+        "language": "es",
+        "overview": "Complejo sencillo con habitaciones acogedoras, bar restaurante informal frente al mar y piscina exterior."
+      },
+      "formatted_address": "Fenix Beach, Tierra Bomba, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "318 3771676",
+      "geometry": {
+        "location": {
+          "lat": 10.36269,
+          "lng": -75.54148099999999
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3641685802915,
+            "lng": -75.54044031970848
+          },
+          "southwest": {
+            "lat": 10.36147061970849,
+            "lng": -75.5431382802915
+          }
+        }
+      },
+      "international_phone_number": "+57 318 3771676",
+      "name": "Fenix Beach Club & Hotel",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: Abierto 24 horas",
+          "martes: Abierto 24 horas",
+          "miércoles: Abierto 24 horas",
+          "jueves: Abierto 24 horas",
+          "viernes: Abierto 24 horas",
+          "sábado: Abierto 24 horas",
+          "domingo: Abierto 24 horas"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3254,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2eKmiX_dLcTRBmnWuD_thdLmP8bDEOfaGx2QDflhMRb8FTuhCS1vli2AQE6m--4DMzIBA13IVNRv4ZCmCY-M7aihjQ3ih51lmXE9bLZFECXhNdLbs1gUhSsaH7ZHtttb4wF4kGh1TIM6HBX4JU7qjUo48WfxwlkfuGCKtEuUC8cdG4Gbcyb_YDfhU27QxIvNPl3C5Yfm_e464uXsixpzjNM_J1648xgdHik3178yI9bQdVID9vrtrFbhOulrpdeW2Rw0fC76FMLiZ4HZSrMdjMIa7OHF2wD29kD-trwM6797w",
+          "width": 4800
+        },
+        {
+          "height": 683,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2ezB4WLhkjJhg0z8VLj7Xi7vrK9QVp9ZiLsvWhXQYjox_QqDILp4OG_wphvwtacDGrjQHokVH-29oHyiBFVEKucWR7vEbsfc_0RiqWB1SPBQIM0YJ5SdHQrCo-d9fHtx0T6fhbQXmVm0f40UCdMYvCPd4Gm_uBCLJMN8n52n6Pu6Puogz9S3W4KFHWNfbXFboQu3BkpFikD--JRmVyCZgBu__siOqtn9dHv0cFAaSGu13Pu5-H-nZ5JSJz0vFYdGh3NDVNh9Aic78LicDHbmwSt_z4v_XN--YTnOvUS8ZjFDg",
+          "width": 1024
+        },
+        {
+          "height": 2000,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2fkiSdSghxBpHCgn63iJnNKJnYpLfwgJiVhrVgLA_MBcegisdf3mmOxlDHDqItmVSbO703SWHnf7VR1e3-on8Psz0rzHzV5HxEtxujdcR8DNUNyx4mDId2DYmMPpotJHis3p7OIE6ldQ45I84C8DxXsSHXIC_na6mE0Ovtp_QdwXoUQQA_BkvaE-BsAboOUK1SRH2HS9nThUKq-rhIwpVyn-vWNYXfFqPjncU6NLkpmRxw6IPDqPMPj0SUX48H9BvTKQgQLPAHw9P9pCfgvhpKaw5ZsKG-8BuDdqicMBoSAnw",
+          "width": 3000
+        },
+        {
+          "height": 683,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2eiXxe-gCjh5jF0ei8DsqgqADrdUg2cVv8ZtVVI76ZH0dS1bKP4QMzFuYYSjaqDCwl6eOWaml_ICJqp2pjeK9Ff1Ncdx14FRrYX3T9qPOyQl9Vnler-izQaXsS1wVizk-46p3N5LAXLQw7pRI4rlGuYXbTwZIKkNhn7j9ZSG0O7_K_DUBfgvVfIzun4Mn-WxUgpq3DAs_jm9qB7ytWVFi-0o8vvp0yf_h35Owe2_nvnbzBKv6sF73FMwkiWoGThJFJlAw4qix8x6h0BA5FdbtejQrx7uTU1yQeH8_bxKHkmiQ",
+          "width": 1024
+        },
+        {
+          "height": 853,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2esDh8oWXTjgkk8sWUPVJ8x8of8WUZa2XRoUenEqhNqnRH_1CWonglgtkFW2Hj7mrn4olPa7nJDsvqLyTiDrQQieItJ9NT38FPf8wUxhYhIX2Sk60jBqHTOwdNGBNMIulgYBdjSBk-x9dc2IqBd5jFQQ3Dixw0oowpuSKbAUcvSBWruDeSHNC0ooTKlKuXz-l1dJV0CfL1KOKxLF50WnDqtodBbM5Gk1cd-iMv8SH1N5vz0_llmw39gBCr8Q5UjSxqOBXdJnlfkgElhNQbh9U_Jb2mRsrvu34p94lqzlqeYgg",
+          "width": 1280
+        },
+        {
+          "height": 683,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2fmlshY18UTYsgV_K5PqQtsRFyM8_y_AArdNPkgGHMjzeZfZQEecR-PEIxpdgCuPAndqkJv8BQMH_2nENOdhgFSvBLLK8yxI_EzloBhaDeH3DUlYXZxoXU6bNEmHk9-old8yEPSn4nflHNwKD_2vHqMHki-jWBQ5B7U6WYLUaDFoEpbknoyTt9CqD89gktDzjDOJ72dGFmuz2pTq2oMCw_TFS7rlERlkspr5_h4MwOVtMfgT4jIFhJMxvTl64VJOO92TDB1hSBg6pI823ougkJndnZq0HqP2a9YUs6HzpCDjw",
+          "width": 1024
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2c1w4-EHWQhN5JzbdmVLHGBY33pzLlL2vHzhipyEw07ud4r4ZHKLDVH-I7tS6dKEQhiUT5KgBid9CZnrQ28iqevvIBNsH_1Yqr56UtRRx65FsRGawspH19Kl21_qxXkk2hiD-E5TFri6XIssxeyF6HH8YJeKOwMrV3Xvd6fc3IdBM65Z3AKI_GodMVADIGDPnmAcmttV85zQdf9RZTQ2QaoPpUC8rJeI31KTXEnyNy-9KaQQdlvP5FnuhLYAQl3aGnQ9OI1v8z-ZvjfG2as_XG4ddA9hskiNDtJbsKNb_wp9g",
+          "width": 4800
+        },
+        {
+          "height": 2268,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2dbBe0k7u5pqbC0NMn7gTim07DmwiZVMkK1OajS1u5hNQVtOMS7w7Ln5LjArMshNE1k20x6ds9BU1j5dnWrzEcJ1ODEYBOrBnT0MZLQwNw02MhxNzBNmOlk26_a5zSsk-X2iO5M5dkC_AOPmMB5t35YGVw2KP95eIGZn7y52cxRIL6XpsfDpEsisAXB1Thweoj0qpCgi0lHhIlMj7xAllJA0whgBVCAsWAXqT7nmTjc5R588DGywFRYsxXExl7UIVIcRY2WP8ZIA4iOPrkXkuOGEBZGcGG7wQkeXdwDKP-GcQ",
+          "width": 4032
+        },
+        {
+          "height": 683,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2cZk_hYgDuYkEYq-tBReYzd8ufSa9HToWSpvUddDpR4fro-TVsAUuHX7mgvWckd48pqyBSvoq0jRRZnBcafDN2N-K-s2IUKoXpvrI-8yuK2481V49gd93KRme8qvdFd8URsAID2IXpS4xyso48L0XeUgYSf4a-Ny1072SywGyzALk6guwZjcY7kJ3cgnaT8-Tc7GIzls6REMysb5KRUXN4ipqLz9uZRHzwKRqwaVhi2vw-KB_GLRxPGdPwtbDHiJZthKk6N5hJZxm-rnXN-SsYtzntV3rUtkYYdJJexg7aYig",
+          "width": 1024
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/104203646129385239612\">Fenix Beach Club &amp; Hotel Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2ci5iwy5fGLHY8Y3d-aiYyoL04gCJl1PGJp31aYxHcXR52LJj9Pj42jNpxHEauf7iLYr_cXJJUyDlZLq6If7HznY3IFfOPD9A9TydJc3y7tx1vxQrmFOhq1Mr8I9RjPm29jOd5TjWkyo49VVeuUDqeBJDZcP0Tf3A_nY9XA47AL4pCM72LJXMU_7evMVFTVXmjnQp6_urTOES3f_vXp_eK2lSljFEeO5UMSQxqTuGAAP_lhMy7fpSDMLJUqOhZGLpGtj7Ur7WEPfPmBBNSIW2I5c2nurS8gNh2QLHO6-M4R_Q",
+          "width": 4800
+        }
+      ],
+      "place_id": "ChIJ3Sx6WNUo9o4RgrpHElrzJrU",
+      "rating": 4.4,
+      "reviews": [
+        {
+          "author_name": "Angela natalia Beltran moreno",
+          "author_url": "https://www.google.com/maps/contrib/115614532974478401699/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUXklSMPSmBbObogZYT2pr2ihbrqtBCVmC2YmxFS98Bfsja2YQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "Hace 1 mes",
+          "text": "Aunque no suelo dejar reviews, quisiera dejar algunos comentarios acerca de este hotel, nosotros estábamos celebrando nuestra luna de miel, por lo cual era un evento importante y esperábamos más de este lugar :(. Aquí algunos de nuestros comentarios.\n\n1. Los precios de la carta diferentes a lo que nos cobran, 2,000 a 3,000 pesos de diferencia.\n2. Desinformación en las lanchas hacia Cartagena, nos dijeron que era gratis en ciertos horarios, sin embargo, cuando quisimos ir a Cartagena nos cobraron 30 mil pesos, nos indicaron que solo era gratis en las lanchas de la mañana. No fue clara esta información. Esto fue lo que más nos molestó por qué no teníamos el panorama completo. Adicional se sintió que quería tomar ventaja.\n3. Apenas llegamos al hotel nos dijeron que éramos huéspedes VIP y que en la habitación encontraríamos algo de impacto. Crearon expectativa en nosotros cuando llegamos al cuarto nos encontramos con dos aguas de coco y está bien se lo agradecemos sin embargo, creo que si van a generar expectativa de que es algo de impacto debería ser así, pues quedamos muy decepcionados. Tampoco nos sentimos VIP no nos dieron ningún trato especial todo fue igual que los demás huéspedes.\n4. El servicio no es muy bueno, hay que repetir varias veces que necesitas sal o azúcar.\n5. Los tiempos de espera de la comida son casi 30 min en traer los platos si eso se demora está bien pero que nos avisen sería algo bueno para uno pedir con anticipación.\n6. Dentro de la habitación no había un armario o un espacio cómodo para colocar la ropa.\n7. La caja fuerte no tiene instrucciones, no pudimos usarla.\n8. No hay espacio para colocar las cosas del baño,  además la cosita donde cuelgas las toalla está muy lejos de la ducha.\n9. La loza del fondo de la piscina está rota :( y las camitas de la playa muy sucia.\n10. No hay muchas actividades por hacer, es chevere poder relajarte pero si quieres pasar muchos días en este sitio quizás puedas aburrirte.\n\nTenemos que rescatar que la comida estaba muy deliciosa, las habitaciones son muy bonitas y con buena decoración! Pero este sería un gran sitio si mejoran estas cosas.",
+          "time": 1752891923,
+          "translated": false
+        },
+        {
+          "author_name": "brayann sanchez",
+          "author_url": "https://www.google.com/maps/contrib/117698184315764572604/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI8351ytxviObufGfD09YqUBewKh7X1xO697lKDqpaxID-t6BvQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 3 meses",
+          "text": "Un paraíso inolvidable 🌴✨\nEstuvimos en esta isla y fue una experiencia maravillosa. El servicio fue espectacular desde el primer momento: atentos, cálidos y siempre con una sonrisa. Es un lugar gay friendly, lo cual nos hizo sentir cómodos y bienvenidos en todo momento. La comida... simplemente deliciosa! Cada plato fue una explosión de sabor. Y lo mejor de todo: el ambiente relajante, ideal para desconectarse y recargar energías. ¡Volveríamos sin dudarlo!",
+          "time": 1748656947,
+          "translated": false
+        },
+        {
+          "author_name": "Juan Manuel Vallejo",
+          "author_url": "https://www.google.com/maps/contrib/118150409994710683494/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocI0BcAwKsmeWu6HRx-DejQO8yMGx0OO52cdO9yWsuljDSdLUA=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "Hace una semana",
+          "text": "El lugar es bonito, pero la atención del personal es pésima! Ni siquiera te dan agua! Nos cobraron dos veces la misma cuenta! El desayuno no está mal, pero muy escaso y si queres pan te lo cobran aparte, lo mismo con el agua. Se supone que te sirven agua y jugo pero cuando lo pedís no te lo traen. En una oportunidad nos trajeron un vaso para dos y nos dijeron q compartamos. La playa está llena de basura y todo es muy desorganizado. Tenes q pedir muchas veces lo mismo hasta q te atienden. No lo recomiendo en absoluto",
+          "time": 1757000202,
+          "translated": false
+        },
+        {
+          "author_name": "Oscar Gonzalez",
+          "author_url": "https://www.google.com/maps/contrib/117067647499482138058/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXn2iJLD81mYRIRXxFiFqwKZ-zG3jojvf7YaiEFAlK2YXkuZIzfFA=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "Hace una semana",
+          "text": "Pague por una habitación grande y fue lo esperado en cuanto espacio y servicios, el internet es un poco lento pero se entiende por su ubicación.\nEl servicio es bueno pero falta un poco más de pro actividad en estar más pendiente sobre lo que se requiere y no buscar a las personas al personal para eso.\nLa playa es lo mejor del hotel, es tranquila y casi sin vendedores lo que da seguridad y tranquilidad\n\nSobre la comida, no inventes pide siempre pescados\n\nEn cuanto a los precios son altos en comparación con Cartagena pero siguen siendo económicos internacionalmente\n\nEspero regresar pronto",
+          "time": 1756912229,
+          "translated": false
+        },
+        {
+          "author_name": "Iselis",
+          "author_url": "https://www.google.com/maps/contrib/104806215875375516629/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK0jlWFSh6ZWiWY2GLGtCtSM92_D1NGsw3sz7bVy66n3IOU3Q=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 3 meses",
+          "text": "Muy bonitas las instalaciones además de muy limpias, el personal muy amable dispuestos a colaborar siempre la primera noche tuvimos inconvenientes con el aire pero lo reportamos y muy amablemente lo solucionaron para que nuestra estancia fuera agradable para nosotros. La comida deliciosa variedad en el menú importante las bebidas siempre frías con bastante hielo me encanto eso en general recibimos una buena atención y servicio.\nEl desayuno también delicioso y muy buenas porciones.",
+          "time": 1749576734,
+          "translated": false
+        }
+      ],
+      "types": [
+        "establishment",
+        "food",
+        "lodging",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "user_ratings_total": 2203,
+      "website": "http://www.fenix.co/",
+      "customDisplayName": "Fénix"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Isla Tierra Bomba, Playa Arroyo, Cartagena de Indias, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "318 3356186",
+      "geometry": {
+        "location": {
+          "lat": 10.3376617,
+          "lng": -75.5908946
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3385795302915,
+            "lng": -75.58931461970849
+          },
+          "southwest": {
+            "lat": 10.3358815697085,
+            "lng": -75.5920125802915
+          }
+        }
+      },
+      "international_phone_number": "+57 318 3356186",
+      "name": "Makani Luxury Wanderlust",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1700"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1700"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1700"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1700"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1700"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1900"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: Cerrado",
+          "martes: 9:00–17:00",
+          "miércoles: 9:00–17:00",
+          "jueves: 9:00–17:00",
+          "viernes: 9:00–17:00",
+          "sábado: 9:00–19:00",
+          "domingo: 9:00–17:00"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2dAFkmfv83gb0LRUDT3pisYjF2DNVd4dqc5EZpZ7AVeRzPF7fpmJeIFgA0DMLLJ2fhenAmmHiA9dBB-dO1nCeCOQKVJSMtALTRZjqN6N9wC-36WLkfeUq21RWSGhWmQ7F5l-vuxXArHHF0v1tys4VfjXNrF7dsUM-oCGV_9JVAzhW-tU7s3_3DuTkLPfdTI3bSW6WX6UNvJt9lJv7I158_kmT7cmTLOObTIkwqBtW7PG8FAPp9oQjKDk3d3wso61v6uszVp1JyPDVxI63VThUEqdE-rxELByn3CHmjc6yD6_g",
+          "width": 4800
+        },
+        {
+          "height": 3199,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2fPaAIFCZe52U3vl2_ZkMj2oo0Gp-H4TNq0TK8WJirdnR_iPkCkt7CcyyXHoeFo2ysZROv89TEder_zfWQYlW0EQms_Db-GPCYTSxsHGyl7FVN3P2x_XcJn0AhkMiOyhDymQnC-rSlD-S996JWK3KUtlFsB-Vv5VwkLhYfa9OW09JwympKD4FQVzBl0rIvTLORJnXZdh9T_I5qWOlmcjOQrzLCFT2zjZ4dBounPAZ5jmRXlIdzc_4ROoHquWUyQ4uWdDYpCdXNBUfLg3yqpTHwrdtdTNli84QSkY3tNIQvEtw",
+          "width": 4800
+        },
+        {
+          "height": 2252,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117367413011459140238\">Leon M</a>"
+          ],
+          "photo_reference": "AciIO2fSjwYgqYm_Vsul_xUlR1VMR7zwkjtYIaGmX_Nmz2gehaeNwG8UOewZOgMSzSr9G8LCR9R9OzbhBWpyc0k1KuC-HYwJTm63MgNRssyQZYmyJwcp4KuqxjvPdFVirZBM5mXw9M4Oq4G-YaBAyup-4wxNojqe31TsMge4oGG-5iRYDa4Cpn69WGrQJTU1Tjbr3PTltukOdwuGVmDVs27csYh8AEgnH157_6DmFsBIRjIotXCkH7vTAlggtJaCHjpLBQFMIkEQtbe30NXEdRXKqI2q_CwXdKAKNT3foMoxrk40_fP-UfcDXfTD4ApKA3c3j_UmsIeB1eaQ4HBH5ejGQvNWyCcEQYbknN3segH99qKXcEGaqN-WC4_rnmaj3zozzwFcWrJn3Sk7Q9GCQnlQAdO9gaPTTUD3T0G_Y2eYINeWSw",
+          "width": 4000
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2ceNkYWuUSQVlog-m813eyy1PFJ8nUPL9xGHuMuG19zI-qhykJMlTR-eduSsEdF8ZWkZOdRuLjWMUvKucdWGHSlFWDSqbibz3sVzSF8dfOqEyhiEUaa0YxyoDIuwiJ_Rm0jhfWqkZkp1yFmn-nDiJ2prtlwMDTVmpSRgc1AM6IBjMGU3-uiIHFPGRhevyMhs2Eax6cSn0fmI2ALisFI5b5vFsj7-u9ciy9Lai-0wvlIAqv7YrdP1vGT-C102h6sGBI-LT67QM7CaxGUgjPrB2JqsRBJPLOPuUo531zgd2Iyxg",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2e4uoQiPv-fCctPio2zilfzMJcAgWT6msgi0ndjypzr8ZP0ElSfAEjPSlFTiCY0luONSyH4KSsH7WN14syCjoYCGOBtFmtQO6q5e_GwNYeHETJrPe8wdf1EKVsfjvupAUTmJKsbTxjrb_Tb6aiFzDH1pRIduFNlyxJuMxT9ZwNQzkp-Lh7BXkN2OnTrAQw7jgOPQHj2Qg_722w5tMS2ugATuyJHRcJ5IFHqOVRuJfPWEjX8rTsIeQ48XeQ9tEiTrBtjvtBzRp0nMHXNPksLYYu3KdpDn66zW_xlW08C7C4MSQ",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2c8YGZZh7sDHd4IE5gwrTFncWdKXSKwktBhkHbjhk7PX-I3IEJG9r3UI5qRo236Bkpv79rFGu6EZGkzAR66WlvJEevrByybNcW05tbP7NB42LjAU0_gF2F3FJsz08wYeV_1gslRFKRK2iLrumTwWKcGqc5CW4ja6HOzOnrgCX9PgKdAv01Hm3S1IrgYEFM7vOVfbNvT5b_UT1vAdhr3U1txRorO3jT9fne7RA8eTMoibWTepjCmRGTDqfFTD82-F1XCsD8LCr-v7UX3jkfA07YZedBQnD9dIBQazxw_QzoYew",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2eUEVjg7fYJaq6BGWjz5gdUpfBnikCbI99zx4o73TgqIDPbMDkMG8_YFCPfEECF9p7MAjL7TLpo0dds7Bng-8YHNUP4LpGmqHYwigNfYVqn8Noj0NwNWsGyIZvvZqknOIblX_3V_EXMue2zRJhoIcXMWZe56BeKcsIAMVGptKFzmnHsM6agWrgfyWN4cQViQ-GXTuiwcrW4kYwOcLCYCpoKQTdGQsIFrhB37H6OPWL83iJMspoZyI6sCyZ9xKQdEPinMzUdYDrHzNdy0O4dIamY9TImAYxNv3uk9Ax0bWHNlg",
+          "width": 4800
+        },
+        {
+          "height": 933,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2cS457x4rMPf-nc45skfQLMBFcZdrAi83qyEcqEhP3wdIlrxVWU3CCrFNdVPsguYIQsJXL8dobj1NcCDPdwnl8dQ6XtyyYgGtpiooMnUV3IujKmZ68hu3U940rd22FMD8v6TjKDxB1_gTF8_Z9xeyGcOXY8tHrAHUSVx8VP9A9Too1lQD2V3bcmAWMhyM1L7H-ltjQxH-yUtSY7xj4OkydFyjZkpw5DQmBauhBnJKWY0R4zaPiQe3mSI8mjU94ly70BhzSdkShn-PI9bWVveZ11X1KkKoXHjAX-SGSKYiIbDw",
+          "width": 1400
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2cSlKappQRmIsEkaAXbkcR9-Zw2ofIjYlf-7mmDs450lv4lEXBHqRlO5YOa8TFiXqpciWpVrqNX03Q1OsszoZ6G3aVFSjqeA2EZOjXCW1i0F0t_Bg5hwJzOHBAdNAfEZgb2E1xAavWpLAKivARmXbvfh-vtr0__LjX_Ug0v5tLhwUFeYAI4UJWBxIao_JTfmgA_qn_zru1kMpKPm3bHfrIfLXO-HiwKIbl-A-TTxM-s_jEMV_iEIQwkrwOJVYyufcCfRriV5TEIAd-aHhUnwnptw4t214M9C4GELl4DnjgDDQ",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112844540024300506387\">Makani Luxury Wanderlust</a>"
+          ],
+          "photo_reference": "AciIO2dUQooh8yT3bSj7YDSJ2EHSJsT3NpIi37WoEd4RhQWgiM9IirlY_JoRzwjS2habBFv7BcPY9Q2Hw3ZPWly06GkzUS6e11_iowjTfYRbvBy9J-yQj9hf6fNUR6AgwGUFEdJH7nAIPyq6kAEARg1uvwdaqzo-pfuau0IP44lXR_iwN_9Yx1ruMkT2GP0cTHYzA9yIRnXNA1o9LKagh8HzUfyHDggFd4lPd2xMdmNQYsO_bKGmuMRWzvXWSin-_zvFcxsr6LP8EKfDTNFQftroqVSD0xSHlFlogShcJdwa_6olTw",
+          "width": 4800
+        }
+      ],
+      "place_id": "ChIJv_pYVVIp9o4RUxA06sj6Etg",
+      "rating": 4.3,
+      "reviews": [
+        {
+          "author_name": "Manuela Swett",
+          "author_url": "https://www.google.com/maps/contrib/118377662516897671397/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL-ErtPfTDdO9HPYrq9uBmz4Qoi5zAKGazUbDfHiwvo5VehRg=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 3 meses",
+          "text": "Es increíble! Fuimos por el día y todo muy bueno. El lugar, la piscina, la atención y la comida. Disfrutamos mucho. Fuimos en modo relajo y desconexión y el lugar acompaña 100%, música agradable y el ambiente impecable. Las lanchas muy buenas, rápidas y son super serviciales, fui con 7 meses de embarazo y estuvieron preocupados de mí todo el tiempo. Gracias por la experiencia!",
+          "time": 1748297262,
+          "translated": false
+        },
+        {
+          "author_name": "Daniela Maldonado",
+          "author_url": "https://www.google.com/maps/contrib/103843566359734800686/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWfqtsOuwaTP8DJtW80IBvczlk3T4MFb1_yHiBLLA50C1NTS1sm=s128-c0x00000000-cc-rp-mo",
+          "rating": 3,
+          "relative_time_description": "Hace 4 meses",
+          "text": "El lugar es muy lindo, sin embargo, lo recomiendo únicamente para extranjeros. Tiene muy poco ambiente, el dj pone en su mayoría música electrónica y pocas canciones latinas, la piscina es caliente y en general las personas están durmiendo y relajadas. No hay ambiente, no hay actividades, es muy costoso el pasadía para no incluir almuerzo ni actividades. Pagas mucha plata por el transporte y el acceso a las instalaciones. Adicionalmente, los costos de la carta son altísimos. No hay un buen balance de precio, calidad.",
+          "time": 1744935160,
+          "translated": false
+        },
+        {
+          "author_name": "Edmary Reyes",
+          "author_url": "https://www.google.com/maps/contrib/105878644817280363919/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWJ2NiM8rtipZSILkfemUOE6VpIGJZUap4w-4rZcOUMO2plh4ub1A=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 2 meses",
+          "text": "Definitivamente no pude haber seleccionado un mejor hotel para la celebración de mi cumpleaños la estadía fue maravillosa la atención prácticamente personalizada. Que personal tan atento. Desde el momento del recibimiento hasta el regreso. Además de sus instalaciones. Digno de sus 5 estrellas y calificaciones.",
+          "time": 1751050690,
+          "translated": false
+        },
+        {
+          "author_name": "pilar Rubiano",
+          "author_url": "https://www.google.com/maps/contrib/106969592199118028459/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLbvO_1qFdr8vp2vvH9H1wSyM7UFOi_lev2mO8V5f7ZXKUDH0o=s128-c0x00000000-cc-rp-mo",
+          "rating": 4,
+          "relative_time_description": "Hace 4 meses",
+          "text": "Es la segunda vez en Makani, lindo lugar\nSin embargo su mantenimiento no es el adecuado, la piscina con el agua en mal estado,, que pesar y en los\nbaños, los dispensadores dañados y sin jabón y sin toallas para secarse el cuerpo, utilizamos la toalla de la playa.\nNo lo dejen desmejorar, es un lindo lugar",
+          "time": 1744989163,
+          "translated": false
+        },
+        {
+          "author_name": "Daniel González",
+          "author_url": "https://www.google.com/maps/contrib/114720183899052247434/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUkGD0ge7dtw_pHOSqwgpOob6eFp8pOECx2vl7B79ct_n9Y566qQQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "Hace 1 mes",
+          "text": "Es uno de los mejores sitios que he estado en Cartagena y al rededores.\n\nEl servicio excelente.\n\nLa comida buenisima.\n\nEl ambiente muy chevere. Todo 5 estrellas.\n\nGracias!",
+          "time": 1754321626,
+          "translated": false
+        }
+      ],
+      "types": [
+        "establishment",
+        "food",
+        "lodging",
+        "point_of_interest",
+        "restaurant",
+        "spa"
+      ],
+      "user_ratings_total": 373,
+      "website": "https://www.makaniluxury.com/?partner=4153&utm_source=google&utm_medium=mybusiness",
+      "customDisplayName": "Makani"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Isla Tierra Bomba, Cartagena de Indias, Bolívar, Colombia",
+      "formatted_phone_number": "323 3058769",
+      "geometry": {
+        "location": {
+          "lat": 10.3655836,
+          "lng": -75.556151
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3670048802915,
+            "lng": -75.55480676970849
+          },
+          "southwest": {
+            "lat": 10.3643069197085,
+            "lng": -75.55750473029151
+          }
+        }
+      },
+      "international_phone_number": "+57 323 3058769",
+      "name": "Mariana's Beach",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1600"
+            },
+            "open": {
+              "day": 0,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "0200"
+            },
+            "open": {
+              "day": 0,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1600"
+            },
+            "open": {
+              "day": 1,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "0200"
+            },
+            "open": {
+              "day": 1,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1600"
+            },
+            "open": {
+              "day": 2,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "0200"
+            },
+            "open": {
+              "day": 2,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1600"
+            },
+            "open": {
+              "day": 3,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "0200"
+            },
+            "open": {
+              "day": 3,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1600"
+            },
+            "open": {
+              "day": 4,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "0200"
+            },
+            "open": {
+              "day": 4,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1600"
+            },
+            "open": {
+              "day": 5,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "0200"
+            },
+            "open": {
+              "day": 5,
+              "time": "1700"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1600"
+            },
+            "open": {
+              "day": 6,
+              "time": "0900"
+            }
+          },
+          {
+            "close": {
+              "day": 0,
+              "time": "0200"
+            },
+            "open": {
+              "day": 6,
+              "time": "1700"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: 9:00–16:00, 17:00–2:00",
+          "martes: 9:00–16:00, 17:00–2:00",
+          "miércoles: 9:00–16:00, 17:00–2:00",
+          "jueves: 9:00–16:00, 17:00–2:00",
+          "viernes: 9:00–16:00, 17:00–2:00",
+          "sábado: 9:00–16:00, 17:00–2:00",
+          "domingo: 9:00–16:00, 17:00–2:00"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100304623367456049149\">Alejandra Perez Uribe</a>"
+          ],
+          "photo_reference": "AciIO2f8IwXOs_2csrsFp3Tu8JjoRM2a9ggHKOr4iIGUZO-DUx9SkPoZPv5OKgier1Jm6vC2k92VHzntnMW7J7AQiYA-LmpxQsiir_Zp3EgxA6LN55vI8agY2Jbr76fp--hTEoa8rnH1AcDTEhJSgl2phM4ibYDmE-HgpLfyqXxATSZamsxI6Cgk4Yr5YPGfHVbtA1KyiefPXiMg1Eim0bGxu1SWfJM0uXZIvLkVbDZA69AqZ-apHIMq00a6DLnHqrzpC7FRJoNx36gATiLX5u6hywQ_4kfCFKS_Wd9WDcjoKw-HBiGmja27viEIlaM_jvFIY56kO0c8lRpnVRLwfysq429VOq16mXTyvIXMOnRRaE94JF-jY1RzYtP1ijMPnLu5OBlR0ByW8lldkHEgLWZY-aICXjMC1XG7NKoQyE4UB-UKkg",
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100304623367456049149\">Alejandra Perez Uribe</a>"
+          ],
+          "photo_reference": "AciIO2fX__8EnbXizh3_s2BllPgwD_0EoP1LkpW3yq54UGEOeqLTPzoj5GXp3k-ryvKACGkYy6CkD3Soz356S_Fd791GqHt3HqmMU27YHHlGDFA_OuZWwAh7E6B6p4KntGGeA_X-yfULXORPMRfK9WJ52IdcDM9ShyQIBmRLxDIYx-LO_4dzR2_wVrKjVdwfENAYXgmr1B8ISXNen62acPSEh43mYczP1c_TLEg6zPKQq4l_83gV1vTYOu8lJUK5Z5cVosRM2_-B2Zb5Aj29w2kXwM0dPYTaBtYgllT-ksrslvvlGjQlsjMeds9HyVwYvfnJP3_KEUSe4qOCm7SzdBTfzYI8xnfJAxjF80C5jQkvUJNKNA2eMypaDqWK4jIM95BU2CFaifqR26oFCmy28ohsh6TlGvvnw6he8LrqT_9vRzJZEfvx",
+          "width": 4032
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118141816533500306499\">César Augusto Rodríguez</a>"
+          ],
+          "photo_reference": "AciIO2ePwYoUTzUBbbRySW4SCLg0QtrpIsHrty9mHzVt-TqCJhz_dh_IIwItorrJFQiCgiPcBOTmFkJ__AUZpdkzyBTKGOqcSRMyhdL_WKlIXik3rZYz9XOEAENOzDIpA0hpCcxmmFg3934l7w9Ng5MJUZx1_rX7e1GfjZO2CpIdnm_dmPi_9Rsy4BbRoGDwwAQW0Iq1ixmFuKsSGYd541mZhIWBNK3-EVwzG2FDavtn9xahm2FIl8Xzv34bEXl9Ws2Mw50tu8gFnLMRCyNN7sEPO9yYC3THrMXx54wk4X670d0ImSH2zcpDvyleWW0ObaQxXJCZsBHic_qZ4Sg1ilmTMvSBx5ebUKnfFdRAL-EpGf8G86Cq4-ziLf47AQc7OF-6PecVJBEtOVh5blZrFXoI5-JoYU8HQwKGHWNbjb61uyFO49o",
+          "width": 4032
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108888573401858605363\">Dr Jorge H. Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2csIY0pCmfuYQOWx3AKOeR0aW2KEYhDkjvO-AWeBixpv6b87FcyyqB5_4nuoMqzrWOmQFy2ZjuXaNDmyUp06U9DRAKQ0NB4dQbCHYYun_9xxTJUrMqbX5thhYxEbXsn4aMEJvJ0Tf1vITa2Ut8T_Wnvt6Kwq-5Hes29PXA1wadN5gRoIdLZWw2t-jVIDXgmKXSzCmHwUwuG3g5YjT4ctNlseIzP-63KSMXQMXRvzW7AA0_Yp3e_xg-6g3AVn7-6uWKhdZt12DI31TM6l3J_XkbS7AqXGTtK3guTBGfKQk87YCWsLiircDdeHriDyWy30bBkTrnrCchsHA-HYlDLevJGmzgJ_ld6b1xBlY4Czwb9CtiNwnErEQdcr_xNUYMx82R3GF5qXpJKUw9d-TOTTuDk47XFWntvOEwRjtNqjNlDag",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/118141816533500306499\">César Augusto Rodríguez</a>"
+          ],
+          "photo_reference": "AciIO2dfm9HP7bKHWQFh1pcbqpdXAekNzm4ZJqg2v3_KkqJt0GgGhtpXtt4jTxHb7j9FdPEL38mbvu2Rj1UXoID8T9uFjRoI3aGvMEf5YGVeedt15nk4C25SayI5xQci3uH6irl-EeEhj3APx_XW6RID7m9gj2eYNhWhp1TeJiohL-xoIZ0tUKw-ZGFXAvCM57NBzNGwOYpFw3AV-DVVFoR2mLop8Dewu86G0MSRNMsm4cubnS7_sHl4GDasPwfb24IjBcmhvU6e9ogn7TynMRcuRE1zk-F88rz3-h4NbxZev4vgbPqJZsR7pT0JOjQt2GMf4CQ7CmmcZKtEabMQeR3r5Ia3HYZF8wz0MCabCzqBYGSg5tAXznRfoSjddmN5rOCWRpTK-oWI_7TrwJHo3vpD5LHzRmJgnt7f3Ut1l03dgIzREQ",
+          "width": 4032
+        },
+        {
+          "height": 3614,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/106096542934130880314\">Anthony Ortega</a>"
+          ],
+          "photo_reference": "AciIO2cV5wRnXjV4UPE6DvRJRmXk4uRx20u71olTrS1VXB4neuhpj90wtoLqaHbYHKhJ9zhpRNBaqA-u36gAE94BATjNg8KbRe4Ty3CInIRHIsOCJ2FFkIA1_sFkDWRRi6aLOfW890WOAR5S1YTvd0cVlh28XO51QdeH97gkX6IJkvyxauPD8gvD4Mm2czIwagEEXk0RmHgrXHemReXs03kRNq0HxzdlBfU1krbdisEqXfDiPgHT0qSERCV2u1NIWfo57E7Wwl5qemwVNoZKMcDXPjW4-XDAEKULmIk91keqcSaitU_WGJfocnvbX1teRKAuEWdkMw2sEEQ7x6NAl_U3LC8H5zQo2SVvAa7p02PNGnVr0nNmoZEqWxUD-P2dQusDAl3rjvfUaPpfzmVfGTBCiGrj5ubf06Xp7lVAd-Aht2x5WA",
+          "width": 4800
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108256107649595974385\">Maria Patricia Montoya</a>"
+          ],
+          "photo_reference": "AciIO2fcZS-tNmth2xkrkrtapF-7Tnb5SDbP105jg-cNzY2DgcngPvr0yAV2h6MOxKoZFoF8GklYjbb-jpyOazKQpP7wHnfRvMa3mRhZk806RLtIPhjgjJ9ViZWL8lUujzBmcD80LuWW7-g-KPcE1gjdXEQQBMVb7Rp24tJ1dyFoQt6e98nk06TLo6I1ZHHbNYKNveLC4czdFlCE1jFeQyK3hoJVNP-0hcl4rvxGtLVTL7fDbHQdmzWOOFGq447mkWrjd_Yxrs5Dlb_SMfdyYalUCKypEbkCJVyxCXA4oFEkiqKtSimGc7lVrGEmtsVydl2H6iHRJlpTzGE_qF75fsJeWlZ2K-SFe1rBKeRz1q3scr0Vt9vKKWZMsh0FqvMKGW-4aMp9yfESCb567UJcb2Coy25-oMYZ49HstfejTeYfrhnx7A",
+          "width": 3024
+        },
+        {
+          "height": 4624,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/105062438632007398549\">Manuela Ledesma</a>"
+          ],
+          "photo_reference": "AciIO2dTynDLkNAIEsEiHcMsivyix7uPLGsfseW19yAATXsierjpZgp3JNFDbt8XD9Ia4P3Rz7K_S4aXiYQoFvqs45mM9z93PxOEOMr1ss8lpScAQKJH86JKGMCxGVPM0KxnuBQOi4V_kbDFFzaWHJLE3wJF9FIYP1QLtqCfUGZ_D0p5XSi0WuZlUAR-C1coOomV888lE-pf7oFZowkCSXOjzCu9SDGMuEMEPi9gRjZTzrNw6lKmYNFHFGSrKBXhtRFjEq-iIGSMv9Z1hJ5B1bOva-Q9J1tM30-0FUIinKjtt7bbFETiyIb-jmiFpCgC-eOR4PQ6XUwdYCUPEMu-4mhymO-fZTj5fWmGtcFVg0FHXUTIv3DS3BcOUZqji-AIPPijvGdgg7wqwik0fXQWK_aXxLx52W94yQQf4w2hanPNYiM",
+          "width": 3468
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/108888573401858605363\">Dr Jorge H. Ramirez</a>"
+          ],
+          "photo_reference": "AciIO2cCpCdV4_5UX9FA6TBYXGmuareomR4VSrFGrEDkOo28HEcRsEL4e5hOCeZ_a5444AzhQYhSCWZdudjj5ema9UqaSpPNEYIQ3XY8NqNYUnTvRbrSxo8YcC5xUCB9xIE5LTxkvNducbIGibp1En2mQCaIlHYK7qAPNCiMO8q22HoxHjsLUKRBlJwKgUoncfV3DrIZfUsZJyqA4GsoqLcwLMI0XJ37MtK_MN_cpjyX5lAoYoqsAh-3I4UVJvU5Q-U9OTgZcRVS4a89hpVhVcdNi5_26jMwb-b_s4W6oNGWIVGy0qRZnBWKf2er58W9DgAuo12fzdpKXMJev6TjxqD56eGHo6PKmnkHN8KAWX-E60wTPgIS8oMC_3SSq3Iq2WLvXAgQrnCpx1ZovX1lVt2ZKRZ1TEyoyfNLcCPfAREa70Kn_0L4",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/100304623367456049149\">Alejandra Perez Uribe</a>"
+          ],
+          "photo_reference": "AciIO2dnycnZycAAJfe6TTx0KnO-g_N4bldXMrDxhJS2cx_iK53SHwe2SRySicWHhtn2EA5Md4lbhqC6_4wfQYVPwWGD_MA2myqDIiPFHOKMJH6WwTitGhkLhDUw0nPgG3sTTWPjCFNJ_M65wXN4wZPN_uuLkUUNrTJww_eiKLEjqoKkTHKxUnTJrUv7_TEWCFPSNcNaIY5PYydkzps3hAF79n3tW0sAoM5egLsvW8g8HJuZgntxtgbaqJbS18ITFLPHTlCqEz6rHkNF5-oVJHlwGsuMgPuQSXmzvW0XzU6Lx6LryXCMfBNbqFQZYAymiEA3ALKeb-7trsS0ugQC4WACkHEjIIBzNRntjBTskV_bRB3u7kQLt1jSOGJ7JyJRdEKdeaWv_CuSdoHD0PAoGagCF4KuFyQqSvIvVvZn3SmUl7g",
+          "width": 4032
+        }
+      ],
+      "place_id": "ChIJVWfgesYo9o4RHSf_3pwI8ew",
+      "rating": 4.4,
+      "reviews": [
+        {
+          "author_name": "MICHAELL ROBLES DIAZ",
+          "author_url": "https://www.google.com/maps/contrib/113718306041615908797/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocLXogveNPvt1C2Y-O_iBJZwXwZPaurL1h2iMcE1aXWGGzgx1w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "Hace un año",
+          "text": "Realmente estoy muy impresionado,desde que vas a tomar la lancha son muy coordiales y atentos, al llegar al lugar te reciben con un cóctel refrescante y una sonrisa insuperable, sus instalaciones son muy bonitas y cómodas, sumamente limpio con atención de primera. Ambiente de relajación y tranquilidad. 0 vendedores perturbando tu descansó. Playas limpias y sin piedras. La comida muy rica. Completamente satisfechos y muy recomendable. 10/10",
+          "time": 1696026679,
+          "translated": false
+        },
+        {
+          "author_name": "César Augusto Rodríguez",
+          "author_url": "https://www.google.com/maps/contrib/118141816533500306499/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVrX7k0ng09WXfoGlP2ZDKMwBgLPN72tDWsZvpunqJcExpRQFJt=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 3 años",
+          "text": "LA MEJOR EXPERIENCIA!!!\n\nTuvimos una estadía de ensueńo, destacamos las instalaciones y la amabilidad de cada uno de los colaboradores del lugar; la comida es excelente, nos llevamos una gran experiencia, gracias a Pacho (en el embarcadero) Wilson (quien nos recibe en el hotel) ambos con su respectiva mascarilla respiratoria, a dońa. Mariana (Propietaria) quienes se esmeran por que tú estancia sea la mejor, felicitaciones por eso.\n\nSi quieres llevar a tú pareja o tú familia a un lugar tranquilo, lindo y a muy buen precio debes ir a Marianas,.",
+          "time": 1632662981,
+          "translated": false
+        },
+        {
+          "author_name": "LUIS Mancilla",
+          "author_url": "https://www.google.com/maps/contrib/107687027241938540230/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKyPKLQtN_Dj138z77_AhvHBWS8jrdSpoJ5NrB4s-7Qfjf78Q=s128-c0x00000000-cc-rp-mo",
+          "rating": 3,
+          "relative_time_description": "Hace 5 años",
+          "text": "Por el día solo estuvimos 3 parejas, la comida excelente, la atención igual. Yo pediría mejorar la limpieza de la arena internamente que no es muy buena y la externa al negocio que está terrible, se que no es culpa del negocio toda la basura que arroja el mar pero si quieren tener un negocio de excelencia tienen que trabajar en eso.",
+          "time": 1575338227,
+          "translated": false
+        },
+        {
+          "author_name": "Anthony Ortega",
+          "author_url": "https://www.google.com/maps/contrib/106096542934130880314/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXAvGQIcqAeMrqQkpH73Quy4qrJhRBcqWPM2rQbjt3hIJcBs50HcQ=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "Hace un año",
+          "text": "sitio ideal para descansar y despejarse de todo, cerca de la ciudad un muelle fácil de llegar. Excelente atención la cazuela de mariscos espectacular",
+          "time": 1704896426,
+          "translated": false
+        },
+        {
+          "author_name": "juan sebastian hernandez cobos",
+          "author_url": "https://www.google.com/maps/contrib/110374211719644630708/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX2rB-rdb01GZ1_iRZcvsNGeJdpb7-8oD1WLB0e0K906AgrUZ6O=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "Hace 6 años",
+          "text": "Un sitio bastante exclusivo. Con un agradable ambiente amigable, cuenta con servicios de restaurante y bar mientras disfrutas de un rato de playa. Los precios se ajustan al sitio. Un buen lugar para celebrar tus fiestas privadas, cumpleaños o para pasar simplemente un buen rato de playa con privacidad",
+          "time": 1552774017,
+          "translated": false
+        }
+      ],
+      "types": [
+        "bar",
+        "establishment",
+        "food",
+        "point_of_interest",
+        "restaurant"
+      ],
+      "user_ratings_total": 133,
+      "website": "http://www.marianasbeach.com/",
+      "customDisplayName": "Marianas Beach Club"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Isla, Tierra Bomba, Tierrabomba, Bolívar, Colombia",
+      "formatted_phone_number": "300 4889421",
+      "geometry": {
+        "location": {
+          "lat": 10.365734,
+          "lng": -75.5518125
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3669920802915,
+            "lng": -75.55041346970849
+          },
+          "southwest": {
+            "lat": 10.3642941197085,
+            "lng": -75.5531114302915
+          }
+        }
+      },
+      "international_phone_number": "+57 300 4889421",
+      "name": "Namasté Beach Cartagena",
+      "photos": [
+        {
+          "height": 4050,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2f99typmYxRUqRRtmkrVULeHVwVSYNOsLZsGNNzI2tZdZ-mR6PeqSUVqXMaD3vXNtbMB2tWqLsHolvqG4qdGI2zCmIi_9_BamnCB6DwTre8ixh_Eq691Ng0cY9XipHUKQP3D11DK1CP8nQZIWTG3MjCEd_0TLjUGHoeGY5AMLiKDFZqoPrcz5lf8hghbly2J2FAsE3Va2kNpzrCtCiJH1CNniofnGLZ6gbjP4TzM70gSW5C__LjHvGk7TyqY7w5M4FGpzr7ZvwC4POsW73aNyyBF00JyiyX39cKmizb6YOb1A",
+          "width": 3240
+        },
+        {
+          "height": 1440,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2cx5MqIJXHSurJ6ve8AgH6itxNMerFnjA-VQBJkfpQDVJMMT9Q0MFZJLyFabWwDzkVT-_6mEU1ICn3jkkq6wE4n0CZdn0LPfiU0_G4oqGBhlAxWF_oXoOKTrIh_qx-PDUanRqBzZ0hqr97oaBpDVl6KeeuHvb8t3YtlGgLz9uX2Annfg2F7y4S7QJ0b98acxtoMd_vEVXbxJngYGQD-6ol6OlOjlaXFqJ3wRt3BBwpi1imSpt3lBAnFeVhMxTs3vAyD4Zh_FPWdf4nBVQ1orRr3Hcds2xpFUCqVMi7vdwywCA",
+          "width": 1440
+        },
+        {
+          "height": 3240,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2fV8-6j_Bimwo-sn83H2Snk4f5LAEWSgA9l1saKVamGNZ1qKxZSpnvbSAXP8x1Sbsf7MAq5GB5xM5pNTLO48ZTKxX_6s5G1d9xUgjIzVGG7T-6c6v1czbx7bw2M_YIFntwMWm14nTLCGHesdPhgZjQt9RKD9SKywnjZhURFFcA4WiXWmAY0n0azBpM9V7XSfx0f-4YuEbG8IYPffwyusrOv8dwVzJ03fzmf5DDlNfdGL0vLjmdOU6H0ptdUiMgnqAibtZMpEo7k3C7T4LPaMFmfVJHLbO5xzAHlR5vZpmrGdA",
+          "width": 3240
+        },
+        {
+          "height": 3120,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2dI_3kzVe3Mn2HvvdTwW8oD8BH9Jcu8lC4CYaK2zXn9qd4UCdNqbEfeJIJBLvFrzMFSrgvLqtvlxQxRlnv2-OkZmkHN88HF8LgOisFcwZlVslBgpEnE0LaAHUxSsz46eDBgQQ686e-eSN6K8lQpXaNYnfsukRAhYHhhVNF1AeV4_GfY8Ux-a-OFGkk-Mg8oW8nWQSx5kaHpsm9QYQYWcnxSMKXCMvWYPcOFDfa3lcPNR2IHNQhwdn9lVef5fDMprGcflXRVnXw74hRBDu7Yp1ov7ZiMsmtNwr9i5Mx9A4fuvw",
+          "width": 3120
+        },
+        {
+          "height": 3179,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2cp1BxtkeyUSt-NtisPiNmpbl9F4nwNIPI34uCpEIjhQFANz7tKogI32aozV-iQ00J-UQWTeGqht5X-UAXOapJ_pMepWnsp7NJMCtkuj6t6wLEWafDLJAXYlbSu5BcmsHZrlSO0JOuZTsvOMr2SGr1fvVKpP2PjMEwXQIz2rJzY5_mjo8T9cvsHiY6DhYv8tIDWckBcsDgdOa8T4j-HHvlU5nWKhQt185LEBnViki4e0SHpe7x0kC9ddOVDOQoYwAkSa7u66wSyd_D9uObtsROaMC_6gRrNFs-UzPC-EaLf_A",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2fsSmBQs7SfPUU32oFCJyj1MAF5nCqsz3MieWjXALGU687KLPRFrdaWjs-ejSVG2QBZvB2iMpPYnQDQ5KJEjkkkXyKX_eo_Yuin_9GUiZXphJNPLUPtQnmYUQXZneGzjEvueIHyuWVPqpXvvshMZIpbYQXb7tB-r3Rf4_jJb50sLaGo9G00ewKcAKr2gX4-v3XUs-MP8z14t4dEaGSysEIAoomrSKOvkfYd9jOlqdLjYxZhfZhemMgemN3eDPHHTUBXPEaVVx15l5euaWeG_1LdEUiiN_91w_eDu5Kgvox6NQ",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2eBWFLPXQsZwmA1p-v_Ju0KPhVhVqjXcmpUFeu8zNjZ1Li1x6tBJrSPWmDhMfodJp69yKWVRC6zMJwLxd7B8vocaAMdK8Ryuh--IFyT1HVxIKec6EN9jZlrE-vpeO4ZAYJvI4Ss17I8E52Jm49-kLYP4hOWUAG6tALW78ep7fKWFDh2HDVxtlWU1y4yCSGQTHgV1PgQQNXeifRTfiy-txULq6_ahR9MKdAecOgpURb7Nt2SffjQeaMAGWjWt4V8ePgovRPlU4HRW59n4LqBYcImEW4eL30CbI1xyB-eekYjhA",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2cDQzIuYvM0JMVg3__8XiD8-RDB_hlf6-M0H1L4gm8aMvRkgvHVXdopLoKzt9BT8OTUFmoF_Ov7ZYt_6r_uzJUmdajQnP3veLVXT3BDuM9f5ZdHTmhaCdynvYY6TIOTOMc1LPD-aQfg44YMrGCayip4563Eg-JHSZ0eGdK2BuGb9AEz1U9O-xqZX4_fjiDDpelhWg3zdU0F5T9Aol73qEMPhL6BYYD4bT_Jh9SLLYAMcXstk4bNqqx_Tws2ySMW6tQ5_ctwW1MyqWXeWLVf6ykT9jionkWlm1pTMG12s8PH5g",
+          "width": 4800
+        },
+        {
+          "height": 4635,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2f8ib2tmAd9OfqwmVwdT23E5CxNAGzcoCM79ibs_PINtTCtFr5mx2MAx-EOtTaAcHLU4Q1bW3loHAzhVAFUzeFwcNz8BD8BRp7sI1HBqvxzg8dAlrNghsyVPrK0bYX2o60udU_De6YILK7d7iQzq527ant0qRpbaZEdZ5P7VgBn2T4qkPLKSs7ewkmoPC9Z7NVyQVazDhobIHzIs1p6cuxs6xlJtwhVNKpFj9XgwQdYlpsA8rdlgmOekR9Zc_mu6u9ixGmc-xoVRjQbUXdjuJVoQcQkJi2BAnJmbHnzLq8jQw",
+          "width": 3070
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/109201044894082693141\">Namasté Beach Cartagena</a>"
+          ],
+          "photo_reference": "AciIO2dftdtMYkRxs-AuFyJM5GOtEn1uP2cM5UVv62nYyi61IXlibHW0nWGY2QBRiA3z98q5NgOCi_C-31lzoc8O3C_BiTNcWwD3QiQ2SfeqHy--2yH-4EyHBH_Qr2QF8KP72p45wQJx3FcIXDj0abs32jArFLvDhpBtXwhUFSbPPGuXx90VKVhVKEjvq0xIGwJo_hu-kRFzV_To-ZgVI6rEE7n64eAXfzFRYUofmTGwUtah3E3M8QtANeJ4VmR2xxoP9ullNE0B205hmCbD2NI-FMYD-V6H76lfi9Wk_rMbm0M55Q",
+          "width": 3179
+        }
+      ],
+      "place_id": "ChIJkbdaYswp9o4RZc9HGpDGv3U",
+      "rating": 4.5,
+      "reviews": [
+        {
+          "author_name": "Jenny Paola Piedrahita Avila",
+          "author_url": "https://www.google.com/maps/contrib/112194736964056641237/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVaWchLxwt4Ft0HQXt_E2sX19IQJxsP1OfpAmxS5Z19gBLh9YQd=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 5,
+          "relative_time_description": "Hace 1 mes",
+          "text": "El lugar es absolutamente bello\nEn medio de todo lo que en tierra bomba de puede ofrecer, este hotel es un recinto mágico, amoroso y lleno de luz.\nLa atención de Antoine hizo de esta experiencia algo aún más bello, es una persona muy agradable, con un don de servicio invaluable.\n\nVolveremos",
+          "time": 1753628367,
+          "translated": false
+        },
+        {
+          "author_name": "Carmen Alvarez",
+          "author_url": "https://www.google.com/maps/contrib/113715300638392761932/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjUyQd3p4lDaH6ToAEJzx_WOexoM_hmEvLijt4RIbxZMQV5Xa_E=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 2 meses",
+          "text": "Un verdadero paraíso en Tierra Bomba. Este lugar es perfecto para quienes buscan desconectar y recargar energías. La tranquilidad del entorno, la calidez de su gente y la comida saludable crean una experiencia realmente especial.\nMonica, con su energía y sus clases de yoga frente al mar, transforma cada mañana en un momento mágico de conexión y bienestar.\nY cómo olvidar a Melcocha, el perrito más tierno y fiel, que nos acompañaba todos los días durante la práctica incluso dentro del mar. ¡Un detalle encantador que hizo todo aún más especial! 🥰",
+          "time": 1751299523,
+          "translated": false
+        },
+        {
+          "author_name": "Daniela Valencia",
+          "author_url": "https://www.google.com/maps/contrib/100832524928970665759/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKLipXIw7S3Wg1mXUXEO_C4-XWJ_--UKOfkDoNMkBpiqmhPnA=s128-c0x00000000-cc-rp-mo",
+          "rating": 1,
+          "relative_time_description": "Hace 4 meses",
+          "text": "El sitio es muy bonito y relajante pero lastima que se prestan para que las masajistas estafen turistas.\nHicimos el tour de 3 islas con mi pareja y la última parada era Namaste, todo iba a bien hasta que se acercaron dos masajistas las cuales practicante nos obligaron a realizar el masaje, el problema no era el masaje el problema fue que no hicieron 10m y se fueron por los cuales con mi pareja nos tocó pagar 160000 cop lo más triste era ver cómo las otras masajistas le cobraban a los extranjeros cifras absurdas. Por que 1 estrella ? Porque el sitio sabe lo que hacen y cómo estafan y aún así permite que entren y no solo masajistas sino varios vendedores de la playa.",
+          "time": 1745189542,
+          "translated": false
+        },
+        {
+          "author_name": "Joana Gomariz",
+          "author_url": "https://www.google.com/maps/contrib/112529195839188076389/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIU3HSDwMXpyU4jsHjDcTfLcqTDSB7kcX1eatk2k9x7R3XY2w=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 2 meses",
+          "text": "Definitivamente, un paraíso!\nTodo el equipo muy atento y servicial. No faltan los detalles y las habitaciones e instalaciones perfectas para el usuario de retiro que hemos tenido.\nY el broche de oro lo pone Monica, la profesora de yoga. Maravillosa!!",
+          "time": 1751237828,
+          "translated": false
+        },
+        {
+          "author_name": "Alejandra Melo Chaves",
+          "author_url": "https://www.google.com/maps/contrib/116040823488760954677/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocK-9pa7qGdqttYvd8d-R0AcYbCjhSHpyFSXT9N0u4ooSImjYQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 2 meses",
+          "text": "Un lugar mágico! Inmerso en la naturaleza , rodeado de detalles y de persona maravilllosas como Mónica , la profesora de yoga que con el movimiento del cuerpo y la presencia  logró que se me quitara el dolor de espalda. Muy recomendado",
+          "time": 1751655165,
+          "translated": false
+        }
+      ],
+      "types": [
+        "establishment",
+        "food",
+        "lodging",
+        "point_of_interest",
+        "restaurant",
+        "spa"
+      ],
+      "user_ratings_total": 400,
+      "website": "https://www.namastebeachclub.com/",
+      "customDisplayName": "Namaste"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "editorial_summary": {
+        "language": "es-419",
+        "overview": "Hotel frente a la playa con habitaciones sencillas, restaurante, piscina al aire libre y canchas deportivas."
+      },
+      "formatted_address": "Isla de Tierra Bomba, Cartagena de Indias, Playa Dorada, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "310 5172659",
+      "geometry": {
+        "location": {
+          "lat": 10.3712777,
+          "lng": -75.5664832
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3726751802915,
+            "lng": -75.5650946697085
+          },
+          "southwest": {
+            "lat": 10.3699772197085,
+            "lng": -75.5677926302915
+          }
+        }
+      },
+      "international_phone_number": "+57 310 5172659",
+      "name": "Palmarito Beach Hotel",
+      "opening_hours": {
+        "open_now": false,
+        "periods": [
+          {
+            "close": {
+              "day": 0,
+              "time": "1200"
+            },
+            "open": {
+              "day": 0,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 1,
+              "time": "1800"
+            },
+            "open": {
+              "day": 1,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 2,
+              "time": "1800"
+            },
+            "open": {
+              "day": 2,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 3,
+              "time": "1800"
+            },
+            "open": {
+              "day": 3,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 4,
+              "time": "1800"
+            },
+            "open": {
+              "day": 4,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 5,
+              "time": "1800"
+            },
+            "open": {
+              "day": 5,
+              "time": "0800"
+            }
+          },
+          {
+            "close": {
+              "day": 6,
+              "time": "1200"
+            },
+            "open": {
+              "day": 6,
+              "time": "0800"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: 8:00–18:00",
+          "martes: 8:00–18:00",
+          "miércoles: 8:00–18:00",
+          "jueves: 8:00–18:00",
+          "viernes: 8:00–18:00",
+          "sábado: 8:00–12:00",
+          "domingo: 8:00–12:00"
+        ]
+      },
+      "photos": [
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117663109537289525338\">Palmarito Beach Hotel</a>"
+          ],
+          "photo_reference": "AciIO2dy5kcDooj9ONjinzqDzBZ8Y_6hUWfbruuxsEmdMXuVpuyB5WzWexdhpgd2Qhru2dRgtPVfhyMWCBwV3erhgEZLhyNs2eodAUmBLXK00GJpznMlhnrjJzv-pWGsenwweLjtNu7ft8pgEdobti69VuiWBP4Iz0cjrwcd9NaC2zoFLJvNZaLRXGPe-vQnSDZ3Lo7COgb3nbMCeaHlNIjrRzRNN7MUvCnmOmA8hS5Xv2wU3R0_PP9JYzNYNltKfHGcv1K3fdbXtJILhS1ezcAqmazOyq1xNdnCUiyzE8VVY9wSqw",
+          "width": 3200
+        },
+        {
+          "height": 1960,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/101162089164665147867\">jordi soler amargant</a>"
+          ],
+          "photo_reference": "AciIO2eu6cNEuJiZAELZal-T2-FQv3duTraxD6tQ_PHfswTBEsYmP7dbY_-LQsv06P_Plx3kHKSKTpdAcsCrl2vF5L9TGqaywv8eSuP2C2U6fmkSE84lQWTk31JZXkJd0wQlJxUpT6-a7XvKU9cBYwN9tpvC8uwF3vN0cy9tubdbp2o_FClQrg1JPdSImANkN2d-N1udCJ5MnZ6udYPnbsoAfBD3tXkTR_9UUZC4y-258MTqTB3EIOyhZ1ckZSzgGqLU3UwMgLZzGD8wMTFYmXlTFxM90OWauAFZ-3TRtnxHPS5ZpMY4JmckWot9Ezl-dOm2flkM5LuLT3kCHr9EhMioTzdjeRYBUrKy_3igfBx1rDnhXrGpONwiUtkRcaAFJfMSyhCpiB9uBLHBKOMomY9AWQxyeBbHFbDGEhqzpoaWQ8toKg",
+          "width": 4032
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117663109537289525338\">Palmarito Beach Hotel</a>"
+          ],
+          "photo_reference": "AciIO2cX9CC6GPcnAaODCZQdHWVpEnaEvIGbjh8W2XQuQiQrg5jgd3ma-0I-wk2c6FY7R-N5adAIVOyExkesLncO-MMTHAYRn4xF0Xo6KnGHaDsFcQdXwErwCNb0zPZeKGpmDZWTKbA8MuUd6HB6cUAnxN7T3mD_6Nxa53cDJbuumabEr4YuAUuJOHHxzs-IIp5oGzBIflR0Zlazfjw6q8X0JJ3YUxi8VOga2ek0J1w78F-fL8IPjGICeDHfu8Wqgyacdhmu2qKPWTQMm-EPyWGLqW5bzKbpXznyxjG1BAHYKKjF1Q",
+          "width": 4800
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117826101945967229696\">Rodolfo Aranda</a>"
+          ],
+          "photo_reference": "AciIO2cJRnAC8p_8T0DaZUdbpuZ68y85KDsoLnAAhRg5AZdpGGJoRahL1dlbXhmeE6FPLa_SFNcAGHtJCfPhFiY3_TlLkLdW1Jm5bdJYDtUTwLjePSPzZOwfUl10OFPaxbbygvvyERbnXeIa_RmgduNcuGbrzh162u07ZFl4Mix9CL5chy1J-skd2R_KpEzQXzu7otB2zDykODiXaOw0-XURkGs0QRcuxUlahADn5oXB2zcvY8jKbbydihgofWVr1RM0hxFMEwLw3ygxSpi0FbEEzBkt3_XiD6GL9dWldf5LnFR8y-BJVzVeToigvGi_5gP1_H3aJEPjWibm62iBRmahJ9OUI9scBmUPC3o-P6xb1hcSJ6V2gQBCCuAdVCUne83bH8DrXsnb3j7caNfgdyeiQ4UdIeso9X0wkxgeEZLFIAA",
+          "width": 4032
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117663109537289525338\">Palmarito Beach Hotel</a>"
+          ],
+          "photo_reference": "AciIO2c6z6OdRxLpK19hj8no1lrGAdTffMO6a0UF8Dlo9oJhXoD1WZ7HjKurZywAje5u2avxYvgVKciTrvfKDQkmDH2T3aRAqZo0za7Xw-SRuAwyrq-oHvOV5w9Bd0_KH-t5lKSL1nDhy5K4B00mwrRvP0GQdNloEsYQJ9IuF3BHhdVrlo-F9hbpiAk3vTBxWKCx7qf6ktqcKyXMvdvCusgzRS9mF4iTA-COSxohYwEzVkJPUvM_oxLiNZMeJ15F2Uje6nJJqWoA3aOY51wdUbC_I60yM-Zke-TsjE18U6ycSCMqKQ",
+          "width": 3200
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117663109537289525338\">Palmarito Beach Hotel</a>"
+          ],
+          "photo_reference": "AciIO2fO5N0UMfePk8Byq-_1gptl066pwb0ktgEXZc2Z-EZBFoUM800MkANe9yW-F6y2YUgS4OFXdivhs1C9OBEklxKCF1k538R0IBbet34LavPBRQzNSulj8VEMsHG5lkUIkPHeQi1wjq0ygBwto9Ys35SBAGLKVwfzQ5ySNW9WpfT_9gm4N0H85EEtTjEOEKVEnGV-pYfrUA_wCFgHwp5cT4IG5XJe1EUGjusY3P6pYuZwEgkvvmelz5jRFnRS-n5fXwDxYP9b5x9GGAHaWIzvECCOhnO4oPzENYy2o-J6Bq6Aqw",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117663109537289525338\">Palmarito Beach Hotel</a>"
+          ],
+          "photo_reference": "AciIO2c_7LN3ysH8UxwC3BMrrG7md9zp525cow3PEBptQRPuiVKXeL_fOSYVugx9Zs6adBjBTTpN-Vk2-5VS7xecRmzDxNwjJFdkgjhTK5h2tTrAPOKGfl6SijAKZIaXlDEntKZlMfxUJGfeLy4Hvy9fEajTiHumEPv0OquOtD04C8tK5v3_jbKBZMkCEv-BO1TjjJ9Z1f06mjTfXF3zW3BaXUzQ-Pj6-mjxFRL_hEF89MtvY6ZcBr4bjIz0LEFivYrhuucgqos48ume7R3pqd_7hJau0SeAkkS-I1uH8Ukg1HM6xg",
+          "width": 4800
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117663109537289525338\">Palmarito Beach Hotel</a>"
+          ],
+          "photo_reference": "AciIO2cuw5gohmtRDD2BXkPqFnLp_2Rlb58iBDw0EkY9ET4IDFRi-ltLuHSeUr32hwqt9sFaulNp9s6LTUlQKqnzFqDpRmkE-iP5KzKZ8k-QKIrsUIeVelf3sFfuBGcsGMrtaIWximl1_1JRYUKa6Xbw2uda5X3ptE_EaieAhFjI7qDxrOeh8st8mKfwOdgEEzbgO_fAr7nj0qQQgFDoCszRjuJe0vDcFRg6Ffy3BOxCRZOTeKyOy8k5ooFInZe4NN_WqzXZy155SgSJtGDLaqhFo-9B6DkPH7Itt8hnMvP6unigMg",
+          "width": 4032
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117663109537289525338\">Palmarito Beach Hotel</a>"
+          ],
+          "photo_reference": "AciIO2eBPtrVAk4Ohnm0BPuAIJ2tjpH4Q3bAeCi88Lygl3PBBX45YECEYfgeXZ51qLtvDWly_WkpTpGBE2C0rNQBMRkieg2HNz7QbEwZXbDmk4z1t_dDqLECarBYHR9nJwcTThy5k9CctsKhH9X8wwVYgtWwrmlgJ1BudnN1LBHuMX23e_0cQlILR6z8r59fRWv9z1A-I5OmMYF9I9hvyqtixJcN28quAvz_AsL_tHiaAqJEp-geVoAGmHvm70KtvcpfBQ-l_Bz4D30q8TOI45Wnwk6L2nNFXMhIZHdHNdjcqPXBFg",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/117663109537289525338\">Palmarito Beach Hotel</a>"
+          ],
+          "photo_reference": "AciIO2eTmiQJhpzqB4-M-ZnAf55AKRIyJfi1xYRbfrKeLtfl_9BiXlJKzDJ1tKLlx26_tvDXNaCWMaTf_XAipYDY-zuO8qZVNtp-bszcRcLpy_pbt80PiGDx8qIcEBNdhpVESGSS269YEZMJYr7gbcXycKLoA4isd7T-Fmxrmg183nHPswcZt-L9rQoeZnrmEYPb7tOyNaDSUUCNsNxxcgIVK-6a93Y8k8oyHAKAk5muTAIK1kOkVY__5GsayGdBcyvHZKzmClipKkZn_PQ1sxmL4V5SsNZttQQwGnpCR7Ul-a-Xtg",
+          "width": 4800
+        }
+      ],
+      "place_id": "ChIJxxX249Ao9o4Rciz7z3iU4Zk",
+      "rating": 4.4,
+      "reviews": [
+        {
+          "author_name": "Sofia Vargas",
+          "author_url": "https://www.google.com/maps/contrib/106905816687279404803/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjX-Yd2J3j6-QFYNF-q-R1BxGI9h8febKPXjq6_r-tI1y_nnZpur=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "Hace 3 meses",
+          "text": "Fui en temporada baja y todo estuvo muy bien. Comida exquisita y buena atención. Eso si, toca estar en la playa tipo 8 am para coger un buen puesto o separar una cama en la playa (no me imagino en temporada alta). Si hay vendedores ambulantes pero no son muchos y no son tan insistentes, quizás pasarán un par de veces al día a ofrecer cosas. Las actividades que ofrecen están más que bien pero depende de cuánta gente vaya al destino (sobretodo los de pasadía). Las habitaciones muy lindas y cómodas, piscina linda pero pequeña.",
+          "time": 1750074307,
+          "translated": false
+        },
+        {
+          "author_name": "Viviana Vera",
+          "author_url": "https://www.google.com/maps/contrib/101346221132934129656/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVq0IePC6vQrMV8bHB8CcDTyelELpxXdCFn48JrBWFex3r80ylX1w=s128-c0x00000000-cc-rp-mo-ba4",
+          "rating": 4,
+          "relative_time_description": "Hace 4 meses",
+          "text": "El lugar es lindo, el espacio de mar muy adecuado y tranquilo para nadar.\nPero… llegamos, nos sentamos y empezaron a caernos como aves de rapiña los vendedores 🤦🏻‍♀️\nEs una isla privada y si uno se va a las islas es precisamente para no tener la molestia de los vendedores atosigando.\nAparte, los jet ski los rentan a quien sea… había una adolescente manejando uno, apenas la vimos nos salimos del agua porque lo consideramos peligroso para los que estamos al rededor.\nSolicitamos usar el Kayak ya que estaba también incluido y el señor encargado de los mismos nos dijo: ahorita no están disponibles, vuelva más luego y debe traer su cédula porque tiene que dar un aporte🙄😒 ( no volví)\nNuestra estadía incluía solo desayuno, y llegamos tipo 9;30am, el primer día el almuerzo lo ordenamos de la carta (pago aparte), estuvo muy bien.\nDía 2: desayuno “buffet” ( incluido) donde solo te sirven lo que a ellos les parece, he estado en muchos hoteles en el mundo y en un buffet usted puede escoger que come y la cantidad , me pareció de muy mal gusto, de postre solo había brownie, pedí 2 pedazos y dijeron que no, que solo 1 🙄 al momento de ir a buscar las bebidas, solicité la mía y de mi pareja ya que él estaba cuidando la comida en la mesa, las estaba entregando un trabajador y me dice: y para quien es la otra? En un tono nada amable 😏 obvio le respondí que para mi pareja.\nEs la primera vez en toooodos los hoteles del mundo donde he estado que tienen las bebidas limitadas, que bochornoso.\n\nDesayuno del tercer y último día, no se pudo ordenar de la carta ni tampoco hubo buffet, solo trajeron un plato con lo que el Hotel quiso traer, no es un sitio barato, no es lo que se espera recibir como servicio.\n\nLa piscina es muy pequeña para la cantidad de gente que permiten en el hotel y no es cómoda para nadar, es solo un hueco en el medio y el rededor es inestable, la verdad no me gustó.\nLa habitación estuvo decente, esperaba algo mejor de acuerdo a las imágenes que muestran en la página, pero en general estuvo bien.\nEn fin, bello lugar pero el servicio que ofrecen puede ser mejor.\nLo único que resalto es que viví un momento maravilloso allí, llegué siendo novia y salí siendo prometida.",
+          "time": 1745898633,
+          "translated": false
+        },
+        {
+          "author_name": "Mauricio Guzman",
+          "author_url": "https://www.google.com/maps/contrib/103030787963224376875/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjXG4jS-pEee3Db7HND2oj-mLPSEVJj6fvbLIj-jWPQ2BF5ETaT7=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 5,
+          "relative_time_description": "Hace 2 semanas",
+          "text": "Estuve en el hotel Palmarito Beach con un pasadía y me pareció excelente. El servicio fue muy bueno, con atención personalizada (aclaro que tomamos la versión VIP del pasadía). La piscina es muy cómoda y el lugar transmite una gran sensación de seguridad. ¡Muy recomendado!\"",
+          "time": 1756395539,
+          "translated": false
+        },
+        {
+          "author_name": "Daniela Martínez",
+          "author_url": "https://www.google.com/maps/contrib/116640950449482563794/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjWsMeiJyLuZzc8pLgG_tw6aN_Abk34FDqTNmJW_m9jGpsMepzOd=s128-c0x00000000-cc-rp-mo-ba2",
+          "rating": 2,
+          "relative_time_description": "Hace 2 semanas",
+          "text": "No es lo que venden en las imágenes. La zona de playa súper súper descuidada, reposeras y sombrillas viejas y muy rotas, vendedores ambulantes cada medio segundo y las motos de agua salen del mismo lugar que uno se puede bañar, literalmente al lado, por lo que es súper peligroso y hay olor a nafta todo el tiempo. No lo recomiendo. Las piscinas si están bien y es una zona linda, pero toda la parte que da al mar sucia, descuidada y peligrosa.",
+          "time": 1756380053,
+          "translated": false
+        },
+        {
+          "author_name": "Paula Andrea Zapata Posada",
+          "author_url": "https://www.google.com/maps/contrib/101868887342486233451/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjW2gLskE0Hl-Cwsjv3WSWTQbqPK-9VQbjZutxJh5dJnKmNkt47K=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 2 semanas",
+          "text": "Excelente experiencia, fue un día maravilloso en familia lugar muy bonito, organizado, muy rica la comida y excelentes bebidas\nLa atención de Giovanny espectacular muy atento, servicial y amable\nEsperamos tener nuevamente en placer de volver",
+          "time": 1756063887,
+          "translated": false
+        }
+      ],
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "user_ratings_total": 3451,
+      "website": "https://palmaritobeach.com/",
+      "customDisplayName": "Palmarito"
+    },
+    {
+      "business_status": "OPERATIONAL",
+      "formatted_address": "Isla de Tierra Bomba, Cartagena de Indias, Provincia de Cartagena, Bolívar, Colombia",
+      "formatted_phone_number": "313 5508457",
+      "geometry": {
+        "location": {
+          "lat": 10.3673443,
+          "lng": -75.5597277
+        },
+        "viewport": {
+          "northeast": {
+            "lat": 10.3687980802915,
+            "lng": -75.5583577197085
+          },
+          "southwest": {
+            "lat": 10.3661001197085,
+            "lng": -75.5610556802915
+          }
+        }
+      },
+      "international_phone_number": "+57 313 5508457",
+      "name": "Vista Mare Beach House",
+      "opening_hours": {
+        "open_now": true,
+        "periods": [
+          {
+            "open": {
+              "day": 0,
+              "time": "0000"
+            }
+          }
+        ],
+        "weekday_text": [
+          "lunes: Abierto 24 horas",
+          "martes: Abierto 24 horas",
+          "miércoles: Abierto 24 horas",
+          "jueves: Abierto 24 horas",
+          "viernes: Abierto 24 horas",
+          "sábado: Abierto 24 horas",
+          "domingo: Abierto 24 horas"
+        ]
+      },
+      "photos": [
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332949083650174368\">Vista Mare Beach House</a>"
+          ],
+          "photo_reference": "AciIO2c3Zu-WIJy2mXyphAx0DxoV3OFFV-r35nV1O8IjI7MSJT0K_3fEnHA2Awjr33NevTk1QGbQAiy-h9eUl1PRh9vlOI-JnZuWmMGEt-JO9teLjc8uVFFVSzVd8DYUkXLHtY0Npl788mGBoq1L40LhWvIhiK1UGtN8E6AmsCrpg20ppkSf7-duSFVhskouiTqZr0VXtg1_TPCaGIvni93hBQ-UtZQWa7jUCzgMOCvb_nOpAJrTnWI3uk_QAF1fzljhPlb3ZQLqvUCjwDlU9SNiTBU9DZxd6D7SX0cwn1LzwlJMVA",
+          "width": 4800
+        },
+        {
+          "height": 4032,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/112190567060381694348\">Dahinea P</a>"
+          ],
+          "photo_reference": "AciIO2fHhAqmyDxnb5R9E8gN7GDg-BeL1eZpAoIBpYgLhyv_Sg4UniN_k5piZILbBsXdzezC2TioPQ4PvZiblKY7LengjGJ7saVGN_YBBByn_DAiCF-Ai8AzuTqxiosFza8fTxAA9cH8ZV7qG_DvhqTCDC1Q22_0EVYcyRwIsWQ5gDA_z8ebISm9w02yRQKuNuYTcSj1Mt2LeaoNMSrUfPA4ns9FV-L3CKf1vb7G44CYYeYEh630L5IqnBsu7xwbNMmgG60upCAZgQ-C6nXw4yY4aTNv13-R4mrEcTQrstH1pWPDbnXSGEW5PDSd9gVehN3Kxi-e_C_-qkftEZHZLoRcFN-rcWlmEDiTx0zyz5vcen5wdFFynEgcyrE3CAbc2w0mmYN67SR6kJOltSOT7-A6blFTukeD7jLv9kkWYrO-8Yw",
+          "width": 3024
+        },
+        {
+          "height": 3024,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/103364910388805559722\">Andrea Hernández</a>"
+          ],
+          "photo_reference": "AciIO2fIbNLUIvl4wRdMHITi8sLvASXfZDuIYlMm-PFV4hltHr4cGp-tu9tZReK_GP0lznX4KFpooKfGNmycRWd95yCx6-SrDvbv8HM7drALgY1Mua00OnHMXSAMTmIdcGKvbzwhWbI_NYXnbEIzLL_V-UZS-RBlcYQkHElrmFLPUcXs8k3X3rw39fi74dDCpQDimClFsRpi6mBcHCw38lrA-knEYsxvaXAkVMIrlpzHy2x-MBmNkDT90iVIm6lXT1FKXCy6k68mbuQnN5-BX6VudvJAvUTyHJdk6SeefyruAnHAZHVkQ2yHw8EqC9A78NCjBO6hF66sgkEdbPj3VA4up9QY7n_fS0LKzEkfdHt8yUMDF_fhbiWJhP8F756_ME0y_6M9iw_iTeVkPU5yKM9UwEmP2iU364ke4vh7x8bbxO7qINS8",
+          "width": 4032
+        },
+        {
+          "height": 3003,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332949083650174368\">Vista Mare Beach House</a>"
+          ],
+          "photo_reference": "AciIO2fUELdbR9zqDCceji0O-EVn_v0yJ5aK33XmcNTlSQdtnV0m9n2G33S1zlzIdsC8HdE2L7HVoYOk7sQc-i28lzFG-r1BNl6zhyMJc02ogjuChGWECyecMC2Plud-DQhoQINUk-GrfSApDbYpMc8Jz3Dd4qXN-Vmj6W0DacwjueIwoR1EVZtvusxuRnfLhmggqzNPdjCoWlAQUn0L87du8LQnorB0-gP_W9A_k1sbdAgqbipPeu2TtUdBmx1CpoJWvPJmV_L50ICUQTq0dJPEh2I8FCvTLqkUBIgculoPyxU-iQ",
+          "width": 4000
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332949083650174368\">Vista Mare Beach House</a>"
+          ],
+          "photo_reference": "AciIO2dt2BbYW-n5MNO2iMwo9EVB51jBaTUohdyzyoOpDmScQRtsmcsWHLooyzZw5CQYhme4CRHynyOXbGlr1giz5y1otv1z8VHO2f6psLKNNK_aFtD_naqcJOvQv61rVhBR5Wvd1cHxrjPhmLS0l4YEddNNQZwG6cDj30Vkvl9WSISycZ5mzwuj-TnxEIcdj1hMIhei0UKgWy9h5OOsX-MPFh7M3JujLisuPEOrNd1Z5QJidTxL7KyQSRNdJZfmQBnZ57xqExx_m04HWZBEj3tpuab1VwO3Lkwww2UmIn4QDjIJXw",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332949083650174368\">Vista Mare Beach House</a>"
+          ],
+          "photo_reference": "AciIO2fr5deW3V8swxzJVJvK30XTIOCcU_1VFSZCbkL7IMeraXDL5i5GkKfkMFeN5jm8a-NQKMX4UnQCOOVZGa57PSgVGatCAvOgf4RXGZ_i_M4QXNXuWDFsPjlE7j1oCwOzb911QYyVJQyKP9tWlk_Kpo2ySgM-auROzqN_XD-GR1-RQ2kj-BIHCp6_jtoRXCqJtqyIIcUL7Y6GIb5At1JHJE3fxf3L6zJwmAKOAN8ZIKX6szvQr4b5Euf7NEC9U7YbPinRsR1QUjVEox8_8qubDfig_g2_PGNzLQyJUSDtfk3neQ",
+          "width": 4800
+        },
+        {
+          "height": 4800,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332949083650174368\">Vista Mare Beach House</a>"
+          ],
+          "photo_reference": "AciIO2eDvXr0RL3nc_uKo9vV9v4mH1l9WNzPW_SDAbHN-hKEcUPkUqwNx1PqNODO3ekime1ccSYkTtLG1rrKNGvQ3jhwY0HBygdV6JjdP9-47wLVK0dDeqyDv-pHnchn25XOk8CHi24UXMJbHruA7USJf0EkQu5OjGitoI0Ezsa90pSQkrf-o8jwDfs43eYeUi6Ptp2-ftpTDAoJtRVp0NS7magMN082NanJBbyagS5P_Mk6AenVBvur8FLpd3o_v8tCHaezb4FMu6NRGwKi3b-y4taYdMoZcoueDgH-f-SpSgyvbg",
+          "width": 3200
+        },
+        {
+          "height": 3199,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332949083650174368\">Vista Mare Beach House</a>"
+          ],
+          "photo_reference": "AciIO2ca_4hvQ6z8L2JdoTHSYqdOCmeSNXYxo-zKUpa9o3LGOVcelhhmgSCytvU6SwNm77OKQ0zgUapwTc5NL6FKtSTUM6cqPaxRjo1GKlhnoYzRli8fLVOSX4hAwxxqCn4OHq2grpAeMShZUogVcLLMOlisJxVPD1dNm9BWtNRQ3pwo3o7sxHaZoznLjjAx5Q5rv2TssIt04zk6cB-hheRGnQ2Dh6Zom0PL0h9J-sdgPwoPkpV6FpSyJPvvFlAymHwWxTlRFr0aajjM_uJmd4Njp2NIqR5FyjWi0R8OgK0P05uw0w",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332949083650174368\">Vista Mare Beach House</a>"
+          ],
+          "photo_reference": "AciIO2fU8eKRbela0-njdyK3G2fLj9IWJkLLfrxNQJ4a8G-Q1iq7jTpuwj_MXcQpJBk4gq-5OXj-y3lrMp1PdELhCXAxTrEFgCb4DzjXe5_NSrA1VpZIBKg045BSDyKjaECaR7MmUV9ojSE3k5RY2bbzJ4onUQaMxHOjx_zR4AtcFpdCTNNQAaI2oftPczwP0ozrmfib2zhFXlhFuD5LEVjyIfdS_Y0ZE6wSDzaWbcOEFMK1j0WtLb_ZHa9vp6QZydlFNZMgCO9j-XnEfOQWTONHk63fN_bb3q5vfQef49e8OyQJQQ",
+          "width": 4800
+        },
+        {
+          "height": 3200,
+          "html_attributions": [
+            "<a href=\"https://maps.google.com/maps/contrib/110332949083650174368\">Vista Mare Beach House</a>"
+          ],
+          "photo_reference": "AciIO2fEAuR3uz6CkhJdXuDRzN6DSyp1pwQce2T8koSJ4j2eIkgs6j0IwuVHPZhK28XyGQ9u5c4yES35lPoKRAB4f95AJDKnw2I1Xa9HMJ7rdLRXn3MfwuPNFtNd6M_2B6zfLtY0JC2ifh4BhS9QlOJpX6WdhHDBjCUr6OLx3GP0C4xLrEWE4mdVZ91vsl59s7L58o0RR0XdQmOj1o9Pp_7FgIz-exV9lhaGwigs-LuwKyqdJq4y5CcUfq2um91LEEkAhci4kTNfMf2bvWQnluVdfHsXN9FEUV0HgHZbhiTDOsMf6A",
+          "width": 4800
+        }
+      ],
+      "place_id": "ChIJJf6Cjq4p9o4RFiE3Ykk5hUo",
+      "rating": 4.3,
+      "reviews": [
+        {
+          "author_name": "Christian Montenegro",
+          "author_url": "https://www.google.com/maps/contrib/110052312802196393213/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVufX6LENhIy1ZzGL1oMF1XJ808zR11U7OZIlw2ILK76mlYl3zQ=s128-c0x00000000-cc-rp-mo-ba3",
+          "rating": 5,
+          "relative_time_description": "Hace una semana",
+          "text": "No alcanzan 5 estrellas para Vista Mare, daría 10, el equipo siempre atento, la comida sabrosa. Las instalaciones hermosas. Todo está bien. Muchas gracias a el equipo de Vista Mare por tan cálido recibimiento.",
+          "time": 1756693490,
+          "translated": false
+        },
+        {
+          "author_name": "Stephanie Troice",
+          "author_url": "https://www.google.com/maps/contrib/104390788318035224898/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocKPuK-0zkW4PwMjVr0KuY3FRb3mMxW29ZcPSlez2itt6Od3hg=s128-c0x00000000-cc-rp-mo-ba5",
+          "rating": 4,
+          "relative_time_description": "Hace 3 meses",
+          "text": "Fue un muy buen encontró este hotel en tierra bomba y disfrutamos mucho nuestra estancia. Antes de nuestra llegada, el hotel muy pendiente nos contacto para agendar la recogida en lancha. Ahi estuvieron puntales por nosotros para llevarnos al hotel. El staff muy buena onda y atentos a lo que se necesite. Nos ayudaron a conseguir moto transporte para ir a otro hotel los 4 días ya que íbamos a una boda. El desayuno incluido está muy rico. Su menú de comida y coctelería también muy bueno y rico. Las cabañas están de buen tamaño y privadas, el aire acondicionado no sirve bien ya que está muy abierto la cabaña pero dormimos bien. A los meseros les falta un poco de entrenamiento al servicio al cliente pero en general fue lindo pasar el fin de semana ahí en la propiedad en la alberca y playa. Sin duda me volvería a quedar aquí.",
+          "time": 1747687427,
+          "translated": false
+        },
+        {
+          "author_name": "Luis Torres",
+          "author_url": "https://www.google.com/maps/contrib/116290048083307463439/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a-/ALV-UjVu2ykfdP_AXxa-6QdKV6n7HTglVWEEWQZuhh32yqpfH8nr6gq3=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 5 meses",
+          "text": "Excelente servicio, personal muy atento!\nLugar acogedor, limpio, bien organizado!\nBuen ambiente para estar en familia o con amigos!\nMenú variado, delicioso todo!\nLa habitación muy acogedora, amplia, limpia, toallas suaves, aire acondicionado óptimo!",
+          "time": 1742862952,
+          "translated": false
+        },
+        {
+          "author_name": "Andrea Hernández",
+          "author_url": "https://www.google.com/maps/contrib/103364910388805559722/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocL7v-PLiwRgOj1peFVz0RMarGkugPcbtBYICigepBiEqY6pIbQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 6 meses",
+          "text": "Gran lugar para relajarse y desconectarse. Me encantó la estadía, la limpieza 10/10, las toallas y sábanas limpias y con agradable olor. Los lugares son muy cómodos, la atención súper desde los lancheros y todo el personal, siempre están atentos a si necesitamos algo o toallas.\nSi quieres visitarlo debes tener en cuenta que el wifi no funciona (o funciona muy poco porque nunca logré conectarme), y la señal de celular en la zona de las cabañas se pierde, pero en la playa, piscina y demás zonas sociales si tenía señal, pero esto no me pareció relevante ya que quería disfrutar el lugar.\nEl mar es muy lindo, aunque pueden llegar a haber muchas piedras pequeñas al ingresar al mar.",
+          "time": 1740523620,
+          "translated": false
+        },
+        {
+          "author_name": "Daniel Lozano",
+          "author_url": "https://www.google.com/maps/contrib/105737303724637228261/reviews",
+          "language": "es",
+          "original_language": "es",
+          "profile_photo_url": "https://lh3.googleusercontent.com/a/ACg8ocIR8z2D7-tf-g4a6kElPBBawbj2p9gHOviA-tyR8-e-5yQexQ=s128-c0x00000000-cc-rp-mo",
+          "rating": 5,
+          "relative_time_description": "Hace 6 meses",
+          "text": "La infraestructura del hotel, tanto las habitaciones como las zonas comunes son muy bonitas, aseadas, buen gusto en el diseño, la piscina les quedó perfecta, todo el personal muy amable, Berta es una excelente anfitriona, la comida exquisita, de verdad los felicitamos por la experiencia que brindan.\n\nLos recomendáremos…",
+          "time": 1741549742,
+          "translated": false
+        }
+      ],
+      "types": [
+        "establishment",
+        "lodging",
+        "point_of_interest"
+      ],
+      "user_ratings_total": 134,
+      "website": "https://vistamarecartagena.com/",
+      "customDisplayName": "Vista Mare Beach Club"
+    }
+  ],
+  "not_found": []
+}

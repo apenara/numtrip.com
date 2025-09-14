@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Clubs y Hoteles Premium - Cartagena</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #00c6fb 0%, #005bea 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '🏖️';
+            position: absolute;
+            font-size: 200px;
+            opacity: 0.1;
+            top: -50px;
+            right: -50px;
+            transform: rotate(-15deg);
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 15px;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        .summary-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 30px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .stat-icon {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .stat-value {
+            font-size: 2em;
+            font-weight: bold;
+            color: #1e3c72;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .controls {
+            padding: 30px;
+            background: white;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            flex-wrap: wrap;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 15px 20px;
+            font-size: 1.1em;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #1e3c72;
+            box-shadow: 0 0 0 3px rgba(30, 60, 114, 0.1);
+        }
+
+        .view-buttons {
+            display: flex;
+            gap: 10px;
+        }
+
+        .view-btn {
+            padding: 12px 24px;
+            border: 2px solid #1e3c72;
+            background: white;
+            color: #1e3c72;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1em;
+            font-weight: 600;
+        }
+
+        .view-btn:hover {
+            background: #f0f8ff;
+        }
+
+        .view-btn.active {
+            background: #1e3c72;
+            color: white;
+        }
+
+        .content-area {
+            padding: 30px;
+            min-height: 500px;
+        }
+
+        .places-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            gap: 30px;
+        }
+
+        .place-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            border: 1px solid #e0e0e0;
+            position: relative;
+        }
+
+        .place-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .place-card.premium {
+            border: 2px solid gold;
+        }
+
+        .place-card.premium::before {
+            content: '⭐ PREMIUM';
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: gold;
+            color: #333;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+            font-size: 0.75em;
+            font-weight: bold;
+            z-index: 1;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .place-header {
+            background: linear-gradient(135deg, #00c6fb 0%, #005bea 100%);
+            color: white;
+            padding: 25px;
+            position: relative;
+        }
+
+        .place-name {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        .place-category {
+            display: inline-block;
+            padding: 5px 12px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            font-size: 0.85em;
+            margin-right: 10px;
+        }
+
+        .place-body {
+            padding: 25px;
+        }
+
+        .place-info {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+        }
+
+        .place-info-icon {
+            font-size: 1.2em;
+            width: 24px;
+            text-align: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .place-info-text {
+            flex: 1;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .place-info-text a {
+            color: #005bea;
+            text-decoration: none;
+        }
+
+        .place-info-text a:hover {
+            text-decoration: underline;
+        }
+
+        .place-rating {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .rating-stars {
+            color: #ffd700;
+            font-size: 1.2em;
+        }
+
+        .rating-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .rating-count {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .place-actions {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        .action-btn {
+            padding: 12px 16px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-decoration: none;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+        }
+
+        .btn-maps {
+            background: #4285f4;
+            color: white;
+        }
+
+        .btn-maps:hover {
+            background: #357ae8;
+        }
+
+        .btn-whatsapp {
+            background: #25d366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background: #20ba5a;
+        }
+
+        .btn-phone {
+            background: #34b7f1;
+            color: white;
+        }
+
+        .btn-phone:hover {
+            background: #2da2d9;
+        }
+
+        .btn-website {
+            background: #ff6b6b;
+            color: white;
+        }
+
+        .btn-website:hover {
+            background: #ff5252;
+        }
+
+        .list-view {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .list-header {
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1.5fr;
+            padding: 20px;
+            background: #f8f9fa;
+            font-weight: bold;
+            color: #666;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .list-item {
+            display: grid;
+            grid-template-columns: 2fr 2fr 1fr 1fr 1fr 1.5fr;
+            padding: 20px;
+            border-bottom: 1px solid #e0e0e0;
+            transition: background 0.3s;
+            align-items: center;
+        }
+
+        .list-item:hover {
+            background: #f8f9fa;
+        }
+
+        .list-item-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .list-item-address {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .list-item-rating {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .list-item-actions {
+            display: flex;
+            gap: 8px;
+        }
+
+        .list-action-btn {
+            padding: 6px 12px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 0.85em;
+            transition: all 0.3s;
+        }
+
+        #map {
+            height: 600px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .map-popup {
+            max-width: 300px;
+        }
+
+        .map-popup h4 {
+            margin: 0 0 10px 0;
+            color: #1e3c72;
+        }
+
+        .map-popup p {
+            margin: 5px 0;
+            font-size: 0.9em;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px;
+            color: #666;
+        }
+
+        .no-results-icon {
+            font-size: 5em;
+            margin-bottom: 20px;
+            opacity: 0.3;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px;
+            color: #666;
+        }
+
+        .spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #1e3c72;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .places-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .list-header, .list-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
+            .list-header > *, .list-item > * {
+                padding: 5px 0;
+            }
+
+            .controls {
+                flex-direction: column;
+            }
+
+            .search-box {
+                width: 100%;
+            }
+        }
+
+        .hidden {
+            display: none !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Beach Clubs & Hoteles Premium</h1>
+            <p>Los mejores destinos de playa en Cartagena y Tierra Bomba</p>
+        </header>
+
+        <div class="summary-stats">
+            <div class="stat-card">
+                <div class="stat-icon">🏖️</div>
+                <div class="stat-value" id="total-places">0</div>
+                <div class="stat-label">Lugares Total</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⭐</div>
+                <div class="stat-value" id="avg-rating">0</div>
+                <div class="stat-label">Rating Promedio</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">💬</div>
+                <div class="stat-value" id="total-reviews">0</div>
+                <div class="stat-label">Reseñas Totales</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-value" id="with-contact">0</div>
+                <div class="stat-label">Con Contacto</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="🔍 Buscar por nombre o dirección...">
+            </div>
+            <div class="view-buttons">
+                <button class="view-btn active" data-view="grid">📱 Tarjetas</button>
+                <button class="view-btn" data-view="list">📋 Lista</button>
+                <button class="view-btn" data-view="map">🗺️ Mapa</button>
+            </div>
+        </div>
+
+        <div class="content-area">
+            <div id="grid-view" class="places-grid">
+                <div class="loading">
+                    <div class="spinner"></div>
+                    <p>Cargando lugares...</p>
+                </div>
+            </div>
+
+            <div id="list-view" class="list-view hidden">
+                <div class="list-header">
+                    <div>Nombre</div>
+                    <div>Dirección</div>
+                    <div>Rating</div>
+                    <div>Teléfono</div>
+                    <div>Website</div>
+                    <div>Acciones</div>
+                </div>
+                <div id="list-content"></div>
+            </div>
+
+            <div id="map-view" class="hidden">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let placesData = null;
+        let filteredPlaces = [];
+        let map = null;
+        let markers = [];
+        let currentView = 'grid';
+
+        // Load data
+        async function loadData() {
+            try {
+                const response = await fetch('specific-places-cartagena.json');
+                const data = await response.json();
+                placesData = data;
+                filteredPlaces = data.places;
+                updateStats();
+                renderView();
+                setupEventListeners();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('grid-view').innerHTML = `
+                    <div class="no-results">
+                        <div class="no-results-icon">⚠️</div>
+                        <h3>Error al cargar los datos</h3>
+                        <p>Por favor, asegúrate de que el archivo specific-places-cartagena.json esté disponible.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Update statistics
+        function updateStats() {
+            if (!placesData) return;
+
+            const places = placesData.places;
+            document.getElementById('total-places').textContent = places.length;
+
+            // Calculate average rating
+            const ratingsSum = places.reduce((sum, place) => sum + (place.rating || 0), 0);
+            const ratingsCount = places.filter(p => p.rating).length;
+            const avgRating = ratingsCount > 0 ? (ratingsSum / ratingsCount).toFixed(1) : '0';
+            document.getElementById('avg-rating').textContent = avgRating;
+
+            // Total reviews
+            const totalReviews = places.reduce((sum, place) => sum + (place.user_ratings_total || 0), 0);
+            document.getElementById('total-reviews').textContent = totalReviews.toLocaleString();
+
+            // Places with contact
+            const withContact = places.filter(p =>
+                p.formatted_phone_number || p.international_phone_number || p.website
+            ).length;
+            document.getElementById('with-contact').textContent = withContact;
+        }
+
+        // Render place card
+        function renderPlaceCard(place) {
+            const phone = place.formatted_phone_number || place.international_phone_number || '';
+            const address = place.formatted_address || '';
+            const rating = place.rating || 0;
+            const reviews = place.user_ratings_total || 0;
+            const website = place.website || '';
+            const isPremium = rating >= 4.5 && reviews >= 100;
+
+            const mapsUrl = place.geometry && place.geometry.location
+                ? `https://www.google.com/maps/search/?api=1&query=${place.geometry.location.lat},${place.geometry.location.lng}`
+                : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name + ' Cartagena')}`;
+
+            const whatsappUrl = phone ? `https://wa.me/57${phone.replace(/[\s\+\-]/g, '').replace(/^57/, '')}` : '';
+
+            return `
+                <div class="place-card ${isPremium ? 'premium' : ''}">
+                    <div class="place-header">
+                        <div class="place-name">${place.customDisplayName || place.name}</div>
+                        <div>
+                            <span class="place-category">Beach Club</span>
+                            ${place.business_status === 'OPERATIONAL' ?
+                                '<span class="place-category" style="background: rgba(76, 175, 80, 0.3);">Abierto</span>' :
+                                ''}
+                        </div>
+                    </div>
+                    <div class="place-body">
+                        ${address ? `
+                            <div class="place-info">
+                                <span class="place-info-icon">📍</span>
+                                <span class="place-info-text">${address}</span>
+                            </div>
+                        ` : ''}
+
+                        ${phone ? `
+                            <div class="place-info">
+                                <span class="place-info-icon">📞</span>
+                                <span class="place-info-text">${phone}</span>
+                            </div>
+                        ` : ''}
+
+                        ${website ? `
+                            <div class="place-info">
+                                <span class="place-info-icon">🌐</span>
+                                <span class="place-info-text">
+                                    <a href="${website}" target="_blank">
+                                        ${website.replace(/^https?:\/\/(www\.)?/, '').slice(0, 30)}
+                                    </a>
+                                </span>
+                            </div>
+                        ` : ''}
+
+                        ${rating > 0 ? `
+                            <div class="place-rating">
+                                <span class="rating-stars">${'⭐'.repeat(Math.round(rating))}</span>
+                                <span class="rating-value">${rating.toFixed(1)}</span>
+                                <span class="rating-count">${reviews} reseñas</span>
+                            </div>
+                        ` : ''}
+
+                        <div class="place-actions">
+                            <a href="${mapsUrl}" target="_blank" class="action-btn btn-maps">
+                                📍 Mapa
+                            </a>
+                            ${phone ? `
+                                <a href="${whatsappUrl}" target="_blank" class="action-btn btn-whatsapp">
+                                    💬 WhatsApp
+                                </a>
+                                <a href="tel:${phone}" class="action-btn btn-phone">
+                                    📞 Llamar
+                                </a>
+                            ` : ''}
+                            ${website ? `
+                                <a href="${website}" target="_blank" class="action-btn btn-website">
+                                    🌐 Web
+                                </a>
+                            ` : ''}
+                        </div>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Render list item
+        function renderListItem(place) {
+            const phone = place.formatted_phone_number || place.international_phone_number || '';
+            const address = place.formatted_address || '';
+            const rating = place.rating || 0;
+            const reviews = place.user_ratings_total || 0;
+            const website = place.website || '';
+
+            const mapsUrl = place.geometry && place.geometry.location
+                ? `https://www.google.com/maps/search/?api=1&query=${place.geometry.location.lat},${place.geometry.location.lng}`
+                : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(place.name + ' Cartagena')}`;
+
+            const whatsappUrl = phone ? `https://wa.me/57${phone.replace(/[\s\+\-]/g, '').replace(/^57/, '')}` : '';
+
+            return `
+                <div class="list-item">
+                    <div class="list-item-name">${place.customDisplayName || place.name}</div>
+                    <div class="list-item-address">${address}</div>
+                    <div class="list-item-rating">
+                        ${rating > 0 ? `<span style="color: #ffd700;">⭐</span> ${rating.toFixed(1)}` : '-'}
+                    </div>
+                    <div>${phone || '-'}</div>
+                    <div>
+                        ${website ? `<a href="${website}" target="_blank" style="color: #005bea;">Ver</a>` : '-'}
+                    </div>
+                    <div class="list-item-actions">
+                        <a href="${mapsUrl}" target="_blank" class="list-action-btn btn-maps">📍</a>
+                        ${phone ? `<a href="${whatsappUrl}" target="_blank" class="list-action-btn btn-whatsapp">💬</a>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Render current view
+        function renderView() {
+            if (!filteredPlaces) return;
+
+            if (currentView === 'grid') {
+                const gridView = document.getElementById('grid-view');
+                if (filteredPlaces.length === 0) {
+                    gridView.innerHTML = `
+                        <div class="no-results">
+                            <div class="no-results-icon">🔍</div>
+                            <h3>No se encontraron resultados</h3>
+                            <p>Intenta con otra búsqueda</p>
+                        </div>
+                    `;
+                } else {
+                    gridView.innerHTML = filteredPlaces.map(place => renderPlaceCard(place)).join('');
+                }
+            } else if (currentView === 'list') {
+                const listContent = document.getElementById('list-content');
+                if (filteredPlaces.length === 0) {
+                    listContent.innerHTML = `
+                        <div class="no-results">
+                            <div class="no-results-icon">🔍</div>
+                            <h3>No se encontraron resultados</h3>
+                        </div>
+                    `;
+                } else {
+                    listContent.innerHTML = filteredPlaces.map(place => renderListItem(place)).join('');
+                }
+            } else if (currentView === 'map') {
+                if (!map) {
+                    setTimeout(initMap, 100);
+                } else {
+                    updateMapMarkers();
+                }
+            }
+        }
+
+        // Initialize map
+        function initMap() {
+            if (map) return;
+
+            map = L.map('map').setView([10.32, -75.54], 12);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            updateMapMarkers();
+        }
+
+        // Update map markers
+        function updateMapMarkers() {
+            if (!map) return;
+
+            // Clear existing markers
+            markers.forEach(marker => map.removeLayer(marker));
+            markers = [];
+
+            // Add new markers
+            filteredPlaces.forEach(place => {
+                if (place.geometry && place.geometry.location) {
+                    const phone = place.formatted_phone_number || place.international_phone_number || '';
+                    const rating = place.rating || 0;
+                    const reviews = place.user_ratings_total || 0;
+
+                    const popupContent = `
+                        <div class="map-popup">
+                            <h4>${place.customDisplayName || place.name}</h4>
+                            <p>${place.formatted_address || ''}</p>
+                            ${rating > 0 ? `<p>⭐ ${rating.toFixed(1)} (${reviews} reseñas)</p>` : ''}
+                            ${phone ? `<p>📞 ${phone}</p>` : ''}
+                        </div>
+                    `;
+
+                    const marker = L.marker([place.geometry.location.lat, place.geometry.location.lng])
+                        .addTo(map)
+                        .bindPopup(popupContent);
+
+                    markers.push(marker);
+                }
+            });
+
+            // Adjust map bounds to show all markers
+            if (markers.length > 0) {
+                const group = L.featureGroup(markers);
+                map.fitBounds(group.getBounds().pad(0.1));
+            }
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            // Search functionality
+            const searchInput = document.getElementById('search-input');
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase();
+
+                if (!searchTerm) {
+                    filteredPlaces = placesData.places;
+                } else {
+                    filteredPlaces = placesData.places.filter(place => {
+                        const name = (place.name || '').toLowerCase();
+                        const customName = (place.customDisplayName || '').toLowerCase();
+                        const address = (place.formatted_address || '').toLowerCase();
+                        return name.includes(searchTerm) ||
+                               customName.includes(searchTerm) ||
+                               address.includes(searchTerm);
+                    });
+                }
+
+                renderView();
+            });
+
+            // View switching
+            document.querySelectorAll('.view-btn').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    const view = this.dataset.view;
+
+                    // Update active button
+                    document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Hide all views
+                    document.getElementById('grid-view').classList.add('hidden');
+                    document.getElementById('list-view').classList.add('hidden');
+                    document.getElementById('map-view').classList.add('hidden');
+
+                    // Show selected view
+                    document.getElementById(`${view}-view`).classList.remove('hidden');
+                    currentView = view;
+
+                    renderView();
+                });
+            });
+        }
+
+        // Initialize
+        loadData();
+    </script>
+</body>
+</html>

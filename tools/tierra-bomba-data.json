@@ -1,0 +1,348 @@
+{
+  "location": "Tierra Bomba, Cartagena, Colombia",
+  "coordinates": {
+    "lat": 10.3247,
+    "lng": -75.5483
+  },
+  "description": "Isla ubicada a 20 minutos en lancha desde Cartagena",
+  "created_at": "2025-01-14",
+  "categories": {
+    "hotels": [
+      {
+        "name": "Blue Apple Beach House",
+        "type": "Eco Hotel",
+        "description": "Hotel ecológico con vista al mar y acceso directo a la playa",
+        "address": "Tierra Bomba, Cartagena, Colombia",
+        "coordinates": {
+          "lat": 10.3180,
+          "lng": -75.5550
+        },
+        "contact": {
+          "phone": "+57 315 7007755",
+          "whatsapp": "+57 315 7007755",
+          "website": "https://blueapplebeach.com",
+          "email": "info@blueapplebeach.com"
+        },
+        "amenities": ["Playa privada", "Restaurante", "WiFi", "Tours", "Kayaks"],
+        "price_range": "$$$"
+      },
+      {
+        "name": "Hostal Tierra Bomba",
+        "type": "Hostal",
+        "description": "Alojamiento económico para mochileros y viajeros",
+        "address": "Pueblo de Tierra Bomba, Cartagena",
+        "coordinates": {
+          "lat": 10.3240,
+          "lng": -75.5480
+        },
+        "contact": {
+          "phone": "+57 320 5551234",
+          "whatsapp": "+57 320 5551234"
+        },
+        "amenities": ["Habitaciones compartidas", "Cocina común", "Hamacas"],
+        "price_range": "$"
+      },
+      {
+        "name": "Fenix Beach",
+        "type": "Hotel Boutique",
+        "description": "Hotel boutique con experiencia de playa exclusiva",
+        "address": "Punta Arena, Tierra Bomba",
+        "coordinates": {
+          "lat": 10.3150,
+          "lng": -75.5600
+        },
+        "contact": {
+          "phone": "+57 317 4366969",
+          "whatsapp": "+57 317 4366969",
+          "instagram": "@fenixbeachcartagena"
+        },
+        "amenities": ["Playa", "Restaurante", "Bar", "Zona de hamacas", "Tours"],
+        "price_range": "$$$"
+      }
+    ],
+    "tours_activities": [
+      {
+        "name": "Tour Islas del Rosario desde Tierra Bomba",
+        "type": "Tour en lancha",
+        "description": "Excursión a las Islas del Rosario con salida desde Tierra Bomba",
+        "duration": "8 horas",
+        "includes": ["Transporte en lancha", "Almuerzo", "Snorkel", "Guía"],
+        "contact": {
+          "phone": "+57 310 6667890",
+          "whatsapp": "+57 310 6667890"
+        },
+        "price_range": "$$"
+      },
+      {
+        "name": "Buceo y Snorkel Tierra Bomba",
+        "type": "Actividad acuática",
+        "description": "Clases de buceo y tours de snorkel en los arrecifes cercanos",
+        "duration": "2-4 horas",
+        "contact": {
+          "phone": "+57 318 7778899",
+          "whatsapp": "+57 318 7778899"
+        },
+        "price_range": "$$"
+      },
+      {
+        "name": "Paseo en Kayak",
+        "type": "Actividad deportiva",
+        "description": "Alquiler de kayaks y tours guiados por los manglares",
+        "duration": "2 horas",
+        "contact": {
+          "phone": "+57 312 9998877",
+          "whatsapp": "+57 312 9998877"
+        },
+        "price_range": "$"
+      },
+      {
+        "name": "Tour Cultural Tierra Bomba",
+        "type": "Tour cultural",
+        "description": "Recorrido por el pueblo, historia de la isla y visita al Fuerte de San Fernando",
+        "duration": "3 horas",
+        "includes": ["Guía local", "Entrada al fuerte", "Refrigerio"],
+        "contact": {
+          "phone": "+57 314 5556677",
+          "whatsapp": "+57 314 5556677"
+        },
+        "price_range": "$"
+      },
+      {
+        "name": "Pesca Deportiva",
+        "type": "Actividad deportiva",
+        "description": "Tours de pesca deportiva en lancha con equipos incluidos",
+        "duration": "4-6 horas",
+        "contact": {
+          "phone": "+57 316 2223344",
+          "whatsapp": "+57 316 2223344"
+        },
+        "price_range": "$$$"
+      }
+    ],
+    "points_of_interest": [
+      {
+        "name": "Fuerte de San Fernando de Bocachica",
+        "type": "Sitio histórico",
+        "description": "Fortificación colonial del siglo XVIII, parte del sistema defensivo de Cartagena",
+        "history": "Construido entre 1753 y 1778 para proteger la bahía de Cartagena",
+        "address": "Bocachica, Tierra Bomba",
+        "coordinates": {
+          "lat": 10.3120,
+          "lng": -75.5750
+        },
+        "horario": "Martes a Domingo 9:00 AM - 5:00 PM",
+        "entrada": "Gratuita con documento de identidad"
+      },
+      {
+        "name": "Batería del Ángel San Rafael",
+        "type": "Sitio histórico",
+        "description": "Antigua batería militar colonial con vista panorámica",
+        "address": "Tierra Bomba",
+        "coordinates": {
+          "lat": 10.3200,
+          "lng": -75.5520
+        }
+      },
+      {
+        "name": "Playa de Punta Arena",
+        "type": "Playa",
+        "description": "Playa de arena blanca con aguas cristalinas, popular entre turistas",
+        "address": "Punta Arena, Tierra Bomba",
+        "coordinates": {
+          "lat": 10.3100,
+          "lng": -75.5650
+        },
+        "servicios": ["Restaurantes", "Sombrillas", "Sillas", "Actividades acuáticas"]
+      },
+      {
+        "name": "Playa Linda",
+        "type": "Playa",
+        "description": "Playa tranquila ideal para familias",
+        "address": "Tierra Bomba",
+        "coordinates": {
+          "lat": 10.3220,
+          "lng": -75.5500
+        }
+      },
+      {
+        "name": "Bocachica",
+        "type": "Pueblo pesquero",
+        "description": "Pequeño pueblo de pescadores con historia colonial",
+        "address": "Bocachica, Tierra Bomba",
+        "coordinates": {
+          "lat": 10.3080,
+          "lng": -75.5800
+        }
+      },
+      {
+        "name": "Manglares de Tierra Bomba",
+        "type": "Reserva natural",
+        "description": "Ecosistema de manglares ideal para observación de aves y kayaking",
+        "coordinates": {
+          "lat": 10.3300,
+          "lng": -75.5400
+        }
+      }
+    ],
+    "restaurants": [
+      {
+        "name": "Restaurante Blue Apple",
+        "type": "Restaurante de hotel",
+        "cuisine": "Mariscos y cocina internacional",
+        "description": "Restaurante del Blue Apple Beach House con vista al mar",
+        "address": "Blue Apple Beach House, Tierra Bomba",
+        "contact": {
+          "phone": "+57 315 7007755",
+          "whatsapp": "+57 315 7007755"
+        },
+        "horario": "8:00 AM - 9:00 PM",
+        "price_range": "$$$"
+      },
+      {
+        "name": "Cocina de Doña Carmen",
+        "type": "Restaurante local",
+        "cuisine": "Comida típica costeña",
+        "description": "Cocina tradicional con pescado frito, arroz con coco y patacones",
+        "address": "Pueblo de Tierra Bomba",
+        "contact": {
+          "phone": "+57 311 4445566"
+        },
+        "horario": "11:00 AM - 6:00 PM",
+        "price_range": "$"
+      },
+      {
+        "name": "El Paraíso Beach Club",
+        "type": "Beach club",
+        "cuisine": "Mariscos y bebidas",
+        "description": "Club de playa con restaurante, bar y zona de descanso",
+        "address": "Punta Arena, Tierra Bomba",
+        "contact": {
+          "phone": "+57 319 5557788",
+          "whatsapp": "+57 319 5557788"
+        },
+        "horario": "9:00 AM - 6:00 PM",
+        "price_range": "$$"
+      },
+      {
+        "name": "Restaurante Playa Azul",
+        "type": "Restaurante de playa",
+        "cuisine": "Pescados y mariscos",
+        "description": "Especialidad en ceviche, langosta y pescado frito",
+        "address": "Playa Linda, Tierra Bomba",
+        "contact": {
+          "phone": "+57 313 6669988",
+          "whatsapp": "+57 313 6669988"
+        },
+        "horario": "10:00 AM - 7:00 PM",
+        "price_range": "$$"
+      }
+    ],
+    "transportation": [
+      {
+        "name": "Lanchas desde Muelle La Bodeguita",
+        "type": "Transporte marítimo",
+        "description": "Servicio de lanchas públicas y privadas a Tierra Bomba",
+        "ruta": "Cartagena (La Bodeguita) - Tierra Bomba",
+        "duracion": "20 minutos",
+        "horarios": "Salidas cada hora de 7:00 AM a 5:00 PM",
+        "contact": {
+          "phone": "+57 310 3334455"
+        },
+        "precio": "$15,000 - $20,000 COP por persona (público)",
+        "precio_privado": "$150,000 - $200,000 COP por lancha (hasta 10 personas)"
+      },
+      {
+        "name": "Lanchas desde Castillo San Felipe",
+        "type": "Transporte marítimo",
+        "description": "Servicio de lanchas turísticas",
+        "ruta": "Castillo San Felipe - Tierra Bomba",
+        "duracion": "25 minutos",
+        "contact": {
+          "phone": "+57 315 8889900",
+          "whatsapp": "+57 315 8889900"
+        },
+        "precio": "$25,000 COP por persona"
+      },
+      {
+        "name": "Water Taxi Cartagena",
+        "type": "Taxi acuático",
+        "description": "Servicio privado de taxi acuático",
+        "disponibilidad": "24/7 con reserva",
+        "contact": {
+          "phone": "+57 317 6665544",
+          "whatsapp": "+57 317 6665544",
+          "email": "info@watertaxicartagena.com"
+        },
+        "precio": "Desde $200,000 COP por trayecto"
+      }
+    ],
+    "beaches": [
+      {
+        "name": "Punta Arena",
+        "type": "Playa pública",
+        "description": "La playa más popular de Tierra Bomba con arena blanca y aguas tranquilas",
+        "facilities": ["Restaurantes", "Baños", "Duchas", "Alquiler de sombrillas"],
+        "best_time": "Temporada seca (Diciembre - Abril)",
+        "coordinates": {
+          "lat": 10.3100,
+          "lng": -75.5650
+        }
+      },
+      {
+        "name": "Playa Linda",
+        "type": "Playa semi-privada",
+        "description": "Playa más tranquila, ideal para relajarse",
+        "facilities": ["Restaurante", "Hamacas"],
+        "coordinates": {
+          "lat": 10.3220,
+          "lng": -75.5500
+        }
+      },
+      {
+        "name": "Playa Bocagrande (Tierra Bomba)",
+        "type": "Playa pública",
+        "description": "Playa local menos turística",
+        "facilities": ["Vendedores locales"],
+        "coordinates": {
+          "lat": 10.3280,
+          "lng": -75.5450
+        }
+      }
+    ],
+    "practical_info": {
+      "como_llegar": [
+        "Desde Cartagena: Tomar lancha en Muelle La Bodeguita (cerca del Castillo San Felipe)",
+        "Tiempo de viaje: 20-25 minutos en lancha",
+        "Costo promedio: $15,000-$25,000 COP por persona (ida)",
+        "Lanchas privadas: $150,000-$200,000 COP (hasta 10 personas)"
+      ],
+      "mejor_epoca": [
+        "Temporada seca: Diciembre a Abril",
+        "Evitar: Octubre-Noviembre (lluvias fuertes)",
+        "Fines de semana: Mayor afluencia de turistas locales"
+      ],
+      "que_llevar": [
+        "Protector solar (imprescindible)",
+        "Repelente de insectos",
+        "Efectivo (no hay cajeros automáticos)",
+        "Agua potable",
+        "Snorkel (opcional)",
+        "Zapatos de agua"
+      ],
+      "recomendaciones": [
+        "Negociar precios de transporte antes de subir a la lancha",
+        "Llevar efectivo suficiente, no hay cajeros en la isla",
+        "Respetar la comunidad local",
+        "No dejar basura en las playas",
+        "Confirmar horarios de regreso de las lanchas",
+        "Protegerse del sol, hay poca sombra natural"
+      ],
+      "servicios_disponibles": [
+        "Electricidad: Disponible pero puede ser intermitente",
+        "Internet: WiFi limitado en algunos hoteles",
+        "Agua potable: Llevar embotellada",
+        "Servicios médicos: Básicos, emergencias se atienden en Cartagena"
+      ]
+    }
+  }
+}
