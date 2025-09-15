@@ -307,7 +307,7 @@ export class BusinessService {
     }
 
     // Get the full business data for these business IDs
-    const businessIds = viewStats.map(stat => stat.business_id);
+    const businessIds = viewStats.map(stat => stat.business_id).filter(id => id !== null);
 
     const { data: businesses, error: businessError } = await supabase
       .from('businesses')

@@ -1,5 +1,5 @@
 interface StructuredDataProps {
-  type: 'website' | 'business' | 'organization' | 'searchAction' | 'breadcrumb';
+  type: 'website' | 'business' | 'organization' | 'searchAction' | 'breadcrumb' | 'custom';
   data: any;
   locale?: string;
 }
@@ -151,6 +151,10 @@ export default function StructuredData({ type, data, locale = 'es' }: Structured
           item: item.url,
         })),
       };
+      break;
+
+    case 'custom':
+      schema = data;
       break;
   }
 

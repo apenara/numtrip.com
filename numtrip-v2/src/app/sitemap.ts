@@ -11,41 +11,41 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'daily',
+      changeFrequency: 'daily' as const,
       priority: 1,
     },
     // Homepage in each locale
     ...locales.map(locale => ({
       url: `${baseUrl}/${locale}`,
       lastModified: new Date(),
-      changeFrequency: 'daily',
+      changeFrequency: 'daily' as const,
       priority: 1,
     })),
     // Search pages
     ...locales.map(locale => ({
       url: `${baseUrl}/${locale}/search`,
       lastModified: new Date(),
-      changeFrequency: 'weekly',
+      changeFrequency: 'weekly' as const,
       priority: 0.8,
     })),
     // Add business pages
     ...locales.map(locale => ({
       url: `${baseUrl}/${locale}/add-business`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
     // Legal pages
     ...locales.map(locale => ({
       url: `${baseUrl}/${locale}/terms`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.5,
     })),
     ...locales.map(locale => ({
       url: `${baseUrl}/${locale}/privacy`,
       lastModified: new Date(),
-      changeFrequency: 'monthly',
+      changeFrequency: 'monthly' as const,
       priority: 0.5,
     })),
   ]
@@ -65,7 +65,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         businessPages.push({
           url: `${baseUrl}/${locale}/business/${slug}`,
           lastModified: new Date(business.updatedAt),
-          changeFrequency: 'weekly',
+          changeFrequency: 'weekly' as const,
           priority: business.verified ? 0.9 : 0.7,
         })
       })
