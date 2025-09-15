@@ -1,0 +1,47 @@
+# NumTrip - Directorio de Contactos Turísticos
+# https://numtrip.com
+
+User-agent: *
+Allow: /
+
+# Main pages
+Allow: /es/
+Allow: /en/
+Allow: /es/search
+Allow: /en/search
+Allow: /es/business/
+Allow: /en/business/
+
+# Legal pages
+Allow: /es/terms
+Allow: /en/terms
+Allow: /es/privacy
+Allow: /en/privacy
+
+# Business submission
+Allow: /es/add-business
+Allow: /en/add-business
+
+# Disallow test pages and admin
+Disallow: /test
+Disallow: /admin
+Disallow: /api/
+Disallow: /_next/
+
+# Disallow private files
+Disallow: /.env
+Disallow: /package.json
+Disallow: /tsconfig.json
+
+# Special instructions for search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Crawl delay for general bots
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://numtrip.com/sitemap.xml

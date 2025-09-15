@@ -1,0 +1,118 @@
+{
+  "HomePage": {
+    "nav": {
+      "search": "Buscar",
+      "businesses": "Empresas",
+      "about": "Acerca de"
+    },
+    "hero": {
+      "title": "Encuentra Contactos Verificados de Turismo",
+      "subtitle": "Descubre números de teléfono, emails y WhatsApp verificados de hoteles, tours y transporte en Cartagena y más destinos.",
+      "searchPlaceholder": "Buscar hoteles, tours, transporte...",
+      "searchButton": "Buscar"
+    },
+    "categories": {
+      "hotels": "Hoteles",
+      "hotelsDescription": "Encuentra contactos directos de hoteles verificados",
+      "tours": "Tours",
+      "toursDescription": "Conecta con operadores de tours locales",
+      "transport": "Transporte",
+      "transportDescription": "Servicios de transporte confiables",
+      "restaurants": "Restaurantes",
+      "restaurantsDescription": "Descubre los mejores restaurantes locales"
+    },
+    "cities": {
+      "cartagenaDescription": "Ciudad histórica y turística"
+    },
+    "actions": {
+      "exploreAll": "Explorar Todo",
+      "exploreAllDescription": "Descubre todos los destinos disponibles"
+    },
+    "features": {
+      "verified": "Verificado",
+      "verifiedDescription": "Contactos validados por la comunidad"
+    },
+    "verified": "Verificado",
+    "copy": "Copiar"
+  },
+  "SearchPage": {
+    "title": "Resultados de Búsqueda",
+    "noResults": "No se encontraron resultados",
+    "searchPlaceholder": "Buscar hoteles, tours, transporte...",
+    "filters": {
+      "category": "Categoría",
+      "city": "Ciudad",
+      "verified": "Solo verificados"
+    }
+  },
+  "Business": {
+    "details": "Detalles del Negocio",
+    "contacts": "Información de Contacto",
+    "promoCodes": "Códigos Promocionales",
+    "validation": "Validación Comunitaria",
+    "similarBusinesses": "Negocios Similares",
+    "breadcrumb": {
+      "home": "Inicio"
+    },
+    "actions": {
+      "copy": "Copiar",
+      "whatsapp": "WhatsApp",
+      "call": "Llamar"
+    }
+  },
+  "Header": {
+    "search": "Buscar",
+    "verified": "Verificados",
+    "about": "Acerca de",
+    "searchPlaceholder": "Buscar hoteles, tours, transporte..."
+  },
+  "Validation": {
+    "works": "Funciona",
+    "doesntWork": "No funciona",
+    "validatedCorrect": "Validado como correcto",
+    "validatedIncorrect": "Validado como incorrecto",
+    "cooldown": "Puedes validar nuevamente en {time}h",
+    "commentPlaceholder": "Agregar comentario opcional...",
+    "cancel": "Cancelar",
+    "validations": "validaciones",
+    "communityValidation": "Validación Comunitaria",
+    "accuracy": "Precisión",
+    "totalValidations": "validaciones totales",
+    "trustLevel": {
+      "low": "Confianza Baja",
+      "medium": "Confianza Media",
+      "high": "Confianza Alta",
+      "verified": "Verificado"
+    },
+    "contactType": {
+      "phone": "Teléfono",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "general": "General"
+    }
+  },
+  "Gamification": {
+    "userLevel": "Nivel de Usuario",
+    "points": "puntos",
+    "validations": "validaciones",
+    "accuracy": "precisión",
+    "nextLevel": "Siguiente nivel",
+    "progressTo": "Progreso hacia {level}",
+    "badges": "Insignias",
+    "validationComplete": "¡Validación completada!",
+    "level": {
+      "novato": "Novato",
+      "experto": "Experto",
+      "super_validador": "Super Validador"
+    },
+    "badge": {
+      "verificador_novato": "Verificador Novato",
+      "experto_local": "Experto Local",
+      "super_validador": "Super Validador",
+      "opinion_confiable": "Opinión Confiable",
+      "precision_alta": "Alta Precisión"
+    }
+  },
+  "verified": "Verificado",
+  "copy": "Copiar"
+}

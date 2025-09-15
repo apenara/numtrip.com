@@ -1,0 +1,118 @@
+{
+  "HomePage": {
+    "nav": {
+      "search": "Search",
+      "businesses": "Businesses",
+      "about": "About"
+    },
+    "hero": {
+      "title": "Find Verified Tourism Contacts",
+      "subtitle": "Discover verified phone numbers, emails and WhatsApp contacts for hotels, tours and transportation in Cartagena and more destinations.",
+      "searchPlaceholder": "Search hotels, tours, transport...",
+      "searchButton": "Search"
+    },
+    "categories": {
+      "hotels": "Hotels",
+      "hotelsDescription": "Find direct contacts from verified hotels",
+      "tours": "Tours",
+      "toursDescription": "Connect with local tour operators",
+      "transport": "Transport",
+      "transportDescription": "Reliable transportation services",
+      "restaurants": "Restaurants",
+      "restaurantsDescription": "Discover the best local restaurants"
+    },
+    "cities": {
+      "cartagenaDescription": "Historic and touristic city"
+    },
+    "actions": {
+      "exploreAll": "Explore All",
+      "exploreAllDescription": "Discover all available destinations"
+    },
+    "features": {
+      "verified": "Verified",
+      "verifiedDescription": "Community validated contacts"
+    },
+    "verified": "Verified",
+    "copy": "Copy"
+  },
+  "SearchPage": {
+    "title": "Search Results",
+    "noResults": "No results found",
+    "searchPlaceholder": "Search hotels, tours, transport...",
+    "filters": {
+      "category": "Category",
+      "city": "City",
+      "verified": "Verified only"
+    }
+  },
+  "Business": {
+    "details": "Business Details",
+    "contacts": "Contact Information",
+    "promoCodes": "Promotional Codes",
+    "validation": "Community Validation",
+    "similarBusinesses": "Similar Businesses",
+    "breadcrumb": {
+      "home": "Home"
+    },
+    "actions": {
+      "copy": "Copy",
+      "whatsapp": "WhatsApp",
+      "call": "Call"
+    }
+  },
+  "Header": {
+    "search": "Search",
+    "verified": "Verified",
+    "about": "About",
+    "searchPlaceholder": "Search hotels, tours, transport..."
+  },
+  "Validation": {
+    "works": "Works",
+    "doesntWork": "Doesn't Work",
+    "validatedCorrect": "Validated as correct",
+    "validatedIncorrect": "Validated as incorrect",
+    "cooldown": "You can validate again in {time}h",
+    "commentPlaceholder": "Add optional comment...",
+    "cancel": "Cancel",
+    "validations": "validations",
+    "communityValidation": "Community Validation",
+    "accuracy": "Accuracy",
+    "totalValidations": "total validations",
+    "trustLevel": {
+      "low": "Low Trust",
+      "medium": "Medium Trust",
+      "high": "High Trust",
+      "verified": "Verified"
+    },
+    "contactType": {
+      "phone": "Phone",
+      "email": "Email",
+      "whatsapp": "WhatsApp",
+      "general": "General"
+    }
+  },
+  "Gamification": {
+    "userLevel": "User Level",
+    "points": "points",
+    "validations": "validations",
+    "accuracy": "accuracy",
+    "nextLevel": "Next level",
+    "progressTo": "Progress to {level}",
+    "badges": "Badges",
+    "validationComplete": "Validation completed!",
+    "level": {
+      "novato": "Novice",
+      "experto": "Expert",
+      "super_validador": "Super Validator"
+    },
+    "badge": {
+      "verificador_novato": "Novice Validator",
+      "experto_local": "Local Expert",
+      "super_validador": "Super Validator",
+      "opinion_confiable": "Reliable Opinion",
+      "precision_alta": "High Precision"
+    }
+  },
+  "verified": "Verified",
+  "copy": "Copy"
+}

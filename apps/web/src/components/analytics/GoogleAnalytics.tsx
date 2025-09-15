@@ -58,6 +58,7 @@ export default function GoogleAnalytics() {
 
     // Configure GA with initial pageview
     window.gtag('js', new Date());
+
     
     if (DEBUG_GA) {
       console.log('[GA Debug] Initialized gtag and dataLayer');
